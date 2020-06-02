@@ -1,0 +1,40 @@
+// sizing variables
+:root {
+  font-size: 12px;
+  --space-1: 0.5rem; // 6
+  --space-2: 1rem; // 12
+  --space-3: 1.5rem; // 18
+  --space-4: 2rem; // 24
+  --space-5: 2.5rem; // 30
+  --space-5: 3rem; // 36
+  --space-6: 3.5rem; // 42
+  --space-7: 4rem; // 48
+  --space-8: 4.5rem; // 54
+  --space-9: 5rem; // 60
+  --space-10: 5.5rem; // 66
+  --space-10: 6rem; // 72
+}
+
+* {
+  outline: rgb(20, 184, 20);
+  box-sizing: border-box;
+}
+
+// font changes per screen change
+@media only screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.black-icon {
+  color: black;
+}
+
+.space-1__margin {
+  margin: var(--space-1);
+}

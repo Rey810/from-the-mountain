@@ -1,0 +1,40 @@
+:root {
+  font-size: 12px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --space-5: 3rem;
+  --space-6: 3.5rem;
+  --space-7: 4rem;
+  --space-8: 4.5rem;
+  --space-9: 5rem;
+  --space-10: 5.5rem;
+  --space-10: 6rem;
+}
+
+* {
+  outline: #14b814;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.black-icon {
+  color: black;
+}
+
+.space-1__margin {
+  margin: var(--space-1);
+}
+/*# sourceMappingURL=util.css.map */
