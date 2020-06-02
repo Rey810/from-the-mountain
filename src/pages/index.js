@@ -1,15 +1,16 @@
 import React from "react"
-// import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
+import LandingHeader from "../components/landingHeader"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+
+// fab represenets all of the brand icons. They're now available anywhere in the app
+library.add(fab)
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Yo!</h1>
-    <p>Welcome to the personal site and blog of Rey van den Berg.</p>
   </Layout>
 )
 
