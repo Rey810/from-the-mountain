@@ -1,0 +1,29 @@
+import React from "react"
+import ToolboxCard from "../components/toolboxCard"
+
+const toolbox = () => {
+  const tools = {
+    frontend: [
+      "HTML",
+      "JavaScript",
+      "CSS",
+      "React",
+      "GraphQL",
+      "Jest",
+      "Gatsby",
+    ],
+    backend: ["Ruby", "Rails", "PostgreSQL", "RSpec"],
+    general: ["Adobe XD", "Git", "Netlify"],
+  }
+
+  return (
+    <section className="toolbox-container">
+      <h1 className="toolbox-header">What's in my toolbox?</h1>
+      <ToolboxCard tools={tools.frontend} title={"Front-end"} />
+      <ToolboxCard tools={tools.backend} title={"Back-end"} />
+      <ToolboxCard tools={tools.general} title={"General"} />
+    </section>
+  )
+}
+
+export default toolbox
