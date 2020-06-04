@@ -9,6 +9,9 @@ import Personal from "../components/personal"
 import Services from "../components/services"
 import Promise from "../components/promise"
 import Toolbox from "../components/toolbox"
+import Projects from "../components/projects"
+import Contact from "../components/contact"
+import Quotes from "../components/quotes"
 
 // fab represenets all of the brand icons. They're now available anywhere in the app
 library.add(fab)
@@ -21,6 +24,9 @@ const IndexPage = () => (
     <Services />
     <Promise />
     <Toolbox />
+    <Projects />
+    <Contact />
+    <Quotes />
   </Layout>
 )
 

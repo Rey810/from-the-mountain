@@ -8,7 +8,9 @@ const toolboxCard = props => {
         <h6 className="toolbox-header">{title}</h6>
         <div className="tools-container">
           {tools.map(tool => (
-            <li className="tool">{tool}</li>
+            <li key={tool} className="tool">
+              {tool}
+            </li>
           ))}
         </div>
       </div>
