@@ -7,12 +7,12 @@ import "../styles/util.css"
 
 export default function Header({ siteTitle }) {
   return (
-    <header className="border-bottom">
+    <header className="flex flex-row justify-end fixed w-full bg-white p-2 lg:p-4 xl:p-6">
       <ThemeControl />
       <a href="https://twitter.com/ReyTheDev">
         <FontAwesomeIcon
           icon={["fab", "twitter"]}
-          className="black-icon space-1__margin"
+          className="lg:text-lg xl:text-xl"
         ></FontAwesomeIcon>
       </a>
     </header>
