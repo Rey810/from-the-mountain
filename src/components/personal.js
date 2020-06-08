@@ -2,9 +2,12 @@ import React from "react"
 
 const personal = () => {
   return (
-    <section className="personal-container">
-      <h1 className="personal-title">Working Remotely, Based in Cape Town</h1>
-      <p className="personal-description">
+    <section className="personal-container pb-20">
+      <div class="personal-title-container px-4 pb-8 text-4xl font-bold flex flex-col sm:flex-row">
+        <h1 className="personal-title ">Working Remotely, &nbsp;</h1>
+        <h1> Based in Cape Town</h1>
+      </div>
+      <p className="personal-description px-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.

@@ -1,5 +1,5 @@
-/* :root {
-  font-size: 12px;
+:root {
+  /* font-size: 12px;
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
@@ -11,5 +11,39 @@
   --space-8: 4.5rem;
   --space-9: 5rem;
   --space-10: 5.5rem;
-  --space-10: 6rem;
-} */
+  --space-10: 6rem; */
+
+  /* REVISIT AND REFACTOR COLOURS USING CALC
+  https://itnext.io/theming-with-css-custom-properties-variables-and-calc-a89b37ad0013*/
+}
+
+* {
+  background-color: transparent;
+}
+
+/* Landing Call to Action buttons */
+.landing-cta-1 {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 90%);
+}
+
+.landing-cta-1:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+.landing-cta-2 {
+  border-color: hsl(140, 85%, 43%);
+  background-color: none;
+  color: hsl(140, 74%, 49%);
+}
+
+.landing-cta-2:hover {
+  background-color: hsl(140, 85%, 43%);
+  color: hsl(0, 0%, 100%, 0.85);
+}
+
+/* CARDS */
+.card-color {
+  background-color: hsl(0, 100%, 99%);
+  color: hsl(0, 0%, 0%);
+}

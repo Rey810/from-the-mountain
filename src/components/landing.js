@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const landing = () => {
   return (
-    <section class="h-screen bg-transparent pt-8">
+    <section class="bg-transparent pt-10 pb-20 my-auto">
       <div className="avatar-container flex flex-row justify-center py-8 ">
         <img className="avatar-pic px-2" alt="Pic of Rey" />
         <h1 className="avatar-name text-xs my-auto font-semibold ">
@@ -21,13 +21,15 @@ const landing = () => {
           words will be here.{" "}
         </p>
       </main>
-      <div className="landing-buttons-container pt-8 flex flex-row justify-center">
-        <button className="landing-cta py-3 px-6 mx-2 rounded-full bg-gray-700 text-gray-200">
-          Say Hi
+      <div className="landing-buttons-container pt-8 flex flex-col justify-center">
+        <button className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-full">
+          Come say, "Howzit!"
         </button>
-        <button className="landing-cta py-3 px-6 mx-2">Checkout Blog</button>
+        <button className="landing-cta-2 py-2 px-8 mx-auto my-2 rounded-full border border-solid">
+          Checkout Blog
+        </button>
       </div>
-      <div className="landing-icons-container flex flex-row justify-center text-2xl text-gray-700 pt-4">
+      <div className="landing-icons-container flex flex-row justify-center text-2xl py-4">
         <Link className="landing-icons px-4" to="/">
           <FontAwesomeIcon icon={["fab", "github"]} />
         </Link>
