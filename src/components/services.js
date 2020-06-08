@@ -32,6 +32,12 @@ const services = () => {
           icon={service2.icon}
         />
       </div>
+      <div class="cta pl-4 pt-4">
+        Interested?{" "}
+        <a href="mailto:reyvdb@gmail.com" class="text-link">
+          hello@mountain.co.za
+        </a>
+      </div>
     </section>
   )
 }

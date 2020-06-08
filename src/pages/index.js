@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // Font Awesome Icons
-import { library } from "@fortawesome/fontawesome-svg-core"
+import { library, config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faCode, faCoffee } from "@fortawesome/free-solid-svg-icons"
 
@@ -16,8 +17,11 @@ import Projects from "../components/projects"
 import Contact from "../components/contact"
 import Quotes from "../components/quotes"
 
-// fab represenets all of the brand icons. They're now available anywhere in the app
+// FONT AWESOME
+// fab represenets all of the brand icons
 library.add(fab, faCode, faCoffee)
+// fixes huge Font Awesome icon on load by inlining CSS
+config.autoAddCss = false
 
 const IndexPage = () => (
   <Layout>

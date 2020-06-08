@@ -1,4 +1,7 @@
 @tailwind base;
+
+/*General*/
+
 @tailwind components;
 @tailwind utilities;
 

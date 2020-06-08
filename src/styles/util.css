@@ -17,10 +17,6 @@
   https://itnext.io/theming-with-css-custom-properties-variables-and-calc-a89b37ad0013*/
 }
 
-* {
-  background-color: transparent;
-}
-
 /* Landing Call to Action buttons */
 .landing-cta-1 {
   background-color: hsl(0, 0%, 20%);
@@ -44,6 +40,34 @@
 
 /* CARDS */
 .card-color {
-  background-color: hsl(0, 100%, 99%);
+  background-color: hsl(0, 0%, 95%);
   color: hsl(0, 0%, 0%);
+}
+
+.text-link {
+  color: hsl(140, 84%, 43%);
+}
+
+.text-link:hover {
+  color: hsl(140, 84%, 27%);
+}
+
+/* LIST ITEMS */
+.promise-container div {
+  counter-increment: promise-counter;
+}
+
+.promise-container div h6:before {
+  content: counter(promise-counter);
+  padding: 0.1rem 0.5rem;
+  background-color: hsl(140, 85%, 43%);
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
 }
