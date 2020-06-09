@@ -4,7 +4,13 @@ module.exports = {
     cursor: {
       grab: "grab",
     },
+    extend: {
+      width: {
+        mc: "max-content",
+      },
+    },
   },
+
   variants: {},
   plugins: [],
 }
