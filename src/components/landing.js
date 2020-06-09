@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const landing = () => {
   return (
-    <section class="bg-transparent pt-10 pb-20 my-auto">
+    <section className="bg-transparent pt-10 pb-20 my-auto">
       <div className="avatar-container flex flex-row justify-center py-16 ">
         <img className="avatar-pic px-2" alt="Pic of Rey" />
         <h1 className="avatar-name text-xs my-auto font-semibold ">
