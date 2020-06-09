@@ -16,12 +16,13 @@ const project = props => {
 
   return (
     <div className="project-container pb-10">
-      <button className="project-site"></button>
-      <h6 className="project-header text-2xl font-semi-bold pb-6">{title}</h6>
       <div className="image-container relative bg-red-500 pb-1/1">
         {projectImageComponents[title]}
       </div>
-      <p className="project-description pt-8 pb-4">{description}</p>
+      <h6 className="project-header text-2xl font-semi-bold pt-6 pb-4">
+        {title}
+      </h6>
+      <p className="project-description pb-4">{description}</p>
       <div className="project-tech-container text-4xl pb-6 pl-2">
         {techStack.map(tech => {
           return (
@@ -33,7 +34,7 @@ const project = props => {
       </div>
       <div className="project-buttons-container flex flex-row justify-even">
         <a href={siteURL} className="project-site-link">
-          <button className="project-site py-4 px-8 my-2 rounded-full">
+          <button className="project-site py-4 px-8 my-2 rounded-full shadow-md">
             Visit Site
           </button>
         </a>

@@ -19,13 +19,15 @@
 
 /* Landing Call to Action buttons */
 .landing-cta-1,
-.project-site {
+.project-site,
+.contact-button {
   background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 90%);
 }
 
 .landing-cta-1:hover,
-.project-site:hover {
+.project-site:hover,
+.contact-button:hover {
   background-color: hsl(0, 0%, 30%);
 }
 

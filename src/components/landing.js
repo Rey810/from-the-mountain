@@ -22,7 +22,7 @@ const landing = () => {
         </p>
       </main>
       <div className="landing-buttons-container pt-16 flex flex-col justify-center">
-        <button className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-full">
+        <button className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-full shadow-md">
           hello@mountain.co.za
         </button>
         <button className="landing-cta-2 py-2 px-8 mx-auto my-2 rounded-full border border-solid">
