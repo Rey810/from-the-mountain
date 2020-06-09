@@ -9,7 +9,7 @@ export default function Header({ siteTitle }) {
   return (
     <header className="flex flex-row justify-end fixed w-full bg-white p-2 lg:p-4 xl:p-6">
       {/* <ThemeControl /> */}
-      <a href="https://twitter.com/ReyTheDev" class="px-4">
+      <a href="https://twitter.com/ReyTheDev" className="px-4">
         <FontAwesomeIcon icon={["fab", "twitter"]}></FontAwesomeIcon>
       </a>
     </header>
