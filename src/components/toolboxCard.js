@@ -14,7 +14,7 @@ rounded-md shadow-md"
             {tools.map(tool => (
               <li
                 key={tool}
-                className="tool text-xs border border-solid rounded-full w-mc py-2 px-4 mr-2 mb-2"
+                className="tool text-xs rounded-lg w-mc py-2 px-4 mr-2 mb-2 shadow-sm"
               >
                 {tool}
               </li>

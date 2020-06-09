@@ -1,8 +1,13 @@
 @tailwind base;
 
 /*General*/
-
+.absolute-important {
+  position: absolute !important;
+}
 @tailwind components;
 @tailwind utilities;
+.justify-even {
+  justify-content: space-evenly;
+}
 
 @import "../styles/util.css";

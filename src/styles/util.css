@@ -18,22 +18,26 @@
 }
 
 /* Landing Call to Action buttons */
-.landing-cta-1 {
+.landing-cta-1,
+.project-site {
   background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 90%);
 }
 
-.landing-cta-1:hover {
+.landing-cta-1:hover,
+.project-site:hover {
   background-color: hsl(0, 0%, 30%);
 }
 
-.landing-cta-2 {
+.landing-cta-2,
+.project-code {
   border-color: hsl(140, 85%, 43%);
   background-color: none;
   color: hsl(140, 74%, 49%);
 }
 
-.landing-cta-2:hover {
+.landing-cta-2:hover,
+.project-code:hover {
   background-color: hsl(140, 85%, 43%);
   color: hsl(0, 0%, 100%, 0.85);
 }
@@ -70,4 +74,11 @@
   align-items: center;
   width: 1.5rem;
   height: 1.5rem;
+}
+
+/* TOOLBOX */
+/*Tool*/
+.tool {
+  background-color: hsl(140, 85%, 43%);
+  color: hsl(0, 0%, 100%, 0.85);
 }

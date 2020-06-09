@@ -3,7 +3,7 @@ import React from "react"
 const personal = () => {
   return (
     <section className="personal-container pb-20">
-      <div class="personal-title-container px-4 pb-8 text-4xl font-bold flex flex-col sm:flex-row">
+      <div className="personal-title-container px-4 pb-8 text-4xl font-bold flex flex-col sm:flex-row">
         <h1 className="personal-title ">Working Remotely, &nbsp;</h1>
         <h1> Based in Cape Town</h1>
       </div>

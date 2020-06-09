@@ -8,11 +8,17 @@ const projects = () => {
       title: "Odin's Forecast",
       imageURL: "This is the project 1 image",
       description:
-        "This is a project I made with a lot of grit and other nonsense",
+        "Ever wondered what Odin thought of our current weather application solutions? Well he thinks they're all rubbish so he tasked me with building a version that would master all others. This is it. Use responsibly.",
       techStack: [
-        { name: "html", url: "/" },
-        { name: "css", url: "/" },
-        { name: "javascript", url: "/" },
+        {
+          name: "html5",
+          url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        },
+        {
+          name: "css3-alt",
+          url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        },
+        { name: "js", url: "https://javascript.info/" },
         { name: "cloudfare", url: "/" },
       ],
       siteURL: "/",
@@ -22,11 +28,11 @@ const projects = () => {
       title: "Odin's Book",
       imageURL: "This is the project 2 image",
       description:
-        "This is a project I made with a lot of grit and other nonsense",
+        "Apparently Odin loves to be social but he didn't fancy any of these other social media 'gimmicks' as he calls them. So he paid me a lot of money and awared me eternal life to bring his idea of the perfect social media app to life",
       techStack: [
-        { name: "html", url: "/" },
-        { name: "css", url: "/" },
-        { name: "javascript", url: "/" },
+        { name: "html5", url: "/" },
+        { name: "css3-alt", url: "/" },
+        { name: "js", url: "/" },
         { name: "rails", url: "/" },
       ],
       siteURL: "/",
@@ -34,8 +40,8 @@ const projects = () => {
     },
   }
   return (
-    <section className="projects-container">
-      <h4 className="projects-header">Projects</h4>
+    <section className="projects-container px-4 pb-20">
+      <h4 className="projects-header pb-8 text-4xl font-bold">Projects</h4>
       <Project info={projectsObj.project1} />
       <Project info={projectsObj.project2} />
     </section>
