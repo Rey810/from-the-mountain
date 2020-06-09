@@ -4,14 +4,22 @@ const toolboxCard = props => {
   const { tools, title } = props
   return (
     <>
-      <div className="toolbox-card">
-        <h6 className="toolbox-header">{title}</h6>
+      <div
+        className="toolbox-card card-color ml-2 mr-6 mb-8 py-8 pl-8 pr-2
+rounded-md shadow-md"
+      >
+        <h6 className="toolbox-header text-2xl font-semibold pb-8">{title}</h6>
         <div className="tools-container">
-          {tools.map(tool => (
-            <li key={tool} className="tool">
-              {tool}
-            </li>
-          ))}
+          <ul className="flex flex-row flex-wrap">
+            {tools.map(tool => (
+              <li
+                key={tool}
+                className="tool text-xs border border-solid rounded-full w-mc py-2 px-4 mr-2 mb-2"
+              >
+                {tool}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </>
