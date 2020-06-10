@@ -3,16 +3,24 @@ import ServiceCard from "./serviceCard"
 
 const services = () => {
   const service1 = {
-    title: "Building your Custom Site",
+    title: "Build the Features You Want",
     description:
-      "Need a refresh on your old dusty Wordpress site? I use the latest proven tech to add that style you sorely need.",
+      "Do you feel restricted by all the drag-and-drop web builders out there? I provide a custom solution that fits your exact needs. No extra nonsense. Just a fast, great looking site owned completely by you.",
     icon: "code",
   }
 
   const service2 = {
-    title: "Implementing an E-Commerce Site",
-    description: "Words about an emmorce site blaah bliu blip blop",
+    title: "Sell your Stuff Online",
+    description:
+      "You have an idea. You want to turn it into an online business without learning all the technical stuff like digital marketing, branding, and the inner workings of online sales dynamics. I'm here to help.",
     icon: "coffee",
+  }
+
+  const service3 = {
+    title: "Become Famous",
+    description:
+      "Google decides your fame by ranking you. A bad ranking means less people see your fantastic blog post or revolutionary product. I ensure you have a great ranking with best SEO practices. Give your content the audience it deserves. Who knows, you might get famous.",
+    icon: "beer",
   }
 
   return (
@@ -30,6 +38,11 @@ const services = () => {
           title={service2.title}
           description={service2.description}
           icon={service2.icon}
+        />
+        <ServiceCard
+          title={service3.title}
+          description={service3.description}
+          icon={service3.icon}
         />
       </div>
       <div class="cta pl-4 pt-4">

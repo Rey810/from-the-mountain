@@ -27,11 +27,6 @@ const landing = () => {
         <button className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-full shadow-md">
           hello@mountain.co.za
         </button>
-        <Link to="/blog" className="mx-auto my-2">
-          <button className="landing-cta-2 py-2 px-8  rounded-full border border-solid">
-            Checkout Blog
-          </button>
-        </Link>
       </div>
       <div className="landing-icons-container flex flex-row justify-center text-2xl py-8">
         <Link className="landing-icons px-4" to="/">

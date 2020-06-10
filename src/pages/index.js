@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faCode, faCoffee } from "@fortawesome/free-solid-svg-icons"
+import { faCode, faCoffee, faBeer } from "@fortawesome/free-solid-svg-icons"
 
 // Components of Landing Page
 import Landing from "../components/landing"
@@ -13,13 +13,14 @@ import Personal from "../components/personal"
 import Services from "../components/services"
 import Promise from "../components/promise"
 import Toolbox from "../components/toolbox"
-import Projects from "../components/projects"
+// import Projects from "../components/projects"
 import Contact from "../components/contact"
 import Quotes from "../components/quotes"
+import Benefits from "../components/benefits"
 
 // FONT AWESOME
 // fab represenets all of the brand icons
-library.add(fab, faCode, faCoffee)
+library.add(fab, faCode, faCoffee, faBeer)
 // fixes huge Font Awesome icon on load by inlining CSS
 config.autoAddCss = false
 
@@ -29,9 +30,10 @@ const IndexPage = () => (
     <Landing />
     <Personal />
     <Services />
+    <Benefits />
     <Promise />
     <Toolbox />
-    <Projects />
+    {/* <Projects /> */}
     <Contact />
     <Quotes />
   </Layout>
