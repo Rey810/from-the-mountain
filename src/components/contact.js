@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const contact = () => {
   return (
-    <section className="contact-container px-4 py-8">
+    <section className="contact-container px-4 pt-0 pb-8">
       <h4 className="contact-header pb-8 text-4xl font-bold">
         Sweet, that's me! Now it's your turn to say hi.
       </h4>

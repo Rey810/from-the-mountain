@@ -15,8 +15,8 @@ const project = props => {
   }
 
   return (
-    <div className="project-container pb-10">
-      <div className="image-container relative bg-red-500 pb-1/1">
+    <div className="project-container pb-10 md:pb-20 md:mx-16">
+      <div className="image-container relative bg-red-500 pb-1/1 md:pb-1/2">
         {projectImageComponents[title]}
       </div>
       <h6 className="project-header text-2xl font-semi-bold pt-6 pb-4">
@@ -32,9 +32,9 @@ const project = props => {
           )
         })}
       </div>
-      <div className="project-buttons-container flex flex-row justify-even">
+      <div className="project-buttons-container flex flex-row justify-even md:justify-start">
         <a href={siteURL} className="project-site-link">
-          <button className="project-site py-4 px-8 my-2 rounded-full shadow-md">
+          <button className="project-site py-4 px-8 my-2 rounded-full shadow-md md:mr-4">
             Visit Site
           </button>
         </a>

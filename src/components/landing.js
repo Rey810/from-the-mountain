@@ -7,8 +7,10 @@ const landing = () => {
   return (
     <section className="bg-transparent pt-10 pb-20 my-auto">
       <div className="avatar-container flex flex-row justify-center py-16 ">
-        <img className="avatar-pic px-2" alt="Pic of Rey" />
-        <h1 className="avatar-name text-xs my-auto font-semibold ">
+        <div className="avater-container h-16 w-16 border-2 rounded-full mx-4">
+          <img className="avatar-pic px-2" alt="Rey van den Berg's Avatar" />
+        </div>
+        <h1 className="avatar-name text-xs my-auto font-bold ">
           REY VAN DEN BERG
         </h1>
       </div>
@@ -16,7 +18,7 @@ const landing = () => {
         <h1 className="landing-title text-6xl leading-none font-extrabold text-center">
           Freelance Developer
         </h1>
-        <p className="landing-description pt-8 px-8 text-xl">
+        <p className="landing-description pt-8 px-8 text-xl text-center">
           I bring your cool ideas to life using only the best tech ingredients
           and tools{" "}
         </p>
@@ -25,9 +27,11 @@ const landing = () => {
         <button className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-full shadow-md">
           hello@mountain.co.za
         </button>
-        <button className="landing-cta-2 py-2 px-8 mx-auto my-2 rounded-full border border-solid">
-          Checkout Blog
-        </button>
+        <Link to="/blog" className="mx-auto my-2">
+          <button className="landing-cta-2 py-2 px-8  rounded-full border border-solid">
+            Checkout Blog
+          </button>
+        </Link>
       </div>
       <div className="landing-icons-container flex flex-row justify-center text-2xl py-8">
         <Link className="landing-icons px-4" to="/">

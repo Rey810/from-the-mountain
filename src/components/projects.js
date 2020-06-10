@@ -42,8 +42,10 @@ const projects = () => {
   return (
     <section className="projects-container px-4 pb-10">
       <h4 className="projects-header pb-8 text-4xl font-bold">Projects</h4>
-      <Project info={projectsObj.project1} />
-      <Project info={projectsObj.project2} />
+      <div className="projects-wrapper lg:flex lg:flex-row lg:flex-wrap">
+        <Project info={projectsObj.project1} />
+        <Project info={projectsObj.project2} />
+      </div>
     </section>
   )
 }
