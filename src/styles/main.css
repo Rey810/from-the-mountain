@@ -4,6 +4,7 @@
 .absolute-important {
   position: absolute !important;
 }
+
 @tailwind components;
 @tailwind utilities;
 .justify-even {

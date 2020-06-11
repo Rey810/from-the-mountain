@@ -17,6 +17,7 @@ import Toolbox from "../components/toolbox"
 import Contact from "../components/contact"
 import Quotes from "../components/quotes"
 import Benefits from "../components/benefits"
+import FAQ from "../components/faq"
 
 // FONT AWESOME
 // fab represenets all of the brand icons
@@ -33,6 +34,7 @@ const IndexPage = () => (
     <Benefits />
     <Promise />
     <Toolbox />
+    <FAQ />
     {/* <Projects /> */}
     <Contact />
     <Quotes />

@@ -86,3 +86,24 @@
   background-color: hsl(140, 85%, 43%);
   color: hsl(0, 0%, 100%, 0.85);
 }
+
+/* FAQ */
+summary::before {
+  content: "+";
+  color: hsl(140, 85%, 43%);
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin-bottom: 0.2rem;
+}
+
+details {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+details p {
+  color: black;
+}
+
+.open {
+  color: black;
+}
