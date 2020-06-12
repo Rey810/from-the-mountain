@@ -4,6 +4,7 @@ module.exports = {
     description: `A personal site and blog for Reynard van den Berg. This is a place where he talks about his journey as a developer, traveller, and human. He also uses this space to show some of the stuff he's worked on!`,
     author: `@ReyTheDev`,
     keywords: `blog, portfolio, developer, travel, freelance`,
+    googleSiteVerification: "zUF4k-2XdAVgIl5-MbijxBudeCAmYgB5Q7CCojbrAOg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

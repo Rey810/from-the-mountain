@@ -20,6 +20,7 @@ function SEO({ description, lang, meta, title, keywords }) {
             description
             author
             keywords
+            googleSiteVerification
           }
         }
       }
@@ -28,6 +29,7 @@ function SEO({ description, lang, meta, title, keywords }) {
 
   const metaDescription = description || site.siteMetadata.description
   const metaKeywords = keywords || site.siteMetadata.keywords
+  const metaVerification = site.siteMetadata.googleSiteVerification
   return (
     <Helmet
       htmlAttributes={{
@@ -38,7 +40,7 @@ function SEO({ description, lang, meta, title, keywords }) {
       meta={[
         {
           name: `google-site-verification`,
-          content: "zUF4k-2XdAVgIl5-MbijxBudeCAmYgB5Q7CCojbrAOg",
+          content: metaVerification,
         },
         {
           name: `description`,

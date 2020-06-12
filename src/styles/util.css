@@ -17,7 +17,13 @@
   https://itnext.io/theming-with-css-custom-properties-variables-and-calc-a89b37ad0013*/
 }
 
-/* Landing Call to Action buttons */
+/* LANDING */
+/* Animated Goal */
+.animated-goal {
+  animation: fadeInSlide 0.5s ease-in infinite;
+  position: relative;
+}
+/* Call to Action buttons */
 .landing-cta-1,
 .project-site,
 .contact-button {
@@ -96,6 +102,10 @@ summary::before {
   margin-bottom: 0.2rem;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 details {
   color: rgba(0, 0, 0, 0.65);
 }
@@ -106,4 +116,32 @@ details p {
 
 .open {
   color: black;
+}
+
+/* ANIMATION */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 15%, 0);
+  }
+
+  25% {
+    opacity: 0.25;
+    transform: translate3d(0, 11.25%, 0);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translate3d(0, 7.5%, 0);
+  }
+
+  75% {
+    opacity: 0.75;
+    transform: translate3d(0, 3.75%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    tranform: translate3d(0, 0%, 0);
+  }
 }
