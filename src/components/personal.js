@@ -4,16 +4,22 @@ import React from "react"
 const personal = () => {
   return (
     <section className="personal-container pl-4 pb-20">
-      <div className="personal-title-container px-4 pb-8 text-4xl font-bold flex flex-col sm:flex-row">
-        <h1 className="personal-title ">Working Remotely, &nbsp;</h1>
-        <h1> Based in Cape Town</h1>
+      <div className="personal-title-container pb-8 text-4xl font-bold flex flex-col sm:flex-row">
+        <h1 className="personal-title ">Let's Start</h1>
+        <h1> With a Question</h1>
       </div>
       <p className="personal-description pb-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
-        sem vitae risus tristique posuere.
+        What comes to mind when I say "the perfect website"? To me, it's
+        "amazing looks", "a fast load time", "ease of use", "uncomplicated".
+      </p>
+      <p className="personal-description pb-4">
+        To you, it might be one that "generates sales", "attracts subscribers",
+        "brings across a clear message".
+      </p>
+      <p className="personal-description pb-10">
+        And that's why you might enjoy working with me - I build with an eye for
+        precision so that when you close your eyes and imagine the perfect site,
+        you see yours.
       </p>
       <Link to="/blog" className="my-2">
         <button className="landing-cta-2 py-2 px-8 border border-solid">

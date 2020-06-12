@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Avatar from "../components/images/avatar"
@@ -18,14 +17,14 @@ const Landing = () => {
     const interval = setInterval(() => {
       setCount(count => (count === 3 ? 0 : count + 1))
       setGoal(goals[count])
-    }, 100000)
+    }, 1000)
     return () => clearInterval(interval)
   })
 
   return (
     <section className="landing-container pt-10 pb-20 my-auto">
-      <div className="avatar-container grid grid-cols-2 gap-2 h-12 my-16 px-12">
-        <div className="avater-image-container relative w-12 ml-auto">
+      <div className="avatar-container grid grid-cols-2 gap-2 h-16 my-16 px-12">
+        <div className="avater-image-container relative w-16 ml-auto">
           <Avatar />
         </div>
         <h1 className="avatar-name text-xs my-auto font-bold ">
