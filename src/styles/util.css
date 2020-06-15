@@ -9,8 +9,8 @@
   --tertiary-color: #40595f;
   --heading-color: #173035;
   --bg-color: #fff;
-  --cta-color: #00a8d3;
-  --cta-hover-color: #41b1ce;
+  --cta-color: hsl(192, 50.7%, 27.5%);
+  --cta-hover-color: hsl(192, 50.7%, 40.5%);
 
   /* REVISIT AND REFACTOR COLOURS USING CALC
   https://itnext.io/theming-with-css-custom-properties-variables-and-calc-a89b37ad0013*/
@@ -41,6 +41,11 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+}
+
+/* HEADER */
+.brand-color {
+  background-color: var(--primary-color);
 }
 
 /* LANDING */
