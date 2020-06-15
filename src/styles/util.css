@@ -77,6 +77,16 @@ h6 {
   color: var(--primary-color);
 }
 
+.landing-cta-2 {
+  border-color: var(--heading-color);
+  color: var(--heading-color);
+}
+
+.landing-cta-2:hover {
+  background-color: var(--heading-color);
+  color: var(--primary-color);
+}
+
 .landing-cta-2:hover,
 .project-code:hover {
   background-color: var(--primary-color);
