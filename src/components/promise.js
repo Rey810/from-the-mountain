@@ -7,7 +7,7 @@ const promise = () => {
         I'll always promise you this:
       </h1>
       <div className="promise-1-container pt-8">
-        <h6 className="promise-header font-semibold flex flex-row items-center pb-2">
+        <h6 className="promise-header flex flex-row items-center pb-2">
           Fast products that work
         </h6>
         <p className="promise-description">
@@ -16,7 +16,7 @@ const promise = () => {
         </p>
       </div>
       <div className="promise-2-container pt-8">
-        <h6 className="promise-header font-semibold flex flex-row items-center pb-2">
+        <h6 className="promise-header flex flex-row items-center pb-2">
           A healthy relationship
         </h6>
         <p className="promise-description">

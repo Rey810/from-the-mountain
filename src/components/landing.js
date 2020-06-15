@@ -33,19 +33,19 @@ const Landing = () => {
       </div>
       <main className="landing-container ">
         <h1 className="landing-title text-6xl leading-none font-extrabold text-center">
-          Get More <span className="goals text-gray-500">{goal}</span>
+          Get More <span className="goals">{goal}</span>
         </h1>
-        <p className="landing-description pt-8 px-8 font-semibold text-xl text-center">
+        <h6 className="landing-description pt-8 px-8 font-semibold text-xl text-center">
           Easy. Cost-Effective. Professional.
-        </p>
+        </h6>
       </main>
       <div className="landing-buttons-container pt-16 flex flex-col justify-center">
         <input
-          className="email-field mx-auto border py-4 px-4 my-2 rounded-md text-gray-800 bg-gray-300 w-64 shadow-sm"
+          className="email-field mx-auto border py-4 px-4 my-2 rounded-md w-64 shadow-sm"
           type="email"
           placeholder="Your email..."
         />
-        <button className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-md shadow-md w-64">
+        <button className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-md shadow-md font-semibold w-64">
           Let's Connect!
         </button>
       </div>

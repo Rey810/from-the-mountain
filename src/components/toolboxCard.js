@@ -8,7 +8,7 @@ const toolboxCard = props => {
         className="toolbox-card card-color ml-2 mr-6 mb-8 py-8 pl-8 pr-2
 rounded-md shadow-md md:w-64 lg:w-full"
       >
-        <h6 className="toolbox-header text-2xl font-semibold pb-8">{title}</h6>
+        <h6 className="toolbox-header text-2xl pb-8">{title}</h6>
         <div className="tools-container">
           <ul className="flex flex-row flex-wrap">
             {tools.map(tool => (

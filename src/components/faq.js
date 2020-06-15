@@ -20,8 +20,9 @@ export default function FAQ() {
     },
     {
       question: "You didn't answer my question.",
-      answer: "That's ok! I'm always happy to have a chat and discuss what's on your mind, so feel free to click on one of my social media icons on this page and pop me a message!"
-    }
+      answer:
+        "That's ok! I'm always happy to have a chat and discuss what's on your mind, so feel free to click on one of my social media icons on this page and pop me a message!",
+    },
     // future faq
     // Where can I see work you've done?
   ]
@@ -41,7 +42,9 @@ export default function FAQ() {
                 Do you charge per hour or per project?
               </summary>
               <p className="faq-answer pl-4 pb-4">
-                Charging per project works better for you and me. You know the price upfront and I can focus on creating something great without counting the hours ;)
+                Charging per project works better for you and me. You know the
+                price upfront and I can focus on creating something great
+                without counting the hours ;)
               </p>
             </details>
           </li>
@@ -49,7 +52,7 @@ export default function FAQ() {
           {faqs.map(faq => (
             <>
               <li key={uuid()} className="faq">
-                <details onClick={toggleFocus}>
+                <details onToggle={toggleFocus}>
                   <summary className="font-semibold flex items-center">
                     {faq.question}
                   </summary>

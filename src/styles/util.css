@@ -1,67 +1,107 @@
 :root {
-  /* font-size: 12px;
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
-  --space-4: 2rem;
-  --space-5: 2.5rem;
-  --space-5: 3rem;
-  --space-6: 3.5rem;
-  --space-7: 4rem;
-  --space-8: 4.5rem;
-  --space-9: 5rem;
-  --space-10: 5.5rem;
-  --space-10: 6rem; */
+  /* Dark blue Purple */
+  /* #396AB2 */
 
+  /* Blue steel */
+  /* #cbe7ee */
+  --primary-color: #cbe7ee;
+  --secondary-color: #6b858c;
+  --tertiary-color: #40595f;
+  --cta-bg-color: #00a8d3;
+  --cta-text-color: #fff;
+  --font-color: #40595f;
+  --bg-color: #fff;
+  --heading-color: #173035;
+  --card-bg-color: #cbe7ee;
+  --card-header-color: #40595f;
+  --card-text-color: #40595f;
   /* REVISIT AND REFACTOR COLOURS USING CALC
   https://itnext.io/theming-with-css-custom-properties-variables-and-calc-a89b37ad0013*/
 }
 
+/* DARK THEME */
+/* [data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+} */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+p {
+  color: var(--font-color);
+}
+
+h1,
+h,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
 /* LANDING */
-/* Animated Goal */
 .animated-goal {
   animation: fadeInSlide 0.5s ease-in infinite;
   position: relative;
+}
+
+.goals {
+  color: #00a8d3;
 }
 /* Call to Action buttons */
 .landing-cta-1,
 .project-site,
 .contact-button {
-  background-color: hsl(0, 0%, 20%);
-  color: hsl(0, 0%, 90%);
+  background-color: #00a8d3;
+  color: rgba(255, 255, 255, 0.89);
 }
 
 .landing-cta-1:hover,
 .project-site:hover,
 .contact-button:hover {
-  background-color: hsl(0, 0%, 30%);
+  background-color: var(--primary-color);
+  color: var(--heading-color);
 }
 
 .landing-cta-2,
 .project-code {
-  border-color: hsl(140, 85%, 43%);
+  border-color: var(--primary-color);
   background-color: none;
-  color: hsl(140, 74%, 49%);
+  color: var(--primary-color);
 }
 
 .landing-cta-2:hover,
 .project-code:hover {
-  background-color: hsl(140, 85%, 43%);
-  color: hsl(0, 0%, 100%, 0.85);
+  background-color: var(--primary-color);
+  color: var(--font-color);
 }
 
 /* CARDS */
 .card-color {
-  background-color: hsl(0, 0%, 95%);
-  color: hsl(0, 0%, 0%);
+  background-color: var(--card-bg-color);
+}
+
+.card-color p {
+  color: var(--card-text-color);
+}
+
+.card-color h6 {
+  color: var(--card-header-color);
 }
 
 .text-link {
-  color: hsl(140, 84%, 43%);
+  color: var(--secondary-color);
 }
 
 .text-link:hover {
-  color: hsl(140, 84%, 27%);
+  color: var(--tertiary-color);
 }
 
 /* LIST ITEMS */
@@ -71,11 +111,11 @@
 }
 
 .promise-container div h6:before,
-.benefit-container div h6:before {
+.benefit-container div p:before {
   content: counter(promise-counter);
   padding: 0.1rem 0.5rem;
-  background-color: hsl(140, 85%, 43%);
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--card-text-color);
   border-radius: 100%;
   text-align: center;
   margin-right: 1rem;
@@ -89,17 +129,16 @@
 /* TOOLBOX */
 /*Tool*/
 .tool {
-  background-color: hsl(140, 85%, 43%);
+  background-color: var(--secondary-color);
   color: hsl(0, 0%, 100%, 0.85);
 }
 
 /* FAQ */
 summary::before {
   content: "+";
-  color: hsl(140, 85%, 43%);
+  color: var(--secondary-color);
   font-size: 1.5em;
   padding: 0.5em;
-  margin-bottom: 0.2rem;
 }
 
 summary::-webkit-details-marker {
@@ -107,15 +146,20 @@ summary::-webkit-details-marker {
 }
 
 details {
-  color: rgba(0, 0, 0, 0.65);
+  color: var(--secondary-color);
 }
 
 details p {
-  color: black;
+  color: var(--font-color);
 }
 
 .open {
-  color: black;
+  color: var(--heading-color);
+}
+
+.open summary::before {
+  content: "-";
+  color: var(--heading-color);
 }
 
 /* ANIMATION */

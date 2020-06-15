@@ -1,6 +1,23 @@
 @tailwind base;
 
 /*General*/
+body {
+  font-family: "Gothic A1", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+h6 {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bold;
+}
+
 .absolute-important {
   position: absolute !important;
 }

@@ -25,7 +25,9 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
-    "react-uuid": "^1.0.2"
+    "react-uuid": "^1.0.2",
+    "typeface-archivo-black": "0.0.72",
+    "typeface-gothic-a1": "0.0.61"
   },
   "devDependencies": {
     "prettier": "2.0.5",
