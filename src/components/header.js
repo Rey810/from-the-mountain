@@ -7,7 +7,7 @@ import "../styles/util.css"
 
 export default function Header({ siteTitle }) {
   return (
-    <header className="fixed flex flex-row justify-end w-full bg-white">
+    <header className="fixed z-10 flex flex-row justify-end w-full bg-white shadow-md">
       {/* <ThemeControl /> */}
       <a href="https://twitter.com/ReyTheDev" className="py-4 pr-6">
         <FontAwesomeIcon icon={["fab", "twitter"]}></FontAwesomeIcon>

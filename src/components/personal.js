@@ -23,7 +23,7 @@ const personal = () => {
         you see <em>yours</em>.
       </p>
       <Link to="/blog" className="my-2">
-        <button className="landing-cta-2 py-2 px-8 border border-solid">
+        <button className="landing-cta-2 py-2 px-8 border border-solid rounded-md">
           Checkout Blog
         </button>
       </Link>

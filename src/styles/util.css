@@ -7,14 +7,11 @@
   --primary-color: #cbe7ee;
   --secondary-color: #6b858c;
   --tertiary-color: #40595f;
-  --cta-bg-color: #00a8d3;
-  --cta-text-color: #fff;
-  --font-color: #40595f;
-  --bg-color: #fff;
   --heading-color: #173035;
-  --card-bg-color: #cbe7ee;
-  --card-header-color: #40595f;
-  --card-text-color: #40595f;
+  --bg-color: #fff;
+  --cta-color: #00a8d3;
+  --cta-hover-color: #41b1ce;
+
   /* REVISIT AND REFACTOR COLOURS USING CALC
   https://itnext.io/theming-with-css-custom-properties-variables-and-calc-a89b37ad0013*/
 }
@@ -30,11 +27,11 @@
 
 body {
   background-color: var(--bg-color);
-  color: var(--font-color);
+  color: var(--tertiary-color);
 }
 
 p {
-  color: var(--font-color);
+  color: var(--tertiary-color);
 }
 
 h1,
@@ -53,32 +50,28 @@ h6 {
 }
 
 .goals {
-  color: #00a8d3;
+  color: var(--cta-color);
 }
-/* Call to Action buttons */
+/* CALL TO ACTION BUTTONS */
 .landing-cta-1,
-.project-site,
+/* .project-site, */
 .contact-button {
-  background-color: #00a8d3;
-  color: rgba(255, 255, 255, 0.89);
-}
-
-.landing-cta-1:hover,
-.project-site:hover,
-.contact-button:hover {
-  background-color: var(--primary-color);
-  color: var(--heading-color);
-}
-
-.landing-cta-2,
-.project-code {
-  border-color: var(--primary-color);
-  background-color: none;
+  background-color: var(--cta-color);
   color: var(--primary-color);
 }
 
-.landing-cta-2 {
+.landing-cta-1:hover,
+/* .project-site:hover, */
+.contact-button:hover {
+  background-color: var(--cta-hover-color);
+  color: var(--bg-color);
+}
+
+/* This is for the 2nd cta button and the unused projects component */
+.landing-cta-2
+/* .project-code */ {
   border-color: var(--heading-color);
+  background-color: none;
   color: var(--heading-color);
 }
 
@@ -87,15 +80,9 @@ h6 {
   color: var(--primary-color);
 }
 
-.landing-cta-2:hover,
-.project-code:hover {
-  background-color: var(--primary-color);
-  color: var(--font-color);
-}
-
 /* CARDS */
 .card-color {
-  background-color: var(--card-bg-color);
+  background-color: var(--primary-color);
 }
 
 .card-color p {
@@ -103,7 +90,7 @@ h6 {
 }
 
 .card-color h6 {
-  color: var(--card-header-color);
+  color: var(--tertiary-color);
 }
 
 .text-link {
@@ -125,7 +112,7 @@ h6 {
   content: counter(promise-counter);
   padding: 0.1rem 0.5rem;
   background-color: var(--primary-color);
-  color: var(--card-text-color);
+  color: var(--tertiary-color);
   border-radius: 100%;
   text-align: center;
   margin-right: 1rem;
@@ -160,7 +147,7 @@ details {
 }
 
 details p {
-  color: var(--font-color);
+  color: var(--tertiary-color);
 }
 
 .open {
