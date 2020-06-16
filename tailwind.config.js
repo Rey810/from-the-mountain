@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       width: {
         mc: "max-content",
+        ideal: "65rem",
       },
       spacing: {
         "1/1": "100%",

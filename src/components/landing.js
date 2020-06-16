@@ -35,9 +35,11 @@ const Landing = () => {
         <h1 className="landing-title text-6xl leading-none font-extrabold text-center">
           Get More <span className="goals">{goal}</span>
         </h1>
-        <h6 className="landing-description pt-8 px-8 font-semibold text-xl text-center">
-          Easy. Cost-Effective. Professional.
-        </h6>
+        <div className="landing-description flex flex-row justify-center  pt-8 px-8 font-semibold text-xl">
+          <h6 className="landing-description__first">Easy.</h6>
+          <h6 className="landing-description__second"> Cost-Effective.</h6>
+          <h6 className="landing-description__third"> Professional.</h6>
+        </div>
       </main>
       <div className="landing-buttons-container pt-16 flex flex-col justify-center">
         <input

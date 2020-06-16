@@ -2,9 +2,9 @@ import React from "react"
 
 const promise = () => {
   return (
-    <section className="promise-container pl-4 pb-20">
+    <section className="promise-container pl-4 pb-20 md:w-2/3 lg:w-1/2">
       <h1 className="promises-header text-4xl font-bold">
-        I'll always promise you this:
+        I Always Promise This:
       </h1>
       <div className="promise-1-container pt-8">
         <h6 className="promise-header flex flex-row items-center pb-2">

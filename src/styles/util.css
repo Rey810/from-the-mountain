@@ -4,12 +4,13 @@
 
   /* Blue steel */
   /* #cbe7ee */
-  --primary-color: #cbe7ee;
-  --secondary-color: #6b858c;
-  --tertiary-color: #40595f;
-  --heading-color: #173035;
-  --bg-color: #fff;
-  --cta-color: hsl(192, 50.7%, 27.5%);
+  --base-color: hsl(192, 51%, 90%);
+  --primary-color: hsl(192, 51%, 80%);
+  --secondary-color: hsl(193, 13%, 48%);
+  --tertiary-color: hsl(192, 19%, 31%);
+  --heading-color: hsl(190, 39%, 15%);
+  --bg-color: hsl(0, 0%, 98%);
+  --cta-color: rgb(24, 206, 176);
   --cta-hover-color: hsl(192, 50.7%, 40.5%);
 
   /* REVISIT AND REFACTOR COLOURS USING CALC
@@ -28,6 +29,9 @@
 body {
   background-color: var(--bg-color);
   color: var(--tertiary-color);
+
+  /* min size, 'ideal' size, max size */
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 p {
@@ -57,19 +61,26 @@ h6 {
 .goals {
   color: var(--cta-color);
 }
+
 /* CALL TO ACTION BUTTONS */
-.landing-cta-1,
 /* .project-site, */
 .contact-button {
-  background-color: var(--cta-color);
-  color: var(--primary-color);
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
 }
 
-.landing-cta-1:hover,
 /* .project-site:hover, */
 .contact-button:hover {
-  background-color: var(--cta-hover-color);
-  color: var(--bg-color);
+  color: var(--secondary-color);
+  background-color: var(--base-color);
+}
+
+.landing-cta-1 {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+.landing-cta-1:hover {
+  background-color: var(--secondary-color);
 }
 
 /* This is for the 2nd cta button and the unused projects component */
@@ -108,7 +119,7 @@ h6 {
 
 /* LIST ITEMS */
 .promise-container div,
-.benefit-container div {
+.all-benefits-container div {
   counter-increment: promise-counter;
 }
 

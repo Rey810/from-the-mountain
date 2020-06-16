@@ -32,7 +32,7 @@ export default function FAQ() {
   }
 
   return (
-    <section className="faq-container px-4 pb-20">
+    <section className="faq-container px-4 pb-20 md:w-2/3 lg:w-1/2">
       <h1 className="faq-header text-4xl font-bold">FAQ</h1>
       <div className="faq-list-container">
         <ul className="faqs">
