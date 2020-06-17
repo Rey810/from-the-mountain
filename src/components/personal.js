@@ -3,8 +3,8 @@ import React from "react"
 
 const personal = () => {
   return (
-    <section className="personal-container px-4 pb-20 md:px-8">
-      <div className="personal-title-container pb-8 text-4xl font-bold flex flex-col sm:flex-row">
+    <section className="personal-container pb-20">
+      <div className="personal-title-container pb-8 font-bold flex flex-col sm:flex-row">
         <h1 className="personal-title ">Let's Start with A Question</h1>
       </div>
       <p className="personal-description pb-4 md:w-2/3">

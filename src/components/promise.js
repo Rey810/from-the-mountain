@@ -2,12 +2,10 @@ import React from "react"
 
 const promise = () => {
   return (
-    <section className="promise-container pl-4 pb-20 md:w-2/3 lg:w-1/2">
-      <h1 className="promises-header text-4xl font-bold">
-        I Always Promise This:
-      </h1>
+    <section className="promise-container pb-20 md:w-2/3 lg:w-1/2">
+      <h1 className="promises-header font-bold">I promise this</h1>
       <div className="promise-1-container pt-8">
-        <h6 className="promise-header flex flex-row items-center pb-2">
+        <h6 className="promise-header flex flex-row items-center pb-2 font-bold">
           Fast products that work
         </h6>
         <p className="promise-description">
@@ -16,7 +14,7 @@ const promise = () => {
         </p>
       </div>
       <div className="promise-2-container pt-8">
-        <h6 className="promise-header flex flex-row items-center pb-2">
+        <h6 className="promise-header flex flex-row items-center pb-2 font-bold">
           A healthy relationship
         </h6>
         <p className="promise-description">

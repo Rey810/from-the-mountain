@@ -2,10 +2,10 @@ import React from "react"
 
 export default function benefits() {
   return (
-    <section className="benefit-container pl-4 pb-20">
-      <h1 className="benefits-header text-4xl font-bold">Benefits</h1>
-      <div className="all-benefits-container md:w-2/3 md:grid md:grid-cols-2 md:grid-rows-3">
-        <div className="benefit-1-container pt-4 ">
+    <section className="benefit-container pb-20">
+      <h1 className="benefits-header font-bold">Benefits</h1>
+      <div className="all-benefits-container pt-10 md:grid md:grid-cols-2 md:grid-rows-3 md:col-gap-2">
+        <div className="benefit-1-container pt-4">
           <p className="benefit-header flex flex-row items-center pb-2">
             Attract clients who value quality
           </p>

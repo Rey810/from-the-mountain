@@ -2,7 +2,7 @@ import React from "react"
 import ServiceCard from "./serviceCard"
 
 const services = () => {
-    const service1 = {
+  const service1 = {
     title: "Have a Website that Works",
     description:
       "You want a website. It must look great and you want it to work.. all the time. Well, that's why I'm here! I help you by designing, building, and hosting a beautiful site that'll make you a very proud owner. Promise.",
@@ -32,9 +32,7 @@ const services = () => {
 
   return (
     <section className="services-container pb-20 ">
-      <h1 className="services-header px-4 pb-8 text-4xl font-bold">
-        Ways I Can Help You
-      </h1>
+      <h1 className="services-header pb-8 font-bold">Ways I Can Help You</h1>
       <div class="serviceCards-container flex flex-no-wrap px-2 overflow-x-auto scrolling-touch">
         <ServiceCard
           title={service1.title}

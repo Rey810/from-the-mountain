@@ -17,10 +17,8 @@ const toolbox = () => {
   }
 
   return (
-    <section className="toolbox-container pl-4 pb-20 ">
-      <h1 className="toolbox-header pb-8 text-4xl font-bold">
-        What's In My Toolbox?
-      </h1>
+    <section className="toolbox-container pb-20 ">
+      <h1 className="toolbox-header pb-8 font-bold">What's in my toolbox?</h1>
       <div className="toolbox-cards-wrapper md:flex md:flex-row md:justify-even">
         <ToolboxCard tools={tools.frontend} title={"Front-end"} />
         <ToolboxCard tools={tools.backend} title={"Back-end"} />

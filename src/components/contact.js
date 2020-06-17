@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const contact = () => {
   return (
-    <section className="contact-container px-4 pt-0 pb-8">
-      <h4 className="contact-header pb-8 text-4xl font-bold md:mx-auto md:w-1/2">
+    <section className="contact-container pt-0 pb-8">
+      <h1 className="contact-header pb-8 font-bold md:mx-auto md:w-3/4">
         Sweet, that's me! Now it's your turn to say hi.
-      </h4>
+      </h1>
       <div className="contact-options-container flex flex-col pb-6">
         <a href="mailto:reyvdb@gmail.com" className="contact-mail mx-auto">
           <button className="contact-button center text-3xl py-4 px-24 my-2 font-semibold shadow-md rounded-full">

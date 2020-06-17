@@ -29,7 +29,7 @@ const Quotes = () => {
   })
   // quotes could be stored here and a timeout can be set to cycle quotes every few seconds
   return (
-    <section className="quotes-container border flex flex-row">
+    <section className="quotes-container absolute left-0 right-0 border flex flex-row">
       <span className="text-4xl border-r p-4">"</span>
       <div className="quote p-4 ">
         <span className="flex flex-col justify-center items-left">

@@ -5,6 +5,16 @@ body {
   font-family: "Gothic A1", sans-serif;
 }
 
+p,
+.quote {
+  /* min size, 'ideal' size, max size */
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
 h1,
 h2,
 h3,
@@ -14,8 +24,21 @@ h5 {
 }
 
 h6 {
-  font-family: "Gothic A1", sans-serif;
+  /* min size, 'ideal' size, max size */
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.landing-description {
   font-weight: bold;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+.landing-title {
+  font-size: clamp(4rem, 10vw, 6rem);
+}
+
+.landing-cta-1 {
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 .absolute-important {
