@@ -20,75 +20,80 @@ h5 {
 
 /* SAFARI AND IE SUPPORT */
 /* clamp() is kept as it makes more sense to look at */
-@supports (font-size: clamp(1rem, 2vw, 3rem)) {
-  p,
-  .quote,
-  summary,
-  .promise-header {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-  }
-  h1 {
-    font-size: clamp(2.25rem, 5vw, 4rem);
-  }
-  h6 {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-  }
+@supports (font-size: clamp(1rem, 3vw, 5rem)) {
+  /* Landing Elements */
   .landing-title {
     font-size: clamp(4rem, 10vw, 6rem);
   }
   .landing-description {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
   }
   .landing-cta-1 {
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 2.25rem);
   }
 
   .email-field {
-    font-size: clamp(0.75rem, 2vw, 1.75rem);
+    font-size: clamp(0.75rem, 2vw, 2rem);
   }
 
-  .card-header,
-  .toolbox-card-header,
-  .landing-cta-2 {
-    font-size: clamp(1.5rem, 2vw, 2rem);
+  /* Section Headers */
+  h1 {
+    font-size: clamp(2.25rem, 5vw, 4rem);
+  }
+  /* General Elements */
+  p,
+  .quote,
+  .landing-cta-2,
+  .cta,
+  li {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  }
+
+  h6,
+  summary {
+    font-size: clamp(1.5rem, 2vw, 2.75rem);
+  }
+
+  .contact-button {
+    font-size: clamp(1.875rem, 5vw, 4rem);
   }
 }
 
-p,
-.quote,
-summary,
-.promise-header {
-  /* min size, 'ideal' size, max size */
-  font-size: min(max(1rem, 2vw), 1.75rem);
+/* Landing Elements */
+.landing-title {
+  font-size: min(max(4rem, 10vw) 6rem);
+}
+.landing-description {
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+}
+.landing-cta-1 {
+  font-size: min(max(1rem, 2vw) 2.25rem);
 }
 
+.email-field {
+  font-size: min(max(0.75rem, 2vw), 2rem);
+}
+
+/* Section Headers */
 h1 {
   font-size: min(max(2.25rem, 5vw), 4rem);
-  /* clamp() is kept as it makes more sense to look at */
+}
+/* General Elements */
+p,
+.quote,
+.landing-cta-2,
+.cta,
+li {
+  font-size: min(max(1rem, 2vw) 1.25rem);
 }
 
-h6 {
-  font-size: min(max(1rem, 2vw), 1.25rem);
-  /* clamp() is kept as it makes more sense to look at */
+h6,
+summary {
+  font-size: min(max(1.5rem, 2vw), 2.75rem);
 }
 
-.landing-description {
-  font-weight: bold;
-  font-size: min(max(1.25rem, 3vw), 2rem);
-}
-
-.landing-title {
-  font-size: min(max(4rem, 10vw), 6rem);
-}
-
-.landing-cta-1 {
-  font-size: min(max(1rem, 2vw), 2rem);
-}
-
-.card-header,
-.toolbox-card-header,
-.landing-cta-2 {
-  font-size: min(max(1.5rem, 2vw), 2rem);
+.contact-button {
+  font-size: min(max(1.875rem, 5vw), 4rem);
 }
 
 .absolute-important {

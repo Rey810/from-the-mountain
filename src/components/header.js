@@ -13,7 +13,7 @@ export default function Header({ siteTitle }) {
         href="https://twitter.com/ReyTheDev"
         className="py-4 pr-6 md:py-6 pr-12"
       >
-        <FontAwesomeIcon icon={["fab", "twitter"]} size="2x"></FontAwesomeIcon>
+        <FontAwesomeIcon icon={["fab", "twitter"]}></FontAwesomeIcon>
       </a>
     </header>
   )
