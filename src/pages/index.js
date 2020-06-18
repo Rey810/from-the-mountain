@@ -29,15 +29,17 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Landing />
-    <Personal />
-    <Services />
-    <Benefits />
-    <Promise />
-    <Toolbox />
-    <FAQ />
-    {/* <Projects /> */}
-    <Contact />
-    <Quotes />
+    <div className="information-container relative px-4 md:px-8 lg:px-12 xl:px-16">
+      <Personal />
+      <Services />
+      <Benefits />
+      <Promise />
+      <Toolbox />
+      <FAQ />
+      {/* <Projects /> */}
+      <Contact />
+      <Quotes />
+    </div>
   </Layout>
 )
 

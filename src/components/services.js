@@ -33,7 +33,7 @@ const services = () => {
   return (
     <section className="services-container pb-20 ">
       <h1 className="services-header pb-8 font-bold">Ways I Can Help You</h1>
-      <div class="serviceCards-container flex flex-no-wrap px-2 overflow-x-auto scrolling-touch">
+      <div className="serviceCards-container flex flex-no-wrap px-2 overflow-x-auto scrolling-touch">
         <ServiceCard
           title={service1.title}
           description={service1.description}
@@ -55,9 +55,9 @@ const services = () => {
           icon={service4.icon}
         />
       </div>
-      <div class="cta pl-4 pt-4">
+      <div className="cta pl-4 pt-4">
         Interested?{" "}
-        <a href="mailto:reyvdb@gmail.com" class="text-link">
+        <a href="mailto:reyvdb@gmail.com" className="text-link">
           hello@mountain.co.za
         </a>
       </div>

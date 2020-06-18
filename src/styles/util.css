@@ -4,18 +4,30 @@
 
   /* Blue steel */
   /* #cbe7ee */
-  --base-color: hsl(192, 51%, 90%);
+  /* --base-color: hsl(192, 51%, 90%);
   --primary-color: hsl(192, 51%, 80%);
   --secondary-color: hsl(193, 13%, 48%);
   --tertiary-color: hsl(192, 19%, 31%);
   --heading-color: hsl(190, 39%, 15%);
   --bg-color: hsl(0, 0%, 98%);
   --cta-color: rgb(24, 206, 176);
-  --cta-hover-color: hsl(192, 50.7%, 40.5%);
+  --cta-hover-color: hsl(192, 50.7%, 40.5%); */
 
-  /* REVISIT AND REFACTOR COLOURS USING CALC
-  https://itnext.io/theming-with-css-custom-properties-variables-and-calc-a89b37ad0013*/
+  --color-60-light: rgb(237, 253, 238);
+  --color-60-medium: #313131;
+  --color-60-dark: #212121;
+  --color-30-1: #9999cc;
+  --color-10-1: #3bde74;
+
+  --color-10-1-lighter: hsl(141, 87%, 64%);
+
+  /* Overlay Colours */
+  --initial-color-overlay: hsl(0, 0%, 13%, 0.6);
+  --final-colour-overlay: rgba(33, 33, 33, 0.952);
 }
+
+/* REVISIT AND REFACTOR COLOURS USING CALC
+  https://itnext.io/theming-with-css-custom-properties-variables-and-calc-a89b37ad0013*/
 
 /* DARK THEME */
 /* [data-theme="dark"] {
@@ -27,12 +39,12 @@
 } */
 
 body {
-  background-color: var(--bg-color);
-  color: var(--tertiary-color);
+  background-color: var(--color-60-dark);
+  color: var(--color-60-light);
 }
 
 p {
-  color: var(--tertiary-color);
+  color: var(--color-60-light);
 }
 
 h1,
@@ -41,77 +53,112 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: var(--color-60-light);
+}
+/*////////////////*/
+/* SCROLL EFFECTS */
+/*////////////////*/
+/* DARKEN BG CONTAINER */
+.color-overlay-container {
+  background-color: var(--initial-color-overlay);
+  filter: blur(0px);
+  transition: background-color 2s ease-out;
+}
+
+.color-overlay-container.saturate {
+  background-color: var(--final-colour-overlay);
+  transform: scale(1.1);
+  transition: background-color 2s ease-out;
+}
+
+/*BLUR BG*/
+.bg-image-wrapper {
+  transition: filter 2s ease-out;
+}
+
+.blur {
+  filter: blur(3px);
+  transition: filter 2s ease-out;
 }
 
 /* HEADER */
 .brand-color {
-  background-color: var(--primary-color);
+  background-color: var(--color-10-1);
 }
 
 /* LANDING */
+.landing-title,
+.landing-description {
+  color: var(--color-60-light);
+}
 .animated-goal {
   animation: fadeInSlide 0.5s ease-in infinite;
   position: relative;
 }
 
 .goals {
-  color: var(--cta-color);
+  color: var(--color-30-1);
 }
 
 /* CALL TO ACTION BUTTONS */
 /* .project-site, */
-.contact-button {
-  color: var(--tertiary-color);
-  background-color: var(--primary-color);
+.contact-button,
+.landing-cta-1 {
+  color: var(--color-60-light);
+  background-color: var(--color-10-1);
+}
+
+.email-field {
+  background-color: var(--color-60-light);
+  color: var(--color-60-medium);
+  opacity: 0.9;
+}
+
+.email-field:hover {
+  opacity: 1;
 }
 
 /* .project-site:hover, */
-.contact-button:hover {
-  color: var(--secondary-color);
-  background-color: var(--base-color);
-}
-
-.landing-cta-1 {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-}
+.contact-button:hover,
 .landing-cta-1:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--color-10-1-lighter);
 }
 
 /* This is for the 2nd cta button and the unused projects component */
 .landing-cta-2
 /* .project-code */ {
-  border-color: var(--heading-color);
+  border-color: var(--color-60-light);
   background-color: none;
-  color: var(--heading-color);
+  color: var(--color-60-light);
 }
 
 .landing-cta-2:hover {
-  background-color: var(--heading-color);
-  color: var(--primary-color);
+  background-color: var(--color-60-light);
 }
 
 /* CARDS */
 .card-color {
-  background-color: var(--primary-color);
+  background-color: var(--color-30-1);
 }
 
 .card-color p {
-  color: var(--card-text-color);
+  color: var(--color-60-medium);
 }
 
 .card-color h6 {
-  color: var(--tertiary-color);
+  color: var(--color-60-dark);
 }
 
 .text-link {
-  color: var(--secondary-color);
+  color: var(--color-10-1);
 }
 
 .text-link:hover {
-  color: var(--tertiary-color);
+  color: var(--color-10-1-lighter);
+}
+
+.service-card svg {
+  color: var(--color-60-medium);
 }
 
 /* LIST ITEMS */
@@ -123,30 +170,31 @@ h6 {
 .promise-container div h6:before,
 .benefit-container div p:before {
   content: counter(promise-counter);
-  padding: 0.1rem 0.5rem;
-  background-color: var(--primary-color);
-  color: var(--tertiary-color);
+  padding: 0.1em 0.5em;
+  background-color: var(--color-30-1);
+  color: var(--color-60-medium);
   border-radius: 100%;
   text-align: center;
   margin-right: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: max-content;
+  height: max-content;
+  font-weight: semibold;
 }
 
 /* TOOLBOX */
 /*Tool*/
 .tool {
-  background-color: var(--secondary-color);
-  color: hsl(0, 0%, 100%, 0.85);
+  background-color: var(--color-60-light);
+  color: var(--color-60-medium);
 }
 
 /* FAQ */
 summary::before {
   content: "+";
-  color: var(--secondary-color);
+  color: var(--color-30-1);
   font-size: 1.5em;
   padding: 0.5em;
 }
@@ -156,20 +204,20 @@ summary::-webkit-details-marker {
 }
 
 details {
-  color: var(--secondary-color);
+  color: var(--color-30-1);
 }
 
 details p {
-  color: var(--tertiary-color);
+  color: var(--color-60-light);
 }
 
 .open {
-  color: var(--heading-color);
+  color: var(--color-60-light);
 }
 
 .open summary::before {
   content: "-";
-  color: var(--heading-color);
+  color: var(--color-60-light);
 }
 
 /* ANIMATION */

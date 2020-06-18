@@ -1,18 +1,9 @@
 @tailwind base;
 
 /*General*/
+/* FONT FAMILIES */
 body {
   font-family: "Gothic A1", sans-serif;
-}
-
-p,
-.quote {
-  /* min size, 'ideal' size, max size */
-  font-size: clamp(1rem, 2vw, 1.25rem);
-}
-
-h1 {
-  font-size: clamp(2.25rem, 5vw, 4rem);
 }
 
 h1,
@@ -23,22 +14,81 @@ h5 {
   font-family: "Archivo Black", sans-serif;
 }
 
-h6 {
+/*//////////////////*/
+/* FLUID TYPOGRAPHY */
+/*//////////////////*/
+
+/* SAFARI AND IE SUPPORT */
+/* clamp() is kept as it makes more sense to look at */
+@supports (font-size: clamp(1rem, 2vw, 3rem)) {
+  p,
+  .quote,
+  summary,
+  .promise-header {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  }
+  h1 {
+    font-size: clamp(2.25rem, 5vw, 4rem);
+  }
+  h6 {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  }
+  .landing-title {
+    font-size: clamp(4rem, 10vw, 6rem);
+  }
+  .landing-description {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+  }
+  .landing-cta-1 {
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+
+  .email-field {
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
+  }
+
+  .card-header,
+  .toolbox-card-header,
+  .landing-cta-2 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+}
+
+p,
+.quote,
+summary,
+.promise-header {
   /* min size, 'ideal' size, max size */
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: min(max(1rem, 2vw), 1.75rem);
+}
+
+h1 {
+  font-size: min(max(2.25rem, 5vw), 4rem);
+  /* clamp() is kept as it makes more sense to look at */
+}
+
+h6 {
+  font-size: min(max(1rem, 2vw), 1.25rem);
+  /* clamp() is kept as it makes more sense to look at */
 }
 
 .landing-description {
   font-weight: bold;
-  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-size: min(max(1.25rem, 3vw), 2rem);
 }
 
 .landing-title {
-  font-size: clamp(4rem, 10vw, 6rem);
+  font-size: min(max(4rem, 10vw), 6rem);
 }
 
 .landing-cta-1 {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: min(max(1rem, 2vw), 2rem);
+}
+
+.card-header,
+.toolbox-card-header,
+.landing-cta-2 {
+  font-size: min(max(1.5rem, 2vw), 2rem);
 }
 
 .absolute-important {

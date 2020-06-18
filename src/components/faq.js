@@ -32,11 +32,11 @@ export default function FAQ() {
   }
 
   return (
-    <section className="faq-container pb-20 md:w-2/3 lg:w-1/2">
+    <section className="faq-container pb-20">
       <h1 className="faq-header font-bold">
         A few questions people normally ask
       </h1>
-      <div className="faq-list-container">
+      <div className="faq-list-container md:w-2/3 lg:w-1/2">
         <ul className="faqs">
           <li className="faq pt-8">
             <details onToggle={toggleFocus} open>
@@ -52,17 +52,15 @@ export default function FAQ() {
           </li>
           <hr />
           {faqs.map(faq => (
-            <>
-              <li key={uuid()} className="faq">
-                <details onToggle={toggleFocus}>
-                  <summary className="font-semibold flex items-center">
-                    {faq.question}
-                  </summary>
-                  <p className="faq-answer pl-4 pb-4">{faq.answer}</p>
-                </details>
-              </li>
+            <li key={uuid()} className="faq">
+              <details key={uuid()} onToggle={toggleFocus}>
+                <summary className="font-semibold flex items-center">
+                  {faq.question}
+                </summary>
+                <p className="faq-answer pl-4 pb-4">{faq.answer}</p>
+              </details>
               <hr />
-            </>
+            </li>
           ))}
         </ul>
       </div>
