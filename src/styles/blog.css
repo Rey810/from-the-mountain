@@ -1,0 +1,58 @@
+.blog {
+  --link-color: #3bde74;
+  --block-bg-color: #9999cc;
+  --block-text-color: #313131;
+}
+
+/* FONTS and PADDING */
+
+.blog-header__main {
+  font-size: 2rem;
+  font-size: min(max(2rem, 10vw), 4rem);
+}
+
+.blog h2 {
+  font-size: 2.5rem;
+  font-size: min(max(1.25rem, 6vw), 2.5rem);
+  padding: 3rem 0 2rem 0;
+}
+
+.blog h3 {
+  font-size: 2rem;
+  padding: 3rem 0 2rem 0;
+}
+
+.blog h4 {
+  font-size: 1.5rem;
+}
+
+.blog p {
+  padding: 0.75rem 0;
+}
+
+.blog p,
+.blog ol,
+.blog ul {
+  font-size: 1.25rem;
+}
+
+.blog ol,
+.blog ul {
+  list-style: unset;
+  padding: 1rem 0;
+}
+
+/* COLOURS */
+.blog a {
+  color: var(--link-color);
+}
+
+.blog a:hover {
+  text-decoration: underline;
+}
+
+.blog blockquote {
+  padding: 1rem 2rem;
+  color: var(--block-text-color);
+  background-color: var(--block-bg-color);
+}

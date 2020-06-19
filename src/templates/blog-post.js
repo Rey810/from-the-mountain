@@ -9,15 +9,19 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
-      <Menu />
       <div>
-        <Link to="/blog">Go Back</Link>
-        <hr />
-        <h1>{post.frontmatter.title}</h1>
-        <h4>
+        {/* <Link to="/blog">Go Back</Link>
+        <hr /> */}
+        <section className="post-container pt-20 mx-auto px-4 md:w-2/3 lg:w-1/2">
+          <h1 className="blog-header__main">{post.frontmatter.title}</h1>
+          {/* <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
-        </h4>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </h4> */}
+          <div
+            className="blog py-10"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </section>
       </div>
     </Layout>
   )

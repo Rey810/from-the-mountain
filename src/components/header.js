@@ -7,7 +7,7 @@ import "../styles/util.css"
 
 export default function Header({ siteTitle }) {
   return (
-    <header className="fixed z-10 flex flex-row justify-end w-full py-4 px-4 md:px-8 lg:px-12 xl:px-16 bg-gray-900">
+    <header className="fixed z-10 flex flex-row justify-end w-full py-4 px-4 md:px-8 lg:px-12 xl:px-16">
       {/* <ThemeControl /> */}
       <div className="header-icons">
         <a href="mailto:reyvdb@gmail.com" className="icon mx-2 md:mx-4">
