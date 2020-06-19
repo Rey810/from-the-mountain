@@ -3,7 +3,7 @@ import React from "react"
 const promise = () => {
   return (
     <section className="promise-container pb-20 md:w-2/3 lg:w-1/2">
-      <h1 className="promises-header font-bold">I promise this</h1>
+      <h1 className="promises-header font-bold">I always promise this</h1>
       <div className="promise-1-container pt-8">
         <h6 className="promise-header flex flex-row items-center pb-2 font-bold">
           Fast products that work

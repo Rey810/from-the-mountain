@@ -25,18 +25,9 @@ h5 {
   .landing-title {
     font-size: clamp(4rem, 10vw, 6rem);
   }
-  .landing-description,
-  .landing-cta-1,
-  .email-field {
+  .landing-description {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
   }
-  /* .landing-cta-1 {
-    font-size: clamp(0.75rem, 2vw, 1.75rem);
-  }
-
-  .email-field {
-    font-size: clamp(0.75rem, 2vw, 2rem);
-  } */
 
   /* Section Headers */
   h1 {
@@ -65,18 +56,14 @@ h5 {
 .landing-title {
   font-size: min(max(4rem, 10vw) 6rem);
 }
-.landing-description,
-.landing-cta-1,
-.email-field {
+.landing-description {
   font-size: min(max(1.25rem, 3vw), 1.5rem);
 }
-/* .landing-cta-1 {
-  font-size: min(max(0.75rem, 2vw) 1.75rem);
-} */
 
-/* .email-field {
-  font-size: min(max(0.75rem, 2vw), 2rem);
-} */
+.landing-cta-1,
+.email-field {
+  font-size: 1.25rem;
+}
 
 /* Section Headers */
 h1 {
@@ -102,6 +89,11 @@ summary {
 
 .absolute-important {
   position: absolute !important;
+}
+
+/* Icons */
+.icon {
+  font-size: min(max(1.25rem, 2vw), 1.5rem);
 }
 
 @tailwind components;

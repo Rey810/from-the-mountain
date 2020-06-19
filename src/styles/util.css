@@ -12,8 +12,8 @@
   --bg-color: hsl(0, 0%, 98%);
   --cta-color: rgb(24, 206, 176);
   --cta-hover-color: hsl(192, 50.7%, 40.5%); */
-
-  --color-60-light: rgb(237, 253, 238);
+  --color-60-lighter: hsl(124, 80%, 100%);
+  --color-60-light: hsl(124, 80%, 96%);
   --color-60-medium: #313131;
   --color-60-dark: #212121;
   --color-30-1: #9999cc;
@@ -55,9 +55,9 @@ h5,
 h6 {
   color: var(--color-60-light);
 }
-/*////////////////*/
+/*/////////////////*/
 /* SCROLL EFFECTS */
-/*////////////////*/
+/*///////////////*/
 /* DARKEN BG CONTAINER */
 .color-overlay-container {
   background-color: var(--initial-color-overlay);
@@ -99,8 +99,9 @@ h6 {
 .goals {
   color: var(--color-30-1);
 }
-
+/*/////////////////////////*/
 /* CALL TO ACTION BUTTONS */
+/*///////////////////////*/
 /* .project-site, */
 .contact-button,
 .landing-cta-1 {
@@ -135,8 +136,16 @@ h6 {
 .landing-cta-2:hover {
   background-color: var(--color-60-light);
 }
+/*////////*/
+/* ICONS */
+/*//////*/
+.icon:hover {
+  color: var(--color-60-lighter);
+}
 
+/*////////*/
 /* CARDS */
+/*//////*/
 .card-color {
   background-color: var(--color-30-1);
 }
@@ -160,8 +169,9 @@ h6 {
 .service-card svg {
   color: var(--color-60-medium);
 }
-
+/*/////////////*/
 /* LIST ITEMS */
+/*///////////*/
 .promise-container div,
 .all-benefits-container div {
   counter-increment: promise-counter;
@@ -183,8 +193,9 @@ h6 {
   height: max-content;
   font-size: 75%;
 }
-
+/*//////////*/
 /* TOOLBOX */
+/*////////*/
 /*Tool*/
 .tool {
   background-color: var(--color-60-light);
