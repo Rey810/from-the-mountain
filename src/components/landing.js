@@ -67,13 +67,13 @@ const Landing = () => {
           <span className="landing-description__third"> Professional.</span>
         </h6>
       </main>
-      <div className="landing-buttons-container pt-16 flex flex-col justify-center">
+      <div className="landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center">
         <input
-          className="email-field mx-auto border py-4 px-4 my-2 rounded-md w-64 md:w-1/4 shadow-sm"
+          className="email-field mx-auto border py-4 px-4 my-2 rounded-md w-64 shadow-sm md:w-1/6 md:mx-2"
           type="email"
           placeholder="Your email..."
         />
-        <button className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-md shadow-md font-semibold w-64 md:w-1/4">
+        <button className="landing-cta-1 py-4 px-8 mx-auto   my-2 rounded-md shadow-md font-semibold w-64 md:w-1/6 md:mx-2">
           Let's Connect!
         </button>
       </div>

@@ -192,6 +192,10 @@ h6 {
 }
 
 /* FAQ */
+
+summary::-webkit-details-marker {
+  display: none;
+}
 summary::before {
   content: "+";
   color: var(--color-30-1);
@@ -199,11 +203,7 @@ summary::before {
   padding: 0.5em;
 }
 
-summary::-webkit-details-marker {
-  display: none;
-}
-
-details {
+summary {
   color: var(--color-30-1);
 }
 
@@ -211,13 +211,13 @@ details p {
   color: var(--color-60-light);
 }
 
-.open {
-  color: var(--color-60-light);
-}
-
 .open summary::before {
   content: "-";
   color: var(--color-60-light);
+}
+
+.open summary {
+  color: var(--color-60-1);
 }
 
 /* ANIMATION */
