@@ -4,23 +4,29 @@ import Layout from "../components/layout"
 import Menu from "../components/menu"
 import SEO from "../components/seo"
 
-export default function Template({ data }) {
+export default function Template({ data, location }) {
   const post = data.markdownRemark
+  // const siteTitle = data.site.siteMetadata.title
+  const image = post.frontmatter.image
+    ? post.frontmatter.featuredImage.childImageSharp.resize
+    : null
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+        image={image}
+        pathname={location.pathname}
+      />
       <div>
         {/* <Link to="/blog">Go Back</Link>
         <hr /> */}
-        <section className="post-container pt-20 mx-auto px-4 md:w-2/3 lg:w-1/2">
-          <h1 className="blog-header__main">{post.frontmatter.title}</h1>
+        <section className="blog-container blog pt-20 mx-auto px-4 sm:w-3/4 md:w-2/3 lg:w-1/2">
+          <h1>{post.frontmatter.title}</h1>
           {/* <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4> */}
-          <div
-            className="blog py-10"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
       </div>
     </Layout>
@@ -29,13 +35,29 @@ export default function Template({ data }) {
 
 export const postQuery = graphql`
   query BlogPostByPath($path: String!) {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
+      id
+      excerpt(pruneLength: 160)
       html
       frontmatter {
         path
         title
-        author
-        date
+        summary
+        featuredImage {
+          childImageSharp {
+            resize(width: 1200) {
+              src
+              height
+              width
+            }
+          }
+        }
       }
     }
   }

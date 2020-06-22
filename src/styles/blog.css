@@ -1,45 +1,72 @@
 .blog {
   --link-color: #3bde74;
-  --block-bg-color: #9999cc;
+  --block-bg-color: hsla(124, 80%, 96%, 0.651);
   --block-text-color: #313131;
+  --block-text-link-color: #0b8034;
 }
 
 /* FONTS and PADDING */
 
-.blog-header__main {
-  font-size: 2rem;
-  font-size: min(max(2rem, 10vw), 4rem);
+.blog h1 {
+  @apply text-4xl;
+}
+
+@screen md {
+  .blog h1 {
+    @apply text-5xl;
+  }
 }
 
 .blog h2 {
-  font-size: 2.5rem;
-  font-size: min(max(1.25rem, 6vw), 2.5rem);
-  padding: 3rem 0 2rem 0;
+  @apply text-3xl;
+  @apply pt-12;
+  @apply pb-4;
 }
 
 .blog h3 {
-  font-size: 2rem;
-  padding: 3rem 0 2rem 0;
+  @apply text-2xl;
+  @apply pt-12;
+  @apply pb-4;
 }
 
 .blog h4 {
-  font-size: 1.5rem;
-}
-
-.blog p {
-  padding: 0.75rem 0;
+  @apply text-lg;
+  @apply pt-10;
+  @apply pb-2;
 }
 
 .blog p,
-.blog ol,
-.blog ul {
-  font-size: 1.25rem;
+.blog li {
+  @apply text-base;
+}
+
+.blog p {
+  @apply py-2;
 }
 
 .blog ol,
 .blog ul {
-  list-style: unset;
-  padding: 1rem 0;
+  @apply py-4;
+}
+
+.blog li {
+  @apply py-1;
+}
+
+.blog blockquote {
+  @apply rounded-md;
+  @apply py-4;
+  @apply px-8;
+  @apply my-12;
+  @apply mx-4;
+}
+
+.blog blockquote p {
+  @apply text-lg;
+}
+
+.blog hr {
+  @apply mt-12;
 }
 
 /* COLOURS */
@@ -52,7 +79,13 @@
 }
 
 .blog blockquote {
-  padding: 1rem 2rem;
-  color: var(--block-text-color);
   background-color: var(--block-bg-color);
+}
+
+.blog blockquote p {
+  color: var(--block-text-color);
+}
+
+.blog blockquote a {
+  color: var(--block-text-link-color);
 }

@@ -1,6 +1,8 @@
 @tailwind base;
 
+/*////////*/
 /*General*/
+/*//////*/
 /* FONT FAMILIES */
 body {
   font-family: "Gothic A1", sans-serif;
@@ -14,7 +16,9 @@ h5 {
   font-family: "Archivo Black", sans-serif;
 }
 
+/* //////////////// */
 /* BASE FONT SIZES */
+/* ///////////// */
 .landing-title {
   @apply text-6xl;
 }
@@ -117,8 +121,13 @@ summary {
   summary {
     @apply text-3xl;
   }
+
+  .contact-header {
+    @apply text-6xl;
+  }
 }
 
 @tailwind components;
 @tailwind utilities;
 @import "../styles/util.css";
+@import "../styles/blog.css";

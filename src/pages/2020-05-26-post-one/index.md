@@ -1,5 +1,5 @@
 ---
-path: "/3-wellbeing-focused-ways-to-be-a-better-developer"
+path: "/blog/3-wellbeing-focused-ways-to-be-a-better-developer"
 date: "2020-05-26"
 title: "3 Wellbeing Focused Ways to Be a Better Developer"
 author: "Rey van den Berg"
@@ -8,12 +8,6 @@ summary: "There are 3 wellbeing-oriented steps to follow for true developer happ
 imageAttribution: "https://icons8.com"
 featuredImage: zen-man.png
 ---
-
-# 3 Wellbeing Focused Ways to Be a Better Developer
-
-(title undecided)
-
-(intro will be trimmed)
 
 ## Who. What. Why.
 
@@ -37,12 +31,12 @@ See, I have a degree in Human Physiology, Genetics, and Psychology so I sort of 
 
 Lol, I don't remember a damn thing from that degree so ignore my "credentials" because I don't have any. The only way you can trust me is to listen to this and nod if you feel me:
 
-:heavy_exclamation_mark: aching eyeballs
-:heavy_exclamation_mark: sore back
-:heavy_exclamation_mark: grumpy about bugs
-:heavy_exclamation_mark: headache at lunchtime
-:heavy_exclamation_mark: writer's block (but with code)
-:heavy_exclamation_mark: the eternal suffering of life as a developer (No? Just me? Jk, I love this stuff but sometimes it's hard).
+1. ❌ aching eyeballs
+1. ❌ sore back
+1. ❌ grumpy about bugs
+1. ❌ headache at lunchtime
+1. ❌ writer's block (but with code)
+1. ❌ the eternal suffering of life as a developer (No? Just me? Jk, I love this stuff but sometimes it's hard).
 
 > Now what if I told you I had the cure to at least 87.5% of aforementioned problems?
 
@@ -54,9 +48,9 @@ So if you _didn't_ get the point, here it is:
 
 Being a happier, healthier developer will have tremendous knock-on effects for the rest of your life:
 
-:heavy_check_mark: You will become a more understanding and respected member of a team
-:heavy_check_mark: You will solve coding problems faster
-:heavy_check_mark: You will have more creative ideas meaning cooler side projects... and better tweets! 😉
+1. 🚀 You will become a more understanding and respected member of a team
+1. 🚀 You will solve coding problems faster
+1. 🚀 You will have more creative ideas meaning cooler side projects... and better tweets! 😉
 
 Ok, if you've made it this far, thank you for your patience and LET'S GET TO IT!
 
@@ -90,7 +84,7 @@ Not to get all 'new-agey' and stuff but this is a serious contender for one of t
 
 If you're not sure what this is about, check out [this explanation](https://www.headspace.com/mindfulness) by _Headspace._
 
-If you want to get some practical '[how-to](https://samharris.org/how-to-meditate/)', you'd do well to see what [Sam Harris](https://samharris.org/) has to say.
+If you want to get some practical ['how-to'](https://samharris.org/how-to-meditate/), you'd do well to see what [Sam Harris](https://samharris.org/) has to say.
 
 > "In a nutshell, mindfulness is the quality of being present and fully engaged with whatever we’re doing at the moment" - Headspace
 
@@ -131,7 +125,7 @@ But there is a crucial thing that needs to happen after your practice for the da
 
 **Ok. Cool. The dude has quotes but who is this Mat guy?**
 
-Let me just say that you'd do well to follow his advice to the letter. He's a neuroscientist at Berkeley (formerly at Harvard) and he's one of the top guys in the WORLD when it comes to sleep. He's only been studying it for like _20 years_. No seriously, this guy know what he's talking about. He's worked as a sleep consultant (yip, that's a real thing!) for the [NBA, NFL, and British Premier League football teams](https://books.google.com/books?id=ZlU3DwAAQBAJ&pg=PA10&lpg=PA10&dq=matthew+walker+sleep+consultant+premier+league&source=bl&ots=MVT8bEWVnW&sig=ACfU3U3GdyiKxs0saJiQpgOOeKqrb6_3AQ&hl=en&sa=X&redir_esc=y#v=onepage&q=matthew%20walker%20sleep%20consultant%20premier%20league&f=false) and professes his absolute academic obsession with sleep and it's superpowers in his book, ["Why We Sleep"](https://www.audible.com/pd/Why-We-Sleep-Audiobook/B0752ZQR33?source_code=ROWGB13108101800N6&gclid=CjwKCAjw5vz2BRAtEiwAbcVIL99i36Bk3aewC9klaA_AesHEptLK6I8I1aA7ZsACJKws3OBS-TAa0hoCyCUQAvD_BwE).
+Let me just say that you'd do well to follow his advice to the letter. He's a neuroscientist at Berkeley (formerly at Harvard) and he's one of the top people in the WORLD when it comes to sleep. He's only been studying it for like _20 years_. No seriously, this guy know what he's talking about. He's worked as a sleep consultant (yip, that's a real thing!) for the [NBA, NFL, and British Premier League football teams](https://books.google.com/books?id=ZlU3DwAAQBAJ&pg=PA10&lpg=PA10&dq=matthew+walker+sleep+consultant+premier+league&source=bl&ots=MVT8bEWVnW&sig=ACfU3U3GdyiKxs0saJiQpgOOeKqrb6_3AQ&hl=en&sa=X&redir_esc=y#v=onepage&q=matthew%20walker%20sleep%20consultant%20premier%20league&f=false) and professes his absolute academic obsession with sleep and it's superpowers in his book, ["Why We Sleep"](https://www.audible.com/pd/Why-We-Sleep-Audiobook/B0752ZQR33?source_code=ROWGB13108101800N6&gclid=CjwKCAjw5vz2BRAtEiwAbcVIL99i36Bk3aewC9klaA_AesHEptLK6I8I1aA7ZsACJKws3OBS-TAa0hoCyCUQAvD_BwE).
 
 > Got 19min and 18s to spare? Do yourself a favour and watch [Dr. Walker's TED Talk](https://www.youtube.com/watch?v=5MuIMqhT8DM).
 
@@ -149,14 +143,14 @@ _every night._
 
 Here are some more **actionable tips** from his book to ensure you give your brain the rest it deserves:
 
-1. Don't exercise two or three hours before your bedtime.
-2. Stick to a sleep schedule, even on weekends!
-3. Avoid caffeine (_cringe..._) and nicotine. If you must have coffee, like me, stop drinking it before late afternoon as it takes up to 8 hours for caffeine to wear off.
-4. Avoid alcohol before bed - it robs your brain of REM sleep which acts as ["overnight therapy"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2890316/)
-5. Don't nap after 3pm. A nap is fine, just take it earlier than 3pm. [Science says naps are good!](https://www.newscientist.com/article/mg23030750-800-how-can-i-nap-like-a-pro/)
-6. Blue light delays our sleep-onset hormones, avoid it as early as possible in the evenings.
+1. ✅ Don't exercise two or three hours before your bedtime.
+1. ✅ Stick to a sleep schedule, even on weekends!
+1. ✅ Avoid caffeine (_cringe..._) and nicotine. If you must have coffee, like me, stop drinking it before late afternoon as it takes up to 8 hours for caffeine to wear off.
+1. ✅ Avoid alcohol before bed - it robs your brain of REM sleep which acts as ["overnight therapy"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2890316/)
+1. ✅ Don't nap after 3pm. A nap is fine, just take it earlier than 3pm. [Science says naps are good!](https://www.newscientist.com/article/mg23030750-800-how-can-i-nap-like-a-pro/)
+1. ✅ Blue light delays our sleep-onset hormones, avoid it as early as possible in the evenings.
 
-**Guys, just do yourself the biggest favour and sleep lots.**
+**My fellow humans, just do yourself the biggest favour and sleep lots.**
 
 (There is another nugget of sleep info straight from the man himself at the end of this post and a fun fact about men and their **shrinking testicles**!)
 
@@ -176,7 +170,7 @@ Oh, remember to check out the Meditation Links #2 below for the little treat I p
 
 ### Extra Links You Might Find Interesting
 
-### Meditation Links
+#### Meditation Links
 
 Here is a ['Why and How of Diffuse vs Focused'](https://www.7pace.com/blog/focused-vs-diffuse-thinking) for software developers.
 
@@ -188,8 +182,8 @@ Need more convincing that mindfulness is good and works? Check out [this article
 
 ["How to Improve your Sleep" - Matthew Walker](https://www.youtube.com/watch?v=lRp5AC9W_F8)
 
-[What Happens to Your Brain When You Sleep or Don't](https://www.foundmyfitness.com/episodes/matthew-walker)
+What [Happens to Your Brain](https://www.foundmyfitness.com/episodes/matthew-walker) When You Sleep or Don't
 
-[Apparently, men who only sleep five hours a night have markedly smaller testicles than men who sleep more than seven.](https://www.wired.com/story/youre-not-getting-enough-sleep-and-its-killing-you/)
-
+Apparently, men who only sleep five hours a night have markedly [smaller testicles](https://www.wired.com/story/youre-not-getting-enough-sleep-and-its-killing-you/)
+than men who sleep more than seven.
 Research shows that the world is exhausted and it's [killing our economy](https://www.rand.org/randeurope/research/projects/the-value-of-the-sleep-economy.html).

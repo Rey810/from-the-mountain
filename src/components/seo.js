@@ -10,7 +10,15 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, keywords }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  image: metaImage,
+  title,
+  keywords,
+  pathname,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,6 +28,7 @@ function SEO({ description, lang, meta, title, keywords }) {
             description
             author
             keywords
+            siteUrl
             googleSiteVerification
           }
         }
@@ -28,8 +37,14 @@ function SEO({ description, lang, meta, title, keywords }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const image =
+    metaImage && metaImage.src
+      ? `${site.siteMetaData.siteUrl}${metaImage.src}`
+      : null
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+
   return (
     <Helmet
       htmlAttributes={{
@@ -37,6 +52,16 @@ function SEO({ description, lang, meta, title, keywords }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={
+        canonical
+          ? [
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+            ]
+          : []
+      }
       meta={[
         {
           name: `google-site-verification`,
@@ -78,7 +103,35 @@ function SEO({ description, lang, meta, title, keywords }) {
           name: `keywords`,
           content: metaKeywords.split(","),
         },
-      ].concat(meta)}
+      ]
+        .concat(
+          metaImage
+            ? [
+                {
+                  property: "og:image",
+                  content: image,
+                },
+                {
+                  property: "og:image:width",
+                  content: metaImage.width,
+                },
+                {
+                  property: "og:image:height",
+                  content: metaImage.height,
+                },
+                {
+                  name: "twitter:card",
+                  content: "summary_large_image",
+                },
+              ]
+            : [
+                {
+                  name: "twitter:card",
+                  content: "summary",
+                },
+              ]
+        )
+        .concat(meta)}
     />
   )
 }
@@ -95,6 +148,12 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   keywords: PropTypes.arrayOf(PropTypes.string),
+  image: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+  }),
+  pathname: PropTypes.string,
 }
 
 export default SEO

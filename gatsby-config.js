@@ -5,6 +5,7 @@ module.exports = {
     author: `@ReyTheDev`,
     keywords: `blog, portfolio, developer, travel, freelance`,
     googleSiteVerification: "zUF4k-2XdAVgIl5-MbijxBudeCAmYgB5Q7CCojbrAOg",
+    siteUrl: "https://www.fromthemountain.co.za",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +25,15 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          // ...
+          "gatsby-remark-a11y-emoji",
+        ],
+      },
+    },
     {
       resolve: "gatsby-plugin-sharp",
       options: {
