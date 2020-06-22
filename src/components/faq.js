@@ -36,7 +36,7 @@ export default function FAQ() {
       <h1 className="faq-header font-bold">
         A few questions people normally ask
       </h1>
-      <div className="faq-list-container md:w-2/3 lg:w-1/2">
+      <div className="faq-list-container md:w-2/3 lg:w-7/12">
         <ul className="faqs">
           <li className="faq pt-8">
             <details onToggle={toggleFocus} open>

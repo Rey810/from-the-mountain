@@ -14,77 +14,40 @@ h5 {
   font-family: "Archivo Black", sans-serif;
 }
 
-/*//////////////////*/
-/* FLUID TYPOGRAPHY */
-/*//////////////////*/
-
-/* SAFARI AND IE SUPPORT */
-/* clamp() is kept as it makes more sense to look at */
-@supports (font-size: clamp(1rem, 3vw, 5rem)) {
-  /* Landing Elements */
-  .landing-title {
-    font-size: clamp(4rem, 10vw, 6rem);
-  }
-  .landing-description {
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
-  }
-
-  /* Section Headers */
-  h1 {
-    font-size: clamp(2.25rem, 5vw, 4rem);
-  }
-  /* General Elements */
-  p,
-  .quote,
-  .landing-cta-2,
-  .cta,
-  li {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-  }
-
-  h6,
-  summary {
-    font-size: clamp(1.5rem, 2vw, 2.75rem);
-  }
-
-  .contact-button {
-    font-size: clamp(1.875rem, 5vw, 4rem);
-  }
-}
-
-/* Landing Elements */
+/* BASE FONT SIZES */
 .landing-title {
-  font-size: min(max(4rem, 10vw) 6rem);
+  @apply text-6xl;
 }
 .landing-description {
-  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  @apply text-xl;
 }
 
 .landing-cta-1,
 .email-field {
-  font-size: 1.25rem;
+  @apply text-xl;
 }
 
 /* Section Headers */
 h1 {
-  font-size: min(max(2.25rem, 5vw), 4rem);
+  @apply text-4xl;
 }
+
 /* General Elements */
 p,
 .quote,
 .landing-cta-2,
 .cta,
 li {
-  font-size: min(max(1rem, 2vw) 1.25rem);
+  @apply text-base;
 }
 
 h6,
 summary {
-  font-size: min(max(1.5rem, 2vw), 2.75rem);
+  @apply text-2xl;
 }
 
 .contact-button {
-  font-size: min(max(1.875rem, 5vw), 4rem);
+  @apply text-3xl;
 }
 
 .absolute-important {
@@ -96,10 +59,66 @@ summary {
   font-size: min(max(1.25rem, 2vw), 1.5rem);
 }
 
-@tailwind components;
-@tailwind utilities;
-.justify-even {
-  justify-content: space-evenly;
+/*//////////////////*/
+/* FLUID TYPOGRAPHY */
+/*//////////////////*/
+@screen md {
+  .landing-title {
+    font-size: 5rem;
+  }
+  .landing-description {
+    @apply text-2xl;
+  }
+
+  /* General Elements */
+  p,
+  .quote,
+  .landing-cta-2,
+  .cta,
+  li {
+    @apply text-lg;
+  }
+
+  /* Section Headers */
+  h1 {
+    @apply text-5xl;
+  }
+
+  /* Smaller headers and main points */
+  h6,
+  summary {
+    @apply text-2xl;
+  }
+
+  .contact-button {
+    @apply text-4xl;
+  }
 }
 
+@screen lg {
+  .landing-title {
+    font-size: 6rem;
+  }
+  /* General Elements */
+  p,
+  .quote,
+  .landing-cta-2,
+  .cta,
+  li {
+    @apply text-xl;
+  }
+
+  /* Section Headers */
+  /* h1 {
+    @apply text-6xl;
+  } */
+  /* Smaller headers and main points */
+  h6,
+  summary {
+    @apply text-3xl;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
 @import "../styles/util.css";

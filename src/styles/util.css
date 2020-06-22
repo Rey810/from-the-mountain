@@ -135,6 +135,7 @@ h6 {
 
 .landing-cta-2:hover {
   background-color: var(--color-60-light);
+  color: var(--color-60-dark);
 }
 /*////////*/
 /* ICONS */
@@ -172,12 +173,12 @@ h6 {
 /*/////////////*/
 /* LIST ITEMS */
 /*///////////*/
-.promise-container div,
+.promises-container div,
 .all-benefits-container div {
   counter-increment: promise-counter;
 }
 
-.promise-container div h6:before,
+.promises-container div h6:before,
 .benefit-container div p:before {
   content: counter(promise-counter);
   padding: 0.1em 0.5em;
