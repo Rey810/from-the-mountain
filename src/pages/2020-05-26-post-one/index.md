@@ -1,10 +1,11 @@
 ---
 path: "/blog/3-wellbeing-focused-ways-to-be-a-better-developer"
-date: "2020-05-26"
-title: "3 Wellbeing Focused Ways to Be a Better Developer"
+date: "2020-06-22"
+title: "3 Wellbeing Habits You Need to Be a Happy Developer"
 author: "Rey van den Berg"
 category: "Developer Happiness"
 summary: "There are 3 wellbeing-oriented steps to follow for true developer happiness and a better life"
+keywords: "wellbeing, meditation, sleep, developer, coding, web development, calm, habits, solution, help, advice, mental, health, healthier, mindset, mindfulness, mindful, balance, minimalism, self-help, programmer, rest, control, posture, fix, assist, coder, webdev, engineer, acuity"
 imageAttribution: "https://icons8.com"
 imageAlt: "A floating, crosslegged animated man in a hoodie totally at peace"
 featuredImage: zen-man.png
@@ -55,7 +56,7 @@ Being a happier, healthier developer will have tremendous knock-on effects for t
 
 Ok, if you've made it this far, thank you for your patience and LET'S GET TO IT!
 
-## Focus on the Process
+## Firstly, Focus on the Process
 
 [Barbara Oakley](https://barbaraoakley.com), known for her course "Learning How to Learn", explains this quite succinctly:
 
@@ -79,7 +80,7 @@ Your feelings of frustration only hurt yourself, they don't help you to code bet
 
 So try it **- focus on the process because,** guess what**, tomorrow is another day.**
 
-## Attain a State of Mindfulness
+## Secondly, Attain a State of Mindfulness
 
 Not to get all 'new-agey' and stuff but this is a serious contender for one of the best things I've started doing in the last year.
 
@@ -103,7 +104,7 @@ What I'm suggesting is that mindfulness at your work station will help to quickl
 
 I've added a little treat at the end of this post for those interested in becoming mindful 🍬
 
-## Sleep More Than You Think
+## Lastly, Sleep More Than You Think
 
 **Lol. Obviously. Nothing new... Right?**
 
@@ -153,7 +154,7 @@ Here are some more **actionable tips** from his book to ensure you give your bra
 
 **My fellow humans, just do yourself the biggest favour and sleep lots.**
 
-(There is another nugget of sleep info straight from the man himself at the end of this post and a fun fact about men and their **shrinking testicles**!)
+(There is another nugget of sleep info straight from the man himself at the end of this post and a fun fact about men and their _shrinking testicles_!)
 
 ## Conclusion
 
@@ -165,7 +166,7 @@ Finally, thanks for reading!
 
 Do you have some advice on how to be a better developer? I'd love to hear from you! Find me on [twitter](https://www.twitter.com/ReyTheDev) or pop me an email at reyvdb@gmail.com.
 
-Oh, remember to check out the Meditation Links #2 below for the little treat I promised!✌🏽💚
+Oh, remember to check out the Meditation Links #2 below for the little treat I promised!✌💚
 
 ---
 

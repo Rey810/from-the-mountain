@@ -19,6 +19,7 @@ export default function Template({ data, location }) {
         imageAltDescr={post.frontmatter.imageAlt}
         type={"article"}
         pathname={location.pathname}
+        keywords={post.frontmatter.keywords}
       />
       <div>
         {/* <Link to="/blog">Go Back</Link>
@@ -51,6 +52,7 @@ export const postQuery = graphql`
         path
         title
         summary
+        keywords
         imageAlt
         featuredImage {
           childImageSharp {
