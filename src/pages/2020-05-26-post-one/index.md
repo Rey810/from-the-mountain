@@ -6,6 +6,7 @@ author: "Rey van den Berg"
 category: "Developer Happiness"
 summary: "There are 3 wellbeing-oriented steps to follow for true developer happiness and a better life"
 imageAttribution: "https://icons8.com"
+imageAlt: "A floating, crosslegged animated man in a hoodie totally at peace"
 featuredImage: zen-man.png
 ---
 

@@ -15,9 +15,11 @@ function SEO({
   lang,
   meta,
   image: metaImage,
+  imageAltDescr,
   title,
   keywords,
   pathname,
+  type,
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -41,6 +43,11 @@ function SEO({
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
+
+  const imageAlt = imageAltDescr
+    ? imageAltDescr
+    : "An image decorating a description card"
+  const ogType = type ? type : "website"
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
@@ -71,6 +78,10 @@ function SEO({
           content: metaDescription,
         },
         {
+          name: "og:url",
+          content: canonical,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -80,7 +91,7 @@ function SEO({
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: ogType,
         },
         {
           name: `twitter:card`,
@@ -119,8 +130,20 @@ function SEO({
                   content: metaImage.height,
                 },
                 {
+                  name: "twitter:image",
+                  content: image,
+                },
+                {
+                  name: "twitter:image:alt",
+                  content: imageAlt,
+                },
+                {
                   name: "twitter:card",
                   content: "summary_large_image",
+                },
+                {
+                  name: "twitter:site",
+                  content: "@ReyTheDev",
                 },
               ]
             : [

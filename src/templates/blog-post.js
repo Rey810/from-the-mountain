@@ -10,13 +10,14 @@ export default function Template({ data, location }) {
   const image = post.frontmatter.featuredImage
     ? post.frontmatter.featuredImage.childImageSharp.resize
     : null
-  console.log(image)
   return (
     <Layout>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.summary || post.excerpt}
         image={image}
+        imageAltDescr={post.frontmatter.imageAlt}
+        type={"article"}
         pathname={location.pathname}
       />
       <div>
@@ -50,6 +51,7 @@ export const postQuery = graphql`
         path
         title
         summary
+        imageAlt
         featuredImage {
           childImageSharp {
             resize(width: 1200) {
