@@ -39,12 +39,11 @@ function SEO({
   const metaDescription = description || site.siteMetadata.description
   const image =
     metaImage && metaImage.src
-      ? `${site.siteMetaData.siteUrl}${metaImage.src}`
+      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
-
   return (
     <Helmet
       htmlAttributes={{

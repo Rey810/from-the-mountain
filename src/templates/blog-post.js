@@ -7,14 +7,15 @@ import SEO from "../components/seo"
 export default function Template({ data, location }) {
   const post = data.markdownRemark
   // const siteTitle = data.site.siteMetadata.title
-  const image = post.frontmatter.image
+  const image = post.frontmatter.featuredImage
     ? post.frontmatter.featuredImage.childImageSharp.resize
     : null
+  console.log(image)
   return (
     <Layout>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        description={post.frontmatter.summary || post.excerpt}
         image={image}
         pathname={location.pathname}
       />
