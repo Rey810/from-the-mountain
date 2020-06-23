@@ -1,7 +1,7 @@
 ---
 path: "/blog/3-wellbeing-focused-ways-to-be-a-better-developer"
 date: "2020-06-22"
-title: "3 Wellbeing Habits You Need to Be a Happy Developer"
+title: "The 3 Best Wellbeing Habits You Need to be a Better Developer"
 author: "Rey van den Berg"
 category: "Developer Happiness"
 summary: "There are 3 wellbeing-oriented steps to follow for true developer happiness and a better life"
@@ -11,19 +11,15 @@ imageAlt: "A floating, crosslegged animated man in a hoodie totally at peace"
 featuredImage: zen-man.png
 ---
 
-## Who. What. Why.
+## Our Mental Health and Wellbeing needs Help
 
 Like you, I'm someone who makes stuff for the web.
 
-"What stack?" you ask.
+Like you, that means: I sit in front of my monitor from 9-5 (sometimes later, especially when there's _just one more bug to kill!_).
 
-"Well... um, that's not really important for this conversation", I reply, somewhat relieved I could so easily quell a potential argument (I guess it helps to be on the writing side of this one😉 ).
+**Newsflash: this behaviour isn't the best for our postures or mental health (a.k.a. mental wellbeing)**
 
-Anyways, I code and, like you, that means: I sit in front of my monitor from 9-5 (sometimes later, especially when there's _just one more bug to kill!_).
-
-**Newsflash: this behaviour isn't the best for our postures or mental health.**
-
-So shortly after noticing the effects of my habits as a developer, I started looking for methods that would help **counteract** this practice of being in front of the screen for hours on end.
+So shortly after noticing the effects of my habits as a developer, I started searching for habits that would help _counteract_ this practice of being in front of the screen for hours on end.
 
 ## But First, Why Listen to Me?
 
@@ -31,7 +27,7 @@ Not to brag or anything but I'm kind of a big deal.
 
 See, I have a degree in Human Physiology, Genetics, and Psychology so I sort of know how our bodies and brains work in creating a complex, highly-functional organism capable of critiquing tech tweets...
 
-Lol, I don't remember a damn thing from that degree so ignore my "credentials" because I don't have any. The only way you can trust me is to listen to this and nod if you feel me:
+Lol, I don't remember a damn thing from that degree so ignore my 'credentials' because I don't have any. The only way you can trust me is to listen to this and nod if you feel me:
 
 1. ❌ aching eyeballs
 1. ❌ sore back
@@ -40,7 +36,7 @@ Lol, I don't remember a damn thing from that degree so ignore my "credentials" b
 1. ❌ writer's block (but with code)
 1. ❌ the eternal suffering of life as a developer (No? Just me? Jk, I love this stuff but sometimes it's hard).
 
-> Now what if I told you I had the cure to at least 87.5% of aforementioned problems?
+> Now, what if I told you I had the cure to at least 87.5% [(quick maths)](https://www.youtube.com/watch?v=3M_5oYU-IsU) of these problems?
 
 Read on because what I propose will make you a happier, healthier developer who gets your Starbucks with your name spelt _right_ (imagine that...), an abundance of ice cream, world fame... You get the point.
 
@@ -54,7 +50,7 @@ Being a happier, healthier developer will have tremendous knock-on effects for t
 1. 🚀 You will solve coding problems faster
 1. 🚀 You will have more creative ideas meaning cooler side projects... and better tweets! 😉
 
-Ok, if you've made it this far, thank you for your patience and LET'S GET TO IT!
+Alright! If you've made it this far, I applaud your patience aaaand LET'S GET TO IT!
 
 ## Firstly, Focus on the Process
 
@@ -74,11 +70,11 @@ Instead of thinking "My day will be successful if I fix this failing code", appr
 
 Maybe something like "My day will be successful if I _spend time attempting_ to fix this failing code".
 
-That slight mental adjustment is especially helpful for beginners - often they (aka _we_) underestimate a problem and feel that they've wasted the day when they go to bed without having solved it.
+That slight mental adjustment is especially helpful for beginners - often they (a.k.a. _we_) underestimate a problem and feel that they've wasted the day when they go to bed without having solved it.
 
 Your feelings of frustration only hurt yourself, they don't help you to code better or faster.
 
-So try it **- focus on the process because,** guess what**, tomorrow is another day.**
+So try it - **focus on the _process_ because, guess what, tomorrow is another day.**
 
 ## Secondly, Attain a State of Mindfulness
 
@@ -94,7 +90,7 @@ So now that we know what is, how can we apply it to our lives as professional de
 
 Imagine for a second that you are fully engaged with a block of code in front of you. "Yeah, dude, that's called concentration. I do it every day!", I hear you say. True! But...
 
-What if I told you that being fully engaged also meant **knowing when you're not thinking** **optimally**? Or that being fully engaged (re: mindful) allows you to quickly realize that it's time to get up and take a break for your own good?
+What if I told you that being fully engaged also meant knowing when you're _not_ thinking _optimally_? Or that being fully engaged (re: mindful) allows you to quickly realize that it's time to get up and take a break for your own good?
 
 **Don't Bash the Wall with Your Head**
 

@@ -23,6 +23,8 @@ const Header = ({ siteTitle, canSee = false }) => {
     console.log("using effect")
     /* This prevents a listener from being added if canSee is false which means that the current location is not on the Latest Posts page. Therefore things can continue as normal. If we are on the Latest Posts page then I don't want the header to didsappear if the user scrolls */
     if (!canSee) window.addEventListener("scroll", toggleVis)
+    // Cleans up the hook by removing the eventlistener when the component
+    // It also cleans up effects from the previous render before runnnig effects the next time
     return () => window.removeEventListener("scroll", toggleVis)
   }, [visible])
 

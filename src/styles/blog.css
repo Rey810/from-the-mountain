@@ -11,7 +11,7 @@
   /* AUXILLARY COLORS */
   --link-color: #4c4cb9;
   /* SUBSCRIBE BLOCK */
-  --button-color: #22bd58;
+  --button-color: #5f5fce;
   --button-text-color: hsl(0, 0%, 100%);
   --input-text-color: rgba(160, 174, 192, 1);
 
@@ -133,6 +133,10 @@ li {
 }
 
 .subscribe-button {
-  background-color: var(--link-color);
+  background-color: var(--button-color);
   color: var(--button-text-color);
+}
+
+.subscribe-button:hover {
+  background-color: var(--link-color);
 }
