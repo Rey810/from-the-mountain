@@ -4,6 +4,9 @@
 /*General*/
 /*//////*/
 /* FONT FAMILIES */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Gothic A1", sans-serif;
 }
@@ -55,7 +58,7 @@ summary {
 }
 
 .header-contact-button {
-  @apply text-sm !important;
+  @apply text-xs !important;
 }
 
 .absolute-important {
@@ -129,5 +132,5 @@ summary {
 
 @tailwind components;
 @tailwind utilities;
-@import "../styles/util.css";
+@import "../styles/colors.css";
 @import "../styles/blog.css";

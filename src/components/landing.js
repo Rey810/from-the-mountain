@@ -42,7 +42,10 @@ const Landing = () => {
   // })
 
   return (
-    <section className="landing-container pt-10 pb-20 my-auto">
+    <section
+      id="connect-section"
+      className="landing-container pt-10 pb-20 my-auto"
+    >
       <div className="bg-image-container fixed -z-20 top-0 left-0 bottom-0 w-full">
         <Background blur={darken} />
       </div>

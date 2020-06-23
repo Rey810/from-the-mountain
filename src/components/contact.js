@@ -45,3 +45,12 @@ const contact = () => {
 }
 
 export default contact
+
+// {
+//   /* <a href="https://twitter.com/ReyTheDev" className="icon m-2 md:m-4">
+//           <FontAwesomeIcon icon={["fab", "twitter"]}></FontAwesomeIcon>
+//         </a>
+//                 <a href="mailto:reyvdb@gmail.com" className="icon mx-2 md:mx-4">
+//           <FontAwesomeIcon icon={["fab", "facebook"]} />
+//         </a>
+// }

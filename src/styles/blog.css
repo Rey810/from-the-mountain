@@ -10,6 +10,10 @@
   --block-text-link-color: #4c4cb9;
   /* AUXILLARY COLORS */
   --link-color: #4c4cb9;
+  /* SUBSCRIBE BLOCK */
+  --button-color: #22bd58;
+  --button-text-color: hsl(0, 0%, 100%);
+  --input-text-color: rgba(160, 174, 192, 1);
 
   /* SOME SPACE ADDED TO END OF POST */
   @apply pb-20;
@@ -120,4 +124,15 @@ li {
 
 .blog blockquote a {
   color: var(--block-text-link-color);
+}
+
+.subscribe-input:focus {
+  outline: none;
+  border: 1px solid var(--link-color);
+  color: var(--input-text-color);
+}
+
+.subscribe-button {
+  background-color: var(--link-color);
+  color: var(--button-text-color);
 }

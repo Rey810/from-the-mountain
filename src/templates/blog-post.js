@@ -3,6 +3,7 @@ import Link from "gatsby-link"
 import Layout from "../components/layout"
 import Menu from "../components/menu"
 import SEO from "../components/seo"
+import Subscribe from "../components/subscribe"
 
 export default function Template({ data, location }) {
   const post = data.markdownRemark
@@ -24,13 +25,14 @@ export default function Template({ data, location }) {
       <div className="blog-container">
         {/* <Link to="/blog">Go Back</Link>
         <hr /> */}
-        <section className="blog pt-20 mx-auto px-4 sm:w-3/4 md:w-2/3 lg:w-1/2">
+        <section className="blog pt-20 mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2">
           <h1>{post.frontmatter.title}</h1>
           {/* <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4> */}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
+        <Subscribe />
       </div>
     </Layout>
   )

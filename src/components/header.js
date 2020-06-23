@@ -2,15 +2,13 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import ThemeControl from "../components/themeControl"
-import "../styles/util.css"
 
 const Header = ({ siteTitle, canSee = false }) => {
   const [visible, setVisible] = useState(canSee)
 
-  const toggleVis = scrollY => {
-    console.log("handleScroll header firing!", scrollY)
-    if (scrollY > 600) {
+  const toggleVis = () => {
+    console.log("handleScroll header firing!", window.scrollY)
+    if (window.scrollY > 600) {
       setVisible(true)
     } else {
       setVisible(false)
@@ -24,8 +22,8 @@ const Header = ({ siteTitle, canSee = false }) => {
   useEffect(() => {
     console.log("using effect")
     /* This prevents a listener from being added if canSee is false which means that the current location is not on the Latest Posts page. Therefore things can continue as normal. If we are on the Latest Posts page then I don't want the header to didsappear if the user scrolls */
-    if (!canSee)
-      window.addEventListener("scroll", () => toggleVis(window.scrollY))
+    if (!canSee) window.addEventListener("scroll", toggleVis)
+    return () => window.removeEventListener("scroll", toggleVis)
   }, [visible])
 
   return (
@@ -36,17 +34,11 @@ const Header = ({ siteTitle, canSee = false }) => {
     >
       {/* <ThemeControl /> */}
       <div className="header-icons">
-        <a href="mailto:reyvdb@gmail.com" className="icon mx-2 md:mx-4">
-          <FontAwesomeIcon icon={["fab", "facebook"]} />
-        </a>
-        <a href="https://twitter.com/ReyTheDev" className="icon m-2 md:m-4">
-          <FontAwesomeIcon icon={["fab", "twitter"]}></FontAwesomeIcon>
-        </a>
-        <a href="mailto:reyvdb@gmail.com" className="contact-mail mx-auto">
+        <a href="#connect-section" className="contact-mail mx-auto">
           <button className="contact-button header-contact-button center py-2 px-6 font-semibold shadow-md rounded-full">
             Let's Connect!
           </button>
-        </a>
+        </a>{" "}
       </div>
     </header>
   )
