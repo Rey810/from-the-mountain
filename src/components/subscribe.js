@@ -3,8 +3,8 @@ import React from "react"
 export default function subscribe() {
   return (
     <section
-      id="contact-section"
-      className="flex flex-col sm:flex-row rounded-lg mx-auto px-4 w-3/4 sm:w-10/12 md:w-2/3 lg:w-1/2 mt-20"
+      id="connect-section"
+      className="flex flex-col sm:flex-row rounded-lg mx-auto px-4 mt-20"
     >
       <div className="subscribe-text bg-gray-200 p-8 flex flex-col w-full mt-0">
         <h1 className="text-gray-900 text-2xl font-medium">
