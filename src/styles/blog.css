@@ -1,8 +1,18 @@
-.blog {
-  --link-color: #3bde74;
-  --block-bg-color: hsla(124, 80%, 96%, 0.651);
+.blog-container {
+  /* TEXT COLOR */
+  --blog-bg-color: hsl(0, 0%, 100%);
+  --blog-text-color: hsl(0, 0%, 20%);
+  --blog-header-color: #212121;
+  /* BLOCKQUOTES COLOR */
+  --block-bg-color: hsl(0, 0%, 98%);
+  --block-border-color: #ccc;
   --block-text-color: #313131;
-  --block-text-link-color: #0b8034;
+  --block-text-link-color: #4c4cb9;
+  /* AUXILLARY COLORS */
+  --link-color: #4c4cb9;
+
+  /* SOME SPACE ADDED TO END OF POST */
+  @apply pb-20;
 }
 
 /* FONTS and PADDING */
@@ -54,6 +64,9 @@
 }
 
 .blog blockquote {
+  background: var(--block-bg-color);
+  border-color: var(--block-border-color);
+  @apply border-l-8;
   @apply rounded-md;
   @apply py-4;
   @apply px-8;
@@ -70,8 +83,26 @@
 }
 
 /* COLOURS */
+.blog-container {
+  background-color: var(--blog-bg-color);
+}
+
+.blog h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  color: var(--blog-header-color);
+}
+
+.blog p {
+  color: var(--blog-text-color);
+}
 .blog a {
   color: var(--link-color);
+  @apply font-medium;
 }
 
 .blog a:hover {
