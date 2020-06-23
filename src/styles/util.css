@@ -43,6 +43,12 @@ body {
   color: var(--color-60-light);
 }
 
+header {
+  background-color: var(--color-60-medium);
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+}
+
 p {
   color: var(--color-60-light);
 }
@@ -58,6 +64,11 @@ h6 {
 /*/////////////////*/
 /* SCROLL EFFECTS */
 /*///////////////*/
+/* HIDE/SHOW HEADER */
+.visible {
+  opacity: 1;
+}
+
 /* DARKEN BG CONTAINER */
 .color-overlay-container {
   background-color: var(--initial-color-overlay);

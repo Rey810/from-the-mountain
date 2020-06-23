@@ -17,7 +17,6 @@ const Landing = () => {
   const [darken, setDarken] = useState(false)
 
   const handleScroll = scrollY => {
-    console.log("handleScroll firing!", scrollY)
     if (scrollY > 200) {
       setDarken(true)
     } else {

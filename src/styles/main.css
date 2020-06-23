@@ -54,13 +54,17 @@ summary {
   @apply text-3xl;
 }
 
+.header-contact-button {
+  @apply text-sm !important;
+}
+
 .absolute-important {
   position: absolute !important;
 }
 
 /* Icons */
 .icon {
-  font-size: min(max(1.25rem, 2vw), 1.5rem);
+  @apply text-lg;
 }
 
 /*//////////////////*/

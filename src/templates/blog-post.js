@@ -11,7 +11,7 @@ export default function Template({ data, location }) {
     ? post.frontmatter.featuredImage.childImageSharp.resize
     : null
   return (
-    <Layout>
+    <Layout location={"blog"}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.summary || post.excerpt}

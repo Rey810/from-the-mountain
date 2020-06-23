@@ -7,11 +7,10 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 
 const BlogPage = ({ data }) => (
-  <Layout>
+  <Layout canSeeHeader={true}>
     <SEO title="Blog Posts" />
-    <Menu />
-    <section class="px-4 md:px-8 lg:px-12 xl:px-16">
-      <h1 className="mt-12">Latest Posts</h1>
+    <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-10">
+      <h1 className="pt-12">Latest Posts</h1>
       <div class="container py-12">
         <div class="flex flex-wrap -m-4">
           {data.allMarkdownRemark.edges.map(post => (

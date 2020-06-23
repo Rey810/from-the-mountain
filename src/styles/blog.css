@@ -19,6 +19,7 @@
 
 .blog h1 {
   @apply text-4xl;
+  @apply pt-4;
 }
 
 @screen md {
