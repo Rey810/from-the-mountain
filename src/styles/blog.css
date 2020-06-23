@@ -23,7 +23,7 @@
 
 .blog h1 {
   @apply text-4xl;
-  @apply pt-4;
+  @apply py-12;
 }
 
 @screen md {

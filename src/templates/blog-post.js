@@ -25,7 +25,7 @@ export default function Template({ data, location }) {
       <div className="blog-container">
         {/* <Link to="/blog">Go Back</Link>
         <hr /> */}
-        <section className="blog pt-20 mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2">
+        <section className="blog mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2">
           <h1>{post.frontmatter.title}</h1>
           {/* <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
