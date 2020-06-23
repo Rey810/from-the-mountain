@@ -112,10 +112,6 @@ summary {
     @apply text-xl;
   }
 
-  /* Section Headers */
-  /* h1 {
-    @apply text-6xl;
-  } */
   /* Smaller headers and main points */
   h6,
   summary {
