@@ -114,6 +114,18 @@ li {
   text-decoration: underline;
 }
 
+.twitter-share-button-wrapper {
+  background-color: var(--blog-bg-color);
+}
+
+.twitter-share-button-container {
+}
+
+.custom-twitter-share-button {
+  color: var(--block-text-color);
+  @apply text-lg;
+}
+
 .blog blockquote {
   background-color: var(--block-bg-color);
 }

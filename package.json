@@ -20,6 +20,7 @@
     "gatsby-plugin-postcss": "^2.3.3",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sharp": "^2.6.4",
+    "gatsby-plugin-twitter": "^2.3.6",
     "gatsby-remark-a11y-emoji": "^1.1.0",
     "gatsby-remark-emoji": "0.0.3",
     "gatsby-source-filesystem": "^2.3.8",
