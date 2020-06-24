@@ -44,7 +44,7 @@ body {
 }
 
 header {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-60-dark);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.35s ease-out;
