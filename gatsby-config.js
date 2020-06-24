@@ -64,6 +64,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-twitter`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: { path: "src/data" },
+    },
+    {
+      resolve: "gatsby-transformer-yaml",
+      options: { typeName: "Tag", path: "src/data/convertkit-tags" },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

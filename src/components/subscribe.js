@@ -1,4 +1,5 @@
 import React from "react"
+import SubscriptionForm from "../components/subscriptionForm"
 
 export default function subscribe() {
   return (
@@ -19,14 +20,7 @@ export default function subscribe() {
         <p className="text-gray-900 text-base font-light mx-auto mb-4">
           Your email address
         </p>
-        <input
-          className="subscribe-input text-base bg-white rounded border border-gray-400 px-4 py-2 mb-4"
-          placeholder="your.email@domain.com"
-          type="email"
-        />
-        <button className="subscribe-button text-white text-lg font-semibold border-0 py-2 px-8 rounded ">
-          Stay Curious
-        </button>
+        <SubscriptionForm tags={["developer"]} />
         <p className="text-xs text-gray-500 mt-3">
           Powered by ConvertKit and a healthy dose of cynicism. Subsribe
           anytime.

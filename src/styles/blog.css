@@ -145,10 +145,13 @@ li {
   color: var(--block-text-link-color);
 }
 
+.subscribe-input {
+  color: var(--input-text-color);
+}
+
 .subscribe-input:focus {
   outline: none;
   border: 1px solid var(--link-color);
-  color: var(--input-text-color);
 }
 
 .subscribe-button {

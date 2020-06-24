@@ -35,3 +35,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     })
   })
 }
+
+// here types are created the Tag so you can get them via GraphQL later:
+exports.sourceNodes = ({ actions }) => {
+  actions.createTypes(`
+    type Tag implements Node @dontInfer {
+      id: ID!
+      name: String!
+    }
+  `)
+}
