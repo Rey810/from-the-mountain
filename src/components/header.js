@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Avatar from "../components/images/avatar"
 
 const Header = ({ siteTitle, canSee = false }) => {
   const [visible, setVisible] = useState(canSee)
@@ -30,11 +31,20 @@ const Header = ({ siteTitle, canSee = false }) => {
 
   return (
     <header
-      className={`fixed top-0 z-10 flex flex-row justify-end w-full py-3 px-4 md:px-8 lg:px-12 xl:px-16 shadow ${
+      className={`fixed top-0 z-10 flex flex-row justify-between w-full py-3 px-4 md:px-8 lg:px-12 xl:px-16 shadow ${
         visible ? "visible" : ""
       }`}
     >
-      {/* <ThemeControl /> */}
+      <Link to="/">
+        <div className="home-section flex flex-row items-center">
+          <div className="avatar-container flex justify-center h-8 mx-auto ">
+            <div className="avater-image-container relative w-8">
+              <Avatar />
+            </div>
+          </div>
+          <h1 className="text-base ml-2">FTM</h1>
+        </div>
+      </Link>
       <div className="header-icons">
         <a href="#connect-section" className="contact-mail mx-auto">
           <button className="contact-button header-contact-button center py-2 px-6 font-semibold shadow-md rounded-full">

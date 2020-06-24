@@ -26,12 +26,6 @@
   @apply py-12;
 }
 
-@screen md {
-  .blog h1 {
-    @apply text-5xl;
-  }
-}
-
 .blog h2 {
   @apply text-3xl;
   @apply pt-12;
@@ -87,6 +81,20 @@
   @apply mt-12;
 }
 
+.custom-twitter-share-button {
+  @apply text-lg;
+}
+
+@screen md {
+  .blog h1 {
+    @apply text-5xl;
+  }
+
+  .custom-twitter-share-button {
+    @apply text-xl;
+  }
+}
+
 /* COLOURS */
 .blog-container {
   background-color: var(--blog-bg-color);
@@ -123,7 +131,6 @@ li {
 
 .custom-twitter-share-button {
   color: var(--block-text-color);
-  @apply text-lg;
 }
 
 .blog blockquote {
