@@ -16,8 +16,8 @@ const Landing = () => {
 
   const [darken, setDarken] = useState(false)
 
-  const handleScroll = scrollY => {
-    if (scrollY > 200) {
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
       setDarken(true)
     } else {
       setDarken(false)
@@ -29,10 +29,9 @@ const Landing = () => {
   // i.e. when the component unmounts and also after the previous render
   // for multiple hooks, they're run in the order they're defined
   useEffect(() => {
-    window.onscroll = () => {
-      handleScroll(window.scrollY)
-    }
-  })
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [darken])
 
   // const interval = setInterval(() => {
   //   setCount(count => (count === 3 ? 0 : count + 1))

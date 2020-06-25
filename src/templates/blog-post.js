@@ -1,5 +1,4 @@
 import React from "react"
-import Link from "gatsby-link"
 import Layout from "../components/layout"
 import Menu from "../components/menu"
 import SEO from "../components/seo"
@@ -14,8 +13,9 @@ export default function Template({ data, location }) {
     ? post.frontmatter.featuredImage.childImageSharp.resize
     : null
 
-  // converts human-readable date into machine-readable date
+  // converts human-readable date into machine-readable date to be used in "Published..."
   const ISOdateString = new Date(post.frontmatter.date).toISOString()
+
   return (
     <Layout location={"blog"}>
       <SEO
@@ -28,8 +28,6 @@ export default function Template({ data, location }) {
         keywords={post.frontmatter.keywords}
       />
       <div className="blog-container">
-        {/* <Link to="/blog">Go Back</Link>
-        <hr /> */}
         <section className="blog mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2">
           <h1>{post.frontmatter.title}</h1>
           <div className="subheader-container sm:flex sm:flex-row sm:items-center">
@@ -49,7 +47,6 @@ export default function Template({ data, location }) {
               </a>
             </div>
           </div>
-
           <div className="h-full border-2 rounded-lg overflow-hidden">
             <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
           </div>
