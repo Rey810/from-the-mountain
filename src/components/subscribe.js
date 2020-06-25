@@ -21,7 +21,7 @@ export default function subscribe() {
           Your email address
         </p>
         <SubscriptionForm tags={["developer"]} />
-        <p className="text-xs text-gray-500 mt-3">
+        <p className="text-xs text-gray-500">
           Powered by ConvertKit and a healthy dose of cynicism. Subsribe
           anytime.
         </p>

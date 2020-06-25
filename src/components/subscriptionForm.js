@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const SubscriptionForm = ({ tags }) => {
   const [status, setStatus] = useState(null)
+  const [loading, setLoading] = useState(false)
   const FORM_ID = "1483305"
   const SUBFORM_ID = "906"
   const FORM_URL = `https://app.convertkit.com/forms/${FORM_ID}/subscriptions`
@@ -30,6 +31,7 @@ const SubscriptionForm = ({ tags }) => {
     const data = new FormData(e.target)
 
     try {
+      setLoading(true)
       const response = await fetch(FORM_URL, {
         method: "post",
         body: data,
@@ -41,18 +43,25 @@ const SubscriptionForm = ({ tags }) => {
       const json = await response.json()
 
       if (json.status === "success") {
+        setLoading(false)
         setStatus("SUCCESS")
         return
       }
-
+      setLoading(false)
       setStatus("ERROR")
     } catch (err) {
+      setLoading(false)
       setStatus("ERROR")
     }
   }
 
   return (
-    <form action={FORM_URL} method="post" onSubmit={handleSubmit}>
+    <form
+      className="subscription-form"
+      action={FORM_URL}
+      method="post"
+      onSubmit={handleSubmit}
+    >
       <input
         className="subscribe-input text-base bg-white rounded border border-gray-400 px-4 py-2 mb-4 w-1/1"
         type="text"
@@ -84,13 +93,17 @@ const SubscriptionForm = ({ tags }) => {
       ))}
 
       <button
-        className="subscribe-button text-white text-lg font-semibold border-0 py-2 px-8 rounded"
+        className={`subscribe-button text-white text-lg font-semibold border-0 py-2 px-8 rounded ${
+          status === "SUCCESS" ? "hidden" : ""
+        }`}
         type="submit"
       >
-        Stay Curious
+        {loading ? "Loading" : "Stay Curious"}
       </button>
-      {status === "SUCCESS" && <p>Please go confirm your subscription!</p>}
-      {status === "ERROR" && <p>Oops, try again.</p>}
+      {status === "SUCCESS" && (
+        <p class="success">Please go confirm your subscription!</p>
+      )}
+      {status === "ERROR" && <p class="error">Oops, please try again.</p>}
     </form>
   )
 }

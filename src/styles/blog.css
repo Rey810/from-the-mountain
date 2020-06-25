@@ -175,3 +175,29 @@ li {
 .subscribe-button:hover {
   background-color: var(--link-color);
 }
+
+/*////////////////////*/
+/* SUBSCRIPTION FORM */
+/*//////////////////*/
+.subscription-form {
+  @apply my-2;
+}
+
+/* WARNING MESSAGES */
+.subscription-form .success {
+  background: #d3fbeb;
+  border-color: #10bf7a;
+  color: #0c905c;
+  @apply my-2;
+  @apply p-3;
+  @apply text-xs;
+}
+
+.subscription-form .error {
+  background: hsl(4, 83%, 91%);
+  border-color: hsl(4, 85%, 41%);
+  color: hsl(4, 85%, 31%);
+  @apply my-2;
+  @apply p-3;
+  @apply text-xs;
+}
