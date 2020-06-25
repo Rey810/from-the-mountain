@@ -56,7 +56,7 @@ export default function Template({ data, location }) {
           <div className="twitter-share-button-container text-center">
             <a
               className="custom-twitter-share-button"
-              href="https://twitter.com/share?text=3%20Wellbeing%20Focused%20Ways%20to%20be%20a%20Better%20Developer via @ReyTheDev&url=https://www.fromthemountain.co.za/blog/3-wellbeing-focused-ways-to-be-a-better-developer"
+              href={`https://twitter.com/share?text=${post.frontmatter.title} via @ReyTheDev&url=https://www.fromthemountain.co.za/${location.pathname}`}
             >
               <FontAwesomeIcon icon={["fab", "twitter"]} />
             </a>

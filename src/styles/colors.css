@@ -80,15 +80,11 @@ h6 {
 
 .color-overlay-container.saturate {
   background-color: var(--final-colour-overlay);
-  transform: scale(1.1);
-  transition: background-color 2s ease-out;
+  transform: scale3d(1.1, 1.1, 1);
+  transition: background-color 1s linear;
 }
 
 /*BLUR BG*/
-.bg-image-wrapper {
-  transition: filter 2s ease-out;
-}
-
 .blur {
   filter: blur(3px);
   transition: filter 2s ease-out;

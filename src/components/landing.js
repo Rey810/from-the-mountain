@@ -17,10 +17,10 @@ const Landing = () => {
   const [darken, setDarken] = useState(false)
 
   const handleScroll = () => {
-    if (window.scrollY > 200) {
-      setDarken(true)
-    } else {
+    if (window.scrollY < 200) {
       setDarken(false)
+    } else {
+      setDarken(true)
     }
   }
   // runs after the first render and after every update
@@ -81,7 +81,7 @@ const Landing = () => {
           href="mailto:rey@fromthemountain.co.za"
           className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-md shadow-md font-semibold w-64"
         >
-          hi@fromthemountain
+          hi@fromthemountain.co.za
         </a>
       </div>
       <div className="landing-icons-container flex flex-row justify-center py-8">
