@@ -5,6 +5,7 @@ import Menu from "../components/menu"
 import SEO from "../components/seo"
 import Subscribe from "../components/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Img from "gatsby-image"
 
 export default function Template({ data, location }) {
   const post = data.markdownRemark
@@ -48,6 +49,10 @@ export default function Template({ data, location }) {
               </a>
             </div>
           </div>
+
+          <div className="h-full border-2 rounded-lg overflow-hidden">
+            <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+          </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
         <div className="twitter-share-button-wrapper fixed w-full bottom-0 p-3 md:left-0 md:w-0 md:top-1/2 md:p-6">
@@ -87,10 +92,8 @@ export const postQuery = graphql`
         imageAlt
         featuredImage {
           childImageSharp {
-            resize(width: 1200) {
-              src
-              height
-              width
+            fluid(maxWidth: 1600, maxHeight: 800) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

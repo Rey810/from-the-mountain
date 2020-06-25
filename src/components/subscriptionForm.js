@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+// import ReCAPTCHA from "react-google-recaptcha"
 
 const SubscriptionForm = ({ tags }) => {
   const [status, setStatus] = useState(null)
@@ -49,7 +50,9 @@ const SubscriptionForm = ({ tags }) => {
       }
       setLoading(false)
       setStatus("ERROR")
+      console.log(json)
     } catch (err) {
+      console.log(err)
       setLoading(false)
       setStatus("ERROR")
     }
@@ -92,16 +95,20 @@ const SubscriptionForm = ({ tags }) => {
         />
       ))}
 
+      {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
+
       <button
         className={`subscribe-button text-white text-lg font-semibold border-0 py-2 px-8 rounded ${
           status === "SUCCESS" ? "hidden" : ""
         }`}
         type="submit"
       >
-        {loading ? "Loading" : "Stay Curious"}
+        {loading ? "Nice!" : "Stay Curious"}
       </button>
       {status === "SUCCESS" && (
-        <p class="success">Please go confirm your subscription!</p>
+        <p class="success">
+          Success! Please confirm your subscription in your email.
+        </p>
       )}
       {status === "ERROR" && <p class="error">Oops, please try again.</p>}
     </form>

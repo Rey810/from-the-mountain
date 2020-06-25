@@ -42,7 +42,7 @@
 
 .blog h2 {
   @apply text-3xl;
-  @apply py-12;
+  @apply py-6;
 }
 
 .blog h3 {
@@ -137,9 +137,6 @@ li {
 
 .twitter-share-button-wrapper {
   background-color: var(--blog-bg-color);
-}
-
-.twitter-share-button-container {
 }
 
 .custom-twitter-share-button {

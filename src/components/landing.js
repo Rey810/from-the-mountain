@@ -70,14 +70,20 @@ const Landing = () => {
         </h6>
       </main>
       <div className="landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center">
-        <input
+        {/* <input
           className="email-field mx-auto border py-4 px-4 my-2 rounded-md w-64 shadow-sm md:w-1/3 lg:w-1/5 xl:w-1/7 md:mx-2"
           type="email"
           placeholder="Your email..."
-        />
-        <button className="landing-cta-1 py-4 px-8 mx-auto   my-2 rounded-md shadow-md font-semibold w-64 md:w-1/3 lg:w-1/5 xl:w-1/7 md:mx-2">
+        /> */}
+        {/* <button className="landing-cta-1 py-4 px-8 mx-auto  my-2 rounded-md shadow-md font-semibold w-64 md:w-1/3 lg:w-1/5 xl:w-1/7 md:mx-2">
           Let's Connect!
-        </button>
+        </button> */}
+        <a
+          href="mailto:rey@fromthemountain.co.za"
+          className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-md shadow-md font-semibold w-64"
+        >
+          hi@fromthemountain
+        </a>
       </div>
       <div className="landing-icons-container flex flex-row justify-center py-8">
         <Link className="landing-icons icon px-4" to="/">

@@ -11,18 +11,18 @@ export default function subscribe() {
         <h1 className="text-gray-900 text-2xl font-medium">
           Want to See More Stuff Like This?
         </h1>
-        <p className="text-sm text-gray-500 mt-3">
-          I publish every full moon... roughly. You'll be the first to know when
+        <p className="text-sm text-gray-600 my-3 sm:mt-3">
+          I publish roughly every full moon. You'll be the first to know when
           there's something new.
         </p>
       </div>
-      <div className="subscribe-action bg-gray-200 p-8 flex flex-col w-full sm:w-1/2 mt-0">
+      <div className="subscribe-action bg-gray-200 pt-0 pl-8 pr-8 pb-8 flex flex-col w-full mt-0 sm:w-1/2 sm:p-8">
         <p className="text-gray-900 text-base font-light mx-auto mb-4">
           Your email address
         </p>
         <SubscriptionForm tags={["developer"]} />
         <p className="text-xs text-gray-500">
-          Powered by ConvertKit and a healthy dose of cynicism. Subsribe
+          Powered by ConvertKit and a healthy dose of optimism. Unsubscribe
           anytime.
         </p>
       </div>
