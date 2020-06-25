@@ -25,11 +25,11 @@ const Landing = () => {
   }
   // runs after the first render and after every update
   // a new function is passed into useEffect (remember, each object/function is a separate thing) eah render which makes each effect "belong" to a render
-  // If your effect returns a function, React will run it when it is time to clean up
-  // i.e. when the component unmounts and also after the previous render
-  // for multiple hooks, they're run in the order they're defined
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
+    // React will run returned function when it is time to clean up
+    // i.e. when the component unmounts and also after the previous render
+    // for multiple hooks, they're run in the order they're defined
     return () => window.removeEventListener("scroll", handleScroll)
   }, [darken])
 
