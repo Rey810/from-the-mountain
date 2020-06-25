@@ -12,6 +12,9 @@ export default function Template({ data, location }) {
   const image = post.frontmatter.featuredImage
     ? post.frontmatter.featuredImage.childImageSharp.resize
     : null
+
+  // converts human-readable date into machine-readable date
+  const ISOdateString = new Date(post.frontmatter.date).toISOString()
   return (
     <Layout location={"blog"}>
       <SEO
@@ -28,9 +31,23 @@ export default function Template({ data, location }) {
         <hr /> */}
         <section className="blog mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2">
           <h1>{post.frontmatter.title}</h1>
-          {/* <h4>
-          Posted by {post.frontmatter.author} on {post.frontmatter.date}
-        </h4> */}
+          <div className="subheader-container sm:flex sm:flex-row sm:items-center">
+            <div className="publish-date">
+              Published{" "}
+              <time datetime={ISOdateString}>{post.frontmatter.date}</time> by{" "}
+              {post.frontmatter.author}
+            </div>
+            <div className="twitter-follow-button-container sm:mt-0 sm:mx-2">
+              <a
+                href="https://twitter.com/ReyTheDev?ref_src=twsrc%5Etfw"
+                class="twitter-follow-button"
+                data-show-screen-name="false"
+                data-show-count="false"
+              >
+                Follow
+              </a>
+            </div>
+          </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
         <div className="twitter-share-button-wrapper fixed w-full bottom-0 p-3 md:left-0 md:w-0 md:top-1/2 md:p-6">
@@ -54,7 +71,6 @@ export const postQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -64,6 +80,8 @@ export const postQuery = graphql`
       frontmatter {
         path
         title
+        author
+        date
         summary
         keywords
         imageAlt

@@ -2,6 +2,7 @@
   /* TEXT COLOR */
   --blog-bg-color: hsl(0, 0%, 100%);
   --blog-text-color: hsl(0, 0%, 20%);
+  --blog-text-color-lighter: hsl(0, 0%, 30%);
   --blog-header-color: #212121;
   /* BLOCKQUOTES COLOR */
   --block-bg-color: hsl(0, 0%, 98%);
@@ -19,17 +20,29 @@
   @apply pb-20;
 }
 
+/* SUBHEADER: PUBLISH DATE and FOLLOW BUTTON */
+.publish-date {
+  color: var(--blog-text-color-lighter);
+}
+
 /* FONTS and PADDING */
 
 .blog h1 {
   @apply text-4xl;
-  @apply py-12;
+  @apply pt-12;
+}
+
+.subheader-container {
+  @apply py-4;
+}
+
+.twitter-follow-button-container {
+  @apply mt-1;
 }
 
 .blog h2 {
   @apply text-3xl;
-  @apply pt-12;
-  @apply pb-4;
+  @apply py-12;
 }
 
 .blog h3 {
