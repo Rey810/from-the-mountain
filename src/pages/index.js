@@ -51,7 +51,7 @@ const IndexPage = () => {
     <Layout>
       <SEO image={image} />
       <Landing />
-      <div className="information-container relative px-4 md:px-8 lg:px-12 xl:px-16">
+      <div className="information-container relative pl-4 md:pl-8 lg:pl-12 ll:pl-16">
         <Personal />
         <Services />
         <Benefits />

@@ -51,7 +51,7 @@ const BlogPage = ({ data }) => (
                       </a>
                     </Link>
                     <div className="card-icons-container">
-                      <span className="inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm py-1 border-gray-300">
+                      <span className="inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm py-1 border-gray-300 italic">
                         {post.node.fields.readingTime.text}
                       </span>
                     </div>

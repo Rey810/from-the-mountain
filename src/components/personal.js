@@ -3,7 +3,7 @@ import React from "react"
 
 const personal = () => {
   return (
-    <section className="personal-container pb-20">
+    <section className="personal-container pb-20 pr-4">
       <div className="personal-title-container pb-8 font-bold flex flex-col sm:flex-row">
         <h1 className="personal-title ">Let's Start with A Question</h1>
       </div>

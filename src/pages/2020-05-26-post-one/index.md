@@ -4,14 +4,14 @@ date: "29 June, 2020"
 title: "The 3 Best Wellbeing Habits You Need to be a Better Developer"
 author: "Rey van den Berg"
 category: "Developer Happiness"
-summary: "There are 3 wellbeing-oriented steps to follow for true developer happiness and a better life"
-keywords: "wellbeing, meditation, sleep, developer, coding, web development, calm, habits, solution, help, advice, mental, health, healthier, mindset, mindfulness, mindful, balance, minimalism, self-help, programmer, rest, control, posture, fix, assist, coder, webdev, engineer, acuity"
+summary: "Your mental health needs these approaches to thrive at the workstation"
+keywords: "wellbeing, meditation, sleep, developer, coding, web development, calm, habits, solution, help, advice, mental, health, healthier, mindset, mindfulness, mindful, balance, minimalism, self-help, programmer, rest, control, posture, fix, assist, coder, webdev, engineer, acuity, wholesome"
 imageAttribution: "https://icons8.com"
 imageAlt: "A floating, crosslegged animated man in a hoodie totally at peace"
 featuredImage: zen-man.png
 ---
 
-## Our Mental Health and Wellbeing needs Help
+## Our Mental Health and Wellbeing Needs Help
 
 Like you, I'm someone who makes stuff for the web.
 
