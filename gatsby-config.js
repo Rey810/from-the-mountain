@@ -40,7 +40,7 @@ module.exports = {
       options: {
         useMozJpeg: true,
         stripMetadata: true,
-        defaultQuality: 75,
+        defaultQuality: 50,
       },
     },
     {
@@ -51,8 +51,15 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/avatar.jpg`, // This path is relative to the root of the site.
+        display: `minimal-ui`, // This path is relative to the root of the site.
+        icon: `src/images/avatar.png`,
+        icons: [
+          {
+            src: `/favicons/android-chrome-48x48.png`,
+            sizes: `48x48`,
+            type: `image/png`,
+          },
+        ],
       },
     },
     "gatsby-plugin-dark-mode",
