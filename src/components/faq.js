@@ -32,7 +32,7 @@ export default function FAQ() {
   }
 
   return (
-    <section className="faq-container pb-20">
+    <section className="faq-container pb-20 pr-4 md:pr-8 lg:pr-12 xl:pr-16">
       <h1 className="faq-header font-bold">
         A few questions people normally ask
       </h1>
@@ -40,7 +40,7 @@ export default function FAQ() {
         <ul className="faqs">
           <li className="faq pt-8">
             <details onToggle={toggleFocus} open>
-              <summary className="font-semibold flex items-center open">
+              <summary className="font-semibold flex items-center">
                 Do you charge per hour or per project?
               </summary>
               <p className="faq-answer pl-4 pb-4">

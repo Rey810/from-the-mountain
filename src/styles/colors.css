@@ -146,6 +146,10 @@ h6 {
   background-color: var(--color-10-1-lighter);
 }
 
+.reply-indicator {
+  color: var(--color-30-1);
+}
+
 /* This is for the 2nd cta button and the unused projects component */
 .landing-cta-2
 /* .project-code */ {
@@ -258,6 +262,15 @@ details p {
 
 .open summary {
   color: var(--color-60-1);
+}
+
+/* QUOTES */
+.quotes-container {
+  border-color: var(--color-30-1);
+}
+
+.quotes-container span {
+  border-color: var(--color-30-1);
 }
 
 /* ANIMATION */
