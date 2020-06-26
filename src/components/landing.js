@@ -2,7 +2,6 @@
 // Similar to componentDidMount and componentDidUpdate
 // useEffect gets run after initial component render
 // re-run with each new render: triggered by the state change
-import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Avatar from "../components/images/avatar"
@@ -85,15 +84,27 @@ const Landing = () => {
         </a>
       </div>
       <div className="landing-icons-container flex flex-row justify-center py-8">
-        <Link className="landing-icons icon px-4" to="/">
+        <a
+          className="landing-icons icon px-4"
+          href="https://twitter.com/ReyTheDev"
+        >
+          <FontAwesomeIcon icon={["fab", "twitter"]} />
+        </a>
+        <a className="landing-icons icon px-4" href="https://github.com/Rey810">
           <FontAwesomeIcon icon={["fab", "github"]} />
-        </Link>
-        <Link className="landing-icons icon px-4" to="/">
+        </a>
+        <a
+          className="landing-icons icon px-4"
+          href="https://www.facebook.com/reynardv"
+        >
           <FontAwesomeIcon icon={["fab", "facebook"]} />
-        </Link>
-        <Link className="landing-icons icon px-4" to="/">
-          <FontAwesomeIcon icon={["fab", "instagram"]} />
-        </Link>
+        </a>
+        <a
+          className="landing-icons icon px-4"
+          href="https://www.linkedin.com/in/rey810/"
+        >
+          <FontAwesomeIcon icon={["fab", "linkedin"]} />
+        </a>
       </div>
     </section>
   )

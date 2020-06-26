@@ -20,28 +20,28 @@ const contact = () => {
         </div>
         <div className="contact-social-container text-2xl flex flex-row justify-center pt-8">
           <a
+            className="landing-icons icon px-4"
+            href="https://twitter.com/ReyTheDev"
+          >
+            <FontAwesomeIcon icon={["fab", "twitter"]} />
+          </a>
+          <a
+            className="landing-icons icon px-4"
+            href="https://github.com/Rey810"
+          >
+            <FontAwesomeIcon icon={["fab", "github"]} />
+          </a>
+          <a
+            className="landing-icons icon px-4"
             href="https://www.facebook.com/reynardv"
-            className="contact-facebook icon mx-4"
           >
             <FontAwesomeIcon icon={["fab", "facebook"]} />
           </a>
           <a
-            href="https://www.instagram.com/rey_810/https://www.instagram.com/rey_810/"
-            className="contact-instagram icon mx-4"
-          >
-            <FontAwesomeIcon icon={["fab", "instagram"]} />
-          </a>
-          <a
+            className="landing-icons icon px-4"
             href="https://www.linkedin.com/in/rey810/"
-            className="contact-linkedin icon mx-4"
           >
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
-          </a>
-          <a
-            href="https://twitter.com/ReyTheDev"
-            className="contact-twitter icon mx-4"
-          >
-            <FontAwesomeIcon icon={["fab", "twitter"]} />
           </a>
         </div>
       </div>

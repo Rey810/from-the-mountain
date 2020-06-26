@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Subscribe from "../components/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Img from "gatsby-image"
+import Footer from "../components/footer"
 
 export default function Template({ data, location }) {
   const post = data.markdownRemark
@@ -62,6 +63,7 @@ export default function Template({ data, location }) {
           </div>
         </div>
         <Subscribe />
+        <Footer />
       </div>
     </Layout>
   )

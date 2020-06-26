@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
-
+import Footer from "../components/footer"
 import Layout from "../components/layout"
-import Menu from "../components/menu"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
@@ -63,6 +62,7 @@ const BlogPage = ({ data }) => (
         </div>
       </div>
     </section>
+    <Footer />
   </Layout>
 )
 

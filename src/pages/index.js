@@ -58,7 +58,6 @@ const IndexPage = () => {
         <Promise />
         <Toolbox />
         <FAQ />
-        {/* <Projects /> */}
         <Contact />
         <Quotes />
       </div>
