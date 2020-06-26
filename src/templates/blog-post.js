@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Menu from "../components/menu"
 import SEO from "../components/seo"
 import Subscribe from "../components/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -91,6 +90,11 @@ export const postQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 1600, maxHeight: 800) {
               ...GatsbyImageSharpFluid
+            }
+            resize(width: 1200) {
+              src
+              height
+              width
             }
           }
         }
