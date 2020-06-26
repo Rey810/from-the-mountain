@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `From The Mountain`,
-    description: `The official online destination for websites built by Rey van den Berg. This is also a place where he talks about his journey as a developer, traveller, and human.`,
-    author: `@ReyTheDev`,
-    keywords: `freelance, portfolio, developer, travel, freelance`,
+    description: `Need a web developer? I'll build your idea of a perfect website. Come on in, let's have a chat about making that idea a reality.`,
+    author: `Rey van den Berg`,
+    keywords: `freelance, portfolio, developer, freelancer, web developer, coder, programmer, javascript developer, react developer, rails developer, business, web consultant, website builder, need website`,
     googleSiteVerification: "zUF4k-2XdAVgIl5-MbijxBudeCAmYgB5Q7CCojbrAOg",
     siteUrl: "https://www.fromthemountain.co.za",
-    image: "laptop_patio.jpg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
