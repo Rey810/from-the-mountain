@@ -78,7 +78,7 @@ const Landing = () => {
           Let's Connect!
         </button> */}
         <a
-          href="mailto:hi@fromthemountain.co.za?subject=%20Rey!%20Let's%20Chat&body=Hi%20Rey!\nI'm%20keen%20to%20chat%20about%20working%20together%20:)/nI%20look%20forward%20to%20hearing%20how%20we%20can%20take%20things%20forwards!/nCheers,%20/n-Insert%20name%20here,%20if you want%20:)"
+          href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!&#10;I'm%20keen%20to%20chat%20about%20working%20together%20:)&#10;I%20look%20forward%20to%20hearing%20how%20we%20can%20take%20things%20forwards!&#10;Cheers,%20&#10;-Insert%20name%20here,%20if you want%20:)"
           className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-md shadow-md font-semibold"
         >
           hi@fromthemountain.co.za
