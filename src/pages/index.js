@@ -6,12 +6,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { fab } from "@fortawesome/free-brands-svg-icons"
-import {
-  faCode,
-  faCoffee,
-  faBeer,
-  faCheckCircle,
-} from "@fortawesome/free-solid-svg-icons"
+import { faCheckCircle } from "@fortawesome/free-regular-svg-icons"
+import { faCode, faCoffee, faBeer } from "@fortawesome/free-solid-svg-icons"
 
 // Components of Landing Page
 import Landing from "../components/landing"

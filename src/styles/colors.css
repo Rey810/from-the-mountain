@@ -16,9 +16,8 @@
   --color-60-light: hsl(124, 80%, 96%);
   --color-60-medium: #313131;
   --color-60-dark: #212121;
-  --color-30-1: #9999cc;
-  --color-10-1: #3bde74;
-
+  --color-30-1: rgba(255, 255, 255, 0.795);
+  --color-10-1: hsl(141, 69%, 54%);
   --color-10-1-lighter: hsl(141, 87%, 64%);
 
   /* Overlay Colours */
@@ -182,13 +181,11 @@ h6 {
 /*/////////////*/
 /* LIST ITEMS */
 /*///////////*/
-.promises-container div,
-.all-benefits-container div {
+.promises-container div {
   counter-increment: promise-counter;
 }
 
-.promises-container div h6:before,
-.benefit-container div p:before {
+.promises-container div h6:before {
   content: counter(promise-counter);
   padding: 0.1em 0.5em;
   background-color: var(--color-30-1);
@@ -202,6 +199,10 @@ h6 {
   width: max-content;
   height: max-content;
   font-size: 75%;
+}
+
+.benefit-icon {
+  color: var(--color-10-1);
 }
 /*//////////*/
 /* TOOLBOX */
