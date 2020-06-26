@@ -6,7 +6,7 @@ const services = () => {
     title: "Have a Website that Works",
     description:
       "You want a website. It must look great and you want it to work.. all the time. Well, that's why I'm here! I help you by designing, building, and hosting a beautiful site that'll make you a very proud owner. Promise.",
-    icon: "code",
+    icon: "award",
   }
 
   const service2 = {
@@ -20,14 +20,14 @@ const services = () => {
     title: "Sell your Stuff Online",
     description:
       "You have an idea. You want to turn it into an online business without learning all the technical stuff like digital marketing, branding, and the inner workings of online sales dynamics. I'm here to help.",
-    icon: "coffee",
+    icon: "shopping-cart",
   }
 
   const service4 = {
     title: "Become Famous",
     description:
       "Google decides your fame by ranking you. A bad ranking means less people see your fantastic blog post or revolutionary product. I ensure you have a great ranking with best SEO practices. Give your content the audience it deserves. Who knows, you might get famous.",
-    icon: "beer",
+    icon: ["far", "thumbs-up"],
   }
 
   return (

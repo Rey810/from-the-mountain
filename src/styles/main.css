@@ -3,6 +3,15 @@
 /*////////*/
 /*General*/
 /*//////*/
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+}
 /* FONT FAMILIES */
 html {
   scroll-behavior: smooth;

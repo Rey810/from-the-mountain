@@ -40,6 +40,19 @@
 body {
   background-color: var(--color-60-dark);
   color: var(--color-60-light);
+  scrollbar-color: rgb(83, 83, 83) #333;
+}
+
+body::-webkit-scrollbar {
+  color: #333;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(83, 83, 83);
+  border-radius: 6px;
 }
 
 header {
@@ -175,8 +188,12 @@ h6 {
   color: var(--color-10-1-lighter);
 }
 
-.service-card svg {
-  color: var(--color-60-medium);
+.service-card .icon-container {
+  background-color: var(--color-60-medium);
+}
+
+.service-card-icon {
+  color: var(--color-30-1);
 }
 /*/////////////*/
 /* LIST ITEMS */
@@ -202,8 +219,9 @@ h6 {
 }
 
 .benefit-icon {
-  color: var(--color-10-1);
+  color: var(--color-60-lighter);
 }
+
 /*//////////*/
 /* TOOLBOX */
 /*////////*/

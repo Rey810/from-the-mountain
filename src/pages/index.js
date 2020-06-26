@@ -6,8 +6,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faCheckCircle } from "@fortawesome/free-regular-svg-icons"
-import { faCode, faCoffee, faBeer } from "@fortawesome/free-solid-svg-icons"
+import { faCheckCircle, faThumbsUp } from "@fortawesome/free-regular-svg-icons"
+import {
+  faCode,
+  faShoppingCart,
+  faAward,
+} from "@fortawesome/free-solid-svg-icons"
 
 // Components of Landing Page
 import Landing from "../components/landing"
@@ -24,7 +28,7 @@ import { siteMetadata } from "../../gatsby-config"
 
 // FONT AWESOME
 // fab represenets all of the brand icons
-library.add(fab, faCode, faCoffee, faBeer, faCheckCircle)
+library.add(fab, faCode, faCheckCircle, faThumbsUp, faShoppingCart, faAward)
 // fixes huge Font Awesome icon on load by inlining CSS
 config.autoAddCss = false
 
