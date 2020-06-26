@@ -77,10 +77,7 @@ const Landing = () => {
         {/* <button className="landing-cta-1 py-4 px-8 mx-auto  my-2 rounded-md shadow-md font-semibold w-64 md:w-1/3 lg:w-1/5 xl:w-1/7 md:mx-2">
           Let's Connect!
         </button> */}
-        <a
-          href="mailto:rey@fromthemountain.co.za"
-          className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-md shadow-md font-semibold w-64"
-        >
+        <a href="mailto:hi@fromthemountain.co.za?subject=%20Rey!%20Let's%20Chat&body=Hi%20Rey!\nI'm%20keen%20to%20chat%20about%20working%20together%20:)/nI%20look%20forward%20to%20hearing%20how%20we%20can%20take%20things%20forwards!/nCheers,%20/n-Insert%20name%20here,%20if you want%20:)">
           hi@fromthemountain.co.za
         </a>
       </div>
