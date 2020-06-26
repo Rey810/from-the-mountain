@@ -6,7 +6,7 @@ const toolboxCard = props => {
     <>
       <div
         className="toolbox-card card-color ml-2 mr-6 mb-8 py-8 pl-8 pr-2
-rounded-md shadow-md md:w-64 md:py-10 md:pl-10 md:pr-4 md:shadow-lg lg:w-full"
+rounded-md shadow-md sm:w-3/4 md:w-2/3 lg:w-64 lg:py-10 lg:pl-10 lg:pr-4 lg:shadow-lg lg:w-full"
       >
         <h6 className="toolbox-card-header pb-8 font-bold">{title}</h6>
         <div className="tools-container">
