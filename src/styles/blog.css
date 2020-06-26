@@ -1,4 +1,14 @@
+/*///////////////////*/
+/* BLOG CARD COLOR */
+/*////////////////*/
+.blog-post-card {
+  --blog-card-link-color: hsl(175, 41%, 65%);
+}
+
 .blog-container {
+  /*////////////////////*/
+  /* BLOG POST COLORS */
+  /*/////////////////*/
   /* TEXT COLOR */
   --blog-bg-color: hsl(0, 0%, 100%);
   --blog-text-color: hsl(0, 0%, 20%);
@@ -111,6 +121,10 @@
 /* COLOURS */
 .blog-container {
   background-color: var(--blog-bg-color);
+}
+
+.blog-post-card .read-more-link {
+  color: var(--blog-card-link-color);
 }
 
 .blog h1,

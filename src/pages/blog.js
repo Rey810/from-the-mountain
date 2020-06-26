@@ -15,7 +15,7 @@ const BlogPage = ({ data }) => (
       <div class="container py-12">
         <div class="flex flex-wrap -m-4">
           {data.allMarkdownRemark.edges.map(post => (
-            <div className="p-4 md:w-1/2 lg:w-1/3">
+            <div className="blog-post-card p-4 md:w-1/2 lg:w-1/3">
               <div className="h-full border-2 rounded-lg overflow-hidden">
                 <Img
                   fluid={
@@ -34,7 +34,7 @@ const BlogPage = ({ data }) => (
                   </p>
                   <div className="flex justify-between items-center flex-wrap ">
                     <Link to={post.node.frontmatter.path}>
-                      <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      <a className="read-more-link inline-flex items-center md:mb-2 lg:mb-0">
                         Read More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -51,34 +51,8 @@ const BlogPage = ({ data }) => (
                       </a>
                     </Link>
                     <div className="card-icons-container">
-                      <span className=" mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
-                        <svg
-                          className="w-4 h-4 mr-1"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                          <circle cx="12" cy="12" r="3"></circle>
-                        </svg>
-                        1.2K
-                      </span>
-                      <span className=" inline-flex items-center leading-none text-sm">
-                        <svg
-                          className="w-4 h-4 mr-1"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                        </svg>
-                        6
+                      <span className="inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm py-1 border-gray-300">
+                        {post.node.fields.readingTime.text}
                       </span>
                     </div>
                   </div>
@@ -111,6 +85,11 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+            }
+          }
+          fields {
+            readingTime {
+              text
             }
           }
         }
