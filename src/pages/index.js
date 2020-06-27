@@ -57,7 +57,7 @@ const IndexPage = () => {
   `)
   const image = data.placeholderImage.childImageSharp.resize
   return (
-    <Layout>
+    <Layout usesLinksHeader={true}>
       <SEO image={image} />
       <Landing />
       <div className="information-container relative pl-4 md:pl-8 lg:pl-12 xl:pl-16">

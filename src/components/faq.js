@@ -39,7 +39,7 @@ export default function FAQ() {
       <div className="faq-list-container md:w-2/3 lg:w-7/12">
         <ul className="faqs">
           <li className="faq pt-8">
-            <details onToggle={toggleFocus} open>
+            <details onToggle={toggleFocus} className="open" open>
               <summary className="font-semibold flex items-center">
                 Do you charge per hour or per project?
               </summary>
