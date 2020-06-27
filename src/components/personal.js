@@ -9,19 +9,18 @@ const personal = () => {
       </div>
       <div className="personal-description-container md:w-2/3 lg:w-7/12">
         <p className="personal-description pb-4 ">
-          What comes to mind when I say "the perfect website"? To me, it's
-          <strong> amazing looks</strong>, <strong> a fast load time</strong>,
-          <strong> ease of use</strong>, <strong> uncomplicated</strong>.
+          What comes to mind when you hear 'The Perfect Website'? I picture a
+          site that has amazing looks, fast load-times, ease-of-use and no
+          complications.
         </p>
         <p className="personal-description pb-4">
-          To you, it might be one that <strong>generates sales</strong>,
-          <strong>attracts subscribers</strong>,
-          <strong>brings across a clear message</strong>.
+          Maybe you picture a site that generates loads of sales, attracts
+          subscribers, and brings across a clear message.
         </p>
         <p className="personal-description pb-10">
-          And that's why you might enjoy working with me - I build with an eye
-          for precision so that when you close your eyes and imagine the perfect
-          site, you see <em>yours</em>.
+          And that's why you might enjoy working with me - I build with a
+          goal-oriented eye for precision. That means when we're done, you can
+          close your eyes and picture <em>yours</em> as The Perfect Website.
         </p>
         <Link to="/blog" className="my-2">
           <button className="landing-cta-2 py-2 px-8 border border-solid rounded-md">

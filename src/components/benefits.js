@@ -6,13 +6,13 @@ export default function benefits() {
     <section className="benefit-container pb-20">
       <h1 className="benefits-header font-bold pb-8">Benefits</h1>
       <div className="all-benefits-container md:grid md:grid-cols-2 md:grid-rows-3 md:col-gap-2">
-        <div className="benefit-1-container flex flex-row items-center">
+        <div className="benefit-1-container flex flex-row items-center md:pt-4">
           <FontAwesomeIcon
             icon={["far", "check-circle"]}
             size="lg"
             className="benefit-icon"
           />
-          <p className="benefit-header  pl-2">
+          <p className="benefit-header pl-2">
             Attract clients who value quality
           </p>
         </div>

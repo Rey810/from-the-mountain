@@ -215,20 +215,12 @@ h6 {
   counter-increment: promise-counter;
 }
 
-.promises-container div h6:before {
-  content: counter(promise-counter);
+.promise-header-container div {
   padding: 0.1em 0.5em;
+  width: 2em;
+  height: 2em;
   background-color: var(--color-30-1);
   color: var(--color-60-medium);
-  border-radius: 100%;
-  text-align: center;
-  margin-right: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
-  height: max-content;
-  font-size: 75%;
 }
 
 .benefit-icon {
