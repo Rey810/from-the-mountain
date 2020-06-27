@@ -5,6 +5,7 @@ import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import Subscribe from "../components/subscribe"
 
 const BlogPage = ({ data }) => (
   <Layout canSeeHeader={true}>
@@ -62,6 +63,7 @@ const BlogPage = ({ data }) => (
         </div>
       </div>
     </section>
+    <Subscribe />
     <Footer />
   </Layout>
 )

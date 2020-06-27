@@ -43,7 +43,7 @@ const Landing = () => {
   return (
     <section
       id="What-I-Do"
-      className="landing-container pt-10 pb-20 my-auto mx-auto"
+      className="landing-container pt-10 pb-20 my-auto mx-auto xl:pb-32"
     >
       <div className="bg-image-container fixed -z-20 top-0 left-0 bottom-0 w-full">
         <Background blur={darken} />
@@ -65,10 +65,10 @@ const Landing = () => {
         <h1 className="landing-title leading-none font-extrabold text-center">
           Freelance Developer
         </h1>
-        <h6 className="landing-description text-center pt-8 px-8 mx-auto md:w-3/4">
+        <p className="landing-description text-center pt-8 px-8 mx-auto md:w-3/4">
           I help people turn their ideas into websites & apps that work.
           Professional and Cost-Effective. Always.
-        </h6>
+        </p>
       </main>
       <div className="landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center md:items-center">
         <a
@@ -77,7 +77,7 @@ const Landing = () => {
         >
           hi@fromthemountain.co.za
         </a>
-        <div className="view-projects-container py-4 px-8 mx-auto md:mr-0 md:ml-4 shadow-md font-semibold">
+        <div className="view-projects-container py-4 px-8 mx-auto md:mr-0 md:ml-4 font-semibold">
           <Link to="/projects" className="flex flex-row items-center">
             <div className="view-projects-icon-container h-8 w-8 mx-2 border-solid border rounded-full flex justify-center items-center">
               <FontAwesomeIcon icon={"chevron-right"} />

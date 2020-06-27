@@ -4,8 +4,8 @@ import SubscriptionForm from "../components/subscriptionForm"
 export default function subscribe() {
   return (
     <section
-      id="connect-section"
-      className="flex flex-col sm:flex-row rounded-lg mx-auto px-4 my-20 sm:w-10/12 md:w-2/3"
+      id="connect"
+      className="flex flex-col sm:flex-row rounded-lg mx-auto px-4 pt-16 my-20 sm:w-10/12 md:w-2/3"
     >
       <div className="subscribe-text bg-gray-200 p-8 flex flex-col w-full sm:w-1/2 mt-0">
         <h1 className="text-gray-900 text-2xl font-medium">

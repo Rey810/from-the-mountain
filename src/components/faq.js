@@ -32,18 +32,18 @@ export default function FAQ() {
   }
 
   return (
-    <section className="faq-container pb-20 pr-4 md:pr-8 lg:pr-12 xl:pr-16">
+    <section className="faq-container pb-20 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32">
       <h1 className="faq-header font-bold">
         A few questions people normally ask
       </h1>
       <div className="faq-list-container md:w-2/3 lg:w-7/12">
         <ul className="faqs">
           <li className="faq pt-8">
-            <details onToggle={toggleFocus} className="open" open>
+            <details onToggle={toggleFocus} className="open py-8" open>
               <summary className="font-semibold flex items-center">
                 Do you charge per hour or per project?
               </summary>
-              <p className="faq-answer pl-4 pb-4">
+              <p className="faq-answer pl-4 py-4">
                 Charging per project works better for you and me. You know the
                 price upfront and I can focus on creating something great
                 without counting the hours ;)
@@ -53,11 +53,11 @@ export default function FAQ() {
           <hr />
           {faqs.map(faq => (
             <li key={uuid()} className="faq">
-              <details key={uuid()} onToggle={toggleFocus}>
+              <details key={uuid()} onToggle={toggleFocus} className="py-8">
                 <summary className="font-semibold flex items-center">
                   {faq.question}
                 </summary>
-                <p className="faq-answer pl-4 pb-4">{faq.answer}</p>
+                <p className="faq-answer pl-4 py-4">{faq.answer}</p>
               </details>
               <hr />
             </li>

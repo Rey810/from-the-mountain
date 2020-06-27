@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 // Font Awesome Icons
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
@@ -42,25 +42,11 @@ library.add(
 config.autoAddCss = false
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "laptop_patio.jpg" }) {
-        childImageSharp {
-          resize(width: 1200) {
-            src
-            height
-            width
-          }
-        }
-      }
-    }
-  `)
-  const image = data.placeholderImage.childImageSharp.resize
   return (
     <Layout usesLinksHeader={true}>
-      <SEO image={image} />
+      <SEO />
       <Landing />
-      <div className="information-container relative pl-4 md:pl-8 lg:pl-12 xl:pl-16">
+      <div className="information-container">
         <Personal />
         <Services />
         <Benefits />

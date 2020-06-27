@@ -31,7 +31,7 @@ const Header = ({ siteTitle, canSee = false, isLinksHeader = false }) => {
 
   return (
     <header
-      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full py-3 px-4 md:px-8 lg:px-12 xl:px-16 shadow ${
+      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full py-3 px-4 md:px-8 lg:px-12 xl:px-16 ${
         visible ? "visible" : ""
       }`}
     >
@@ -59,7 +59,7 @@ const Header = ({ siteTitle, canSee = false, isLinksHeader = false }) => {
             </Link>
           </div>
         ) : (
-          <a href="#Connect" className="contact-mail mx-auto">
+          <a href="#connect" className="contact-mail mx-auto">
             <button className="contact-button header-contact-button center py-2 px-6 font-semibold shadow-md rounded-full">
               Let's Connect!
             </button>

@@ -12,7 +12,17 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: thin;
 }
+
+/* ///////////// */
+/* LINE HEIGHTS */
+/* /////////// */
+p {
+  line-height: 1.75;
+}
+
+/* /////////////// */
 /* FONT FAMILIES */
+/* //////////// */
 html {
   scroll-behavior: smooth;
 }
@@ -162,6 +172,12 @@ summary {
 
   .view-projects-icon-container {
     @apply text-lg;
+  }
+}
+
+@screen xl {
+  html {
+    font-size: 18px;
   }
 }
 

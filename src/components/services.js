@@ -31,13 +31,16 @@ const services = () => {
   }
 
   return (
-    <section className="services-container pb-20 ">
-      <h1 className="services-header pb-8 font-bold">Ways I Can Help You</h1>
+    <section className="services-container pb-20 xl:pb-32 ">
+      <h1 className="services-header pb-8 font-bold px-4 md:px-8 lg:px-12 xl:px-16">
+        Ways I Can Help You
+      </h1>
       <div className="serviceCards-container flex flex-no-wrap px-2 overflow-x-auto scrolling-touch">
         <ServiceCard
           title={service1.title}
           description={service1.description}
           icon={service1.icon}
+          margin={"ml-4 md:ml-8 lg:ml-12 xl:ml-16"}
         />
         <ServiceCard
           title={service2.title}
@@ -55,7 +58,7 @@ const services = () => {
           icon={service4.icon}
         />
       </div>
-      <div className="cta pl-4 pt-4">
+      <div className="cta pt-4 px-4 md:px-8 lg:px-12 xl:px-16">
         Interested?{" "}
         <a href="mailto:reyvdb@gmail.com" className="text-link">
           hello@mountain.co.za
