@@ -4,7 +4,11 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 
-const Layout = ({ children, canSeeHeader = false }) => {
+const Layout = ({
+  children,
+  canSeeHeader = false,
+  usesLinksHeader = false,
+}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -17,7 +21,11 @@ const Layout = ({ children, canSeeHeader = false }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} canSee={canSeeHeader} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        canSee={canSeeHeader}
+        isLinksHeader={usesLinksHeader}
+      />
       <main>{children}</main>
     </>
   )

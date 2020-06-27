@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Avatar from "../components/images/avatar"
 import Background from "../components/images/background"
+import { Link } from "gatsby"
 
 const Landing = () => {
   // const [goal, setGoal] = useState("Fans")
@@ -40,10 +41,7 @@ const Landing = () => {
   // })
 
   return (
-    <section
-      id="connect-section"
-      className="landing-container pt-10 pb-20 my-auto"
-    >
+    <section id="What-I-Do" className="landing-container pt-10 pb-20 my-auto">
       <div className="bg-image-container fixed -z-20 top-0 left-0 bottom-0 w-full">
         <Background blur={darken} />
       </div>
@@ -56,32 +54,34 @@ const Landing = () => {
         <div className="avater-image-container relative w-16">
           <Avatar />
         </div>
+        <div className="landing-name-container flex items-center pl-4">
+          <span className="name font-semibold">Rey van den Berg</span>
+        </div>
       </div>
       <main className="landing-container ">
         <h1 className="landing-title leading-none font-extrabold text-center">
-          Get More <span className="goals">Fans</span>
+          Freelance Developer
         </h1>
-        <h6 className="landing-description text-center pt-8 px-8 font-semibold">
-          <span className="landing-description__first">Easy.</span>
-          <span className="landing-description__second"> Cost-Effective.</span>
-          <span className="landing-description__third"> Professional.</span>
+        <h6 className="landing-description text-center pt-8 px-8 ">
+          I help people turn their ideas into websites & apps that work.
+          Professional and Cost-Effective. Always.
         </h6>
       </main>
-      <div className="landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center">
-        {/* <input
-          className="email-field mx-auto border py-4 px-4 my-2 rounded-md w-64 shadow-sm md:w-1/3 lg:w-1/5 xl:w-1/7 md:mx-2"
-          type="email"
-          placeholder="Your email..."
-        /> */}
-        {/* <button className="landing-cta-1 py-4 px-8 mx-auto  my-2 rounded-md shadow-md font-semibold w-64 md:w-1/3 lg:w-1/5 xl:w-1/7 md:mx-2">
-          Let's Connect!
-        </button> */}
+      <div className="landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center md:items-center">
         <a
           href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!%0D%0AI'm%20keen%20to%20chat%20about%20working%20together%20:)%0D%0AI%20look%20forward%20to%20hearing%20how%20we%20can%20take%20things%20forwards!%0D%0ACheers,%20%0D%0A-Insert%20name%20here,%20if you want%20:)"
-          className="landing-cta-1 py-4 px-8 mx-auto my-2 rounded-md shadow-md font-semibold"
+          className="landing-cta-1 py-4 px-8 mx-auto md:ml-0 md:mr-4 my-2 rounded-md shadow-md font-semibold"
         >
           hi@fromthemountain.co.za
         </a>
+        <div className="view-projects-container py-4 px-8 mx-auto md:mr-0 md:ml-4 shadow-md font-semibold">
+          <Link to="/projects" className="flex flex-row items-center">
+            <div className="view-projects-icon-container h-8 w-8 mx-2 border-solid border rounded-full flex justify-center items-center">
+              <FontAwesomeIcon icon={"chevron-right"} />
+            </div>
+            <span>View Projects</span>
+          </Link>
+        </div>
       </div>
       <div className="landing-icons-container flex flex-row justify-center py-8">
         <a

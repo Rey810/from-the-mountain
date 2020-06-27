@@ -78,6 +78,14 @@ summary {
 .icon {
   @apply text-lg;
 }
+.view-projects-icon-container {
+  @apply text-xs;
+}
+
+.view-projects-container:hover {
+  @apply underline;
+  text-decoration-color: ;
+}
 
 /*//////////////////*/
 /* FLUID TYPOGRAPHY */
@@ -113,6 +121,15 @@ summary {
   .contact-button {
     @apply text-4xl;
   }
+
+  /* Icons */
+  .icon {
+    @apply text-xl;
+  }
+
+  .view-projects-icon-container {
+    @apply text-sm;
+  }
 }
 
 @screen lg {
@@ -136,6 +153,15 @@ summary {
 
   .contact-header {
     @apply text-6xl;
+  }
+
+  /* Icons */
+  .icon {
+    @apply text-2xl;
+  }
+
+  .view-projects-icon-container {
+    @apply text-lg;
   }
 }
 

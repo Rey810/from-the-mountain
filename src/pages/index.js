@@ -11,6 +11,7 @@ import {
   faCode,
   faShoppingCart,
   faAward,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 
 // Components of Landing Page
@@ -28,7 +29,15 @@ import { siteMetadata } from "../../gatsby-config"
 
 // FONT AWESOME
 // fab represenets all of the brand icons
-library.add(fab, faCode, faCheckCircle, faThumbsUp, faShoppingCart, faAward)
+library.add(
+  fab,
+  faCode,
+  faCheckCircle,
+  faThumbsUp,
+  faShoppingCart,
+  faAward,
+  faChevronRight
+)
 // fixes huge Font Awesome icon on load by inlining CSS
 config.autoAddCss = false
 
@@ -56,7 +65,6 @@ const IndexPage = () => {
         <Services />
         <Benefits />
         <Promise />
-        <Toolbox />
         <FAQ />
         <Contact />
         <Quotes />

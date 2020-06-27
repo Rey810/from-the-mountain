@@ -130,6 +130,15 @@ h6 {
   background-color: var(--color-10-1);
 }
 
+.view-projects-container {
+  color: var(--color-10-1);
+}
+
+.view-projects-icon-container {
+  color: var(--color-10-1);
+  border-color: var(--color-10-1);
+}
+
 .email-field {
   background-color: var(--color-60-light);
   color: var(--color-60-medium);
