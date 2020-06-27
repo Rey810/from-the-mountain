@@ -13,7 +13,7 @@ const contact = () => {
       <div className="contact-options-container flex flex-col pb-6">
         <div className="button-container mx-auto">
           <a href="mailto:reyvdb@gmail.com" className="contact-mail">
-            <button className="contact-button center py-4 px-24 my-2 font-semibold shadow-md rounded-full">
+            <button className="contact-button w-mc center my-2 py-4 px-20 md:py-8 font-semibold shadow-md rounded-full">
               Chat with Rey
             </button>
           </a>

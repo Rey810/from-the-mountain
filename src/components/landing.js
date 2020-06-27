@@ -41,7 +41,10 @@ const Landing = () => {
   // })
 
   return (
-    <section id="What-I-Do" className="landing-container pt-10 pb-20 my-auto">
+    <section
+      id="What-I-Do"
+      className="landing-container pt-10 pb-20 my-auto mx-auto"
+    >
       <div className="bg-image-container fixed -z-20 top-0 left-0 bottom-0 w-full">
         <Background blur={darken} />
       </div>
@@ -62,7 +65,7 @@ const Landing = () => {
         <h1 className="landing-title leading-none font-extrabold text-center">
           Freelance Developer
         </h1>
-        <h6 className="landing-description text-center pt-8 px-8 ">
+        <h6 className="landing-description text-center pt-8 px-8 mx-auto md:w-3/4">
           I help people turn their ideas into websites & apps that work.
           Professional and Cost-Effective. Always.
         </h6>
