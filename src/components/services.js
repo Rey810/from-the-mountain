@@ -31,9 +31,9 @@ const services = () => {
   }
 
   return (
-    <section className="services-container pb-20 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32 ">
+    <section className="services-container pb-20 pl-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32 ">
       <h1 className="services-header pb-8 font-bold ">Ways I Can Help You</h1>
-      <div className="serviceCards-container flex flex-no-wrap px-2 overflow-x-auto scrolling-touch md:grid md:grid-cols-2 md:gap-4 md:pl-0 lg:w-3/4 lg:gap-8 xl:gap-12">
+      <div className="serviceCards-container flex flex-no-wrap px-2 overflow-x-auto scrolling-touch md:grid md:grid-cols-2 md:gap-4 md:pl-0 lg:w-3/4 lg:gap-8 xl:w-1/1 xl:gap-12 xl:mr-auto">
         <ServiceCard
           title={service1.title}
           description={service1.description}

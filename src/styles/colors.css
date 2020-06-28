@@ -15,7 +15,7 @@
   --color-60-lighter: #ffffff;
   --color-60-light: hsl(124, 80%, 96%);
   --color-60-medium: #313131;
-  --color-60-dark: #212121;
+  --color-60-dark: #1f1f1f;
   --color-30-1: rgba(255, 255, 255, 0.795);
   --color-10-1: #ec4e20;
   --color-10-1-lighter: hsl(141, 87%, 64%);
@@ -23,6 +23,14 @@
   /* Overlay Colours */
   --initial-color-overlay: hsla(0, 0%, 12%, 0.5);
   --final-colour-overlay: hsla(0, 0%, 12%, 0.8);
+
+  /* Card Colours */
+  --card-bg-color: hsla(0, 0%, 12%, 0.65);
+  --card-header-color: #ffffff;
+  --card-text-color: #ffffffd2;
+
+  /* FAQ Colours */
+  --faq-bg-color: hsla(0, 0%, 12%, 0.8);
 }
 
 /* REVISIT AND REFACTOR COLOURS USING CALC
@@ -36,7 +44,6 @@
     --bg-color: #161625;
     --heading-color: #818cab;
 } */
-
 body {
   background-color: var(--color-60-dark);
   color: var(--color-60-light);
@@ -201,13 +208,30 @@ h6 {
   color: var(--color-10-1-lighter);
 }
 
+.service-card {
+  background-color: var(--card-bg-color);
+}
+
 .service-card .icon-container {
-  background-color: var(--color-60-medium);
+  background-color: var(--card-header-color);
+}
+
+.service-card .icon-container svg {
+  color: var(--color-60-dark);
 }
 
 .service-card-icon {
-  color: var(--color-30-1);
+  color: var(--card-header-color);
 }
+
+.service-card h6 {
+  color: var(--card-header-color);
+}
+
+.service-card p {
+  color: var(--card-text-color);
+}
+
 /*/////////////*/
 /* LIST ITEMS */
 /*///////////*/
@@ -245,14 +269,16 @@ summary::before {
   content: "+";
   color: var(--color-30-1);
   font-size: 1.5em;
-  padding: 0 0.5em;
+  padding: 0 0.5rem 0 0;
 }
 
 summary {
   color: var(--color-30-1);
+  background-color: var(--faq-bg-color);
 }
 
 details p {
+  background-color: var(--faq-bg-color);
   color: var(--color-60-light);
 }
 
