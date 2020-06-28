@@ -245,7 +245,7 @@ summary::before {
   content: "+";
   color: var(--color-30-1);
   font-size: 1.5em;
-  padding: 0.5em;
+  padding: 0 0.5em;
 }
 
 summary {
