@@ -73,9 +73,9 @@ const Landing = () => {
       <div className="landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center md:items-center">
         <a
           href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!%0D%0AI'm%20keen%20to%20chat%20about%20working%20together%20:)%0D%0AI%20look%20forward%20to%20hearing%20how%20we%20can%20take%20things%20forwards!%0D%0ACheers,%20%0D%0A-Insert%20name%20here,%20if you want%20:)"
-          className="landing-cta-1 py-4 px-8 mx-auto md:ml-0 md:mr-4 my-2 rounded-md shadow-md font-semibold"
+          className="landing-cta-1 py-4 px-12 mx-auto md:ml-0 md:mr-4 my-2 rounded-md shadow-md font-semibold"
         >
-          hi@fromthemountain.co.za
+          Chat with Rey
         </a>
         <div className="view-projects-container py-4 px-8 mx-auto md:mr-0 md:ml-4 font-semibold">
           <Link to="/projects" className="flex flex-row items-center">

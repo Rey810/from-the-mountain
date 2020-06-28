@@ -5,20 +5,22 @@ const contact = () => {
   return (
     <section
       id="Connect"
-      className="contact-container pt-0 pb-8 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32"
+      className="contact-container pt-0 pb-8 px-4 md:px-8 lg:px-12 xl:px-16"
     >
-      <h1 className="contact-header pb-8 font-bold md:mx-auto md:w-3/4">
+      <h1 className="contact-header pb-8 font-bold text-center md:mx-auto md:w-3/4">
         Sweet, that's me! Now it's your turn to say hi.
       </h1>
       <div className="contact-options-container flex flex-col pb-6">
         <div className="button-container mx-auto">
           <a href="mailto:reyvdb@gmail.com" className="contact-mail">
-            <button className="contact-button w-mc center my-2 py-4 px-20 md:py-8 font-semibold shadow-md rounded-full">
+            <button className="contact-button w-mc center my-2 py-4 px-20 font-semibold shadow-md rounded-md md:py-8">
               Chat with Rey
             </button>
           </a>
           <div className="reply-indicator-container text-center">
-            <span className="reply-indicator">will reply within 24hrs</span>
+            <span className="reply-indicator">
+              or email directly at hi@fromthemountain.co.za
+            </span>
           </div>
         </div>
         <div className="contact-social-container text-2xl flex flex-row justify-center pt-8">

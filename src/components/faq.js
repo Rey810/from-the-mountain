@@ -4,6 +4,11 @@ import uuid from "react-uuid"
 export default function FAQ() {
   const faqs = [
     {
+      question: "Do you charge per hour or per project?",
+      answer:
+        "Charging per project works better for you and me. You know the price upfront and I can focus on creating something great without counting the hours ;)",
+    },
+    {
       question: "How often will we be in contact?",
       answer:
         "I promised to keep a healthy relationship with you. If that means a call every day, cool. If it means keeping in touch through a weekly email exchange, cool. Whatever works for you. Remember, I'm here to make your life easier, not more complicated.",
@@ -38,19 +43,6 @@ export default function FAQ() {
       </h1>
       <div className="faq-list-container md:w-2/3 lg:w-7/12">
         <ul className="faqs">
-          <li className="faq pt-8">
-            <details onToggle={toggleFocus} className="open py-10" open>
-              <summary className="font-semibold flex items-center">
-                Do you charge per hour or per project?
-              </summary>
-              <p className="faq-answer pl-4 py-4">
-                Charging per project works better for you and me. You know the
-                price upfront and I can focus on creating something great
-                without counting the hours ;)
-              </p>
-            </details>
-          </li>
-          <hr />
           {faqs.map(faq => (
             <li key={uuid()} className="faq">
               <details key={uuid()} onToggle={toggleFocus} className="py-10">
@@ -59,7 +51,6 @@ export default function FAQ() {
                 </summary>
                 <p className="faq-answer pl-4 py-4">{faq.answer}</p>
               </details>
-              <hr />
             </li>
           ))}
         </ul>
