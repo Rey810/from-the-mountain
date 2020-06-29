@@ -176,12 +176,12 @@ li {
   border: 1px solid var(--button-color);
 }
 
-.subscribe-button {
+.custom-subscribe-button {
   background-color: var(--button-color);
   color: var(--button-text-color);
 }
 
-.subscribe-button:hover {
+.custom-subscribe-button:hover {
   background-color: var(--button-hover-color);
 }
 

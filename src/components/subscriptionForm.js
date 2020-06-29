@@ -98,7 +98,7 @@ const SubscriptionForm = ({ tags }) => {
       {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
 
       <button
-        className={`subscribe-button text-white text-lg font-semibold border-0 py-2 px-8 rounded ${
+        className={`custom-subscribe-button text-white text-lg font-semibold border-0 py-2 px-8 rounded ${
           status === "SUCCESS" ? "hidden" : ""
         }`}
         type="submit"
