@@ -263,7 +263,7 @@ h6 {
 /* FAQ */
 
 .faq-list-container li {
-  background-color: var(--faq-bg-color);
+  background-color: var(--card-bg-color);
 }
 
 summary::-webkit-details-marker {

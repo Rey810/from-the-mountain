@@ -45,15 +45,15 @@ export default function FAQ() {
       <div className="faq-list-container md:w-2/3 lg:w-7/12">
         <ul className="faqs">
           {faqs.map(faq => (
-            <li key={uuid()} className="faq py-4 my-10 rounded-md">
+            <li key={uuid()} className="faq p-6 my-10 rounded-md">
               <details key={uuid()} onToggle={toggleFocus}>
-                <summary className="font-semibold flex flex-row items-baseline px-4">
+                <summary className="font-semibold flex flex-row items-baseline">
                   <span className="faq-icon-container flex text-base pr-2">
                     <FontAwesomeIcon icon="chevron-down"></FontAwesomeIcon>
                   </span>
                   {faq.question}
                 </summary>
-                <p className="faq-answer p-4">{faq.answer}</p>
+                <p className="faq-answer py-4">{faq.answer}</p>
               </details>
             </li>
           ))}
