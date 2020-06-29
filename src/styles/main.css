@@ -176,11 +176,11 @@ summary {
   }
 }
 
-@screen xl {
+/* @screen xl {
   html {
     font-size: 18px;
   }
-}
+} */
 
 @tailwind components;
 @tailwind utilities;

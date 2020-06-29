@@ -11,9 +11,9 @@ const contact = () => {
         Sweet, that's me! Now it's your turn to say hi.
       </h1>
       <div className="contact-options-container flex flex-col pb-6">
-        <div className="button-container mx-auto">
+        <div className="button-container mx-auto text-center">
           <a href="mailto:reyvdb@gmail.com" className="contact-mail">
-            <button className="contact-button w-mc center my-2 py-4 px-20 font-semibold shadow-md rounded-md md:py-8">
+            <button className="landing-cta-1 py-4 px-12 my-2  mx-auto -4 my-2 rounded-md shadow-md font-semibold">
               Chat with Rey
             </button>
           </a>
