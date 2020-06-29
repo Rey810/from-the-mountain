@@ -168,9 +168,11 @@ Oh, remember to check out the Meditation Links #2 below for the little treat I p
 
 ### Extra Links You Might Find Interesting
 
-#### Meditation Links
+#### Process vs Product Links
 
 Here is a ['Why and How of Diffuse vs Focused'](https://www.7pace.com/blog/focused-vs-diffuse-thinking) for software developers.
+
+#### Meditation Links
 
 If you're interested in becoming mindful, [check this out](https://wakingup.com/). The first 7 meditations are free and if you use [this](https://share.wakingup.com/dab9b5), you'll get a FREE MONTH from me - no card, no string attached, simply a month free. At the end of your free month, it's possible to ask the Waking Up team for a free subscription if you can't afford it. They're super understanding and will help you out no questions asked.
 
