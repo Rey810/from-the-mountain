@@ -15,26 +15,24 @@ featuredImage: zen-man.png
 
 Like you, I'm someone who makes stuff for the web.
 
-Like you, that means: I sit in front of my monitor from 9-5 (sometimes later, especially when there's _just one more bug to kill!_).
+Like you, that means I sit in front of my monitor from 9-5 (sometimes later, especially when there's _just one more bug to kill!_).
 
-**Newsflash: this behaviour isn't the best for our postures or mental health (a.k.a. mental wellbeing)**
+**Newsflash: this behaviour isn't the best for our postures or mental health**
 
 So shortly after noticing the effects of my habits as a developer, I started searching for habits that would help _counteract_ this practice of being in front of the screen for hours on end.
 
 ## But First, Why Listen to Me?
 
-Not to brag or anything but I'm kind of a big deal.
+I have a degree in Human Physiology, Genetics, and Psychology so I sort of know how our bodies and brains work in creating a complex, highly-functional organism capable of critiquing tech tweets...
 
-See, I have a degree in Human Physiology, Genetics, and Psychology so I sort of know how our bodies and brains work in creating a complex, highly-functional organism capable of critiquing tech tweets...
-
-Lol, I don't remember a damn thing from that degree so ignore my 'credentials' because I don't have any. The only way you can trust me is to listen to this and nod if you feel me:
+Ha! I don't remember a damn thing from that degree so ignore my 'credentials' because I don't have any. The only way you can trust me is check this 👇 and nod if you get me:
 
 1. ❌ aching eyeballs
 1. ❌ sore back
 1. ❌ grumpy about bugs
 1. ❌ headache at lunchtime
 1. ❌ writer's block (but with code)
-1. ❌ the eternal suffering of life as a developer (No? Just me? Jk, I love this stuff but sometimes it's hard).
+1. ❌ the eternal suffering of life as a developer (Jk, I love this stuff but sometimes it's hard).
 
 > Now, what if I told you I had the cure to at least 87.5% [(quick maths)](https://www.youtube.com/watch?v=3M_5oYU-IsU) of these problems?
 
@@ -174,7 +172,7 @@ Here is a ['Why and How of Diffuse vs Focused'](https://www.7pace.com/blog/focus
 
 #### Meditation Links
 
-If you're interested in becoming mindful, [check this out](https://wakingup.com/). The first 7 meditations are free and if you use [this](https://share.wakingup.com/dab9b5), you'll get a FREE MONTH from me - no card, no string attached, simply a month free. At the end of your free month, it's possible to ask the Waking Up team for a free subscription if you can't afford it. They're super understanding and will help you out no questions asked.
+If you're interested in becoming mindful, [check this out](https://wakingup.com/). The first 7 meditations are free and if you use [this](https://share.wakingup.com/dab9b5), you'll get a FREE MONTH from me - no card, no strings attached, simply a month free. At the end of your free month, it's possible to ask the Waking Up team for a free subscription if you can't afford it. They're super understanding and will help you out no questions asked.
 
 Need more convincing that mindfulness is good and works? Check out [this article](https://greatergood.berkeley.edu/article/item/the_state_of_mindfulness_science) from UC [Berkeley](http://berkley.edu) about the scientifically-backed benefits of mindfulness.
 

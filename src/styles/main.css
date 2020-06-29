@@ -60,6 +60,10 @@ h1 {
 }
 
 /* General Elements */
+summary {
+  cursor: pointer;
+}
+
 p,
 .quote,
 .landing-cta-2,
