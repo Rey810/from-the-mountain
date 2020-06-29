@@ -51,7 +51,7 @@ export default function FAQ() {
                   <span className="faq-icon-container flex text-base pr-2">
                     <FontAwesomeIcon icon="chevron-down"></FontAwesomeIcon>
                   </span>
-                  {faq.question}
+                  <span>{faq.question}</span>
                 </summary>
                 <p className="faq-answer py-4">{faq.answer}</p>
               </details>

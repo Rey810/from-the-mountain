@@ -103,7 +103,7 @@ const SubscriptionForm = ({ tags }) => {
         }`}
         type="submit"
       >
-        {loading ? "Nice!" : "Stay Curious"}
+        {loading ? "Thinking..." : "Stay Curious"}
       </button>
       {status === "SUCCESS" && (
         <p class="success">
