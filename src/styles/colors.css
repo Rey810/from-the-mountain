@@ -22,7 +22,8 @@
 
   /* Overlay Colours */
   --initial-color-overlay: hsla(0, 0%, 12%, 0.5);
-  --final-colour-overlay: hsla(0, 0%, 12%, 0.8);
+  --mid-colour-overlay: hsla(0, 0%, 12%, 0.8);
+  --final-colour-overlay: hsla(0, 0%, 12%);
 
   /* Card Colours */
   --card-bg-color: hsla(0, 0%, 12%, 0.65);
@@ -98,7 +99,7 @@ h6 {
 }
 
 .color-overlay-container.saturate {
-  background-color: var(--final-colour-overlay);
+  background-color: var(--mid-colour-overlay);
   transition: background-color 1s linear;
 }
 
@@ -106,6 +107,11 @@ h6 {
 .blur {
   filter: blur(3px);
   transition: filter 2s ease-out;
+}
+
+/* DARKEN BG CONTAINER when contact button is in view*/
+.darkenContact {
+  background-color: var(--final-colour-overlay) !important;
 }
 
 /* HEADER */
