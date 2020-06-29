@@ -47,10 +47,10 @@ export default function FAQ() {
           {faqs.map(faq => (
             <li key={uuid()} className="faq py-4 my-10 rounded-md">
               <details key={uuid()} onToggle={toggleFocus}>
-                <summary className="font-semibold flex flex-row items-center">
-                  <div className="faq-icon-container flex text-base pl-6 pr-2">
+                <summary className="font-semibold flex flex-row items-baseline px-4">
+                  <span className="faq-icon-container flex text-base pr-2">
                     <FontAwesomeIcon icon="chevron-down"></FontAwesomeIcon>
-                  </div>
+                  </span>
                   {faq.question}
                 </summary>
                 <p className="faq-answer p-4">{faq.answer}</p>
