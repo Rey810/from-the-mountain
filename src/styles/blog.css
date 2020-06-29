@@ -236,7 +236,7 @@ li {
   --button-hover-color: #fa5d2f;
 }
 
-.subscribe-text,
+.subscribe-text-container,
 .subscribe-action {
   background-color: var(--form-bg-color);
 }

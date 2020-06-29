@@ -52,7 +52,7 @@ export default function Template({ data, location }) {
           </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
-        <div className="twitter-share-button-wrapper fixed z-10 w-full bottom-0 p-3 md:left-0 md:w-0 md:top-1/2 md:p-6">
+        <div className="twitter-share-button-wrapper fixed z-10 w-full bottom-0 p-3 sm:z-0 md:left-0 md:w-0 md:top-1/2 md:p-6">
           <div className="twitter-share-button-container text-center">
             <a
               className="custom-twitter-share-button"
