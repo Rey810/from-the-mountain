@@ -18,7 +18,7 @@
   --color-60-dark: #1f1f1f;
   --color-30-1: rgba(255, 255, 255, 0.795);
   --color-10-1: #ec4e20;
-  --color-10-1-lighter: hsl(141, 87%, 64%);
+  --color-10-1-lighter: #fa5d2f;
 
   /* Overlay Colours */
   --initial-color-overlay: hsla(0, 0%, 12%, 0.5);

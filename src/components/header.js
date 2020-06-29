@@ -4,7 +4,12 @@ import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Avatar from "../components/images/avatar"
 
-const Header = ({ siteTitle, canSee = false, isLinksHeader = false }) => {
+const Header = ({
+  siteTitle,
+  canSee = false,
+  isLinksHeader = false,
+  isPostHeader = false,
+}) => {
   const [visible, setVisible] = useState(canSee)
 
   const toggleVis = () => {
@@ -35,16 +40,22 @@ const Header = ({ siteTitle, canSee = false, isLinksHeader = false }) => {
         visible ? "visible" : ""
       }`}
     >
-      <Link to="/">
-        <div className="home-section flex flex-row items-center">
-          <div className="avatar-container flex justify-center h-8 mx-auto ">
-            <div className="avater-image-container relative w-8">
-              <Avatar />
+      {isPostHeader ? (
+        <Link to="/blog">
+          <FontAwesomeIcon icon={"chevron-left"} />
+        </Link>
+      ) : (
+        <Link to="/">
+          <div className="home-section flex flex-row items-center">
+            <div className="avatar-container flex justify-center h-8 mx-auto ">
+              <div className="avater-image-container relative w-8">
+                <Avatar />
+              </div>
             </div>
+            <h1 className="text-base ml-2">FTM</h1>
           </div>
-          <h1 className="text-base ml-2">FTM</h1>
-        </div>
-      </Link>
+        </Link>
+      )}
       <div className="header-icons">
         {isLinksHeader ? (
           <div className="inner-links-container">

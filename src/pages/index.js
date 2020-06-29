@@ -13,6 +13,7 @@ import {
   faAward,
   faChevronRight,
   faChevronDown,
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons"
 
 // Components of Landing Page
@@ -37,7 +38,8 @@ library.add(
   faShoppingCart,
   faAward,
   faChevronRight,
-  faChevronDown
+  faChevronDown,
+  faChevronLeft
 )
 // fixes huge Font Awesome icon on load by inlining CSS
 config.autoAddCss = false

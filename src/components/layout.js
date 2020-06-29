@@ -8,6 +8,7 @@ const Layout = ({
   children,
   canSeeHeader = false,
   usesLinksHeader = false,
+  usesInPostHeader = false,
 }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -25,6 +26,7 @@ const Layout = ({
         siteTitle={data.site.siteMetadata.title}
         canSee={canSeeHeader}
         isLinksHeader={usesLinksHeader}
+        isPostHeader={usesInPostHeader}
       />
       <main>{children}</main>
     </>

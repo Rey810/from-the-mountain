@@ -17,7 +17,7 @@ export default function Template({ data, location }) {
   const ISOdateString = new Date(post.frontmatter.date).toISOString()
 
   return (
-    <Layout location={"blog"}>
+    <Layout location={"blog"} usesInPostHeader={true}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.summary || post.excerpt}
