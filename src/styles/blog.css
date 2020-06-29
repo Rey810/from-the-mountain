@@ -218,8 +218,8 @@ li {
 .light {
   --form-bg-color: hsl(210, 38%, 90%);
   --form-header-color: hsl(220, 25.7%, 13.7%);
-  --form-text-color: hsl(208.8, 10.5%, 46.9%);
-  --form-footer-text-color: rgb(221, 244, 251);
+  --form-text-color: hsl(208.8, 10.5%, 29%);
+  --form-footer-text-color: hsl(208.8, 10.5%, 35%);
   --form-input-bg-color: rgb(255, 255, 255);
   --form-input-border: 1px solid rgb(203, 213, 224);
   --button-color: #ec4e20;
@@ -246,7 +246,7 @@ li {
 }
 
 .connect-form p {
-  color: var(--form-header-color);
+  color: var(--form-text-color);
 }
 
 .connect-form .form-footer-text {
