@@ -19,7 +19,7 @@ const contact = () => {
           </a>
           <div className="reply-indicator-container text-center">
             <span className="reply-indicator">
-              or email directly at hi@fromthemountain.co.za
+              or email him at hi@fromthemountain.co.za
             </span>
           </div>
         </div>
