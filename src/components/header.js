@@ -36,12 +36,12 @@ const Header = ({
 
   return (
     <header
-      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full py-3 px-4 md:px-8 lg:px-12 xl:px-16 ${
-        visible ? "visible" : ""
-      }`}
+      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full ${
+        isPostHeader ? "" : "py-4 px-4"
+      } md:px-8 lg:px-12 xl:px-16 ${visible ? "visible" : ""}`}
     >
       {isPostHeader ? (
-        <Link to="/blog">
+        <Link to="/blog" className="p-4">
           <FontAwesomeIcon icon={"chevron-left"} />
         </Link>
       ) : (
