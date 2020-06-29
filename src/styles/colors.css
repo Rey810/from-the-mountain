@@ -99,7 +99,6 @@ h6 {
 
 .color-overlay-container.saturate {
   background-color: var(--final-colour-overlay);
-  transform: scale3d(1.1, 1.1, 1);
   transition: background-color 1s linear;
 }
 
