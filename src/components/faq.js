@@ -1,5 +1,6 @@
 import React from "react"
 import uuid from "react-uuid"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function FAQ() {
   const faqs = [
@@ -44,12 +45,15 @@ export default function FAQ() {
       <div className="faq-list-container md:w-2/3 lg:w-7/12">
         <ul className="faqs">
           {faqs.map(faq => (
-            <li key={uuid()} className="faq">
-              <details key={uuid()} onToggle={toggleFocus} className="my-10">
-                <summary className="font-semibold flex items-center pl-8 pr-4">
+            <li key={uuid()} className="faq py-4 my-10 rounded-md">
+              <details key={uuid()} onToggle={toggleFocus}>
+                <summary className="font-semibold flex flex-row items-center">
+                  <div className="faq-icon-container pl-6 pr-2">
+                    <FontAwesomeIcon icon="chevron-down"></FontAwesomeIcon>
+                  </div>
                   {faq.question}
                 </summary>
-                <p className="faq-answer py-4 px-8">{faq.answer}</p>
+                <p className="faq-answer p-4">{faq.answer}</p>
               </details>
             </li>
           ))}

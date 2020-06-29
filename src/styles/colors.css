@@ -262,11 +262,14 @@ h6 {
 
 /* FAQ */
 
+.faq-list-container li {
+  background-color: var(--faq-bg-color);
+}
+
 summary::-webkit-details-marker {
   display: none;
 }
 summary::before {
-  content: "+";
   color: var(--color-30-1);
   font-size: 1.5em;
   padding: 0 0.5rem 0 0;
@@ -274,21 +277,26 @@ summary::before {
 
 summary {
   color: var(--color-30-1);
-  background-color: var(--faq-bg-color);
 }
 
 details p {
-  background-color: var(--faq-bg-color);
   color: var(--color-60-light);
 }
 
 .open summary::before {
-  content: "-";
   color: var(--color-60-light);
 }
 
 .open summary {
   color: var(--color-60-1);
+}
+
+svg {
+  transition: transform 0.2s ease-in;
+}
+
+.open svg {
+  transform: rotate(180deg);
 }
 
 /* QUOTES */
