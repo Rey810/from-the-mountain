@@ -34,7 +34,7 @@ const ProjectsPage = () => {
             ready!
           </p>
         </div>
-        <div className="constuction-image-container relative pb-1/1 md:pb-1/2 md:mx-1/4 lg:pb-1/3 mx-1/3">
+        <div className="constuction-image-container relative pb-1/1 md:pb-1/2 md:mx-1/4 lg:pb-1/3 lg:mx-1/3">
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             className="absolute-important h-full w-full"

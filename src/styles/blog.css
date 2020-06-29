@@ -2,7 +2,7 @@
 /* BLOG CARD COLOR */
 /*////////////////*/
 .blog-post-card {
-  --blog-card-link-color: hsl(175, 41%, 65%);
+  --blog-card-link-color: #ec4e20;
 }
 
 .blog-container {
@@ -22,7 +22,8 @@
   /* AUXILLARY COLORS */
   --link-color: #4c4cb9;
   /* SUBSCRIBE BLOCK */
-  --button-color: #5f5fce;
+  --button-color: #ec4e20;
+  --button-hover-color: #fa5d2f;
   --button-text-color: hsl(0, 0%, 100%);
   --input-text-color: rgba(160, 174, 192, 1);
 }
@@ -172,7 +173,7 @@ li {
 
 .subscribe-input:focus {
   outline: none;
-  border: 1px solid var(--link-color);
+  border: 1px solid var(--button-color);
 }
 
 .subscribe-button {
@@ -181,7 +182,7 @@ li {
 }
 
 .subscribe-button:hover {
-  background-color: var(--link-color);
+  background-color: var(--button-hover-color);
 }
 
 /*////////////////////*/
@@ -208,4 +209,51 @@ li {
   @apply my-2;
   @apply p-3;
   @apply text-xs;
+}
+
+/*////////////////////*/
+/* SUBSCRIPTION FORM THEMING */
+/*//////////////////*/
+
+.light {
+  --form-bg-color: hsl(210, 38%, 90%);
+  --form-header-color: hsl(220, 25.7%, 13.7%);
+  --form-text-color: hsl(208.8, 10.5%, 46.9%);
+  --form-footer-text-color: rgb(221, 244, 251);
+  --form-input-bg-color: rgb(255, 255, 255);
+  --form-input-border: 1px solid rgb(203, 213, 224);
+  --button-color: #ec4e20;
+}
+
+.dark {
+  --form-bg-color: hsl(0, 0%, 30%);
+  --form-header-color: rgba(255, 255, 255, 1);
+  --form-text-color: rgba(255, 255, 255, 0.8);
+  --form-footer-text-color: rgba(255, 255, 255, 0.5);
+  --form-input-bg-color: hsl(0, 0%, 25.2%);
+  --form-input-border: none;
+  --button-color: #ec4e20;
+  --button-hover-color: #fa5d2f;
+}
+
+.subscribe-text,
+.subscribe-action {
+  background-color: var(--form-bg-color);
+}
+
+.connect-form h1 {
+  color: var(--form-header-color);
+}
+
+.connect-form p {
+  color: var(--form-header-color);
+}
+
+.connect-form .form-footer-text {
+  color: var(--form-footer-text-color);
+}
+
+.connect-form input {
+  background-color: var(--form-input-bg-color);
+  border: var(--form-input-border);
 }

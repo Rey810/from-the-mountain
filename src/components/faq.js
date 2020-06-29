@@ -48,7 +48,7 @@ export default function FAQ() {
             <li key={uuid()} className="faq py-4 my-10 rounded-md">
               <details key={uuid()} onToggle={toggleFocus}>
                 <summary className="font-semibold flex flex-row items-center">
-                  <div className="faq-icon-container pl-6 pr-2">
+                  <div className="faq-icon-container flex text-base pl-6 pr-2">
                     <FontAwesomeIcon icon="chevron-down"></FontAwesomeIcon>
                   </div>
                   {faq.question}

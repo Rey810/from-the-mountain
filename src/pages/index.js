@@ -11,6 +11,7 @@ import {
   faCode,
   faShoppingCart,
   faAward,
+  faChevronRight,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons"
 
@@ -19,13 +20,12 @@ import Landing from "../components/landing"
 import Personal from "../components/personal"
 import Services from "../components/services"
 import Promise from "../components/promise"
-import Toolbox from "../components/toolbox"
+// import Toolbox from "../components/toolbox"
 // import Projects from "../components/projects"
 import Contact from "../components/contact"
 import Quotes from "../components/quotes"
 import Benefits from "../components/benefits"
 import FAQ from "../components/faq"
-import { siteMetadata } from "../../gatsby-config"
 
 // FONT AWESOME
 // fab represenets all of the brand icons
@@ -36,6 +36,7 @@ library.add(
   faThumbsUp,
   faShoppingCart,
   faAward,
+  faChevronRight,
   faChevronDown
 )
 // fixes huge Font Awesome icon on load by inlining CSS

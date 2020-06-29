@@ -63,7 +63,7 @@ const BlogPage = ({ data }) => (
         </div>
       </div>
     </section>
-    <Subscribe />
+    <Subscribe theme={"dark"} />
     <Footer />
   </Layout>
 )
