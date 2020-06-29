@@ -79,7 +79,7 @@ const SubscriptionForm = ({ tags }) => {
         type="email"
         aria-label="Your email"
         name="email_address"
-        placeholder="Your email address"
+        placeholder="Your email"
         required
       />
 
