@@ -2,7 +2,7 @@
 path: "/blog/3-wellbeing-focused-ways-to-be-a-better-developer"
 date: "30 June, 2020"
 title: "The 3 Best Wellbeing Habits You Need to be a Better Developer"
-author: "@ReyTheDev"
+author: "Rey van den Berg"
 category: "Developer Happiness"
 summary: "Your mental health needs these approaches to thrive at the workstation"
 keywords: "wellbeing, meditation, sleep, developer, coding, web development, calm, habits, solution, help, advice, mental, health, healthier, mindset, mindfulness, mindful, balance, minimalism, self-help, programmer, rest, control, posture, fix, assist, coder, webdev, engineer, acuity, wholesome"

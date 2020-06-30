@@ -124,7 +124,7 @@ function SEO({
         },
       ]
         .concat(
-          imagePath
+          image
             ? [
                 {
                   property: "og:image",
@@ -147,16 +147,8 @@ function SEO({
                   content: imageAlt,
                 },
                 {
-                  name: `twitter:text:title`,
-                  content: title,
-                },
-                {
                   name: "twitter:card",
                   content: "summary_large_image",
-                },
-                {
-                  name: "twitter:site",
-                  content: "@ReyTheDev",
                 },
               ]
             : [
