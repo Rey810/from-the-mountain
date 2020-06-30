@@ -72,7 +72,7 @@ const Header = ({
           </div>
         ) : (
           <a href="#connect" className="contact-mail mx-auto">
-            <button className="contact-button header-contact-button center py-2 px-6 font-semibold shadow-md rounded-full">
+            <button className="contact-button header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md">
               Let's Connect!
             </button>
           </a>
