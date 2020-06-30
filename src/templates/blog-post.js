@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Subscribe from "../components/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import Img from "gatsby-image"
 import Footer from "../components/footer"
 
@@ -39,7 +40,7 @@ export default function Template({ data, location }) {
             <div className="twitter-follow-button-container sm:mt-0 sm:mx-2">
               <a
                 href="https://twitter.com/ReyTheDev?ref_src=twsrc%5Etfw"
-                class="twitter-follow-button"
+                className="twitter-follow-button"
                 data-show-screen-name="false"
                 data-show-count="false"
               >
@@ -58,7 +59,7 @@ export default function Template({ data, location }) {
               className="custom-twitter-share-button"
               href={`https://twitter.com/share?text=${post.frontmatter.title} via @ReyTheDev&url=https://www.fromthemountain.co.za/${location.pathname}`}
             >
-              <FontAwesomeIcon icon={["fab", "twitter"]} />
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
           </div>
         </div>
