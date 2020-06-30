@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `From The Mountain`,
+    title: `Home`,
     description: `Need a web developer? I'll build your idea of a perfect website. Come on in, let's have a chat about making that idea a reality.`,
     author: `Rey van den Berg`,
     keywords: `freelance, portfolio, developer, freelancer, web developer, coder, programmer, javascript developer, react developer, rails developer, business, web consultant, website builder, need website`,

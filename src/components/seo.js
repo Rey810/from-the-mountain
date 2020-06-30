@@ -14,7 +14,7 @@ function SEO({
   pathname,
   type,
 }) {
-  const { site } = useStaticQuery(
+  const { site, placeholderImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -27,16 +27,27 @@ function SEO({
             googleSiteVerification
           }
         }
+        placeholderImage: file(relativePath: { eq: "hero_light_2.jpg" }) {
+          childImageSharp {
+            resize(width: 1200) {
+              src
+              height
+              width
+            }
+          }
+        }
       }
     `
   )
 
-  const pageTitle = title ? title : site.siteMetadata.title
+  const pageTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
-  const image =
+  const imagePath =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : null
+      : `${site.siteMetadata.siteUrl}${placeholderImage.childImageSharp.resize.src}`
+
+  const image = metaImage || placeholderImage.childImageSharp.resize
 
   const imageAlt = imageAltDescr
     ? imageAltDescr
@@ -45,7 +56,9 @@ function SEO({
   const ogType = type ? type : "website"
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+  const canonical = pathname
+    ? `${site.siteMetadata.siteUrl}${pathname}`
+    : `${site.siteMetadata.siteUrl}`
 
   return (
     <Helmet
@@ -53,7 +66,7 @@ function SEO({
         lang,
       }}
       title={pageTitle}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | From The Mountain`}
       link={
         canonical
           ? [
@@ -79,7 +92,7 @@ function SEO({
         },
         {
           property: `og:title`,
-          content: title,
+          content: pageTitle,
         },
         {
           property: `og:description`,
@@ -111,23 +124,23 @@ function SEO({
         },
       ]
         .concat(
-          metaImage
+          imagePath
             ? [
                 {
                   property: "og:image",
-                  content: image,
+                  content: imagePath,
                 },
                 {
                   property: "og:image:width",
-                  content: metaImage.width,
+                  content: image.width,
                 },
                 {
                   property: "og:image:height",
-                  content: metaImage.height,
+                  content: image.height,
                 },
                 {
                   name: "twitter:image",
-                  content: image,
+                  content: imagePath,
                 },
                 {
                   name: "twitter:image:alt",
@@ -157,7 +170,6 @@ function SEO({
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
 }
 
 SEO.propTypes = {
