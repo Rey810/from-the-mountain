@@ -7,9 +7,9 @@ function SEO({
   description,
   lang,
   meta,
+  title,
   image: metaImage,
   imageAltDescr,
-  title,
   keywords,
   pathname,
   type,
@@ -22,6 +22,7 @@ function SEO({
             title
             description
             author
+            twitterAuthor
             keywords
             siteUrl
             googleSiteVerification
@@ -87,7 +88,7 @@ function SEO({
           content: metaDescription,
         },
         {
-          name: "og:url",
+          name: `og:url`,
           content: canonical,
         },
         {
@@ -103,16 +104,12 @@ function SEO({
           content: ogType,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.twitterAuthor,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: pageTitle,
         },
         {
           name: `twitter:description`,
@@ -137,10 +134,6 @@ function SEO({
                 {
                   property: "og:image:height",
                   content: image.height,
-                },
-                {
-                  name: "twitter:image",
-                  content: imagePath,
                 },
                 {
                   name: "twitter:image:alt",
