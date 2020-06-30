@@ -21,6 +21,7 @@ const BlogPage = ({ data }) => (
                   fluid={
                     post.node.frontmatter.featuredImage.childImageSharp.fluid
                   }
+                  alt={post.node.frontmatter.imageAlt}
                 />
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium  mb-1">

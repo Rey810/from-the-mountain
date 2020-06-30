@@ -35,6 +35,7 @@ const BackgroundImage = props => {
   return (
     <Img
       fluid={data.placeholderImage.childImageSharp.fluid}
+      alt="A laptop, headphones, and notebook artistically placed on a big, flat rock on a mountain"
       className={`bg-image-wrapper absolute-important h-full w-full object-cover ${
         blur ? "blur" : ""
       }`}

@@ -107,10 +107,6 @@
   @apply text-lg;
 }
 
-#alwaysVisible {
-  display: inline-block !important;
-}
-
 @screen md {
   .blog h1 {
     @apply text-5xl;

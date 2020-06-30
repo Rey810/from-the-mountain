@@ -28,6 +28,7 @@ const AvatarImage = () => {
 
   return (
     <Img
+      alt="A profile picture of a smiling Rey van den Berg"
       fluid={data.placeholderImage.childImageSharp.fluid}
       className="absolute-important h-full w-full object-cover rounded-full"
     />

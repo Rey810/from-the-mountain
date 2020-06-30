@@ -50,7 +50,10 @@ export default function Template({ data, location }) {
             </div>
           </div>
           <div className="h-full border-2 rounded-lg overflow-hidden">
-            <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+            <Img
+              fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
+              alt={post.frontmatter.imageAlt}
+            />
           </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
