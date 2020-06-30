@@ -119,10 +119,6 @@ function SEO({
           content: metaDescription,
         },
         {
-          name: `twitter:text:title`,
-          content: title,
-        },
-        {
           name: `keywords`,
           content: metaKeywords.split(","),
         },
@@ -149,6 +145,10 @@ function SEO({
                 {
                   name: "twitter:image:alt",
                   content: imageAlt,
+                },
+                {
+                  name: `twitter:text:title`,
+                  content: title,
                 },
                 {
                   name: "twitter:card",
