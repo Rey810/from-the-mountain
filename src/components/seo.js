@@ -41,10 +41,12 @@ function SEO({
   const imageAlt = imageAltDescr
     ? imageAltDescr
     : "An image decorating a description card"
+
   const ogType = type ? type : "website"
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+
   return (
     <Helmet
       htmlAttributes={{
