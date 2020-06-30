@@ -162,6 +162,8 @@ Do you have some advice on how to be a better developer? I'd love to hear from y
 
 Oh, remember to check out the Meditation Links below for the little treat I promised!✌💚
 
+_P.S A huge thank you and shout out to [Monica Lent](https://twitter.com/monicalent) for giving that all important advice on writing and setting up my first blog post 🙌_
+
 ---
 
 ### Extra Links You Might Find Interesting
