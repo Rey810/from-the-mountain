@@ -39,6 +39,7 @@ export default function Template({ data, location }) {
             </div>
             <div className="twitter-follow-button-container sm:mt-0 sm:mx-2">
               <a
+                id="alwaysVisible"
                 href="https://twitter.com/ReyTheDev?ref_src=twsrc%5Etfw"
                 className="twitter-follow-button"
                 data-show-screen-name="false"
@@ -56,6 +57,7 @@ export default function Template({ data, location }) {
         <div className="twitter-share-button-wrapper fixed z-10 w-full bottom-0 p-3 sm:z-0 md:left-0 md:w-0 md:top-1/2 md:p-6">
           <div className="twitter-share-button-container text-center">
             <a
+              id="alwaysVisible"
               className="custom-twitter-share-button"
               href={`https://twitter.com/share?text=${post.frontmatter.title} via @ReyTheDev&url=https://www.fromthemountain.co.za/${location.pathname}`}
             >
