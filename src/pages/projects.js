@@ -38,6 +38,7 @@ const ProjectsPage = () => {
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             className="absolute-important h-full w-full"
+            alt="Two odly shaped cartoon construction workers digging"
           />
         </div>
         <Footer />
