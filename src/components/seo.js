@@ -119,6 +119,10 @@ function SEO({
           content: metaDescription,
         },
         {
+          name: `twitter:text:title`,
+          content: title,
+        },
+        {
           name: `keywords`,
           content: metaKeywords.split(","),
         },
