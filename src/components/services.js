@@ -57,8 +57,11 @@ const services = () => {
       </div>
       <div className="cta pt-4 pr-4 md:pr-8 lg:pr-12 xl:pr-16">
         Interested?{" "}
-        <a href="mailto:reyvdb@gmail.com" className="text-link">
-          hello@mountain.co.za
+        <a
+          href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!"
+          className="text-link"
+        >
+          hi@fromthemountain.co.za
         </a>
       </div>
     </section>

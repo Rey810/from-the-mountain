@@ -25,8 +25,8 @@ const Landing = () => {
     }
     const contact = document.querySelector(".contact-social-container")
     // innerHeight property of the Window interface returns the interior height of the window in pixels, including the height of the horizontal scroll bar, if present.
-    // contact.getBoundingClientRect().top is the distance of the bottom of the element from the top of the viewport
-    // when the top of the contact container is equal to or smaller than the height of the viewport, then it's in view
+    // contact.getBoundingClientRect().bottom is the distance of the bottom of the element from the top of the viewport
+    // when the bottom of the contact container is equal to or smaller than the height of the viewport, then it's in view
     if (
       contact.getBoundingClientRect().bottom <=
       (window.innerHeight || document.documentElement.clientHeight)
@@ -79,7 +79,7 @@ const Landing = () => {
           Freelance Developer
         </h1>
         <p className="landing-description text-center pt-8 px-8 mx-auto md:w-3/4">
-          I help people turn their ideas into websites & apps that work.
+          I help people turn their ideas into websites & apps that works.
           Professional and Cost-Effective. Always.
         </p>
       </main>
