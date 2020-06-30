@@ -34,6 +34,9 @@ const Header = ({
     return () => window.removeEventListener("scroll", toggleVis)
   }, [visible])
 
+  // possible fix for not displaying in desktop chrome
+  const backIcon = <FontAwesomeIcon icon={"chevron-left"} />
+
   return (
     <header
       className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full ${
@@ -42,7 +45,7 @@ const Header = ({
     >
       {isPostHeader ? (
         <Link to="/blog" className="p-4">
-          <FontAwesomeIcon icon={"chevron-left"} />
+          {backIcon}
         </Link>
       ) : (
         <Link to="/">
