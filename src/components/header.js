@@ -60,6 +60,9 @@ const Header = ({
       <div className="header-icons">
         {isLinksHeader ? (
           <div className="inner-links-container">
+            <Link to="/blog" className="ml-4">
+              Blog
+            </Link>
             <Link to="/#What-I-Do" className="ml-4">
               What I Do
             </Link>
