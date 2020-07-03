@@ -79,7 +79,8 @@ const Landing = () => {
           Freelance Developer
         </h1>
         <p className="landing-description text-center pt-8 px-8 mx-auto md:w-3/4">
-          I help people turn their ideas into websites & apps that works.
+          I help people turn their ideas into websites & apps that work.
+          <br />
           Professional and Cost-Effective. Always.
         </p>
       </main>
