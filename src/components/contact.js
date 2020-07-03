@@ -11,11 +11,12 @@ const contact = () => {
         Sweet, that's me! Now it's your turn to say hi.
       </h1>
       <div className="contact-options-container flex flex-col pb-6">
-        <div className="button-container mx-auto text-center">
-          <a href="mailto:reyvdb@gmail.com" className="contact-mail">
-            <button className="landing-cta-1 py-4 px-12 my-2  mx-auto -4 my-2 rounded-md shadow-md font-semibold">
-              Chat with Rey
-            </button>
+        <div className="button-container mx-auto text-center ">
+          <a
+            href="mailto:reyvdb@gmail.com"
+            className="landing-cta-1 my-2 rounded-md shadow-md font-semibold inline-block py-4 px-12 w-1/1 w-1/1"
+          >
+            Chat with Rey
           </a>
           <div className="reply-indicator-container text-center">
             <span className="reply-indicator">
@@ -35,12 +36,6 @@ const contact = () => {
             href="https://github.com/Rey810"
           >
             <FontAwesomeIcon icon={["fab", "github"]} />
-          </a>
-          <a
-            className="landing-icons icon px-4"
-            href="https://www.facebook.com/reynardv"
-          >
-            <FontAwesomeIcon icon={["fab", "facebook"]} />
           </a>
           <a
             className="landing-icons icon px-4"

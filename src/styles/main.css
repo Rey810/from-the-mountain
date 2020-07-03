@@ -13,6 +13,14 @@ body {
   scrollbar-width: thin;
 }
 
+/* SPECIAL FOCUS BORDER AND COLOUR */
+a:focus,
+summary:focus,
+.serviceCards-container:focus {
+  @apply outline-none;
+  @apply shadow-outline;
+}
+
 /* ///////////// */
 /* LINE HEIGHTS */
 /* /////////// */

@@ -9,6 +9,9 @@ module.exports = {
         mc: "max-content",
         ideal: "65rem",
       },
+      boxShadow: {
+        outline: '0 0 0 3px #ec4e20'
+      },
       spacing: {
         "1/1": "100%",
         "1/2": "50%",

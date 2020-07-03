@@ -91,14 +91,15 @@ const Landing = () => {
         >
           Chat with Rey
         </a>
-        <div className="view-projects-container py-4 px-8 mx-auto md:mr-0 md:ml-4 font-semibold">
+
+        {/* <div className="view-projects-container py-4 px-8 mx-auto md:mr-0 md:ml-4 font-semibold">
           <Link to="/projects" className="flex flex-row items-center">
             <div className="view-projects-icon-container h-8 w-8 mx-2 border-solid border rounded-full flex justify-center items-center">
               <FontAwesomeIcon icon={"chevron-right"} />
             </div>
             <span>View Projects</span>
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className="landing-icons-container flex flex-row justify-center py-8">
         <a
@@ -109,12 +110,6 @@ const Landing = () => {
         </a>
         <a className="landing-icons icon px-4" href="https://github.com/Rey810">
           <FontAwesomeIcon icon={["fab", "github"]} />
-        </a>
-        <a
-          className="landing-icons icon px-4"
-          href="https://www.facebook.com/reynardv"
-        >
-          <FontAwesomeIcon icon={["fab", "facebook"]} />
         </a>
         <a
           className="landing-icons icon px-4"
