@@ -14,7 +14,7 @@ const contact = () => {
         <div className="button-container mx-auto text-center ">
           <a
             href="mailto:reyvdb@gmail.com"
-            className="landing-cta-1 my-2 rounded-md shadow-md font-semibold inline-block py-4 px-12 w-1/1 w-1/1"
+            className="landing-cta-1 my-2 rounded-md shadow-md font-semibold inline-block py-4 px-12"
           >
             Chat with Rey
           </a>
