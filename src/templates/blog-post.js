@@ -1,8 +1,10 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Subscribe from "../components/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import Img from "gatsby-image"
 import Footer from "../components/footer"
@@ -30,7 +32,14 @@ export default function Template({ data, location }) {
       />
       <div className="blog-container">
         <section className="blog mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2">
-          <h1>{post.frontmatter.title}</h1>
+          <div className="header-container pt-6"></div>
+          <Link to="/blog" className="text-xl p-2 pl-0">
+            <FontAwesomeIcon
+              className="blog-back-arrow"
+              icon={faLongArrowAltLeft}
+            />
+          </Link>
+          <h1 className="text-4xl">{post.frontmatter.title}</h1>
           <div className="subheader-container sm:flex sm:flex-row sm:items-center">
             <div className="publish-date">
               Published{" "}

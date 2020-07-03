@@ -35,9 +35,8 @@
 
 /* FONTS and PADDING */
 
-.blog h1 {
-  @apply text-4xl;
-  @apply pt-12;
+.blog-back-arrow {
+  color: var(--blog-header-color);
 }
 
 .subheader-container {
