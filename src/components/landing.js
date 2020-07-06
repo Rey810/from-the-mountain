@@ -6,7 +6,6 @@ import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Avatar from "../components/images/avatar"
 import Background from "../components/images/background"
-import { Link } from "gatsby"
 
 const Landing = () => {
   // const [goal, setGoal] = useState("Fans")

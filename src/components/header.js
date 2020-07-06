@@ -63,9 +63,9 @@ const Header = ({
             <Link to="/#What-I-Do" className="ml-4">
               What I Do
             </Link>
-            <Link to="/projects/#Toolbox" className="ml-4">
+            {/* <Link to="/projects/#Toolbox" className="ml-4">
               Tech
-            </Link>
+            </Link> */}
             <Link to="/blog" className="ml-4">
               Blog
             </Link>
