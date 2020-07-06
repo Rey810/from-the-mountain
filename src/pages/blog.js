@@ -10,7 +10,7 @@ import Subscribe from "../components/subscribe"
 const BlogPage = ({ data }) => (
   <Layout canSeeHeader={true}>
     <SEO
-      title="Blog Posts"
+      title="Blog"
       description="A blog for Rey van den Berg's, From The Mountain, freelance web develpoment site. He writes about developer well-being and happiness, how to form better everyday work habits, and general mindfulness tips for busy people."
       keywords="blog, developer happiness, developer well-being, coding blog, programming blog, developer zen habits, Rey van den Berg's blog, From The Mountain blog, thoughts on developer well-being, thoughts on developer mental health, how to become a better developer, Cape Town developer blog, Cape Town freelance developer"
     />

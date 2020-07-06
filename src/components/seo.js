@@ -67,6 +67,7 @@ function SEO({
         lang,
       }}
       title={pageTitle}
+      //the %s is used by Helmet to replace it with the title
       titleTemplate={`%s | From The Mountain`}
       link={
         canonical
