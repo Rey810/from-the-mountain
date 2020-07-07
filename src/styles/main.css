@@ -68,7 +68,8 @@ h1 {
 }
 
 /* General Elements */
-summary {
+summary,
+a {
   cursor: pointer;
 }
 

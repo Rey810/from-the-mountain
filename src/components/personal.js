@@ -22,12 +22,12 @@ const personal = () => {
           goal-oriented eye for precision. That means when we're done, you can
           close your eyes and picture <em>yours</em> as The Perfect Website.
         </p>
-        <Link
+        {/* <Link
           to="/blog"
           className="py-2 px-8 border border-solid rounded-md my-2"
         >
           Checkout Blog
-        </Link>
+        </Link> */}
       </div>
     </section>
   )
