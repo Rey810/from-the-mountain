@@ -6,7 +6,7 @@ module.exports = {
     twitterAuthor: `@ReyTheDev`,
     keywords: `freelance, portfolio, developer, freelancer, web developer, coder, programmer, javascript developer, react developer, rails developer, business, web consultant, website builder, need website`,
     googleSiteVerification: "zUF4k-2XdAVgIl5-MbijxBudeCAmYgB5Q7CCojbrAOg",
-    siteUrl: "https://www.fromthemountain.co.za",
+    siteUrl: "https://www.fromthemountain.co.za/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,6 +16,12 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.fromthemountain.co.za`,
       },
     },
     {
@@ -47,20 +53,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `From The Mountain`,
+        short_name: `FTM`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`, // This path is relative to the root of the site.
+        background_color: `hsla(0, 0%, 12%)`,
+        theme_color: `#ec4e20`,
+        display: `standalone`, // This path is relative to the root of the site.
         icon: `src/images/avatar.png`,
-        icons: [
-          {
-            src: `/favicons/android-chrome-48x48.png`,
-            sizes: `48x48`,
-            type: `image/png`,
-          },
-        ],
       },
     },
     "gatsby-plugin-dark-mode",
@@ -80,14 +79,18 @@ module.exports = {
       resolve: "gatsby-transformer-yaml",
       options: { typeName: "Tag", path: "src/data/convertkit-tags" },
     },
+    // {
+    //   resolve: `gatsby-plugin-fullstory`,
+    //   options: {
+    //     fs_org: "W6GPY",
+    //   },
+    // },
+    `gatsby-plugin-netlify`,
     {
-      resolve: `gatsby-plugin-fullstory`,
+      resolve: `gatsby-plugin-offline`,
       options: {
-        fs_org: "W6GPY",
+        precachePages: [`/`, `/blog/*`],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

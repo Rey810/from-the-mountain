@@ -57,7 +57,7 @@ function SEO({
   const ogType = type ? type : "website"
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
-  const canonical = pathname
+  const url = pathname
     ? `${site.siteMetadata.siteUrl}${pathname}`
     : `${site.siteMetadata.siteUrl}`
 
@@ -69,16 +69,16 @@ function SEO({
       title={pageTitle}
       //the %s is used by Helmet to replace it with the title
       titleTemplate={`%s | From The Mountain`}
-      link={
-        canonical
-          ? [
-              {
-                rel: "canonical",
-                href: canonical,
-              },
-            ]
-          : []
-      }
+      // link={
+      //   canonical
+      //     ? [
+      //         {
+      //           rel: "canonical",
+      //           href: canonical,
+      //         },
+      //       ]
+      //     : []
+      // }
       meta={[
         {
           name: `google-site-verification`,
@@ -90,7 +90,7 @@ function SEO({
         },
         {
           name: `og:url`,
-          content: canonical,
+          content: url,
         },
         {
           property: `og:title`,
