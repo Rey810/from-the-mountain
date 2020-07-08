@@ -49,15 +49,13 @@ const IndexPage = () => {
     <Layout usesPortfolioHeader={true}>
       <SEO />
       <Landing />
-      <div className="information-container">
-        <Personal />
-        <Services />
-        <Benefits />
-        <Promise />
-        <FAQ />
-        <Contact />
-        <Quotes />
-      </div>
+      <Personal />
+      <Services />
+      <Benefits />
+      <Promise />
+      <FAQ />
+      <Contact />
+      <Quotes />
     </Layout>
   )
 }
