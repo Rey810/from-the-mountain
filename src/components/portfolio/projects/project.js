@@ -1,8 +1,8 @@
 import React from "react"
 import uuid from "react-uuid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Project1Image from "../components/images/project1-image"
-import Project2Image from "../components/images/project2-image"
+import Project1Image from "../../../images/project1-image"
+import Project2Image from "../../../images/project2-image"
 
 const project = props => {
   // properties of the project

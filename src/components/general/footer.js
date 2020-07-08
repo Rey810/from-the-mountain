@@ -1,5 +1,5 @@
 import React from "react"
-import Avatar from "../components/images/avatar"
+import Avatar from "../images/avatar"
 import { Link } from "gatsby"
 
 const Footer = () => {

@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Subscribe from "../components/subscribe"
+import Layout from "../components/containers/layout"
+import SEO from "../components/general/seo"
+import Subscribe from "../components/blog/subscribe/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import Img from "gatsby-image"
-import Footer from "../components/footer"
+import Footer from "../components/general/footer"
 
 export default function Template({ data, location }) {
   const post = data.markdownRemark

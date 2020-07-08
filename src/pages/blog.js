@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/containers/layout"
+import SEO from "../components/general/seo"
+import BlogCard from "../components/blog/blogCard"
+import Subscribe from "../components/blog/subscribe/subscribe"
 import Footer from "../components/footer"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import BlogCard from "../components/blogCard"
-import Subscribe from "../components/subscribe"
 
 const BlogPage = ({ data }) => (
   <Layout canSeeHeader={true}>

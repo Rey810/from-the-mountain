@@ -1,5 +1,5 @@
 import React from "react"
-import SubscriptionForm from "../components/subscriptionForm"
+import SubscriptionForm from "./subscriptionForm"
 
 export default function subscribe({ theme }) {
   return (

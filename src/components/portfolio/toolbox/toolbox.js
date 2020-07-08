@@ -1,5 +1,5 @@
 import React from "react"
-import ToolboxCard from "../components/toolboxCard"
+import ToolboxCard from "./toolboxCard"
 
 const toolbox = () => {
   const tools = {

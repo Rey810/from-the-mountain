@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons"
-import Avatar from "../components/images/avatar"
+import Avatar from "../images/avatar"
 
 const Header = ({
   canSee = false,
