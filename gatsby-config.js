@@ -6,7 +6,7 @@ module.exports = {
     twitterAuthor: `@ReyTheDev`,
     keywords: `freelance, portfolio, developer, freelancer, web developer, coder, programmer, javascript developer, react developer, rails developer, business, web consultant, website builder, need website`,
     googleSiteVerification: "zUF4k-2XdAVgIl5-MbijxBudeCAmYgB5Q7CCojbrAOg",
-    siteUrl: "https://www.fromthemountain.co.za",
+    siteUrl: "https://www.fromthemountain.co.za/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.fromthemountain.co.za`,
+        siteUrl: `https://www.fromthemountain.co.za/`,
       },
     },
     {

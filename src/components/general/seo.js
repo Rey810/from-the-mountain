@@ -58,7 +58,7 @@ function SEO({
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
   const url = pathname
-    ? `${site.siteMetadata.siteUrl}/${pathname}`
+    ? `${site.siteMetadata.siteUrl}${pathname}`
     : `${site.siteMetadata.siteUrl}`
 
   return (
