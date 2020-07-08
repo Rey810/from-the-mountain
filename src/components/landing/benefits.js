@@ -23,7 +23,7 @@ export default function benefits() {
             className="benefit-icon"
           />
           <p className="benefit-header pl-2">
-            Feel confident in your business or blog
+            Get more time to focus on your business
           </p>
         </div>
         <div className="benefit-3-container flex flex-row items-center pt-4">
