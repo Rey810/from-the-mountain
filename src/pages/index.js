@@ -46,7 +46,7 @@ config.autoAddCss = false
 
 const IndexPage = () => {
   return (
-    <Layout usesLinksHeader={true}>
+    <Layout usesPortfolioHeader={true}>
       <SEO />
       <Landing />
       <div className="information-container">
