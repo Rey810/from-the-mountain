@@ -92,6 +92,6 @@ module.exports = {
         precachePages: [`/`, `/blog/*`],
       },
     },
-    `gatsby-plugin-sitemap
+    `gatsby-plugin-sitemap`,
   ],
 }
