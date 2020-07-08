@@ -45,8 +45,8 @@ function SEO({
   const metaDescription = description || site.siteMetadata.description
   const imagePath =
     metaImage && metaImage.src
-      ? `${site.siteMetadata.siteUrl}/${metaImage.src}`
-      : `${site.siteMetadata.siteUrl}/${placeholderImage.childImageSharp.resize.src}`
+      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
+      : `${site.siteMetadata.siteUrl}${placeholderImage.childImageSharp.resize.src}`
 
   const image = metaImage || placeholderImage.childImageSharp.resize
 
