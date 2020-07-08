@@ -45,8 +45,8 @@ function SEO({
   const metaDescription = description || site.siteMetadata.description
   const imagePath =
     metaImage && metaImage.src
-      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : `${site.siteMetadata.siteUrl}${placeholderImage.childImageSharp.resize.src}`
+      ? `${site.siteMetadata.siteUrl}/${metaImage.src}`
+      : `${site.siteMetadata.siteUrl}/${placeholderImage.childImageSharp.resize.src}`
 
   const image = metaImage || placeholderImage.childImageSharp.resize
 
@@ -58,7 +58,7 @@ function SEO({
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
   const url = pathname
-    ? `${site.siteMetadata.siteUrl}${pathname}`
+    ? `${site.siteMetadata.siteUrl}/${pathname}`
     : `${site.siteMetadata.siteUrl}`
 
   return (
