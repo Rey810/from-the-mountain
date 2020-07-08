@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/containers/layout"
+import SEO from "../components/general/seo"
 // import Projects from "../components/projects"
 // import Toolbox from "../components/toolbox"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Footer from "../components/footer"
+import Footer from "../components/general/footer"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`

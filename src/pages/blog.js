@@ -4,7 +4,7 @@ import Layout from "../components/containers/layout"
 import SEO from "../components/general/seo"
 import BlogCard from "../components/blog/blogCard"
 import Subscribe from "../components/blog/subscribe/subscribe"
-import Footer from "../components/footer"
+import Footer from "../components/general/footer"
 
 const BlogPage = ({ data }) => (
   <Layout canSeeHeader={true}>
