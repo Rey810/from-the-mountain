@@ -13,7 +13,7 @@ const contact = () => {
       <div className="contact-options-container flex flex-col pb-6">
         <div className="button-container mx-auto text-center ">
           <a
-            href="mailto:reyvdb@gmail.com"
+            href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!%20:)"
             className="landing-cta-1 my-2 rounded-md shadow-md font-semibold inline-block py-4 px-12"
           >
             Chat with Rey
