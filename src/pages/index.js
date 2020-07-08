@@ -5,7 +5,7 @@ import SEO from "../components/general/seo"
 // Components of Landing Page
 import Landing from "../components/landing/landing"
 import Personal from "../components/landing/personal"
-import Services from "../components/landing/services"
+import Services from "../components/landing/services/services"
 import Promise from "../components/landing/promise"
 // import Toolbox from "../components/toolbox"
 // import Projects from "../components/projects"

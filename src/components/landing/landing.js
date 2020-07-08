@@ -4,8 +4,8 @@
 // re-run with each new render: triggered by the state change
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Avatar from "../components/images/avatar"
-import Background from "../components/images/background"
+import Avatar from "../images/avatar"
+import Background from "../images/background"
 
 const Landing = () => {
   // const [goal, setGoal] = useState("Fans")
