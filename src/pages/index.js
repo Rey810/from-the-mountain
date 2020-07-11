@@ -47,7 +47,7 @@ config.autoAddCss = false
 const IndexPage = () => {
   return (
     <Layout usesPortfolioHeader={true}>
-      <SEO />
+      <SEO title="Web Developer" />
       <Landing />
       <Personal />
       <Services />

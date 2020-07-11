@@ -13,7 +13,6 @@ const Header = ({
   const [visible, setVisible] = useState(canSee)
 
   const toggleVis = () => {
-    console.log("handleScroll header firing!", window.scrollY)
     if (window.scrollY > 600) {
       setVisible(true)
     } else {
@@ -26,7 +25,6 @@ const Header = ({
   // i.e. when the component unmounts and also after the previous render
   // for multiple hooks, they're run in the order they're defined
   useEffect(() => {
-    console.log("using effect")
     /* This prevents a listener from being added if canSee is false which means that the current location is not on the Latest Posts page. Therefore things can continue as normal. If we are on the Latest Posts page then I don't want the header to didsappear if the user scrolls */
     if (!canSee) window.addEventListener("scroll", toggleVis)
     // Cleans up the hook by removing the eventlistener when the component

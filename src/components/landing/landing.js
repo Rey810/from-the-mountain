@@ -16,6 +16,8 @@ const Landing = () => {
   const [darken, setDarken] = useState(false)
   const [darkenContact, setdarkenContact] = useState(false)
 
+  const [animated, setAnimated] = useState(false)
+
   const handleScroll = () => {
     if (window.scrollY < 200) {
       setDarken(false)
@@ -38,12 +40,14 @@ const Landing = () => {
   // runs after the first render and after every update
   // a new function is passed into useEffect (remember, each object/function is a separate thing) eah render which makes each effect "belong" to a render
   useEffect(() => {
+    console.log("I'm using an effect")
+    setAnimated(true)
     window.addEventListener("scroll", handleScroll)
     // React will run returned function when it is time to clean up
     // i.e. when the component unmounts and also after the previous render
     // for multiple hooks, they're run in the order they're defined
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [darken, darkenContact])
+  }, [darken, darkenContact, animated])
 
   // const interval = setInterval(() => {
   //   setCount(count => (count === 3 ? 0 : count + 1))
@@ -65,7 +69,11 @@ const Landing = () => {
           darken ? "saturate" : ""
         } ${darkenContact ? "darkenContact" : ""}`}
       ></div>
-      <div className="avatar-container flex justify-center h-16 my-16 mx-auto px-12">
+      <div
+        className={`opacity-0 ${
+          animated ? "fadeInSlideUp-1st" : ""
+        } avatar-container flex justify-center h-16 my-16 mx-auto px-12`}
+      >
         <div className="avater-image-container relative w-16">
           <Avatar />
         </div>
@@ -74,16 +82,28 @@ const Landing = () => {
         </div>
       </div>
       <main className="landing-container ">
-        <h1 className="landing-title leading-none font-extrabold text-center">
+        <h1
+          className={`opacity-0 ${
+            animated ? "fadeInSlideUp-2nd" : ""
+          } landing-title leading-none font-extrabold text-center`}
+        >
           Freelance Developer
         </h1>
-        <p className="landing-description text-center pt-8 px-8 mx-auto md:w-3/4">
+        <p
+          className={`opacity-0 ${
+            animated ? "fadeInSlideUp-3rd" : ""
+          } landing-description text-center pt-8 px-8 mx-auto md:w-3/4`}
+        >
           I help people turn their ideas into websites & apps that work.
           <br />
           Professional and Cost-Effective. Always.
         </p>
       </main>
-      <div className="landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center md:items-center">
+      <div
+        className={`opacity-0 ${
+          animated ? "fadeInSlideUp-4th" : ""
+        } landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center md:items-center`}
+      >
         <a
           href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!%20:)"
           className="landing-cta-1 py-4 px-12 mx-auto md:ml-0 md:mr-4 my-2 rounded-md shadow-md font-semibold"
@@ -99,7 +119,11 @@ const Landing = () => {
           </Link>
         </div> */}
       </div>
-      <div className="landing-icons-container flex flex-row justify-center py-8">
+      <div
+        className={`opacity-0 ${
+          animated ? "fadeIn-5th" : ""
+        } landing-icons-container flex flex-row justify-center py-8`}
+      >
         <a
           className="landing-icons icon px-4"
           href="https://twitter.com/ReyTheDev"

@@ -199,3 +199,4 @@ summary {
 @tailwind utilities;
 @import "../styles/colors.css";
 @import "../styles/blog.css";
+@import "../styles/animations.css";
