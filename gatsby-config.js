@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Web Developer`,
-    description: `Web Development, Web Design, Ecommerce, SEO. From The Mountain builds fast, excellent websites and apps that work. Affordable, professional, quality Web Developer & Designer from South Africa`,
+    title: `Web Developer & Designer`,
+    description: `From The Mountain designs & develops fast, excellent websites and apps that work. Affordable and professional design, development, e-commerce & SEO.`,
     author: `Rey van den Berg`,
     twitterAuthor: `@ReyTheDev`,
     keywords: `freelance, portfolio, developer, freelancer, web developer, coder, programmer, javascript developer, react developer, rails developer, business, web consultant, website builder, need website`,
