@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Web Developer & Designer`,
+    title: `Web Designer & Developer`,
     description: `From The Mountain designs & develops fast, excellent websites and apps that work. Affordable and professional design, development, e-commerce & SEO.`,
     author: `Rey van den Berg`,
     twitterAuthor: `@ReyTheDev`,
