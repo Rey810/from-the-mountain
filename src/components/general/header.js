@@ -54,7 +54,7 @@ const Header = ({
             <Avatar />
           </div>
         </div>
-        <h1 className="text-base ml-2">FTM</h1>
+        <span className="text-base ml-2 font-bold">FTM</span>
       </div>
     </Link>
   )
