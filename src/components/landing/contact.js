@@ -7,9 +7,9 @@ const contact = () => {
       id="Connect"
       className="contact-container pt-0 pb-8 px-4 md:px-8 lg:px-12 xl:px-16"
     >
-      <h1 className="contact-header pb-8 font-bold text-center md:mx-auto md:w-3/4">
+      <h2 className="contact-header pb-8 font-bold text-center md:mx-auto md:w-3/4">
         Sweet, that's me! Now it's your turn to say hi.
-      </h1>
+      </h2>
       <div className="contact-options-container flex flex-col pb-6">
         <div className="button-container mx-auto text-center ">
           <a

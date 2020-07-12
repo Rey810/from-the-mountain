@@ -3,7 +3,7 @@ import React from "react"
 const promise = () => {
   return (
     <section className="promise-container pb-20 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32">
-      <h1 className="promises-header font-bold">I always promise this</h1>
+      <h2 className="promises-header font-bold">I always promise this</h2>
       <div className="promises-container lg:grid lg:grid-cols-2">
         <div className="promise-1-container pt-8">
           <div className="promise-header-container  pb-2 flex justify-start items-center">

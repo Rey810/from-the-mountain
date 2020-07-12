@@ -5,7 +5,7 @@ const personal = () => {
   return (
     <section className="personal-container pb-20 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32">
       <div className="personal-title-container pb-8 font-bold flex flex-col sm:flex-row">
-        <h1 className="personal-title ">Let's Start with A Question</h1>
+        <h2 className="personal-title ">Let's Start with A Question</h2>
       </div>
       <div className="personal-description-container md:w-2/3 lg:w-7/12">
         <p className="personal-description pb-4 ">
