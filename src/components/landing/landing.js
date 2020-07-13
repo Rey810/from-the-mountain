@@ -40,7 +40,6 @@ const Landing = () => {
   // runs after the first render and after every update
   // a new function is passed into useEffect (remember, each object/function is a separate thing) eah render which makes each effect "belong" to a render
   useEffect(() => {
-    console.log("I'm using an effect")
     setAnimated(true)
     window.addEventListener("scroll", handleScroll)
     // React will run returned function when it is time to clean up

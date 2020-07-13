@@ -35,7 +35,7 @@ const Header = ({
   // adds an extra class if a header other than the post header is being displayed
   const extraClasses = []
   if (!isPostHeader) {
-    extraClasses.push("py-4")
+    extraClasses.push("p-4")
   }
   if (visible) {
     extraClasses.push("visible")
