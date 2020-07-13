@@ -128,16 +128,26 @@ const Landing = () => {
           className="landing-icons icon px-4"
           href="https://twitter.com/ReyTheDev"
         >
-          <FontAwesomeIcon icon={["fab", "twitter"]} />
+          <FontAwesomeIcon
+            title="Find Rey on Twitter"
+            icon={["fab", "twitter"]}
+            alt="Twitter"
+          />
         </a>
         <a className="landing-icons icon px-4" href="https://github.com/Rey810">
-          <FontAwesomeIcon icon={["fab", "github"]} />
+          <FontAwesomeIcon
+            title="See Rey's Code on Github"
+            icon={["fab", "github"]}
+          />
         </a>
         <a
           className="landing-icons icon px-4"
           href="https://www.linkedin.com/in/rey810/"
         >
-          <FontAwesomeIcon icon={["fab", "linkedin"]} />
+          <FontAwesomeIcon
+            title="Find Rey on LinkedIn"
+            icon={["fab", "linkedin"]}
+          />
         </a>
       </div>
     </section>
