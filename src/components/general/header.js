@@ -34,8 +34,8 @@ const Header = ({
 
   // adds an extra class if a header other than the post header is being displayed
   const extraClasses = []
-  if (!isPostHeader) {
-    extraClasses.push("p-4")
+  if (isPostHeader) {
+    extraClasses.push("pl-0 py-0")
   }
   if (visible) {
     extraClasses.push("visible")
@@ -85,7 +85,7 @@ const Header = ({
 
   return (
     <header
-      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full md:px-8 lg:px-12 xl:px-16 ${extraClasses.join(
+      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full p-4 md:px-8 lg:px-12 xl:px-16 ${extraClasses.join(
         " "
       )}`}
     >
