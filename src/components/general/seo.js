@@ -8,7 +8,7 @@ function SEO({
   lang,
   meta,
   title,
-  image: metaImage,
+  image,
   imageAltDescr,
   keywords,
   pathname,
@@ -41,44 +41,33 @@ function SEO({
     `
   )
 
-  const pageTitle = title || site.siteMetadata.title
+  // general meta
+  const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
-  const imagePath =
-    metaImage && metaImage.src
-      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : `${site.siteMetadata.siteUrl}${placeholderImage.childImageSharp.resize.src}`
-
-  const image = metaImage || placeholderImage.childImageSharp.resize
-
-  const imageAlt = imageAltDescr
-    ? imageAltDescr
-    : "An image decorating a description card"
-
-  const ogType = type ? type : "website"
   const metaKeywords = keywords || site.siteMetadata.keywords
   const metaVerification = site.siteMetadata.googleSiteVerification
   const url = pathname
     ? `${site.siteMetadata.siteUrl}${pathname}`
     : `${site.siteMetadata.siteUrl}`
+  const ogType = type ? type : "website"
+  // image meta
+  const metaImage = image || placeholderImage.childImageSharp.resize
+  const imagePath =
+    image && image.src
+      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
+      : `${site.siteMetadata.siteUrl}${placeholderImage.childImageSharp.resize.src}`
+  const imageAlt = imageAltDescr
+    ? imageAltDescr
+    : "An image decorating a description card"
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={pageTitle}
+      title={metaTitle}
       //the %s is used by Helmet to replace it with the title
       titleTemplate={`%s | From The Mountain`}
-      // link={
-      //   canonical
-      //     ? [
-      //         {
-      //           rel: "canonical",
-      //           href: canonical,
-      //         },
-      //       ]
-      //     : []
-      // }
       meta={[
         {
           name: `google-site-verification`,
@@ -94,7 +83,7 @@ function SEO({
         },
         {
           property: `og:title`,
-          content: pageTitle,
+          content: metaTitle,
         },
         {
           property: `og:description`,
@@ -110,7 +99,7 @@ function SEO({
         },
         {
           name: `twitter:title`,
-          content: pageTitle,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
@@ -122,7 +111,7 @@ function SEO({
         },
       ]
         .concat(
-          image
+          metaImage
             ? [
                 {
                   property: "og:image",
@@ -130,11 +119,11 @@ function SEO({
                 },
                 {
                   property: "og:image:width",
-                  content: image.width,
+                  content: metaImage.width,
                 },
                 {
                   property: "og:image:height",
-                  content: image.height,
+                  content: metaImage.height,
                 },
                 {
                   name: "twitter:image:alt",
