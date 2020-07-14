@@ -133,7 +133,7 @@ summary {
 
   /* Section Headers */
   h2 {
-    @apply text-5xl;
+    @apply text-6xl;
   }
 
   /* Smaller headers and main points */
@@ -160,6 +160,12 @@ summary {
   .landing-title {
     font-size: 6rem;
   }
+
+  /* Section Headers */
+  h2 {
+    font-size: 5rem;
+  }
+
   /* General Elements */
   p,
   .quote,
