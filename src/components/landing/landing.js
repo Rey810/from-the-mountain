@@ -124,22 +124,27 @@ const Landing = () => {
         } landing-icons-container flex flex-row justify-center py-8`}
       >
         <a
+          aria-label="Find Rey on Twitter"
           className="landing-icons icon px-4"
           href="https://twitter.com/ReyTheDev"
         >
           <FontAwesomeIcon
             title="Find Rey on Twitter"
             icon={["fab", "twitter"]}
-            alt="Twitter"
           />
         </a>
-        <a className="landing-icons icon px-4" href="https://github.com/Rey810">
+        <a
+          aria-label="See Rey's Code on Github"
+          className="landing-icons icon px-4"
+          href="https://github.com/Rey810"
+        >
           <FontAwesomeIcon
             title="See Rey's Code on Github"
             icon={["fab", "github"]}
           />
         </a>
         <a
+          aria-label="Find Rey on LinkedIn"
           className="landing-icons icon px-4"
           href="https://www.linkedin.com/in/rey810/"
         >
