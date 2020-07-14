@@ -132,7 +132,7 @@ summary {
   }
 
   /* Section Headers */
-  h1 {
+  h2 {
     @apply text-5xl;
   }
 
