@@ -3,11 +3,11 @@ import React from "react"
 
 const personal = () => {
   return (
-    <section className="personal-container pb-24 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32">
-      <div className="personal-title-container pb-8 font-bold flex flex-col sm:flex-row">
+    <section className="personal-container pb-24 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32 md:w-2/3 lg:w-7/12">
+      <div className="personal-title-container pb-12 font-bold flex flex-col sm:flex-row">
         <h2 className="personal-title">Let's Start With A Question</h2>
       </div>
-      <div className="personal-description-container md:w-2/3 lg:w-7/12">
+      <div className="personal-description-container">
         <p className="personal-description pb-4 ">
           What comes to mind when you hear 'The Perfect Website'? I picture a
           site that has amazing looks, fast load-times, ease-of-use and no

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function benefits() {
   return (
     <section className="benefit-container relative pb-24 xl:pb-32 pl-4 md:pl-8 lg:pl-12 xl:pl-16 xl:pb-32">
-      <h2 className="benefits-header pb-12">Benefits</h2>
+      <h2 className="benefits-header pb-12">Your Benefits</h2>
       <div className="all-benefits-container md:grid md:grid-cols-2 md:grid-rows-3 md:col-gap-2">
         <div className="benefit-1-container flex flex-row items-center md:pt-4">
           <FontAwesomeIcon

@@ -70,7 +70,7 @@ h2 {
 
 /* Section Headers */
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 /* General Elements */
@@ -139,7 +139,7 @@ summary {
 
   /* Section Headers */
   h2 {
-    @apply text-6xl;
+    @apply text-5xl;
   }
 
   /* Smaller headers and main points */
@@ -169,7 +169,7 @@ summary {
 
   /* Section Headers */
   h2 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   /* General Elements */
@@ -185,10 +185,6 @@ summary {
   h3,
   summary {
     @apply text-3xl;
-  }
-
-  .contact-header {
-    @apply text-6xl;
   }
 
   /* Icons */
