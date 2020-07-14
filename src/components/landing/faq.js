@@ -38,7 +38,7 @@ export default function FAQ() {
   }
 
   return (
-    <section className="faq-container pb-24 px-4 md:px-8 lg:px-12 xl:px-16">
+    <section className="faq-container pb-24 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32">
       <h2 className="faq-header pb-12">A few questions people normally ask</h2>
       <div className="faq-list-container md:w-2/3 lg:w-7/12">
         <ul className="faqs">

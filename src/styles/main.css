@@ -201,12 +201,6 @@ summary {
   }
 }
 
-@screen xl {
-  html {
-    font-size: 18px;
-  }
-}
-
 @media screen and (min-width: 1400px) {
   html {
     font-size: 24px;

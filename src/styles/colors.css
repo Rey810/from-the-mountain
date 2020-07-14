@@ -21,8 +21,8 @@
   --color-10-1-lighter: #fa5d2f;
 
   /* Overlay Colours */
-  --initial-color-overlay: hsla(0, 0%, 12%, 0.5);
-  --mid-colour-overlay: hsla(0, 0%, 12%, 0.7);
+  --initial-color-overlay: hsla(0, 0%, 12%, 0.4);
+  --mid-colour-overlay: hsla(0, 0%, 12%, 0.6);
   --final-colour-overlay: hsla(0, 0%, 12%);
 
   /* Card Colours */

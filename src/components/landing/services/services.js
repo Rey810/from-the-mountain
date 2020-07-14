@@ -31,7 +31,7 @@ const services = () => {
   }
 
   return (
-    <section className="services-container pb-24 pl-4 md:px-8 lg:px-12 xl:px-16">
+    <section className="services-container pb-24 pl-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32">
       <h2 className="services-header pb-12">Ways I Can Help You</h2>
       <div className="serviceCards-container flex flex-no-wrap px-2 overflow-x-auto scrolling-touch md:grid md:grid-cols-2 md:gap-4 md:pl-0 lg:w-3/4 lg:gap-8 xl:w-5/6 xl:gap-12 xl:mr-auto">
         <ServiceCard
