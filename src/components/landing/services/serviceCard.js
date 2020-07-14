@@ -8,7 +8,7 @@ const serviceCard = props => {
       <div className="icon-container p-4 w-12 h-12 inline-block rounded-full flex items-center justify-center">
         <FontAwesomeIcon icon={icon} size="lg" className="service-card-icon" />
       </div>
-      <h6 className="card-header font-bold pt-2 pb-4">{title}</h6>
+      <h3 className="card-header font-bold pt-2 pb-4">{title}</h3>
       <p className="card-description">{description}</p>
     </div>
   )

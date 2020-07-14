@@ -18,7 +18,7 @@ const toolbox = () => {
 
   return (
     <section id="Toolbox" className="toolbox-container pb-20 pt-12">
-      <h1 className="toolbox-header pb-8 font-bold">What's in my toolbox?</h1>
+      <h2 className="toolbox-header pb-8">What's in my toolbox?</h2>
       <div className="toolbox-cards-wrapper lg:flex lg:flex-row lg:justify-even">
         <ToolboxCard tools={tools.frontend} title={"Front-end"} />
         <ToolboxCard tools={tools.backend} title={"Back-end"} />

@@ -3,41 +3,46 @@ import ServiceCard from "./serviceCard"
 
 const services = () => {
   const service1 = {
-    title: "Have a Website that Works",
+    title: "Own a Website that Works",
     description:
-      "You want a website. It must look great and you want it to work.. all the time. Well, that's why I'm here! I help you by designing, building, and hosting a beautiful site that'll make you a very proud owner. Promise.",
+      "You want a website. It must look great and you want it to work... All the time. Well, that's why I'm here! I help you by designing, building, and hosting a beautiful site that'll make you a very proud owner. Promise.",
     icon: "award",
   }
 
   const service2 = {
-    title: "Build the Features You Want",
+    title: "Control the Features",
     description:
-      "Do you feel restricted by all the drag-and-drop web builders out there? I provide a custom solution that fits your exact needs. No extra nonsense. Just a fast, great looking site owned completely by you.",
+      "Do you feel restricted by all the drag-and-drop web builders out there? I provide a custom solution that fits your exact needs. At the end, you'll own a fast, great looking site.",
     icon: "code",
   }
 
   const service3 = {
-    title: "Sell your Stuff Online",
+    title: "Sell Your Stuff Online",
     description:
-      "You have an idea. You want to turn it into an online business without learning all the technical stuff like digital marketing, branding, and the inner workings of online sales dynamics. I'm here to help.",
+      "You have an idea. You want to turn it into an online business without all the hassle. Perfect! I'm here to help you set up an e-commerce store that looks amazing and works like a charm.",
     icon: "shopping-cart",
   }
 
   const service4 = {
-    title: "Become Famous",
+    title: "Become Famous with SEO",
     description:
-      "Google decides your fame by ranking you. A bad ranking means less people see your fantastic blog post or revolutionary product. I ensure you have a great ranking with best SEO practices. Give your content the audience it deserves. Who knows, you might get famous.",
+      "An impressive Google ranking means more people see your fantastic blog post or revolutionary product. I ensure you have a great ranking with best SEO practices. Give your content the audience it deserves!",
     icon: ["far", "thumbs-up"],
   }
 
   return (
-    <section className="services-container pb-20 pl-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32 ">
-      <h2 className="services-header pb-8 font-bold ">Ways I Can Help You</h2>
+    <section className="services-container pb-24 pl-4 md:px-8 lg:px-12 xl:px-16">
+      <h2 className="services-header pb-12">Ways I Can Help You</h2>
       <div className="serviceCards-container flex flex-no-wrap px-2 overflow-x-auto scrolling-touch md:grid md:grid-cols-2 md:gap-4 md:pl-0 lg:w-3/4 lg:gap-8 xl:w-5/6 xl:gap-12 xl:mr-auto">
         <ServiceCard
           title={service1.title}
           description={service1.description}
           icon={service1.icon}
+        />
+        <ServiceCard
+          title={service4.title}
+          description={service4.description}
+          icon={service4.icon}
         />
         <ServiceCard
           title={service2.title}
@@ -48,11 +53,6 @@ const services = () => {
           title={service3.title}
           description={service3.description}
           icon={service3.icon}
-        />
-        <ServiceCard
-          title={service4.title}
-          description={service4.description}
-          icon={service4.icon}
         />
       </div>
       <div className="cta pt-4 pr-4 md:pr-8 lg:pr-12 xl:pr-16">

@@ -3,9 +3,9 @@ import React from "react"
 
 const personal = () => {
   return (
-    <section className="personal-container pb-20 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32">
+    <section className="personal-container pb-24 px-4 md:px-8 lg:px-12 xl:px-16">
       <div className="personal-title-container pb-8 font-bold flex flex-col sm:flex-row">
-        <h2 className="personal-title ">Let's Start with A Question</h2>
+        <h2 className="personal-title">Let's Start With A Question</h2>
       </div>
       <div className="personal-description-container md:w-2/3 lg:w-7/12">
         <p className="personal-description pb-4 ">
@@ -17,7 +17,7 @@ const personal = () => {
           Maybe you picture a site that generates loads of sales, attracts
           subscribers, and brings across a clear message.
         </p>
-        <p className="personal-description pb-10">
+        <p className="personal-description">
           And that's why you might enjoy working with me - I build with a
           goal-oriented eye for precision. That means when we're done, you can
           close your eyes and picture <em>yours</em> as The Perfect Website.

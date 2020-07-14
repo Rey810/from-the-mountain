@@ -39,12 +39,18 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-h1,
-h2,
 h3,
 h4,
 h5 {
   font-weight: bold;
+}
+
+/* Font black is a font weight of 900 */
+/* Leading-none sets line-height to 1 to tighten things up */
+h1,
+h2 {
+  @apply font-black;
+  @apply leading-none;
 }
 
 /* //////////////// */
@@ -64,7 +70,7 @@ h5 {
 
 /* Section Headers */
 h2 {
-  @apply text-4xl;
+  font-size: 3.5rem;
 }
 
 /* General Elements */
@@ -81,7 +87,7 @@ li {
   @apply text-base;
 }
 
-h6,
+h3,
 summary {
   @apply text-2xl;
 }
@@ -137,7 +143,7 @@ summary {
   }
 
   /* Smaller headers and main points */
-  h6,
+  h3,
   summary {
     @apply text-2xl;
   }
@@ -176,7 +182,7 @@ summary {
   }
 
   /* Smaller headers and main points */
-  h6,
+  h3,
   summary {
     @apply text-3xl;
   }
@@ -198,6 +204,12 @@ summary {
 @screen xl {
   html {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 24px;
   }
 }
 

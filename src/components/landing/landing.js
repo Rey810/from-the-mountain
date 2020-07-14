@@ -84,7 +84,7 @@ const Landing = () => {
         <h1
           className={`opacity-0 ${
             animated ? "fadeInSlideUp-2nd" : ""
-          } landing-title leading-none font-extrabold text-center`}
+          } landing-title leading-none text-center`}
         >
           Freelance Developer
         </h1>
