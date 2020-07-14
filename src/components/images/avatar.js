@@ -18,7 +18,7 @@ const AvatarImage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "black.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid
           }
         }

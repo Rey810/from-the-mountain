@@ -62,7 +62,7 @@ module.exports = {
         icon: `src/images/avatar.png`,
       },
     },
-    "gatsby-plugin-dark-mode",
+    // "gatsby-plugin-dark-mode",
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-clicky`,
