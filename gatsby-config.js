@@ -79,6 +79,13 @@ module.exports = {
       resolve: "gatsby-transformer-yaml",
       options: { typeName: "Tag", path: "src/data/convertkit-tags" },
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/projects`,
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-fullstory`,
     //   options: {

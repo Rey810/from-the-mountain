@@ -5,7 +5,7 @@ const projects = () => {
   // all project info
   const projectsObj = {
     project1: {
-      title: "Odin's Forecast",
+      title: "",
       imageURL: "This is the project 1 image",
       description:
         "Ever wondered what Odin thought of our current weather application solutions? Well he thinks they're all rubbish so he tasked me with building a version that would master all others. This is it. Use responsibly.",

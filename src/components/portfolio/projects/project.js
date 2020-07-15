@@ -1,23 +1,23 @@
 import React from "react"
 import uuid from "react-uuid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Project1Image from "../../../images/project1-image"
-import Project2Image from "../../../images/project2-image"
+import Img from "gatsby-image"
+
+// import Project1Image from "../../../images/project1-image"
+// import Project2Image from "../../../images/project2-image"
 
 const project = props => {
   // properties of the project
-  const { title, description, techStack, siteURL, codeURL } = props.info
+  const { title, description, techStack, siteURL, codeURL, image } = props.info
 
-  // all the project image components
-  const projectImageComponents = {
-    "Odin's Forecast": <Project1Image />,
-    "Odin's Book": <Project2Image />,
-  }
-
+  console.dir("image", image)
   return (
     <div className="project-container pb-10 md:pb-20 md:mx-16">
       <div className="image-container relative bg-red-500 pb-1/1 md:pb-1/2">
-        {projectImageComponents[title]}
+        {/* <Img
+          fluid={props.image.childImageSharp.fluid}
+          className="absolute-important h-full w-full"
+        /> */}
       </div>
       <h6 className="project-header text-2xl font-semi-bold pt-6 pb-4">
         {title}
