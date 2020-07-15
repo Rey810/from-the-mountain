@@ -1,31 +1,54 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/containers/layout"
 import SEO from "../components/general/seo"
 // import Projects from "../components/projects"
 // import Toolbox from "../components/toolbox"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+// import { useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
+import Websites from "../components/portfolio/projects/websites"
+import ToggleSwitch from "../components/general/toggleSwitch"
+import Apps from "../components/portfolio/projects/apps"
 import Footer from "../components/general/footer"
 
 const ProjectsPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "construction.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  const [toggled, setToggled] = useState(false)
+
+  const toggleSwitchHandler = () => {
+    setToggled(!toggled)
+  }
+
+  const displayedProjects = toggled ? <Websites /> : <Apps />
+
   return (
     <Layout canSeeHeader={true} usesLinksHeader={true}>
       <SEO />
-      <div className="information-container pt-20 relative pl-4 md:pl-8 lg:pl-12 xl:pl-16 h-screen">
-        {/* <Projects />
+      {/* <Projects />
         <Toolbox /> */}
-        <div className="construction-notice-container mx-auto my-12">
+      <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-10">
+        <ToggleSwitch toggleProjects={toggleSwitchHandler} />
+        {displayedProjects}
+      </section>
+      <Footer />
+    </Layout>
+  )
+}
+
+export default ProjectsPage
+
+// const data = useStaticQuery(graphql`
+//   query {
+//     placeholderImage: file(relativePath: { eq: "construction.png" }) {
+//       childImageSharp {
+//         fluid {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `)
+
+//PAGE UNDER CONSTRUCTION VIEW
+/* <div className="construction-notice-container mx-auto my-12">
           <h1 className="constrution-header text-center font-bold">
             Coming Soon
           </h1>
@@ -38,13 +61,6 @@ const ProjectsPage = () => {
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             className="absolute-important h-full w-full"
-            alt="Two odly shaped cartoon construction workers digging"
+            alt="Two oddly shaped cartoon construction workers digging"
           />
-        </div>
-        <Footer />
-      </div>
-    </Layout>
-  )
-}
-
-export default ProjectsPage
+        </div> */
