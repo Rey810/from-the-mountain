@@ -39,13 +39,13 @@ const Apps = () => {
   console.dir(apps)
 
   console.log("apps.js image", apps[0].image)
-  console.log("apps.js image 2", apps[1].image)
+  // console.log("apps.js image 2", apps[1].image)
   return (
-    <div className="project-container pb-10 md:pb-20 md:mx-16">
+    <>
       {apps.map(project => (
         <Project info={project} />
       ))}
-    </div>
+    </>
   )
 }
 

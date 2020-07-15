@@ -12,17 +12,17 @@ const project = props => {
 
   console.dir("image", image)
   return (
-    <div className="project-container pb-10 md:pb-20 md:mx-16">
+    <div className="project-container pb-10 md:pb-20 md:mx-16 lg:w-1/3">
       <div className="image-container relative bg-red-500 pb-1/1 md:pb-1/2">
-        {/* <Img
-          fluid={props.image.childImageSharp.fluid}
+        <Img
+          fluid={image.childImageSharp.fluid}
           className="absolute-important h-full w-full"
-        /> */}
+        />
       </div>
       <h6 className="project-header text-2xl font-semi-bold pt-6 pb-4">
         {title}
       </h6>
-      <p className="project-description pb-4">{description}</p>
+      <p className="project-description pb-4 h-56">{description}</p>
       <div className="project-tech-container text-4xl pb-6 pl-2">
         {techStack.map(tech => {
           return (
