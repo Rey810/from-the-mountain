@@ -14,12 +14,13 @@ const BlogPage = ({ data }) => (
       keywords="blog, developer happiness, developer well-being, coding blog, programming blog, developer zen habits, Rey van den Berg's blog, From The Mountain blog, thoughts on developer well-being, thoughts on developer mental health, how to become a better developer, Cape Town developer blog, Cape Town freelance developer"
     />
     <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-10">
-      <h1 className="pt-12">Latest Posts</h1>
+      <h1 className="pt-12 text-5xl">Latest Posts</h1>
       <div class="container py-12">
         <div class="flex flex-wrap -m-4">
           {data.allMarkdownRemark.edges.map(post => (
             <BlogCard
               title={post.node.frontmatter.title}
+              cardTitle={post.node.frontmatter.cardTitle}
               image={post.node.frontmatter.featuredImage.childImageSharp.fluid}
               imageAlt={post.node.frontmatter.imageAlt}
               category={post.node.frontmatter.category}
@@ -45,6 +46,7 @@ export const pageQuery = graphql`
           frontmatter {
             path
             title
+            cardTitle
             date
             author
             category
