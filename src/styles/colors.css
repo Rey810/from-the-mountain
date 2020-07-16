@@ -23,7 +23,7 @@
   /* Overlay Colours */
   --initial-color-overlay: hsla(0, 0%, 12%, 0.4);
   --mid-colour-overlay: hsla(0, 0%, 12%, 0.6);
-  --final-colour-overlay: hsla(0, 0%, 12%);
+  --final-colour-overlay: rgb(31, 31, 31);
 
   /* Card Colours */
   --card-bg-color: hsla(0, 0%, 12%, 0.65);
@@ -32,6 +32,13 @@
 
   /* FAQ Colours */
   --faq-bg-color: hsla(0, 0%, 12%, 0.8);
+
+  /* Project Card Colors */
+  --project-card-header-color: hsla(0, 0, 100, 0.85);
+  --project-card-description-color: hsla(0, 0, 100, 0.75);
+  --project-card-tech-color: hsla(0, 0, 100, 0.65);
+  --project-button-sec-bg-color: hsla(0, 0%, 100%, 0.05);
+  --project-button-sec-text-color: hsla(0, 0%, 100%, 0.75);
 }
 /*////////////////*/
 /* FOCUS COLOURS */
@@ -262,6 +269,36 @@ header {
 
 .benefit-icon {
   color: var(--color-10-1);
+}
+
+/*/////////////////////////*/
+/* //////PROJECT CARDS/// */
+/*///////////////////////*/
+.project-container {
+  background-color: var(--color-60-medium);
+}
+
+.project-container h2 {
+  color: var(--project-card-header-color);
+}
+
+.project-container p {
+  color: var(--project-card-description-color);
+}
+
+.project-tech-container a {
+  color: var(--project-card-tech-color);
+  border-color: var(--project-card-tech-color);
+}
+
+.project-site-link {
+  color: var(--project-card-description-color);
+  background-color: var(--color-10-1);
+}
+
+.project-code-link {
+  color: var(--project-button-sec-text-color);
+  background-color: var(--project-button-sec-bg-color);
 }
 
 /*//////////*/

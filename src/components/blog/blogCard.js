@@ -15,7 +15,7 @@ const BlogCard = props => {
 
   return (
     <div className="blog-post-card p-4 md:w-1/2 lg:w-1/3">
-      <div className="h-full border-2 rounded-lg overflow-hidden">
+      <div className="h-full rounded-lg overflow-hidden">
         <Img fluid={image} alt={imageAlt} />
         <div className="p-6">
           <h2 className="tracking-widest text-lg title-font font-light mb-2">

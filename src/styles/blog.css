@@ -3,6 +3,8 @@
 /*////////////////*/
 .blog-post-card {
   --blog-card-link-color: #ec4e20;
+  --blog-card-bg-color: #313131;
+  background-color: var(--blog-card-bg-color);
 }
 
 .blog-container {
