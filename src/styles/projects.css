@@ -3,3 +3,11 @@
   height: -moz-available;
   height: -webkit-fill-available;
 }
+
+.project-image-container {
+  padding-bottom: inherit;
+}
+
+.project-tech-widget {
+  padding: 0.25em 0.5em;
+}

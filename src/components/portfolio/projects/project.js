@@ -16,7 +16,7 @@ const project = props => {
     <>
       <div className="project-square-wrapper relative w-1/2 pb-1/2">
         <div className="project-container absolute inset-0 grid grid-rows-2 rounded-lg">
-          <div className="project-image-container relative mx-6 pb-1/1">
+          <div className="project-image-container relative mx-6">
             <Img
               fluid={image.childImageSharp.fluid}
               className="absolute-important mt-6 rounded-md h-full w-full"
@@ -34,7 +34,9 @@ const project = props => {
                 {techStack.map(tech => {
                   return (
                     <a key={uuid()} href={tech.url} className="tech-link mr-4">
-                      <FontAwesomeIcon icon={["fab", tech.name]} />
+                      <span className="project-tech-widget border-2 rounded-md">
+                        {tech.name}
+                      </span>
                     </a>
                   )
                 })}
@@ -57,9 +59,6 @@ const project = props => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
     </>
   )
 }

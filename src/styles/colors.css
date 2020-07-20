@@ -37,8 +37,8 @@
   --project-card-header-color: hsla(0, 0, 100, 0.85);
   --project-card-description-color: hsla(0, 0, 100, 0.75);
   --project-card-tech-color: hsla(0, 0, 100, 0.65);
-  --project-button-sec-bg-color: hsla(0, 0%, 100%, 0.05);
-  --project-button-sec-text-color: hsla(0, 0%, 100%, 0.75);
+  --project-button-sec-bg-color: hsla(0, 0, 100, 0.05);
+  --project-button-sec-text-color: hsla(0, 0, 100, 0.75);
 }
 /*////////////////*/
 /* FOCUS COLOURS */
@@ -286,11 +286,6 @@ header {
   color: var(--project-card-description-color);
 }
 
-.project-tech-container a {
-  color: var(--project-card-tech-color);
-  border-color: var(--project-card-tech-color);
-}
-
 .project-site-link {
   color: var(--project-card-description-color);
   background-color: var(--color-10-1);
@@ -299,6 +294,11 @@ header {
 .project-code-link {
   color: var(--project-button-sec-text-color);
   background-color: var(--project-button-sec-bg-color);
+}
+
+.project-tech-container {
+  color: var(--project-card-tech-color);
+  border-color: var(--project-card-tech-color);
 }
 
 /*//////////*/
