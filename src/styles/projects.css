@@ -1,0 +1,5 @@
+/* Prevents image from overflowing the first grid row in the projects cards */
+.project-image-container div {
+  height: -moz-available;
+  height: -webkit-fill-available;
+}
