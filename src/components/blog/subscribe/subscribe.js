@@ -22,7 +22,7 @@ export default function subscribe({ theme }) {
         <p className="text-base font-light mx-auto mb-4">Your email address</p>
         <SubscriptionForm tags={["developer"]} />
         <p className="form-footer-text text-xs">
-          Powered by ConvertKit and a healthy dose of optimism. Unsubscribe
+          Powered by a healthy dose of optimism. No spam - ever. Unsubscribe
           anytime.
         </p>
       </div>
