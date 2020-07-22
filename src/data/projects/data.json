@@ -18,14 +18,6 @@
           "imageURL": "This is the project 1 image",
           "description": "Ever wondered what Odin thought of our current weather application solutions? Well he thinks they're all rubbish so he tasked me with building a version that would master all others. This is it. Use responsibly.",
           "techStack": [
-            {
-              "name": "HTML",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-            },
-            {
-              "name": "CSS",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-            },
             { "name": "JavaScript", "url": "https://javascript.info/" },
             { "name": "Cloudfare", "url": "/" }
           ],

@@ -1,6 +1,5 @@
 /* Prevents image from overflowing the first grid row in the projects cards */
 .project-image-container div {
-  height: -moz-available;
   height: -webkit-fill-available;
 }
 
@@ -8,6 +7,10 @@
   padding-bottom: inherit;
 }
 
-.project-tech-widget {
+.tech-link {
   padding: 0.25em 0.5em;
+}
+
+.project-buttons-container a {
+  padding: 0.5em 1em;
 }
