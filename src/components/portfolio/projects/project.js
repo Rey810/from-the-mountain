@@ -19,15 +19,15 @@ const project = props => {
           <div className="project-image-container relative m-4 mb-0">
             <Img
               fluid={image.childImageSharp.fluid}
-              className="absolute inset-0  rounded-md h-full w-full"
+              className="absolute inset-0  rounded-t-md h-full w-full"
             />
           </div>
-          <div className="project-info-container mx-4 mb-4 flex justify-between">
+          <div className="project-info-container mx-4 mb-auto mt-4 flex justify-between">
             <div className="project-text-container w-1/2 flex flex-col justify-end">
-              <h2 className="project-header text-lg font-semi-bold mb-4">
+              <h2 className="project-header text-lg md:text-xl font-semi-bold mb-4">
                 {title}
               </h2>
-              <p className="project-description text-xs mb-4 h-17 overflow-y-hidden leading-snug">
+              <p className="project-description text-xs mb-4 h-17 overflow-y-hidden leading-snug md:text-sm md:h-20">
                 {description}
               </p>
               <div className="project-tech-container flex flex-wrap">
@@ -36,7 +36,7 @@ const project = props => {
                     <a
                       key={uuid()}
                       href={tech.url}
-                      className="tech-link text-xs border-2 rounded-md mb-2 mr-2"
+                      className="tech-link text-xs md:text-sm border-2 rounded-md mb-2 mr-2"
                     >
                       {tech.name}
                     </a>
@@ -47,7 +47,7 @@ const project = props => {
             <div className="project-buttons-container w-2/5 mb-2 flex flex-col justify-end font-extrabold leading-none">
               <a
                 href={siteURL}
-                className="project-site-link text-xs rounded-md shadow-md flex items-center justify-around"
+                className="project-site-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around"
               >
                 View Project{" "}
                 <svg className="w-4" fill="currentColor" viewBox="0 0 20 20">
@@ -60,7 +60,7 @@ const project = props => {
               </a>
               <a
                 href={codeURL}
-                className="project-code-link text-xs rounded-md shadow-md flex items-center  justify-around mt-2"
+                className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center  justify-around mt-2"
               >
                 See the Code{" "}
                 <svg className="w-4" fill="currentColor" viewBox="0 0 20 20">

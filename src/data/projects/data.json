@@ -30,10 +30,8 @@
           "imageURL": "This is the project 2 image",
           "description": "Apparently Odin loves to be social but he didn't fancy any of these other social media 'gimmicks' as he calls them. So he paid me a lot of money and awared me eternal life to bring his idea of the perfect social media app to life",
           "techStack": [
-            { "name": "html5", "url": "/" },
-            { "name": "css3-alt", "url": "/" },
-            { "name": "js", "url": "/" },
-            { "name": "rails", "url": "/" }
+            { "name": "JavaScript", "url": "/" },
+            { "name": "Rails", "url": "/" }
           ],
           "siteURL": "/",
           "codeURL": "/",

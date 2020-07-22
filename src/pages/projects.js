@@ -26,7 +26,7 @@ const ProjectsPage = () => {
         <Toolbox /> */}
       <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-10">
         <ToggleSwitch toggleProjects={toggleSwitchHandler} />
-        <div className="projects-container lg:flex lg:flex-row lg:flex-wrap">
+        <div className="projects-container mx-auto sm:w-72 lg:w-80">
           {displayedProjects}
         </div>
       </section>

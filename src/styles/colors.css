@@ -34,11 +34,11 @@
   --faq-bg-color: hsla(0, 0%, 12%, 0.8);
 
   /* Project Card Colors */
-  --project-card-header-color: hsla(0, 0, 100, 0.85);
+  --project-card-header-color: hsla(0, 0, 100%, 0.85);
   --project-card-description-color: hsla(0, 0, 100, 0.75);
-  --project-card-tech-color: hsla(0, 0, 100, 0.65);
-  --project-button-sec-bg-color: hsla(0, 0, 100, 0.05);
-  --project-button-sec-text-color: hsla(0, 0, 100, 0.75);
+  --project-card-tech-color: hsla(0, 0, 100%, 0.65);
+  --project-button-sec-bg-color: hsla(0, 0%, 100%, 0.05);
+  --project-button-sec-text-color: hsla(0, 0, 100%, 0.75);
 }
 /*////////////////*/
 /* FOCUS COLOURS */
