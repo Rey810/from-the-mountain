@@ -44,7 +44,7 @@ const project = props => {
                 })}
               </div>
             </div>
-            <div className="project-buttons-container w-2/5 mb-2 flex flex-col justify-end font-extrabold leading-none">
+            <div className="project-buttons-container w-5/12 mb-2 flex flex-col justify-end font-extrabold leading-none">
               <a
                 href={siteURL}
                 className="project-site-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around"

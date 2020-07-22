@@ -38,6 +38,7 @@
   --project-card-description-color: rgba(255, 255, 255, 0.75);
   --project-card-tech-color: rgba(255, 255, 255, 0.55);
   --project-card-tech-border-color: rgba(255, 255, 255, 0.4);
+  /* Project Card Sec CTA */
   --project-button-sec-bg-color: rgba(64, 64, 64, 0.65);
   --project-button-sec-text-color: rgba(255, 255, 255, 0.75);
 }
