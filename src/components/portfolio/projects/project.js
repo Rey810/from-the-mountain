@@ -60,7 +60,7 @@ const project = props => {
               </a>
               <a
                 href={codeURL}
-                className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center  justify-around mt-2"
+                className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around mt-3"
               >
                 See the Code{" "}
                 <svg className="w-4" fill="currentColor" viewBox="0 0 20 20">

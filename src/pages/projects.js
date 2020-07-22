@@ -20,7 +20,7 @@ const ProjectsPage = () => {
   const displayedProjects = toggled ? <Websites /> : <Apps />
 
   return (
-    <Layout canSeeHeader={true} usesLinksHeader={true}>
+    <Layout canSeeHeader={true} usesPortfolioHeader={true}>
       <SEO />
       {/* <Projects />
         <Toolbox /> */}

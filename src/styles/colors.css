@@ -21,12 +21,12 @@
   --color-10-1-lighter: #fa5d2f;
 
   /* Overlay Colours */
-  --initial-color-overlay: hsla(0, 0%, 12%, 0.4);
-  --mid-colour-overlay: hsla(0, 0%, 12%, 0.6);
+  --initial-color-overlay: rgba(31, 31, 31, 0.4);
+  --mid-colour-overlay: rgba(31, 31, 31, 0.6);
   --final-colour-overlay: rgb(31, 31, 31);
 
   /* Card Colours */
-  --card-bg-color: hsla(0, 0%, 12%, 0.65);
+  --card-bg-color: rgba(31, 31, 31, 0.65);
   --card-header-color: #ffffff;
   --card-text-color: #ffffffd2;
 
@@ -34,11 +34,12 @@
   --faq-bg-color: hsla(0, 0%, 12%, 0.8);
 
   /* Project Card Colors */
-  --project-card-header-color: hsla(0, 0, 100%, 0.85);
-  --project-card-description-color: hsla(0, 0, 100, 0.75);
-  --project-card-tech-color: hsla(0, 0, 100%, 0.65);
-  --project-button-sec-bg-color: hsla(0, 0%, 100%, 0.05);
-  --project-button-sec-text-color: hsla(0, 0, 100%, 0.75);
+  --project-card-header-color: rgba(255, 255, 255, 0.85);
+  --project-card-description-color: rgba(255, 255, 255, 0.75);
+  --project-card-tech-color: rgba(255, 255, 255, 0.55);
+  --project-card-tech-border-color: rgba(255, 255, 255, 0.4);
+  --project-button-sec-bg-color: rgba(64, 64, 64, 0.65);
+  --project-button-sec-text-color: rgba(255, 255, 255, 0.75);
 }
 /*////////////////*/
 /* FOCUS COLOURS */
@@ -298,7 +299,10 @@ header {
 
 .project-tech-container {
   color: var(--project-card-tech-color);
-  border-color: var(--project-card-tech-color);
+}
+
+.project-tech-container a {
+  border-color: var(--project-card-tech-border-color);
 }
 
 /*//////////*/
