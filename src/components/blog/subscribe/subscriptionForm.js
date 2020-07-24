@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 // import ReCAPTCHA from "react-google-recaptcha"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 
 const SubscriptionForm = ({ tags }) => {
   const [status, setStatus] = useState(null)
@@ -98,12 +100,19 @@ const SubscriptionForm = ({ tags }) => {
       {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
 
       <button
-        className={`custom-subscribe-button text-white text-lg font-semibold border-0 py-2 px-8 rounded ${
+        className={`custom-subscribe-button text-white text-lg font-semibold border-0 py-2 px-6 rounded items-center ${
           status === "SUCCESS" ? "hidden" : ""
         }`}
         type="submit"
       >
-        {loading ? "Thinking..." : "Stay Curious"}
+        {loading ? (
+          "Sending..."
+        ) : (
+          <>
+            <span>Stay Curious</span>
+            <FontAwesomeIcon className="ml-4" icon={faPaperPlane} />
+          </>
+        )}
       </button>
       {status === "SUCCESS" && (
         <p class="success">
