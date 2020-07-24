@@ -32,10 +32,9 @@
 
   /* FAQ Colours */
   --faq-bg-color: hsla(0, 0%, 12%, 0.8);
-
   /* Project Card Colors */
-  --project-card-header-color: rgba(255, 255, 255, 0.85);
-  --project-card-description-color: rgba(255, 255, 255, 0.75);
+  --project-card-header-color: rgba(255, 255, 255, 0.9);
+  --project-card-description-color: rgba(255, 255, 255, 0.8);
   --project-card-tech-color: rgba(255, 255, 255, 0.55);
   --project-card-tech-border-color: rgba(255, 255, 255, 0.4);
   /* Project Card Sec CTA */
@@ -289,7 +288,7 @@ header {
 }
 
 .project-site-link {
-  color: var(--project-card-description-color);
+  color: var(--color-60-light);
   background-color: var(--color-10-1);
 }
 

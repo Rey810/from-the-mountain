@@ -1,7 +1,5 @@
 import React from "react"
 import uuid from "react-uuid"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import Img from "gatsby-image"
 
 // import Project1Image from "../../../images/project1-image"
@@ -22,7 +20,7 @@ const project = props => {
               className="absolute inset-0  rounded-t-md h-full w-full"
             />
           </div>
-          <div className="project-info-container mx-4 mb-auto mt-4 flex justify-between">
+          <div className="project-info-container mx-4 my-auto flex justify-between">
             <div className="project-text-container w-1/2 flex flex-col justify-end">
               <h2 className="project-header text-lg md:text-xl font-semi-bold mb-4">
                 {title}
@@ -60,7 +58,7 @@ const project = props => {
               </a>
               <a
                 href={codeURL}
-                className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around mt-3"
+                className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around mt-4"
               >
                 See the Code{" "}
                 <svg className="w-4" fill="currentColor" viewBox="0 0 20 20">
