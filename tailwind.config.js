@@ -10,7 +10,7 @@ module.exports = {
         ideal: "65rem",
       },
       boxShadow: {
-        outline: "0 0 0 3px #ec4e20",
+        outline: "0 0 0 1px #ec4e20",
       },
       spacing: {
         "1/40": "20%",

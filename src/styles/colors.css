@@ -12,9 +12,10 @@
   --bg-color: hsl(0, 0%, 98%);
   --cta-color: rgb(24, 206, 176);
   --cta-hover-color: hsl(192, 50.7%, 40.5%); */
-  --color-60-lighter: #ffffff;
+  --color-60-lighter: rgb(255, 255, 255);
   --color-60-light: hsl(124, 80%, 96%);
-  --color-60-medium: #313131;
+  --color-60-medium: hsl(0, 0%, 25%);
+  --color-60-medium-dark: #313131;
   --color-60-dark: #1f1f1f;
   --color-30-1: rgba(255, 255, 255, 0.795);
   --color-10-1: #ec4e20;
@@ -169,7 +170,7 @@ header {
 
 .email-field {
   background-color: var(--color-60-light);
-  color: var(--color-60-medium);
+  color: var(--color-60-medium-dark);
   opacity: 0.9;
 }
 
@@ -214,7 +215,7 @@ header {
 }
 
 .card-color p {
-  color: var(--color-60-medium);
+  color: var(--color-60-medium-dark);
 }
 
 .card-color h6 {
@@ -276,7 +277,7 @@ header {
 /* //////PROJECT CARDS/// */
 /*///////////////////////*/
 .project-container {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-60-medium-dark);
 }
 
 .project-container h2 {
@@ -311,7 +312,7 @@ header {
 /*Tool*/
 .tool {
   background-color: var(--color-60-light);
-  color: var(--color-60-medium);
+  color: var(--color-60-medium-dark);
 }
 
 /* FAQ */

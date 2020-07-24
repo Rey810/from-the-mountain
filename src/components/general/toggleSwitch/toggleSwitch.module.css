@@ -1,0 +1,41 @@
+.toggleSwitchWrapper button {
+  /* transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out; */
+  transition: all 0.3s ease-out;
+}
+
+.toggleArea {
+  padding: 1.125em 1em;
+}
+
+/* Colors are taken from colors.css - mostly from the project cards colours due to this toggle switch currently being used on the projects page */
+.active {
+  background-color: #ec4e20;
+  color: rgba(255, 255, 255);
+}
+
+.inactive {
+  background-color: #313131;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.active:hover,
+.active:active {
+  background-color: hsl(14, 95%, 60%);
+}
+
+.inactive:hover,
+.inactive:active {
+  background-color: hsl(0, 0%, 32%);
+}
+
+.active:focus {
+  @apply outline-none;
+  @apply shadow-outline;
+}
+
+.inactive:focus {
+  @apply outline-none;
+  @apply shadow-outline;
+}

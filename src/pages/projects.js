@@ -6,26 +6,29 @@ import SEO from "../components/general/seo"
 // import { useStaticQuery, graphql } from "gatsby"
 // import Img from "gatsby-image"
 import Websites from "../components/portfolio/projects/websites"
-import ToggleSwitch from "../components/general/toggleSwitch"
+import ToggleSwitch from "../components/general/toggleSwitch/toggleSwitch"
 import Apps from "../components/portfolio/projects/apps"
 import Footer from "../components/general/footer"
 
 const ProjectsPage = () => {
-  const [toggled, setToggled] = useState(false)
+  const [showSites, setShowSites] = useState(false)
 
   const toggleSwitchHandler = () => {
-    setToggled(!toggled)
+    setShowSites(!showSites)
   }
 
-  const displayedProjects = toggled ? <Websites /> : <Apps />
+  const displayedProjects = showSites ? <Websites /> : <Apps />
 
   return (
-    <Layout canSeeHeader={true} usesPortfolioHeader={true}>
+    <Layout canSeeHeader usesPortfolioHeader>
       <SEO />
       {/* <Projects />
         <Toolbox /> */}
-      <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-10">
-        <ToggleSwitch toggleProjects={toggleSwitchHandler} />
+      <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-16">
+        <ToggleSwitch
+          toggleProjects={toggleSwitchHandler}
+          showSites={showSites}
+        />
         <div className="projects-container mx-auto sm:w-72 lg:w-76">
           {displayedProjects}
         </div>
