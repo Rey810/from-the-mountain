@@ -64,11 +64,11 @@ module.exports = {
     },
     // "gatsby-plugin-dark-mode",
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-clicky`,
-      options: {
-        siteId: "101262924",
-      },
+    // {
+    //   resolve: `gatsby-plugin-clicky`,
+    //   options: {
+    //     siteId: '101262924',
+    //   },
     },
     `gatsby-plugin-twitter`,
     {
