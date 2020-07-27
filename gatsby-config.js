@@ -69,7 +69,7 @@ module.exports = {
     //   options: {
     //     siteId: '101262924',
     //   },
-    },
+    // },
     `gatsby-plugin-twitter`,
     {
       resolve: "gatsby-source-filesystem",
