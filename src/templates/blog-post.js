@@ -16,8 +16,12 @@ export default function Template({ data, location }) {
     ? post.frontmatter.featuredImage.childImageSharp.resize
     : null
 
+  // uses a date that exists. If the post has been updated, that date will be used
+  let date = post.frontmatter.lastUpdated || post.frontmatter.date
+  let dateType = post.frontmatter.lastUpdated ? "Last Updated" : "Published"
+
   // converts human-readable date into machine-readable date to be used in "Published..."
-  const ISOdateString = new Date(post.frontmatter.date).toISOString()
+  const ISOdateString = new Date(date).toISOString()
 
   return (
     <Layout location={"blog"} usesInPostHeader={true}>
@@ -42,9 +46,9 @@ export default function Template({ data, location }) {
           <h1 className="text-4xl">{post.frontmatter.title}</h1>
           <div className="subheader-container sm:flex sm:flex-row sm:items-center">
             <div className="publish-date">
-              Published{" "}
-              <time datetime={ISOdateString}>{post.frontmatter.date}</time> by{" "}
-              {post.frontmatter.author}
+              <strong>{dateType}:</strong>{" "}
+              <time datetime={ISOdateString}>{date}</time>{" "}
+              <i>by {post.frontmatter.author}</i>
             </div>
             <div className="twitter-follow-button-container sm:mt-0 sm:mx-2">
               <a
@@ -102,6 +106,7 @@ export const postQuery = graphql`
         title
         author
         date
+        lastUpdated
         summary
         keywords
         imageAlt

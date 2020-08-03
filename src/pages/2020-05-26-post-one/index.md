@@ -1,8 +1,9 @@
 ---
 path: "/blog/3-wellbeing-focused-ways-to-be-a-better-developer"
+lastUpdated: "03 August, 2020"
 date: "30 June, 2020"
 title: "The 3 Best Wellbeing Habits You Need to be a Better Developer"
-cardTitle: "The 3 Best Wellbeing Habits" 
+cardTitle: "The 3 Best Wellbeing Habits"
 author: "Rey van den Berg"
 category: "Developer Happiness"
 summary: "Using these approaches will greatly improve your mental health."
@@ -71,7 +72,28 @@ Maybe something like "My day will be successful if I _spend time attempting_ to 
 
 That slight mental adjustment is especially helpful for beginners - often they (a.k.a. _we_) underestimate a problem and feel that they've wasted the day when they go to bed without having solved it.
 
-Your feelings of frustration only hurt yourself, they don't help you to code better or faster.
+As slight as the mental adjustment can be, subtle changes in automatic behaviour initially require concentrated effort. Let's practice something real quick - try to identify the 3 process-oriented approaches from the list below:
+
+1. ❓ I am going to try get fit this month.
+1. ❓ I'm going to spend time on a few exciting physical activities this month.
+
+1. ❓ I am going to increase my vocabulary by 5% this month.
+1. ❓ I am going to spend some time on a technical book in a topic that I've always wanted to learn more about.
+
+1. ❓ I'm not going to eat any meat this month.
+1. ❓ I'm going to explore exciting vegetarian dishes this month.
+
+.  
+.  
+.
+
+If you chose the following 3 as the process-oriented approaches, then you're on the right track:
+
+1. ✅ I'm going to spend time on a few exciting physical activities this month.
+1. ✅ I am going to spend some time on a technical book in a topic that I've always wanted to learn more about.
+1. ✅ I'm going to explore exciting vegetarian dishes this month.
+
+Now, to make this mindset change as frictionless as possible, see if you could apply this concept to other areas of your life in a similar vein. The thing is, your feelings of frustration only hurt yourself, they don't help you to code better or faster.
 
 So try it - **focus on the _process_ because, guess what, tomorrow is another day.**
 
