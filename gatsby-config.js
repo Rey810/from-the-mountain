@@ -92,7 +92,14 @@ module.exports = {
     //     fs_org: "W6GPY",
     //   },
     // },
-    `gatsby-plugin-netlify`,
+    {
+      resolve: "gatsby-plugin-netlify",
+      options: {
+        headers: {
+          "/*": [`Referrer-Policy: origin-when-cross-origin`],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-offline`,
       options: {
