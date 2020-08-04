@@ -24,7 +24,7 @@ summary:focus,
 /* ///////////// */
 /* LINE HEIGHTS */
 /* /////////// */
-.general-layout-children p {
+.landing-children p {
   line-height: 1.75;
 }
 
@@ -79,16 +79,16 @@ a {
   cursor: pointer;
 }
 
-.general-layout-children p,
+.landing-children p,
 .quote,
 .landing-cta-2,
 .cta,
-.general-layout-children li {
+.landing-children li {
   @apply text-base;
 }
 
-.general-layout-children h3,
-.general-layout-children summary {
+.landing-children h3,
+.landing-children summary {
   @apply text-2xl;
 }
 
@@ -128,21 +128,21 @@ a {
   }
 
   /* General Elements */
-  .general-layout-children p,
+  .landing-children p,
   .quote,
   .landing-cta-2,
   .cta,
-  .general-layout-children li {
+  .landing-children li {
     @apply text-lg;
   }
 
   /* Section Headers */
-  .general-layout-children h2 {
+  .landing-children h2 {
     @apply text-5xl;
   }
 
   /* Smaller headers and main points */
-  .general-layout-children h3,
+  .landing-children h3,
   summary {
     @apply text-2xl;
   }
@@ -167,21 +167,21 @@ a {
   }
 
   /* Section Headers */
-  .general-layout-children h2 {
+  .landing-children h2 {
     font-size: 4rem;
   }
 
   /* General Elements */
-  .general-layout-children p,
+  .landing-children p,
   .quote,
   .landing-cta-2,
   .cta,
-  .general-layout-children li {
+  .landing-children li {
     @apply text-xl;
   }
 
   /* Smaller headers and main points */
-  .general-layout-children h3,
+  .landing-children h3,
   summary {
     @apply text-3xl;
   }

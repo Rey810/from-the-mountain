@@ -48,14 +48,16 @@ const IndexPage = () => {
   return (
     <Layout usesPortfolioHeader={true}>
       <SEO title="Web Developer" />
-      <Landing />
-      <Personal />
-      <Services />
-      <Benefits />
-      <Promise />
-      <FAQ />
-      <Contact />
-      <Quotes />
+      <div className="landing-children">
+        <Landing />
+        <Personal />
+        <Services />
+        <Benefits />
+        <Promise />
+        <FAQ />
+        <Contact />
+        <Quotes />
+      </div>
     </Layout>
   )
 }
