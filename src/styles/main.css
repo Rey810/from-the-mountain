@@ -39,16 +39,16 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.general-layout-children h3,
-.general-layout-children h4,
-.general-layout-children h5 {
+.landing-children h3,
+.landing-children h4,
+.landing-children h5 {
   font-weight: bold;
 }
 
 /* Font black is a font weight of 900 */
 /* Leading-none sets line-height to 1 to tighten things up */
-.general-layout-children h1,
-.general-layout-children h2 {
+.landing-children h1,
+.landing-children h2 {
   @apply font-black;
   @apply leading-none;
 }
@@ -69,7 +69,7 @@ body {
 }
 
 /* Section Headers */
-.general-layout-children h2 {
+.landing-children h2 {
   font-size: 2.5rem;
 }
 

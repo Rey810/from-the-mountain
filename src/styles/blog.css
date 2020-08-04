@@ -49,19 +49,26 @@
   @apply mt-1;
 }
 
+.blog h1 {
+  @apply font-bold;
+}
+
 .blog h2 {
+  @apply font-bold;
   @apply text-3xl;
   @apply pt-12;
   @apply pb-6;
 }
 
 .blog h3 {
+  @apply font-bold;
   @apply text-2xl;
   @apply pt-12;
   @apply pb-4;
 }
 
 .blog h4 {
+  @apply font-bold;
   @apply text-lg;
   @apply pt-10;
   @apply pb-2;
@@ -128,12 +135,12 @@
 }
 
 .blog h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li {
+.blog h2,
+.blog h3,
+.blog h4,
+.blog h5,
+.blog h6,
+.blog li {
   color: var(--blog-header-color);
 }
 
