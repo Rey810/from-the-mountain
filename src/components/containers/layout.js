@@ -15,7 +15,7 @@ const Layout = ({
         isPortfolioHeader={usesPortfolioHeader}
         isPostHeader={usesInPostHeader}
       />
-      <main>{children}</main>
+      <main className="general-layout-children">{children}</main>
     </>
   )
 }

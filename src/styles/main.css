@@ -24,7 +24,7 @@ summary:focus,
 /* ///////////// */
 /* LINE HEIGHTS */
 /* /////////// */
-p {
+.general-layout-children p {
   line-height: 1.75;
 }
 
@@ -39,16 +39,16 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-h3,
-h4,
-h5 {
+.general-layout-children h3,
+.general-layout-children h4,
+.general-layout-children h5 {
   font-weight: bold;
 }
 
 /* Font black is a font weight of 900 */
 /* Leading-none sets line-height to 1 to tighten things up */
-h1,
-h2 {
+.general-layout-children h1,
+.general-layout-children h2 {
   @apply font-black;
   @apply leading-none;
 }
@@ -69,7 +69,7 @@ h2 {
 }
 
 /* Section Headers */
-h2 {
+.general-layout-children h2 {
   font-size: 2.5rem;
 }
 
@@ -79,16 +79,16 @@ a {
   cursor: pointer;
 }
 
-p,
+.general-layout-children p,
 .quote,
 .landing-cta-2,
 .cta,
-li {
+.general-layout-children li {
   @apply text-base;
 }
 
-h3,
-summary {
+.general-layout-children h3,
+.general-layout-children summary {
   @apply text-2xl;
 }
 
@@ -114,7 +114,6 @@ summary {
 
 .view-projects-container:hover {
   @apply underline;
-  text-decoration-color: ;
 }
 
 /*//////////////////*/
@@ -129,21 +128,21 @@ summary {
   }
 
   /* General Elements */
-  p,
+  .general-layout-children p,
   .quote,
   .landing-cta-2,
   .cta,
-  li {
+  .general-layout-children li {
     @apply text-lg;
   }
 
   /* Section Headers */
-  h2 {
+  .general-layout-children h2 {
     @apply text-5xl;
   }
 
   /* Smaller headers and main points */
-  h3,
+  .general-layout-children h3,
   summary {
     @apply text-2xl;
   }
@@ -168,21 +167,21 @@ summary {
   }
 
   /* Section Headers */
-  h2 {
+  .general-layout-children h2 {
     font-size: 4rem;
   }
 
   /* General Elements */
-  p,
+  .general-layout-children p,
   .quote,
   .landing-cta-2,
   .cta,
-  li {
+  .general-layout-children li {
     @apply text-xl;
   }
 
   /* Smaller headers and main points */
-  h3,
+  .general-layout-children h3,
   summary {
     @apply text-3xl;
   }
