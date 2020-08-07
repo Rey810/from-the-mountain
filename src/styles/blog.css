@@ -30,6 +30,10 @@
   --input-text-color: rgba(160, 174, 192, 1);
 }
 
+.blog-container ol {
+  list-style: decimal;
+}
+
 /* SUBHEADER: PUBLISH DATE and FOLLOW BUTTON */
 .publish-date {
   color: var(--blog-text-color-lighter);
@@ -132,6 +136,10 @@
 
 .blog-post-card .read-more-link {
   color: var(--blog-card-link-color);
+}
+
+.blog-post-card .read-more-link svg {
+  margin-top: 3px;
 }
 
 .blog h1,

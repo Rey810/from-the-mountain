@@ -36,6 +36,8 @@ module.exports = {
       minHeight: {
         "9/10": "90vh",
         "8/10": "80vh",
+        "7/10": "70vh",
+        "6/10": "60vh",
       },
       gridTemplateRows: {
         // Simple 8 row grid
