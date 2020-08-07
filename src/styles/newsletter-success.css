@@ -1,0 +1,13 @@
+.newsletter-success h1 {
+  color: var(--color-10-1);
+}
+
+.newsletter-success p {
+  color: var(--color-30-1);
+}
+
+.sticky-footer-wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
