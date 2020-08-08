@@ -1,7 +1,7 @@
 ---
 path: "/blog/digital-minimalism-why-your-happiness-demands-it"
 lastUpdated: ""
-date: "5 August, 2020"
+date: "8 August, 2020"
 title: "Digital Minimalism: Why Your Happiness Demands It"
 cardTitle: "Digital Minimalism"
 author: "Rey van den Berg"
