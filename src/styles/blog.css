@@ -164,8 +164,14 @@
   text-decoration: underline;
 }
 
-.twitter-share-button-wrapper {
-  background-color: var(--blog-bg-color);
+.share-buttons-wrapper {
+  background-color: var(--block-bg-color);
+}
+
+@media (min-width: 768px) {
+  .share-buttons-wrapper {
+    background-color: var(--blog-bg-color);
+  }
 }
 
 .custom-twitter-share-button {

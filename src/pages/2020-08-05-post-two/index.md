@@ -33,7 +33,7 @@ featuredImage: relaxing-man.png
 
 <a href="#summary">8. Summary</a>
 
-<h2 id="introduction">Introduction to Minimalism</h2>
+<h2 id="introduction">1. Introduction to Minimalism</h2>
 
 Digital minimalism is a topic that is "all-that-jazz" right now.
 
@@ -43,9 +43,7 @@ There is no doubt that the concept and practice of digital minimalism has gone f
 
 By reading on, you will peek into the practice of digital minimalism, scientifically-backed dangers of digital mind**_less_**ness, the life-altering effects of digital mind**_ful_**ness (minimalism), identify whether you could benefit from this approach and, finally, how to actually become more digitally minimal.
 
-### Pre-article ramblings
-
-First off, let's get personal:
+### First Off, Let's Get Personal
 
 Each morning, I open my eyes and tell myself that I should probably not check my phone first thing in the morning. Such pure intentions...
 
@@ -61,7 +59,7 @@ Essentially, I spend most of my time in front of a screen writing code and tryin
 
 And so I write this for you and me both. Let's jump in, shall we?
 
-<h2 id="what-is-minimalism">What is Minimalism?</h2>
+<h2 id="what-is-minimalism">2. What is Minimalism?</h2>
 
 The whole concept can be boiled down into just 3 words:
 
@@ -109,7 +107,7 @@ What if you don't know what brings you genuine pleasure in life? Well, it might 
 
 Since I'm a deluded digital addict (or at least pretending to be for the sake of this article... I am a little though), I want to tackle this process of becoming minimal from a digital perspective.
 
-<h2 id="what-is-digital-minimalism">What is digital minimalism?</h2>
+<h2 id="what-is-digital-minimalism">3. What is Digital Minimalism?</h2>
 
 It's minimalism **_but digital._** I know right?
 
@@ -121,7 +119,7 @@ For a more nerdy-wordy answer, look no further than this quote from computer sci
 
 Confused? Read my explanation again. Want to show off to your friends that you understand the justification for digital minimalism? Well, you now have a very quotable quote to quote when anyone questions you. Thanks, Prof. Cal!
 
-<h2 id="7-core-principles-of-digital-minimalism"> 7. Core Principles of Digital Minimalism.</h2>
+<h2 id="7-core-principles-of-digital-minimalism"> 4. Core Principles of Digital Minimalism</h2>
 
 Tomfoolery aside, significant value can be garnered from inspecting Cal's [core principles of digital minimalism](https://www.calnewport.com/blog/2016/12/18/on-digital-minimalism/) which I've summarized for your viewing pleasure:
 
@@ -161,7 +159,7 @@ Now that we know what digital minimalism is on a bit of a deeper level, let's ge
 
 Fair point. There's no sense in preaching to the converted so check this out to be sure 👇
 
-<h2 id="am-i-a-victim-of-digital-mindlessness">Am I a Victim of Digital Mindlessness?</h2>
+<h2 id="am-i-a-victim-of-digital-mindlessness">5. Am I a Victim of Digital Mindlessness?</h2>
 
 Use the points below as a guide to whether you might want to look into digital minimalism:
 
@@ -172,7 +170,7 @@ Use the points below as a guide to whether you might want to look into digital m
 
 You see what I'm getting at, right? We know better. We always know better. But somehow we still fall prey to bad habits. If you identified with even one of the above points, then maybe your life will become a little less cluttered, a little more purposeful, if you sought to become mindful and practice digital minimalism. Even if it makes your life 5% more engaged and meaningful, it's a win in our continual quest to be ["happier" and more "at ease"](https://www.youtube.com/watch?v=O4SzvsMFaek).
 
-<h2 id="how-can-i-become-more-digitally-minimal">How Can I Become More Digitally Minimal?</h2>
+<h2 id="how-can-i-become-more-digitally-minimal">6. How Can I Become More Digitally Minimal?</h2>
 
 So, what can you do **_practically_** to take back a little more control of your life where [your brain is less reactive to a notification popping up on your smartphone](http://sitn.hms.harvard.edu/flash/2018/dopamine-smartphones-battle-time/)
 
@@ -188,7 +186,7 @@ Here are some small actionable things to try out in your digital minimalism expe
 
 Again, these are not meant to make your life difficult or unpleasant. They're a means to clarifying which pieces of technology are genuinely valuable and which are not. In other words, you're practicing digital minimalism!
 
-<h2 id="the-harms-of-an-unchecked-digital-life">The Harms of an Unchecked Digital Life</h2>
+<h2 id="the-harms-of-an-unchecked-digital-life">7. The Harms of an Unchecked Digital Life</h2>
 
 _Aside: The sources for the stats below are from well-respected journals such as Nature, Journal of Communication, Journal of Consumer Research, American Economic Review, The Journal of the American Medical Association, Science Direct, Society for Research in Child Development; respected authors, and other sources deemed worthy and true by the [Center for Humane Technology.](https://www.humanetech.com/)_
 
@@ -236,7 +234,7 @@ This is by no means an exhaustive list of resources but my hope, in summarizing 
 
 Digital minimalism might not be everyone's cup of tea but it sure is a taste everyone should start getting used to for the sake of our humanity.
 
-<h2 id="summary">Summary</h2>
+<h2 id="summary">8. Summary</h2>
 
 Minimalism as a whole is meant to make our lives more enjoyable and rewarding, not dull and boring. The same applies to digital minimalism.
 

@@ -5,7 +5,7 @@ import SEO from "../components/general/seo"
 import Subscribe from "../components/blog/subscribe/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter, faFacebookF } from "@fortawesome/free-brands-svg-icons"
 import Img from "gatsby-image"
 import Footer from "../components/general/footer"
 
@@ -71,8 +71,8 @@ export default function Template({ data, location }) {
           </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
-        <div className="twitter-share-button-wrapper fixed z-10 w-full bottom-0 p-3 sm:z-0 md:left-0 md:w-0 md:top-1/2 md:p-6">
-          <div className="twitter-share-button-container text-center">
+        <div className="share-buttons-wrapper fixed z-10 w-full bottom-0 p-3 flex justify-center sm:z-0 md:block md:left-0 md:w-0 md:top-1/3 md:p-6">
+          <div className="twitter-share-button-container text-center mx-4 md:mx-0 md:mb-6">
             <a
               title="Share on Twitter"
               id="alwaysVisible"
@@ -80,6 +80,16 @@ export default function Template({ data, location }) {
               href={`https://twitter.com/share?text=${post.frontmatter.title} via @ReyTheDev&url=https://www.fromthemountain.co.za/${location.pathname}`}
             >
               <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </div>
+          <div className="facebook-share-button-container text-center mx-4 md:mx-0">
+            <a
+              title="Share on Facebook"
+              id="alwaysVisible"
+              className="custom-twitter-share-button"
+              href={`https://www.facebook.com/sharer.php?u=https://www.fromthemountain.co.za/${location.pathname}`}
+            >
+              <FontAwesomeIcon icon={faFacebookF} />
             </a>
           </div>
         </div>
