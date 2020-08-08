@@ -81,7 +81,7 @@ The man was a minimalist!
 
 Well, his art was (it was called _[Suprematism](https://www.tate.org.uk/art/art-terms/s/suprematism)_ though).
 
-While I don't know anything abut his personal finances during his creative years, it is said that he ['died in poverty and oblivion'](https://www.britannica.com/biography/Kazimir-Malevich) thanks to the decisions of Soviet politicians against modern art. Yikes. Turns out the man was a minimalist in practice too, but probably not by choice.
+While I don't know anything about his personal finances during his creative years, it is said that he ['died in poverty and oblivion'](https://www.britannica.com/biography/Kazimir-Malevich) thanks to the decisions of Soviet politicians against modern art. Yikes. Turns out the man was a minimalist in practice too, but probably not by choice.
 
 Contemporary Minmalism
 
@@ -95,7 +95,7 @@ To provide more room for the things that matter by removing anything that distra
 
 **How do people actually become minimalists?**
 
-I were to give you the minimal solution to become a minimalist, it would be this: Identify items, practices, even beliefs, that are detracting from your life and simply remove them.
+If were to give you the minimal solution to become a minimalist, it would be this: Identify items, practices, even beliefs, that are detracting from your life and simply remove them.
 
 Again, look into mindfulness before you cast judgement on your percolator. It will save you the embarrassment of realizing your life revolves around caffeine and that you are nothing without it. The same applies to everything else, don't remove things that genuinely bring you pleasure - what would be the point of that? We're not trying to become Mormons over here.
 
