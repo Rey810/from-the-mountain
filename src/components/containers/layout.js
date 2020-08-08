@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "../general/header"
+import ScrollUpButton from "../general/scrollUpButton/scrollUpButton"
 
 const Layout = ({
   children,
@@ -15,7 +16,9 @@ const Layout = ({
         isPortfolioHeader={usesPortfolioHeader}
         isPostHeader={usesInPostHeader}
       />
+      <a id="top"></a>
       <main>{children}</main>
+      <ScrollUpButton isPostHeader={usesInPostHeader} />
     </>
   )
 }

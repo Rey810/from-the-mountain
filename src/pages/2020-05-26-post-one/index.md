@@ -74,14 +74,14 @@ That slight mental adjustment is especially helpful for beginners - often they (
 
 As slight as the mental adjustment can be, subtle changes in automatic behaviour initially require concentrated effort. Let's practice something real quick - try to identify the 3 process-oriented approaches from the list below:
 
-1. ❓ I am going to try get fit this month.
-1. ❓ I'm going to spend time on a few exciting physical activities this month.
+- ❓ I am going to try get fit this month.
+- ❓ I'm going to spend time on a few exciting physical activities this month.
 
-1. ❓ I am going to increase my vocabulary by 5% this month.
-1. ❓ I am going to spend some time on a technical book in a topic that I've always wanted to learn more about.
+- ❓ I am going to increase my vocabulary by 5% this month.
+- ❓ I am going to spend some time on a technical book in a topic that I've always wanted to learn more about.
 
-1. ❓ I'm not going to eat any meat this month.
-1. ❓ I'm going to explore exciting vegetarian dishes this month.
+- ❓ I'm not going to eat any meat this month.
+- ❓ I'm going to explore exciting vegetarian dishes this month.
 
 .  
 .  
@@ -89,9 +89,9 @@ As slight as the mental adjustment can be, subtle changes in automatic behaviour
 
 If you chose the following 3 as the process-oriented approaches, then you're on the right track:
 
-1. ✅ I'm going to spend time on a few exciting physical activities this month.
-1. ✅ I am going to spend some time on a technical book in a topic that I've always wanted to learn more about.
-1. ✅ I'm going to explore exciting vegetarian dishes this month.
+- ✅ I'm going to spend time on a few exciting physical activities this month.
+- ✅ I am going to spend some time on a technical book in a topic that I've always wanted to learn more about.
+- ✅ I'm going to explore exciting vegetarian dishes this month.
 
 Now, to make this mindset change as frictionless as possible, see if you could apply this concept to other areas of your life in a similar vein. The thing is, your feelings of frustration only hurt yourself, they don't help you to code better or faster.
 

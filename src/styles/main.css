@@ -161,6 +161,8 @@ a {
   }
 }
 
+/* GENERAL GLOBAL ELEMENTS */
+
 @screen lg {
   .landing-title {
     font-size: 6rem;
