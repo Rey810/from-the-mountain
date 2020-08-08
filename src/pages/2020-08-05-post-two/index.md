@@ -13,8 +13,6 @@ imageAlt: "A bearded cartoon man lying in his room looking at his phone"
 featuredImage: relaxing-man.png
 ---
 
-# Digital Minimalism: Why Your Happiness Demands It
-
 ## Table of Contents
 
 <a href="#introduction">1. Introduction to Minimalism</a>
