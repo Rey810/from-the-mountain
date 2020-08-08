@@ -35,7 +35,7 @@ featuredImage: relaxing-man.png
 
 <h2 id="introduction">1. Introduction to Minimalism</h2>
 
-Digital minimalism is a topic that is "all-that-jazz" right now.
+Digital minimalism is a topic that is "all-that-rage" right now.
 
 Type "What is Digital Minimalism" into your web browser search bar and you'll be greeted with an absolute plethora of articles ranging from full "how-to" guides to quick 2-minute "best tips" posts.
 
