@@ -81,7 +81,7 @@ Well, his art was (it was called _[Suprematism](https://www.tate.org.uk/art/art-
 
 While I don't know anything about his personal finances during his creative years, it is said that he ['died in poverty and oblivion'](https://www.britannica.com/biography/Kazimir-Malevich) thanks to the decisions of Soviet politicians against modern art. Yikes. Turns out the man was a minimalist in practice too, but probably not by choice.
 
-Contemporary Minmalism
+Contemporary Minimalism
 
 Today we have vocal advocates for minimalism (unimpeded by communist ideologies) like [Joshua Becker](https://www.becomingminimalist.com), [Cal Newport](https://www.calnewport.com/), and [Joshua Millburn & Ryan Nicodemus](https://www.theminimalists.com/) who stand for a message that I can totally agree with! In essence, this is their "Why" and "How":
 
