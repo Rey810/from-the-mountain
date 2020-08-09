@@ -226,11 +226,12 @@ The true purpose of social networks is to connect us but it can leave many feeli
 
 > [**High depressive symptoms** for 13 - 18 year old girls rose by 65% between 2010 and 2015 after nearly 2 decades in decline.](https://journals.sagepub.com/doi/abs/10.1177/2167702617723376?journalCode=cpxa)
 
-_A special thanks to the amazing humans at the [Center for Humane Technology](https://www.humanetech.com/) for the awesome work they're doing in bringing these stats to life! And thanks to [James Tucker](https://twitter.com/tucker_dev) for pointing them out to me during one of our discussions on mindfulness._
-
 This is by no means an exhaustive list of resources but my hope, in summarizing them and providing references to the original research, is that it will propel your own understanding of the real dangers of being digitally mindless. Use these resources to equip yourself and educate those around you.
 
 Digital minimalism might not be everyone's cup of tea but it sure is a taste everyone should start getting used to for the sake of our humanity.
+
+<!-- prettier-ignore -->
+*A special thanks to the amazing humans at the [Center for Humane Technology](https://www.humanetech.com/) for the awesome work they're doing in bringing these stats to life! And thanks to [James Tucker](https://twitter.com/tucker\_dev) for pointing them out to me during one of our discussions on mindfulness.*
 
 <h2 id="summary">8. Summary</h2>
 
