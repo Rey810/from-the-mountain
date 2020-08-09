@@ -85,7 +85,7 @@ Contemporary Minimalism
 
 Today we have vocal advocates for minimalism (unimpeded by communist ideologies) like [Joshua Becker](https://www.becomingminimalist.com), [Cal Newport](https://www.calnewport.com/), and [Joshua Millburn & Ryan Nicodemus](https://www.theminimalists.com/) who stand for a message that I can totally agree with! In essence, this is their "Why" and "How":
 
-**\*Momentary Aside:** Some of these guys have built careers (being paid to be a minimalist can be called a career now, you know) around teaching people the what, the why, and, on the all-important HOW of minimalism. I'm of the inclination that you don't need to spend any money to become a good minimalist (this is becoming quite meta...) and to this end I propose you prepend your minimalism adventures with a look into becoming mindful. I've written a short article on some habits that we can adopt in becoming more mindful which will definitely help you in your digital minimalism journey.\*
+_**Momentary Aside:** Some of these guys have built careers (being paid to be a minimalist can be called a career now, you know) around teaching people the what, the why, and, on the all-important HOW of minimalism. I'm of the inclination that you don't need to spend any money to become a good minimalist (this is becoming quite meta...) and to this end I propose you prepend your minimalism adventures with a look into becoming mindful. I've written a short article on some habits that we can adopt in becoming more mindful which will definitely help you in your digital minimalism journey._
 
 **Why would anyone want to become a minimalist?**
 
@@ -177,8 +177,8 @@ Here are some small actionable things to try out in your digital minimalism expe
 1. The next time you're about to have a meal with someone, leave your phone in another room.
 2. When you have some time to relax, try to catch yourself while reaching for your phone or PC. Observe the action.
 3. Before you go to sleep at night, put your phone outside your bedroom door.
-4. Set aside 2 hours during the weekend where you don't use your phone at all. After some time, set a whole morning or afternoon aside where you don't use any screen technology at all.
-5. Delete your social media apps from your phone, only allowing yourself to check them on your PC. If you don't have a PC, delete them anyways and limit yourself to your phone's web browser.
+4. Set aside 2 hours during the weekend where you don't use your phone at all. After some time, set a whole morning orafternoon aside where you don't use any screen technology at all.
+5. Delete your social media apps from your phone, only allowing yourself to check them on your PC. If you don't have a PC,delete them anyways and limit yourself to your phone's web browser.
 6. For every "like" on social media, leave an actual response that isn't robotic. Try to be as genuine as you can.
 7. Next time you're driving or walking to a new place, try to use the road signs instead of your phone's maps app.
 

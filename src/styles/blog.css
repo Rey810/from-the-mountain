@@ -32,6 +32,7 @@
 
 .blog-container ol {
   list-style: decimal;
+  margin-left: 1rem;
 }
 
 /* SUBHEADER: PUBLISH DATE and FOLLOW BUTTON */
