@@ -25,7 +25,7 @@ featuredImage: relaxing-man.png
 
 <a href="#am-i-a-victim-of-digital-mindlessness">5. Am I a Victim of Digital _Mindlessness_?</a>
 
-<a href="#how-can-i-become-more-digitally-minimal">6. How can I become more digitally minimal?</a>
+<a href="#how-can-i-become-more-digitally-minimal">6. How Can I Become More Digitally Minimal?</a>
 
 <a href="#the-harms-of-an-unchecked-digital-life">7. The Harms of an Unchecked Digital Life</a>
 
@@ -93,7 +93,7 @@ To provide more room for the things that matter by removing anything that distra
 
 **How do people actually become minimalists?**
 
-If were to give you the minimal solution to become a minimalist, it would be this: Identify items, practices, even beliefs, that are detracting from your life and simply remove them.
+If I were to give you the minimal solution to becoming a minimalist, it would be this: Identify items, practices, even beliefs, that are detracting from your life and simply remove them.
 
 Again, look into mindfulness before you cast judgement on your percolator. It will save you the embarrassment of realizing your life revolves around caffeine and that you are nothing without it. The same applies to everything else, don't remove things that genuinely bring you pleasure - what would be the point of that? We're not trying to become Mormons over here.
 
