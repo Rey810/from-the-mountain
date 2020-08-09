@@ -29,12 +29,12 @@ I have a degree in Human Physiology, Genetics, and Psychology so I sort of know 
 
 Ha! I don't remember a damn thing from that degree so ignore my 'credentials' because I don't have any. The only way you can trust me is check this 👇 and nod if you get me:
 
-1. ❌ aching eyeballs
-1. ❌ sore back
-1. ❌ grumpy about bugs
-1. ❌ headache at lunchtime
-1. ❌ writer's block (but with code)
-1. ❌ the eternal suffering of life as a developer (Jk, I love this stuff but sometimes it's hard).
+- ❌ aching eyeballs
+- ❌ sore back
+- ❌ grumpy about bugs
+- ❌ headache at lunchtime
+- ❌ writer's block (but with code)
+- ❌ the eternal suffering of life as a developer (Jk, I love this stuff but sometimes it's hard).
 
 > Now, what if I told you I had the cure to at least 87.5% [(quick maths)](https://www.youtube.com/watch?v=3M_5oYU-IsU) of these problems?
 
@@ -46,9 +46,9 @@ So if you _didn't_ get the point, here it is:
 
 Being a happier, healthier developer will have tremendous knock-on effects for the rest of your life:
 
-1. 🚀 You will become a more understanding and respected member of a team
-1. 🚀 You will solve coding problems faster
-1. 🚀 You will have more creative ideas meaning cooler side projects... and better tweets! 😉
+- 🚀 You will become a more understanding and respected member of a team
+- 🚀 You will solve coding problems faster
+- 🚀 You will have more creative ideas meaning cooler side projects... and better tweets! 😉
 
 Alright! If you've made it this far, I applaud your patience aaaand LET'S GET TO IT!
 
