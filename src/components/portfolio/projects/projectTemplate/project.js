@@ -15,7 +15,10 @@ const project = props => {
     image,
   } = props.info
 
-  console.dir("image", props.info)
+  console.log({ props })
+  // builds relative URL
+  const caseStudyURL = props.location.pathname + linkName
+
   return (
     <>
       <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12">
@@ -50,7 +53,7 @@ const project = props => {
             </div>
             <div className="project-buttons-container w-5/12 mb-2 flex flex-col justify-end font-extrabold leading-none">
               <Link
-                to={linkName}
+                to={caseStudyURL}
                 // passes project info to link as prop available as location.state in linked page
                 state={props.info}
                 className="project-site-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around"

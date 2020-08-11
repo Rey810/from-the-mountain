@@ -16,7 +16,7 @@
         {
           "title": "Odin's Forecast",
           "year": 2018,
-          "linkName": "projects/odins-forecast",
+          "linkName": "/odins-forecast",
           "imageURL": "The results of a weather search on the 'Odin's Forecast' weather app",
           "description": "A weather app built to deliver only the most important weather information. It can run in any browser, works on mobile and desktop, and uses the latest web technology for fast results.",
           "caseDescription": "Longer description fitting for the case. A weather app built to deliver only the most important weather information. It can run in any browser, works on mobile and desktop, and uses the latest web technology for fast results.",
@@ -35,7 +35,7 @@
         {
           "title": "Musenet",
           "year": 2018,
-          "linkName": "projects/musenet",
+          "linkName": "/musenet",
           "imageURL": "This is the project 2 image",
           "description": "A social media app built to prove to myself that I can build a full-stack application from scratch. Includes user signup and signin, post creation, [insert other features here]",
           "caseDescription": "Longer description fitting for the case. A weather app built to deliver only the most important weather information. It can run in any browser, works on mobile and desktop, and uses the latest web technology for fast results.",

@@ -9,3 +9,5 @@ const OdinsForecast = props => {
 }
 
 export default OdinsForecast
+
+// SHould probabyl query data in here and pass into case study instead of props. A fitler can be used in graphQL to only pass the data that matches this name

@@ -3,7 +3,7 @@ import React from "react"
 import Project from "./projectTemplate/project"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Apps = () => {
+const Apps = props => {
   const data = useStaticQuery(graphql`
     query {
       allDataJson {
@@ -50,7 +50,7 @@ const Apps = () => {
   return (
     <>
       {apps.map(project => (
-        <Project info={project} />
+        <Project info={project} location={props.location} />
       ))}
     </>
   )

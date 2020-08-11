@@ -10,14 +10,19 @@ import ToggleSwitch from "../../components/general/toggleSwitch/toggleSwitch"
 import Apps from "../../components/portfolio/projects/apps"
 import Footer from "../../components/general/footer"
 
-const ProjectsPage = () => {
+const ProjectsPage = props => {
   const [showSites, setShowSites] = useState(false)
 
+  console.log({ props })
   const toggleSwitchHandler = () => {
     setShowSites(!showSites)
   }
 
-  const displayedProjects = showSites ? <Websites /> : <Apps />
+  const displayedProjects = showSites ? (
+    <Websites location={props.location} />
+  ) : (
+    <Apps location={props.location} />
+  )
 
   return (
     <Layout canSeeHeader usesPortfolioHeader>
