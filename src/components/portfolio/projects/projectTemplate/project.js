@@ -1,13 +1,19 @@
 import React from "react"
 import uuid from "react-uuid"
 import Img from "gatsby-image"
-
-// import Project1Image from "../../../images/project1-image"
-// import Project2Image from "../../../images/project2-image"
+import { Link } from "gatsby"
 
 const project = props => {
   // properties of the project
-  const { title, description, techStack, siteURL, codeURL, image } = props.info
+  const {
+    title,
+    linkName,
+    description,
+    techStack,
+    siteURL,
+    codeURL,
+    image,
+  } = props.info
 
   console.dir("image", image)
   return (
@@ -43,8 +49,10 @@ const project = props => {
               </div>
             </div>
             <div className="project-buttons-container w-5/12 mb-2 flex flex-col justify-end font-extrabold leading-none">
-              <a
-                href={siteURL}
+              <Link
+                to={linkName}
+                // passes project info to link as prop available as location.state in linked page
+                state={props.info}
                 className="project-site-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around"
               >
                 View Project{" "}
@@ -55,7 +63,7 @@ const project = props => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
               <a
                 href={codeURL}
                 className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around mt-4"

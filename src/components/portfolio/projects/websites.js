@@ -1,4 +1,5 @@
 import React from "react"
+import Project from "./projectTemplate/project"
 
 const websites = () => {
   return (

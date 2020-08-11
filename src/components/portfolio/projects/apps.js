@@ -1,6 +1,6 @@
 import React from "react"
 // import projects from "./projects"
-import Project from "../projects/project"
+import Project from "./projectTemplate/project"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Apps = () => {
@@ -12,9 +12,16 @@ const Apps = () => {
             type {
               apps {
                 title
+                year
+                linkName
                 imageURL
                 description
+                caseDescription
                 techStack {
+                  name
+                  url
+                }
+                toolSet {
                   name
                   url
                 }

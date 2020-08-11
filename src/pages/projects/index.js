@@ -24,16 +24,18 @@ const ProjectsPage = () => {
       <SEO />
       {/* <Projects />
         <Toolbox /> */}
-      <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-16">
-        <ToggleSwitch
-          toggleProjects={toggleSwitchHandler}
-          showSites={showSites}
-        />
-        <div className="projects-container mx-auto sm:w-72 lg:w-76">
-          {displayedProjects}
-        </div>
-      </section>
-      <Footer />
+      <div className="sticky-footer-wrapper">
+        <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-16">
+          <ToggleSwitch
+            toggleProjects={toggleSwitchHandler}
+            showSites={showSites}
+          />
+          <div className="projects-container mx-auto sm:w-72 lg:w-76">
+            {displayedProjects}
+          </div>
+        </section>
+        <Footer />
+      </div>
     </Layout>
   )
 }
