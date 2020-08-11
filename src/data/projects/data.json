@@ -39,14 +39,16 @@
           "imageURL": "This is the project 2 image",
           "description": "A social media app built to prove to myself that I can build a full-stack application from scratch. Includes user signup and signin, post creation, [insert other features here]",
           "caseDescription": "Longer description fitting for the case. A weather app built to deliver only the most important weather information. It can run in any browser, works on mobile and desktop, and uses the latest web technology for fast results.",
-          "techStack": [{ "name": "Rails", "url": "/" }],
+          "techStack": [
+            { "name": "JavaScript", "url": "https://javascript.info/" }
+          ],
           "toolSet": [
             { "name": "AdobeXD", "url": "/" },
             { "name": "VSCode", "url": "/" },
             { "name": "Git", "url": "/" }
           ],
-          "siteURL": "/",
-          "codeURL": "/",
+          "siteURL": "https://rey810.github.io/weather-app/",
+          "codeURL": "https://github.com/Rey810/Weather-App",
           "image": "musenet.jpg"
         }
       ]

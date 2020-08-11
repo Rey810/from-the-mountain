@@ -15,7 +15,7 @@ const project = props => {
     image,
   } = props.info
 
-  console.dir("image", image)
+  console.dir("image", props.info)
   return (
     <>
       <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12">
