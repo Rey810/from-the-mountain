@@ -45,7 +45,7 @@ By reading on, you will peek into the practice of digital minimalism, scientific
 
 Each morning, I open my eyes and tell myself that I should probably not check my phone first thing in the morning. Such pure intentions...
 
-I then proceed to check my phone and blame my addiction to dopamine for my inability to control my impulses straight after an intentional thought aimed in the opposite direction.
+I then proceed to check my phone, blaming my uncontrolled impulses on my dopamine addiction, straight after an intentional thought aimed in the opposite direction.
 
 I then get out of bed, make some hot lemon water, come back to bed and practice mindfulness via [my favourite meditation app](https://www.wakingup.com/).
 
@@ -53,7 +53,9 @@ Immediately after, I jump up, **_mindlessly_** grab breakfast and plonk myself i
 
 Those 8 hours will only be interrupted by brief excursions to the kitchen, toilet, and the outdoors often accompanied by my phone and the 48 bookmarked very-important-must-read-if-I-want-to-be-a-better-human-and-developer articles.
 
-Essentially, I spend most of my time in front of a screen writing code and trying (but failing) to avoid social media (not because I don't love cat videos) but because I know how addictive it all is. As you can tell, I'm not here to brag. What I'm trying to say is, if there is anyone who could benefit from the practice of digital minimalism, it's me.
+Essentially, I spend most of my time in front of a screen writing code and trying (but failing) to avoid social media (not because I don't love cat videos) but because I know how addictive it all is. As you can tell, I'm not here to brag...
+
+What I'm trying to say is, if there is anyone who could benefit from the practice of digital minimalism, it's me.
 
 And so I write this for you and me both. Let's jump in, shall we?
 
@@ -69,11 +71,11 @@ I'm going to keep this explanation short for the sake of your total reading time
 
 The tangible value of 'less' and 'more' really just depends on your context.
 
-### The 1st Minimalist Liked Black Squares
+### The First Minimalist Liked Black Squares
 
 The current trending form of minimalism is certainly not the first time the concept of 'minimalism' was brought to the attention of the world.
 
-Back in 1913, a painter by the name of Kasimir Malevich painted a black square on a white background explaining himself like an overly woke-millennial: ["...trying desperately to free art from the dead weight of the real world, I took refuge in the form of the square."](https://www.tate.org.uk/art/artists/kazimir-malevich-1561/five-ways-look-malevichs-black-square).
+Back in 1913, a painter by the name of Kasimir Malevich painted a black square on a white background explaining: ["...trying desperately to free art from the dead weight of the real world, I took refuge in the form of the square."](https://www.tate.org.uk/art/artists/kazimir-malevich-1561/five-ways-look-malevichs-black-square).
 
 The man was a minimalist!
 
@@ -253,4 +255,4 @@ Prioritize the practice of mindfulness and the rest will follow.
 
 Thanks for taking some of your time and spending it on this article. I hope you gained something of value from it.
 
-If you think this article could be beneficial to others around you, feel free to share it directly with your friends. If you're a mindful user of Twitter 😉, you're welcome to share the article by clicking on the Twitter icon on this page. If you feel triggered or simply want to continue the conversation, you can find me on Twitter or email me directly at rey@fromthemountain.co.za.
+If you think this article could be beneficial to others around you, feel free to share it directly with your friends. If you're a mindful user of Twitter or Facebook 😉, you're welcome to share the article by clicking on their icons on this page. If this article resonated with you and you'd like to continue the conversation, [find me on Twitter](https://twitter.com/ReyTheDev) or email me directly at rey@fromthemountain.co.za.
