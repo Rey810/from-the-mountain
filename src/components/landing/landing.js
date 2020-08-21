@@ -86,7 +86,7 @@ const Landing = () => {
             animated ? "fadeInSlideUp-2nd" : ""
           } landing-title leading-none text-center`}
         >
-          Freelance Developer
+          Freelance Developer.
         </h1>
         <p
           className={`opacity-0 ${
@@ -100,7 +100,7 @@ const Landing = () => {
       </main>
       <div
         className={`opacity-0 ${
-          animated ? "fadeInSlideUp-4th" : "" 
+          animated ? "fadeInSlideUp-4th" : ""
         } landing-buttons-container pt-16 flex flex-col justify-center md:flex-row md:justify-center md:items-center`}
       >
         <a
