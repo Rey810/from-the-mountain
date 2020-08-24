@@ -61,7 +61,7 @@ const Landing = () => {
   return (
     <section
       id="What-I-Do"
-      className="landing-container h-screen flex justify-center items-center"
+      className="landing-container mt-8 md:flex md:justify-center md:items-center md:flex-row md:h-screen"
     >
       {/* <div
         className={`opacity-0 ${
