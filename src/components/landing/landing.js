@@ -152,7 +152,7 @@ const Landing = () => {
           </div>
         </div>
       </main>
-      <main className="text-wrapper flex justify-center items-center">
+      <main className="img-wrapper flex justify-center items-center">
         <HeroMan />
       </main>
     </section>

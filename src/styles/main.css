@@ -70,7 +70,7 @@ body {
 
 /* Section Headers */
 .landing-children h2 {
-  font-size: 2.5rem;
+  @apply text-6xl;
 }
 
 /* General Elements */
@@ -83,7 +83,6 @@ a {
   @apply block px-12 py-4 rounded my-6;
 }
 
-.landing-children p,
 .quote,
 .landing-cta-2,
 .cta,
@@ -133,22 +132,21 @@ a {
   @apply my-3;
 }
 
+/* SPECIFIC SECTIONS */
+.personal-description-container {
+  @apply py-12;
+}
+
 /*//////////////////*/
 /* FLUID TYPOGRAPHY */
 /*//////////////////*/
 @screen md {
   /* General Elements */
-  .landing-children p,
   .quote,
   .landing-cta-2,
   .cta,
   .landing-children li {
     @apply text-lg;
-  }
-
-  /* Section Headers */
-  .landing-children h2 {
-    @apply text-5xl;
   }
 
   /* Smaller headers and main points */
@@ -170,13 +168,7 @@ a {
 /* GENERAL GLOBAL ELEMENTS */
 
 @screen lg {
-  /* Section Headers */
-  .landing-children h2 {
-    font-size: 4rem;
-  }
-
   /* General Elements */
-  .landing-children p,
   .quote,
   .landing-cta-2,
   .cta,
