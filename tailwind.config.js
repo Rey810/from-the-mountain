@@ -71,4 +71,11 @@ module.exports = {
 
   variants: {},
   plugins: [],
+  experimental: {
+    extendedFontSizeScale: true,
+    applyComplexClasses: true,
+  },
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
 }

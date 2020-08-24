@@ -57,7 +57,7 @@ body {
 /* BASE FONT SIZES */
 /* ///////////// */
 .landing-title {
-  @apply text-6xl;
+  @apply text-7xl;
 }
 .landing-description {
   @apply text-xl;
@@ -165,7 +165,7 @@ a {
 
 @screen lg {
   .landing-title {
-    font-size: 6rem;
+    @apply text-7xl;
   }
 
   /* Section Headers */
