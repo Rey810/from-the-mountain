@@ -4,6 +4,8 @@
 // re-run with each new render: triggered by the state change
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import FeatherArrowRightCircle from "../../assets/icons/featherArrowRightCircle"
+import HeroMan from "../../assets/illustrations/heroMan"
 // import Avatar from "../images/avatar"
 // import Background from "../images/background"
 import { Link } from "gatsby"
@@ -59,7 +61,7 @@ const Landing = () => {
   return (
     <section
       id="What-I-Do"
-      className="landing-container pt-10 pb-20 my-auto mx-auto xl:pb-32 grid grid-cols-2"
+      className="landing-container h-screen flex justify-center items-center"
     >
       {/* <div
         className={`opacity-0 ${
@@ -73,81 +75,85 @@ const Landing = () => {
           <span className="name font-semibold">Rey van den Berg</span>
         </div>
       </div> */}
-      <main className="landing-container">
-        <h1
-          className={`opacity-0 ${
-            animated ? "fadeInSlideUp-2nd" : ""
-          } landing-title leading-none`}
-        >
-          Freelance <br /> Developer
-        </h1>
-        <p
-          className={`opacity-0 ${
-            animated ? "fadeInSlideUp-3rd" : null
-          } landing-description pt-8`}
-        >
-          I help people turn their ideas into websites & apps that work.
-          <br />
-          Professional and Cost-Effective. <br /> Always.
-        </p>
-        <div className="cta-container flex flex-row">
-          <div
+      <main className="text-wrapper flex justify-center items-center">
+        <div>
+          <h1
             className={`opacity-0 ${
-              animated ? "fadeInSlideUp-4th" : ""
-            } landing-buttons-container pt-16`}
+              animated ? "fadeInSlideUp-2nd" : ""
+            } landing-title leading-none`}
           >
-            <Link
-              href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!%20:)"
-              className="landing-cta-1"
+            Freelance <br /> Developer
+          </h1>
+          <p
+            className={`opacity-0 ${
+              animated ? "fadeInSlideUp-3rd" : null
+            } landing-description my-12`}
+          >
+            Helping people turn their ideas into <br /> sites & apps that work.{" "}
+            <br />
+            Professional and Cost-Effective. <br /> Always.
+          </p>
+          <div className="cta-container flex flex-row">
+            <div
+              className={`opacity-0 ${
+                animated ? "fadeInSlideUp-4th" : null
+              } landing-buttons-container`}
             >
-              Chat with Rey
-            </Link>
-            <div className="view-projects-container">
-              <Link to="/projects" className="flex flex-row items-center">
-                <div className="view-projects-icon-container h-8 w-8 mx-2 border-solid border rounded-full flex justify-center items-center">
-                  <FontAwesomeIcon icon={"chevron-right"} />
-                </div>
-                <span>View Projects</span>
+              <Link
+                href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!%20:)"
+                className="btn landing-cta-1"
+              >
+                Chat with Rey
+              </Link>
+              <Link
+                to="/projects"
+                className="view-projects-container btn flex flex-row items-center"
+              >
+                <FeatherArrowRightCircle />
+                <span className="pl-4">View Projects</span>
               </Link>
             </div>
-          </div>
-          <div
-            className={`opacity-0 ${
-              animated ? "fadeIn-5th" : ""
-            } landing-icons-container flex flex-col justify-center py-8`}
-          >
-            <a
-              aria-label="Find Rey on Twitter"
-              className="landing-icons icon px-4"
-              href="https://twitter.com/ReyTheDev"
+            <div
+              className={`opacity-0 ${
+                animated ? "fadeIn-5th" : ""
+              } landing-icons-container flex flex-col justify-center ml-18`}
             >
-              <FontAwesomeIcon
-                title="Find Rey on Twitter"
-                icon={["fab", "twitter"]}
-              />
-            </a>
-            <a
-              aria-label="See Rey's Code on Github"
-              className="landing-icons icon px-4"
-              href="https://github.com/Rey810"
-            >
-              <FontAwesomeIcon
-                title="See Rey's Code on Github"
-                icon={["fab", "github"]}
-              />
-            </a>
-            <a
-              aria-label="Find Rey on LinkedIn"
-              className="landing-icons icon px-4"
-              href="https://www.linkedin.com/in/rey810/"
-            >
-              <FontAwesomeIcon
-                title="Find Rey on LinkedIn"
-                icon={["fab", "linkedin"]}
-              />
-            </a>
+              <a
+                aria-label="Find Rey on Twitter"
+                className="landing-icons icon px-4"
+                href="https://twitter.com/ReyTheDev"
+              >
+                <FontAwesomeIcon
+                  title="Find Rey on Twitter"
+                  icon={["fab", "twitter"]}
+                />
+              </a>
+              <a
+                aria-label="See Rey's Code on Github"
+                className="landing-icons icon px-4"
+                href="https://github.com/Rey810"
+              >
+                <FontAwesomeIcon
+                  title="See Rey's Code on Github"
+                  icon={["fab", "github"]}
+                />
+              </a>
+              <a
+                aria-label="Find Rey on LinkedIn"
+                className="landing-icons icon px-4"
+                href="https://www.linkedin.com/in/rey810/"
+              >
+                <FontAwesomeIcon
+                  title="Find Rey on LinkedIn"
+                  icon={["fab", "linkedin"]}
+                />
+              </a>
+            </div>
           </div>
         </div>
+      </main>
+      <main className="text-wrapper flex justify-center items-center">
+        <HeroMan />
       </main>
     </section>
   )

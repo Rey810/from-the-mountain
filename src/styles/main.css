@@ -60,12 +60,12 @@ body {
   @apply text-7xl;
 }
 .landing-description {
-  @apply text-xl;
+  @apply text-2xl;
 }
 
 .landing-cta-1,
 .email-field {
-  @apply text-xl;
+  @apply text-2xl;
 }
 
 /* Section Headers */
@@ -77,6 +77,10 @@ body {
 summary,
 a {
   cursor: pointer;
+}
+
+.btn {
+  @apply block px-12 py-4 rounded my-6;
 }
 
 .landing-children p,
@@ -108,25 +112,31 @@ a {
 .icon {
   @apply text-lg;
 }
-.view-projects-icon-container {
-  @apply text-xs;
+.view-projects-container {
+  @apply border text-xl;
+  border-color: var(--color-10-1);
 }
 
-.view-projects-container:hover {
-  @apply underline;
+.view-projects-container svg {
+  @apply absolute;
+  transition: all 0.2s ease-in;
+  @apply opacity-0;
+  transform: translate3d(-200%, 0, 0);
+}
+
+.view-projects-container:hover svg {
+  @apply opacity-100;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.landing-icons-container a {
+  @apply my-3;
 }
 
 /*//////////////////*/
 /* FLUID TYPOGRAPHY */
 /*//////////////////*/
 @screen md {
-  .landing-title {
-    font-size: 5rem;
-  }
-  .landing-description {
-    @apply text-2xl;
-  }
-
   /* General Elements */
   .landing-children p,
   .quote,
@@ -155,19 +165,11 @@ a {
   .icon {
     @apply text-xl;
   }
-
-  .view-projects-icon-container {
-    @apply text-sm;
-  }
 }
 
 /* GENERAL GLOBAL ELEMENTS */
 
 @screen lg {
-  .landing-title {
-    @apply text-7xl;
-  }
-
   /* Section Headers */
   .landing-children h2 {
     font-size: 4rem;
@@ -191,10 +193,6 @@ a {
   /* Icons */
   .icon {
     @apply text-2xl;
-  }
-
-  .view-projects-icon-container {
-    @apply text-lg;
   }
 }
 /* 
