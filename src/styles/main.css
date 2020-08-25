@@ -155,7 +155,7 @@ a {
   @apply relative;
 }
 .service-item {
-  @apply grid grid-rows-2 md:grid-cols-2;
+  @apply grid grid-rows-2 md:grid-cols-2 grid-rows-none;
   @apply mt-24;
 }
 
