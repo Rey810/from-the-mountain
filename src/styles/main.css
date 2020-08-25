@@ -230,7 +230,7 @@ a {
 
 /* FAQs */
 .faqs-container {
-  @apply pb-80 !important;
+  padding-bottom: 45rem !important;
 }
 
 .faq-list-container {
@@ -239,9 +239,15 @@ a {
 
 /* Contact */
 .contact-container {
-  @apply mx-40 rounded-md shadow-md;
-  @apply -mt-64;
+  @apply mx-40 rounded-md shadow-lg;
+  @apply -mt-76;
   @apply py-24;
+  @apply w-3/4 xl:w-1/2;
+  @apply mx-auto;
+}
+
+.contact-container h2 {
+  @apply mb-0;
 }
 
 /*//////////////////*/

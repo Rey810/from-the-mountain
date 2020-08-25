@@ -1,15 +1,25 @@
 import React from "react"
 
 const PaddingContainer = props => {
-  let paddingX = "md:px-24"
-  if (props.paddingXLarge) {
-    paddingX = "md:px-40"
+  let paddingX = null
+  let paddingY = null
+
+  let padding = []
+  if (props.X) {
+    paddingX = "md:px-24"
+    padding.push(paddingX)
   }
-  return (
-    <div className={`${props.type} ${paddingX} md:pt-32 md:pb-40`}>
-      {props.children}
-    </div>
-  )
+
+  if (props.Y) {
+    paddingY = "md:pt-32 md:pb-40"
+    padding.push(paddingY)
+  }
+
+  console.log(padding)
+  padding = padding.join(" ")
+  console.log("padding", padding)
+
+  return <div className={`${props.type} ${padding}`}>{props.children}</div>
 }
 
 export default PaddingContainer

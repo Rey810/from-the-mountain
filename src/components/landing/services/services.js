@@ -7,7 +7,7 @@ import RobotWoman from "../../../assets/illustrations/robotWoman"
 
 const Services = () => {
   return (
-    <PaddingContainer type="service-container">
+    <PaddingContainer type="service-container" X Y>
       <h2>Ways I can help you</h2>
       {/* Various benefits listed here */}
       <section className="service-items-container">

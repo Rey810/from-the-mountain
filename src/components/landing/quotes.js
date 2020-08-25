@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
+import PaddingContainer from "../../components/containers/paddingContainer"
 
 const Quotes = () => {
   const [quote, setQuote] = useState(
@@ -31,14 +33,34 @@ const Quotes = () => {
   })
   // quotes could be stored here and a timeout can be set to cycle quotes every few seconds
   return (
-    <section className="quotes-container absolute left-0 right-0 flex flex-row mr-16 md:mr-0">
-      <span className="text-4xl p-4">"</span>
-      <div className="quote px-0 md:p-4 flex flex-wrap items-center">
-        <span>
-          {quote} <strong>- {author}</strong>
-        </span>
-      </div>
-    </section>
+    <PaddingContainer type="quotes-container" X>
+      <section className="quotes-container flex flex-row justify-between pt-40">
+        <div className="quote flex flex-row">
+          <span className="text-4xl p-4">"</span>
+          <div className="quote px-0 md:p-4 flex flex-wrap items-center">
+            <span>
+              {quote} <strong>- {author}</strong>
+            </span>
+          </div>
+        </div>
+        <div className="footer-links flex items-center">
+          <div className="inner-links-container">
+            <Link to="/#What-I-Do" className="ml-4">
+              What I Do
+            </Link>
+            {/* <Link to="/projects/#Toolbox" className="ml-4">
+              Tech
+            </Link> */}
+            <Link to="/blog" className="ml-4">
+              Blog
+            </Link>
+            <Link to="/#Connect" className="ml-4">
+              Contact
+            </Link>
+          </div>
+        </div>
+      </section>
+    </PaddingContainer>
   )
 }
 

@@ -5,7 +5,7 @@ import WebDevMan from "../../assets/illustrations/webDevMan"
 
 const promise = () => {
   return (
-    <PaddingContainer type="promises-container">
+    <PaddingContainer type="promises-container" X Y>
       <h2 className="promises-header">My Promises</h2>
       <section className="all-promises-container">
         <div className="first-promise">

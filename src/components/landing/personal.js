@@ -5,7 +5,7 @@ import PaddingContainer from "../containers/paddingContainer"
 
 const personal = () => {
   return (
-    <PaddingContainer type="personal-container">
+    <PaddingContainer type="personal-container" X Y>
       <section className="md:grid md:grid-cols-2">
         <div className="img-wrapper flex justify-center items-center">
           <QuestionMan />
