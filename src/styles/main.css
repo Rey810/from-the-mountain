@@ -57,21 +57,19 @@ body {
 /* BASE FONT SIZES */
 /* ///////////// */
 .landing-title {
-  @apply text-7xl;
-}
-.landing-description {
-  @apply text-2xl;
+  @apply text-6xl md:text-7xl;
 }
 
+.landing-description,
 .landing-cta-1,
 .email-field {
-  @apply text-2xl;
+  @apply text-xl md:text-2xl;
 }
 
 /* Section Headers */
 .landing-children h2 {
   @apply text-center;
-  @apply text-6xl;
+  @apply text-5xl md:text-6xl;
   @apply mb-32;
 }
 
@@ -95,9 +93,12 @@ a {
   @apply text-base;
 }
 
-.landing-children h3,
-.landing-children summary {
+.landing-children h3 {
   @apply text-2xl;
+}
+
+.landing-children summary {
+  @apply text-xl md:text-2xl;
 }
 
 .contact-button {
@@ -140,6 +141,9 @@ a {
 /*////////////////////*/
 /* SPECIFIC SECTIONS */
 /*//////////////////*/
+.personal-contaniner {
+  @apply flex flex-col flex-col-reverse md:grid md:grid-cols-2;
+}
 .personal-description-container {
   @apply py-12;
 }
@@ -152,6 +156,7 @@ a {
 /* Services */
 .service-container {
   @apply relative;
+  @apply xl:w-2/3 xl:mx-auto;
 }
 .service-item {
   @apply grid grid-rows-2 md:grid-cols-2 grid-rows-none;
@@ -159,20 +164,16 @@ a {
 }
 
 .service-item p {
-  @apply w-4/5;
 }
 
 .service-text__left,
 .service-text__right {
-  @apply w-3/4;
   @apply flex flex-col justify-center;
 }
 
 .service-text__left {
-  @apply ml-auto;
 }
 .service-text__right {
-  @apply mr-auto;
 }
 
 .service-img {
@@ -185,8 +186,8 @@ a {
 }
 
 .all-benefits-container ul {
-  @apply grid grid-cols-2 md:grid-cols-3;
-  @apply gap-32;
+  @apply md:grid md:grid-cols-2 md:grid-cols-3;
+  @apply gap-y-32;
 }
 
 .benefit-item {
@@ -197,6 +198,13 @@ a {
   @apply p-4 rounded-full flex justify-center items-center;
   height: 5rem;
   width: 5rem;
+}
+
+@media (max-width: 640px) {
+  .benefit-icon {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 .benefit-icon svg {
@@ -221,11 +229,12 @@ a {
 .all-promises-container h3 {
   @apply my-6;
   @apply font-semibold;
+  @apply md:w-3/4;
 }
 
 .first-promise,
 .second-promise {
-  @apply flex flex-col items-center md:block;
+  @apply flex flex-col items-center md:block xl:w-3/4;
 }
 
 /* FAQs */
@@ -234,15 +243,15 @@ a {
 }
 
 .faq-list-container {
-  @apply w-1/2 mx-auto;
+  @apply mx-auto w-11/12 md:w-1/2;
 }
 
 /* Contact */
 .contact-container {
-  @apply mx-40 rounded-md shadow-lg;
+  @apply md:mx-40 rounded-md shadow-lg;
   @apply -mt-76;
   @apply py-24;
-  @apply w-3/4 xl:w-1/2;
+  @apply w-11/12 md:w-3/4 xl:w-1/2;
   @apply mx-auto;
 }
 
@@ -257,11 +266,6 @@ a {
   /* General Elements */
   .landing-cta-2 {
     @apply text-lg;
-  }
-
-  /* Smaller headers and main points */
-  summary {
-    @apply text-2xl;
   }
 
   .contact-button {
@@ -280,11 +284,6 @@ a {
   /* General Elements */
   .landing-cta-2 {
     @apply text-xl;
-  }
-
-  /* Smaller headers and main points */
-  summary {
-    @apply text-3xl;
   }
 
   /* Icons */
