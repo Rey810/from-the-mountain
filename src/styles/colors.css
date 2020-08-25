@@ -207,6 +207,10 @@ header {
   color: var(--color-60-lighter);
 }
 
+.benefit-icon {
+  background-color: var(--color-60-medium);
+}
+
 /*/////////////////////*/
 /* PERSONAL CONTAINER */
 /*///////////////////*/
@@ -220,6 +224,23 @@ header {
   background-color: var(--color-60-medium);
 }
 
+/*/////////////////////*/
+/* BENEFITS CONTAINER */
+/*///////////////////*/
+.benefits-container {
+  background-color: var(--color-60-medium-dark);
+}
+
+/*/////////////////////*/
+/* FAQS CONTAINER */
+/*///////////////////*/
+.faqs-containers {
+  background-color: var(--color-60-medium-dark);
+}
+
+.faqs-container li {
+  background-color: var(--color-60-medium);
+}
 /*////////*/
 /* CARDS */
 /*//////*/
@@ -326,12 +347,6 @@ header {
 .tool {
   background-color: var(--color-60-light);
   color: var(--color-60-medium-dark);
-}
-
-/* FAQ */
-
-.faq-list-container li {
-  background-color: var(--card-bg-color);
 }
 
 summary::-webkit-details-marker {

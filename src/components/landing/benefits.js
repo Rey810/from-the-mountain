@@ -1,72 +1,66 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import PaddingContainer from "../../components/containers/paddingContainer"
+import ThumbUp from "../../assets/thumbUp"
+import Time from "../../assets/time"
+import Money from "../../assets/money"
+import Friends from "../../assets/friends"
+import Work from "../../assets/work"
+import Handshake from "../../assets/handshake"
 
-export default function benefits() {
+const Benefits = () => {
   return (
-    <section className="benefit-container relative pb-24 xl:pb-32 pl-4 md:pl-8 lg:pl-12 xl:pl-16 xl:pb-32">
-      <h2 className="benefits-header pb-12">Your Benefits</h2>
-      <div className="all-benefits-container md:grid md:grid-cols-2 md:grid-rows-3 md:col-gap-2">
-        <div className="benefit-1-container flex flex-row items-center md:pt-4">
-          <FontAwesomeIcon
-            icon={["far", "check-circle"]}
-            size="lg"
-            className="benefit-icon"
-          />
-          <p className="benefit-header pl-2">
-            Attract clients who value quality
-          </p>
-        </div>
-        <div className="benefit-2-container flex flex-row items-center pt-4">
-          <FontAwesomeIcon
-            icon={["far", "check-circle"]}
-            size="lg"
-            className="benefit-icon"
-          />
-          <p className="benefit-header pl-2">
-            Get more time to focus on your business
-          </p>
-        </div>
-        <div className="benefit-3-container flex flex-row items-center pt-4">
-          <FontAwesomeIcon
-            icon={["far", "check-circle"]}
-            size="lg"
-            className="benefit-icon"
-          />
-          <p className="benefit-header pl-2">
-            Own a beautiful website that works 24/7
-          </p>
-        </div>
-        <div className="benefit-4-container flex flex-row items-center pt-4">
-          <FontAwesomeIcon
-            icon={["far", "check-circle"]}
-            size="lg"
-            className="benefit-icon"
-          />
-          <p className="benefit-header  pl-2">
-            Turn leads into paying customers
-          </p>
-        </div>
-        <div className="benefit-5-container flex flex-row items-center pt-4">
-          <FontAwesomeIcon
-            icon={["far", "check-circle"]}
-            size="lg"
-            className="benefit-icon"
-          />
-          <p className="benefit-header pl-2">
-            Build trust with your ideal clients
-          </p>
-        </div>
-        <div className="benefit-6-container flex flex-row items-center pt-4">
-          <FontAwesomeIcon
-            icon={["far", "check-circle"]}
-            size="lg"
-            className="benefit-icon"
-          />
-          <p className="benefit-header pl-2">
-            Reach a larger, more curious audience
-          </p>
-        </div>
-      </div>
-    </section>
+    <PaddingContainer type="benefits-container">
+      <h2 className="benefits-header">Ways you'll benefit</h2>
+      <section className="all-benefits-container">
+        <ul>
+          <div className="benefit-item">
+            <div className="benefit-icon">
+              <ThumbUp />
+            </div>
+            <li className="benefit-text">Attract clients who value quality</li>
+          </div>
+          <div className="benefit-item">
+            <div className="benefit-icon">
+              <Time />
+            </div>
+            <li className="benefit-text">
+              More time to focus on your business
+            </li>
+          </div>
+          <div className="benefit-item">
+            <div className="benefit-icon px-">
+              <Money />
+            </div>
+            <li className="benefit-text">Turn leads into paying customers</li>
+          </div>
+          <div className="benefit-item">
+            <div className="benefit-icon">
+              <Friends />
+            </div>
+            <li className="benefit-text">
+              Reach a larger, more curious audience
+            </li>
+          </div>
+          <div className="benefit-item">
+            <div className="benefit-icon">
+              <Work />
+            </div>
+            <li className="benefit-text">
+              Own a beautiful website that works 24/7
+            </li>
+          </div>
+          <div className="benefit-item">
+            <div className="benefit-icon">
+              <Handshake />
+            </div>
+            <li className="benefit-text">
+              Build trust with your ideal clients
+            </li>
+          </div>
+        </ul>
+      </section>
+    </PaddingContainer>
   )
 }
+
+export default Benefits

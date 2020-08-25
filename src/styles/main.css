@@ -91,8 +91,7 @@ a {
 
 .quote,
 .landing-cta-2,
-.cta,
-.landing-children li {
+.cta {
   @apply text-base;
 }
 
@@ -159,6 +158,10 @@ a {
   @apply mt-24;
 }
 
+.service-item p {
+  @apply w-4/5;
+}
+
 .service-text__left,
 .service-text__right {
   @apply w-3/4;
@@ -175,19 +178,72 @@ a {
 .service-img {
   @apply flex justify-center items-center;
 }
+
+/* Benefits */
+.all-benefits-container {
+  @apply w-3/4 mx-auto;
+}
+
+.all-benefits-container ul {
+  @apply grid grid-cols-2 md:grid-cols-3;
+  @apply gap-32;
+}
+
+.benefit-item {
+  @apply flex flex-col justify-center items-center mx-auto;
+}
+
+.benefit-icon {
+  @apply p-4 rounded-full flex justify-center items-center;
+  height: 5rem;
+  width: 5rem;
+}
+
+.benefit-icon svg {
+  @apply w-4/6;
+}
+
+.benefit-text {
+  @apply mt-6;
+  @apply text-xl;
+  @apply text-center;
+}
+
+/* Promises */
+.promises-container {
+  @apply w-3/4 mx-auto;
+}
+
+.all-promises-container {
+  @apply md:grid md:grid-cols-2 gap-40;
+}
+
+.all-promises-container h3 {
+  @apply my-6;
+  @apply font-semibold;
+}
+
+.first-promise,
+.second-promise {
+  @apply flex flex-col items-center md:block;
+}
+
+/* FAQs */
+.faq-list-container {
+  @apply w-1/2 mx-auto;
+}
+
 /*//////////////////*/
 /* FLUID TYPOGRAPHY */
 /*//////////////////*/
 @screen md {
   /* General Elements */
   .quote,
-  .landing-cta-2,
-  .landing-children li {
+  .landing-cta-2 {
     @apply text-lg;
   }
 
   /* Smaller headers and main points */
-  .landing-children h3,
   summary {
     @apply text-2xl;
   }
@@ -207,13 +263,11 @@ a {
 @screen lg {
   /* General Elements */
   .quote,
-  .landing-cta-2,
-  .landing-children li {
+  .landing-cta-2 {
     @apply text-xl;
   }
 
   /* Smaller headers and main points */
-  .landing-children h3,
   summary {
     @apply text-3xl;
   }

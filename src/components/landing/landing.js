@@ -75,7 +75,7 @@ const Landing = () => {
           <span className="name font-semibold">Rey van den Berg</span>
         </div>
       </div> */}
-      <main className="text-wrapper flex justify-center items-center">
+      <div className="text-wrapper flex justify-center items-center">
         <div>
           <h1
             className={`opacity-0 ${
@@ -151,10 +151,10 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </main>
-      <main className="img-wrapper flex justify-center items-center">
+      </div>
+      <div className="img-wrapper flex justify-center items-center">
         <HeroMan />
-      </main>
+      </div>
     </section>
   )
 }

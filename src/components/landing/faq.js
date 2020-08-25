@@ -1,6 +1,7 @@
 import React from "react"
 import uuid from "react-uuid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import PaddingContainer from "../../components/containers/paddingContainer"
 
 export default function FAQ() {
   const faqs = [
@@ -38,17 +39,15 @@ export default function FAQ() {
   }
 
   return (
-    <section className="faq-container pb-24 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32 md:w-2/3 lg:w-7/12">
-      <h2 className="faq-header pb-12">
-        A few questions people normally ask me
-      </h2>
+    <PaddingContainer type="faqs-container">
+      <h2 className="faq-header pb-12">Frequently asked questions</h2>
       <div className="faq-list-container">
         <ul className="faqs">
           {faqs.map(faq => (
             <li key={uuid()} className="faq mb-12 rounded-md">
               <details key={uuid()} onToggle={toggleFocus}>
-                <summary className="flex flex-row items-baseline font-semibold p-6">
-                  <span className="faq-icon-container inline-block w-mc text-base pr-2">
+                <summary className="flex flex-row items-baseline p-6">
+                  <span className="faq-icon-container inline-block w-mc text-base pl-2 pr-6">
                     <FontAwesomeIcon icon="chevron-down"></FontAwesomeIcon>
                   </span>
                   <span className="">{faq.question}</span>
@@ -59,6 +58,6 @@ export default function FAQ() {
           ))}
         </ul>
       </div>
-    </section>
+    </PaddingContainer>
   )
 }
