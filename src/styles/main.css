@@ -229,8 +229,19 @@ a {
 }
 
 /* FAQs */
+.faqs-container {
+  @apply pb-80 !important;
+}
+
 .faq-list-container {
   @apply w-1/2 mx-auto;
+}
+
+/* Contact */
+.contact-container {
+  @apply mx-40 rounded-md shadow-md;
+  @apply -mt-64;
+  @apply py-24;
 }
 
 /*//////////////////*/
@@ -238,7 +249,6 @@ a {
 /*//////////////////*/
 @screen md {
   /* General Elements */
-  .quote,
   .landing-cta-2 {
     @apply text-lg;
   }
@@ -262,7 +272,6 @@ a {
 
 @screen lg {
   /* General Elements */
-  .quote,
   .landing-cta-2 {
     @apply text-xl;
   }

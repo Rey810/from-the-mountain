@@ -1,13 +1,11 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import PaddingContainer from "../containers/paddingContainer"
 
 const contact = () => {
   return (
-    <section
-      id="Connect"
-      className="contact-container pt-0 pb-8 px-4 md:px-8 lg:px-12 xl:px-16"
-    >
-      <h2 className="contact-header pb-8 text-center md:mx-auto md:w-3/4">
+    <section id="Connect" className="contact-container">
+      <h2 className="contact-header pb-24 text-center md:mx-auto md:w-3/4">
         Sweet, that's me! Now it's your turn to say hi.
       </h2>
       <div className="contact-options-container flex flex-col pb-6">
@@ -19,12 +17,12 @@ const contact = () => {
             Chat with Rey
           </a>
           <div className="reply-indicator-container text-center">
-            <span className="reply-indicator">
+            <span className="reply-indicator text-xs">
               or email him at hi@fromthemountain.co.za
             </span>
           </div>
         </div>
-        <div className="contact-social-container text-2xl flex flex-row justify-center pt-8">
+        <div className="contact-social-container text-2xl flex flex-row justify-center pt-6">
           <a
             className="landing-icons icon px-4"
             href="https://twitter.com/ReyTheDev"

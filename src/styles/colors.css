@@ -63,7 +63,7 @@
     --heading-color: #818cab;
 } */
 body {
-  background-color: var(--color-60-dark);
+  background-color: var(--color-60-medium);
   color: var(--color-60-light);
   scrollbar-color: rgb(83, 83, 83) #333;
 }
@@ -212,6 +212,13 @@ header {
 }
 
 /*/////////////////////*/
+/* LANDING CONTAINER */
+/*///////////////////*/
+.landing-container {
+  background-color: var(--color-60-dark);
+}
+
+/*/////////////////////*/
 /* PERSONAL CONTAINER */
 /*///////////////////*/
 .personal-container {
@@ -234,11 +241,18 @@ header {
 /*/////////////////////*/
 /* FAQS CONTAINER */
 /*///////////////////*/
-.faqs-containers {
+.faqs-container {
   background-color: var(--color-60-medium-dark);
 }
 
 .faqs-container li {
+  background-color: var(--color-60-medium);
+}
+
+/*/////////////////////*/
+/* CONTACT CONTAINER */
+/*///////////////////*/
+.contact-container {
   background-color: var(--color-60-medium);
 }
 /*////////*/
