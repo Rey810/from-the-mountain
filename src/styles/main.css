@@ -112,7 +112,7 @@ a {
   @apply text-lg;
 }
 .view-projects-container {
-  @apply border text-xl;
+  @apply border-2 text-xl;
   border-color: var(--color-10-1);
 }
 
