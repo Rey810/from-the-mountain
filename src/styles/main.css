@@ -70,7 +70,13 @@ body {
 
 /* Section Headers */
 .landing-children h2 {
+  @apply text-center;
   @apply text-6xl;
+  @apply mb-32;
+}
+
+.landing-children h3 {
+  @apply mb-8;
 }
 
 /* General Elements */
@@ -132,11 +138,43 @@ a {
   @apply my-3;
 }
 
+/*////////////////////*/
 /* SPECIFIC SECTIONS */
+/*//////////////////*/
 .personal-description-container {
   @apply py-12;
 }
 
+.personal-title-container h2 {
+  @apply mb-0;
+  @apply text-left;
+}
+
+/* Services */
+.service-container {
+  @apply relative;
+}
+.service-item {
+  @apply grid grid-rows-2 md:grid-cols-2;
+  @apply mt-24;
+}
+
+.service-text__left,
+.service-text__right {
+  @apply w-3/4;
+  @apply flex flex-col justify-center;
+}
+
+.service-text__left {
+  @apply ml-auto;
+}
+.service-text__right {
+  @apply mr-auto;
+}
+
+.service-img {
+  @apply flex justify-center items-center;
+}
 /*//////////////////*/
 /* FLUID TYPOGRAPHY */
 /*//////////////////*/
@@ -144,7 +182,6 @@ a {
   /* General Elements */
   .quote,
   .landing-cta-2,
-  .cta,
   .landing-children li {
     @apply text-lg;
   }
@@ -171,7 +208,6 @@ a {
   /* General Elements */
   .quote,
   .landing-cta-2,
-  .cta,
   .landing-children li {
     @apply text-xl;
   }
