@@ -175,7 +175,7 @@ a {
 }
 
 .mobile-reverse {
-  @apply flex flex-col-reverse md:block;
+  @apply flex flex-col-reverse md:grid;
 }
 
 .service-img {
@@ -189,7 +189,7 @@ a {
 
 .all-benefits-container ul {
   @apply md:grid md:grid-cols-2 md:grid-cols-3;
-  @apply md:gap-y-32;
+  @apply md:gap-x-24 md:gap-y-24;
 }
 
 .benefit-item {
@@ -258,12 +258,12 @@ a {
 
 @media (min-width: 676px) {
   .faqs-container {
-    padding-bottom: 45rem !important;
+    padding-bottom: 24rem !important;
   }
 }
 
 .faq-list-container {
-  @apply mx-auto md:w-11/12 md:w-1/2;
+  @apply mx-auto md:w-1/2;
 }
 
 /* Contact */

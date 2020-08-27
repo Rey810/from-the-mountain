@@ -34,7 +34,7 @@ const Quotes = () => {
   // quotes could be stored here and a timeout can be set to cycle quotes every few seconds
   return (
     <PaddingContainer type="quotes-container" X>
-      <section className="quotes-container pt-20 md:pt-40">
+      <section className="quotes-container pt-12">
         <div className="footer-links flex justify-between mx-12 font-bold md:mx-0 md:justify-center items-center">
           <Link to="/#What-I-Do" className="mx-4 md:mx-8">
             What I Do
