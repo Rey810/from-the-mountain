@@ -229,12 +229,8 @@ a {
 }
 
 /* Promises */
-.promises-container {
-  @apply w-3/4 mx-auto;
-}
-
 .all-promises-container {
-  @apply md:grid md:grid-cols-2 gap-32;
+  @apply w-3/4 mx-auto md:grid md:grid-cols-2 gap-32;
 }
 /* .all-promises-container div {
   @apply;
