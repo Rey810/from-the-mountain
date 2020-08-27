@@ -5,9 +5,8 @@ import PaddingContainer from "../containers/paddingContainer"
 const contact = () => {
   return (
     <section id="Connect" className="contact-container">
-      <h2 className="contact-header pb-24 text-center mx-24">
-        Sweet, that's me! Now <br />
-        it's your turn to say hi.
+      <h2 className="contact-header">
+        Sweet, that's me! Now it's your turn to say hi.
       </h2>
       <div className="contact-options-container flex flex-col">
         <div className="button-container mx-auto text-center ">

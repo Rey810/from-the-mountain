@@ -40,7 +40,7 @@ export default function FAQ() {
 
   return (
     <PaddingContainer type="faqs-container" X Y>
-      <h2 className="faq-header pb-12">Frequently asked questions</h2>
+      <h2 className="faq-header">Frequently asked questions</h2>
       <div className="faq-list-container">
         <ul className="faqs">
           {faqs.map(faq => (

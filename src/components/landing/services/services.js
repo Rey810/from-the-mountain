@@ -27,7 +27,7 @@ const Services = () => {
             <GraphsWoman />
           </div>
         </div>
-        <div className="service-item">
+        <div className="service-item mobile-reverse">
           <div className="service-img">
             <CelebrateWoman />
           </div>
@@ -58,7 +58,7 @@ const Services = () => {
             <RobotWoman />
           </div>
         </div>
-        <div className="service-item">
+        <div className="service-item mobile-reverse">
           <div className="service-img">
             <MoneyWoman />
           </div>

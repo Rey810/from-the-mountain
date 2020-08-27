@@ -6,18 +6,16 @@ const PaddingContainer = props => {
 
   let padding = []
   if (props.X) {
-    paddingX = "md:px-24"
+    paddingX = "px-4 md:px-24"
     padding.push(paddingX)
   }
 
   if (props.Y) {
-    paddingY = "md:pt-32 md:pb-40"
+    paddingY = "pt-16 pb-20 md:pt-32 md:pb-40"
     padding.push(paddingY)
   }
 
-  console.log(padding)
   padding = padding.join(" ")
-  console.log("padding", padding)
 
   return <div className={`${props.type} ${padding}`}>{props.children}</div>
 }

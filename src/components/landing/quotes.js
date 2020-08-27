@@ -34,29 +34,27 @@ const Quotes = () => {
   // quotes could be stored here and a timeout can be set to cycle quotes every few seconds
   return (
     <PaddingContainer type="quotes-container" X>
-      <section className="quotes-container flex flex-row justify-between pt-40">
+      <section className="quotes-container pt-20 md:pt-40">
+        <div className="footer-links flex justify-between mx-12 font-bold md:mx-0 md:justify-center items-center">
+          <Link to="/#What-I-Do" className="mx-4 md:mx-8">
+            What I Do
+          </Link>
+          {/* <Link to="/projects/#Toolbox" className="ml-4">
+              Tech
+            </Link> */}
+          <Link to="/blog" className="mx-4 md:mx-8">
+            Blog
+          </Link>
+          <Link to="/#Connect" className="mx-4 md:mx-8">
+            Contact
+          </Link>
+        </div>
         <div className="quote flex flex-row">
           <span className="text-4xl p-4">"</span>
           <div className="quote px-0 md:p-4 flex flex-wrap items-center">
             <span>
               {quote} <strong>- {author}</strong>
             </span>
-          </div>
-        </div>
-        <div className="footer-links flex items-center">
-          <div className="inner-links-container">
-            <Link to="/#What-I-Do" className="ml-4">
-              What I Do
-            </Link>
-            {/* <Link to="/projects/#Toolbox" className="ml-4">
-              Tech
-            </Link> */}
-            <Link to="/blog" className="ml-4">
-              Blog
-            </Link>
-            <Link to="/#Connect" className="ml-4">
-              Contact
-            </Link>
           </div>
         </div>
       </section>
