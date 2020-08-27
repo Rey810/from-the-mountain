@@ -14,7 +14,7 @@ const Quotes = () => {
     "A nice son who cooks the best",
     "The most handsome guy I know",
     "The best teacher I ever had",
-    "An average human with an above-average height",
+    "Average human with above-average height",
     "A typer of good things",
   ]
   const authors = ["Mom", "Partner", "Student", "Friend", "Happy Client"]
