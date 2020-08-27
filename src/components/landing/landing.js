@@ -110,7 +110,7 @@ const Landing = () => {
                 className="view-projects-container btn flex flex-row items-center"
               >
                 <FeatherArrowRightCircle />
-                <span className="w-1/1">View Projects</span>
+                <span className="w-1/1 text-center">View Projects</span>
               </Link>
             </div>
             <div
