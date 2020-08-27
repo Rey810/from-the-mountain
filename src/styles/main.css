@@ -121,6 +121,14 @@ a {
   border-color: var(--color-10-1);
 }
 
+.view-projects-container span {
+  transition: all 0.2s ease-in;
+}
+
+.view-projects-container:hover span {
+  transform: translate3d(5%, 0, 0);
+}
+
 .view-projects-container svg {
   @apply absolute;
   transition: all 0.2s ease-in;
