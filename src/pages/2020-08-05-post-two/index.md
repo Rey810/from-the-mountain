@@ -83,11 +83,11 @@ Well, his art was (it was called _[Suprematism](https://www.tate.org.uk/art/art-
 
 While I don't know anything about his personal finances during his creative years, it is said that he ['died in poverty and oblivion'](https://www.britannica.com/biography/Kazimir-Malevich) thanks to the decisions of Soviet politicians against modern art. Yikes. Turns out the man was a minimalist in practice too, but probably not by choice.
 
-Contemporary Minimalism
+### Contemporary Minimalism
 
 Today we have vocal advocates for minimalism (unimpeded by communist ideologies) like [Joshua Becker](https://www.becomingminimalist.com), [Cal Newport](https://www.calnewport.com/), and [Joshua Millburn & Ryan Nicodemus](https://www.theminimalists.com/) who stand for a message that I can totally agree with! In essence, this is their "Why" and "How":
 
-_**Momentary Aside:** Some of these guys have built careers (being paid to be a minimalist can be called a career now, you know) around teaching people the what, the why, and, on the all-important HOW of minimalism. I'm of the inclination that you don't need to spend any money to become a good minimalist (this is becoming quite meta...) and to this end I propose you prepend your minimalism adventures with a look into becoming mindful. I've written a short article on some habits that we can adopt in becoming more mindful which will definitely help you in your digital minimalism journey._
+_**Momentary Aside:** Some of these guys have built careers (being paid to be a minimalist can be called a career now, you know) around teaching people the what, the why, and the all-important HOW of minimalism. I'm of the inclination that you don't need to spend any money to become a good minimalist (this is becoming quite meta...) and to this end I propose you prepend your minimalism adventures with a look into becoming mindful. I've written a short article on some habits that we can adopt in becoming more mindful which will definitely help you in your digital minimalism journey._
 
 **Why would anyone want to become a minimalist?**
 
@@ -163,24 +163,24 @@ Fair point. There's no sense in preaching to the converted so check this out to 
 
 Use the points below as a guide to whether you might want to look into digital minimalism:
 
-- You think that physical exercise is important for your health and happiness but often find yourself binging on another Netflix show instead of going for a run or hitting the gym.
-- You value long-term friendships but rarely reach out to call them, instead you find yourself spending way too much time on random (but totally justified, right?..) Youtube videos.
-- You think it's important to "be present and engaged" during meals but find yourself glancing at your phone every few minutes instead of being fully engaged with the meal and people around you.
-- You think procrastination is bad but sometimes you get lost (mindlessly) scrolling down the infinite stream that is social feeds and blog posts instead of working on your latest passion project.
+1. You think that physical exercise is important for your health and happiness but often find yourself binging on another Netflix show instead of going for a run or hitting the gym.
+2. You value long-term friendships but rarely reach out to call them, instead you find yourself spending way too much time on random (but totally justified, right?..) Youtube videos.
+3. You think it's important to "be present and engaged" during meals but find yourself glancing at your phone every few minutes instead of being fully engaged with the meal and people around you.
+4. You think procrastination is bad but sometimes you get lost (mindlessly) scrolling down the infinite stream that is social feeds and blog posts instead of working on your latest passion project.
 
 You see what I'm getting at, right? We know better. We always know better. But somehow we still fall prey to bad habits. If you identified with even one of the above points, then maybe your life will become a little less cluttered, a little more purposeful, if you sought to become mindful and practice digital minimalism. Even if it makes your life 5% more engaged and meaningful, it's a win in our continual quest to be ["happier" and more "at ease"](https://www.youtube.com/watch?v=O4SzvsMFaek).
 
 <h2 id="how-can-i-become-more-digitally-minimal">6. How Can I Become More Digitally Minimal?</h2>
 
-So, what can you do **_practically_** to take back a little more control of your life where [your brain is less reactive to a notification popping up on your smartphone](http://sitn.hms.harvard.edu/flash/2018/dopamine-smartphones-battle-time/)
+So, what can you do **_practically_** to take back a little more control of your life where [your brain is less reactive to a notification popping up on your smartphone.](http://sitn.hms.harvard.edu/flash/2018/dopamine-smartphones-battle-time/)
 
 Here are some small actionable things to try out in your digital minimalism experiment:
 
 1. The next time you're about to have a meal with someone, leave your phone in another room.
 2. When you have some time to relax, try to catch yourself while reaching for your phone or PC. Observe the action.
 3. Before you go to sleep at night, put your phone outside your bedroom door.
-4. Set aside 2 hours during the weekend where you don't use your phone at all. After some time, set a whole morning orafternoon aside where you don't use any screen technology at all.
-5. Delete your social media apps from your phone, only allowing yourself to check them on your PC. If you don't have a PC,delete them anyways and limit yourself to your phone's web browser.
+4. Set aside 2 hours during the weekend where you don't use your phone at all. After some time, set a whole morning or afternoon aside where you don't use any screen technology at all.
+5. Delete your social media apps from your phone, only allowing yourself to check them on your PC. If you don't have a PC, delete them anyways and limit yourself to your phone's web browser.
 6. For every "like" on social media, leave an actual response that isn't robotic. Try to be as genuine as you can.
 7. Next time you're driving or walking to a new place, try to use the road signs instead of your phone's maps app.
 

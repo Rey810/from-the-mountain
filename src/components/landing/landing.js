@@ -152,7 +152,11 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="img-wrapper flex justify-center items-center">
+      <div
+        className={`opacity-0 ${
+          animated ? "fadeIn-6th" : ""
+        } img-wrapper flex justify-center items-center`}
+      >
         <HeroMan />
       </div>
     </section>
