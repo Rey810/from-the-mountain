@@ -21,6 +21,8 @@
   --color-10-1: #ec4e20;
   --color-10-1-lighter: #fa5d2f;
 
+  --color-illustration: rgb(99, 41, 196);
+
   /* Overlay Colours */
   --initial-color-overlay: rgba(31, 31, 31, 0.4);
   --mid-colour-overlay: rgba(31, 31, 31, 0.6);

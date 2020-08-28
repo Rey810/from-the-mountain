@@ -208,6 +208,7 @@ a {
   @apply p-4 rounded-full flex justify-center items-center;
   height: 5rem;
   width: 5rem;
+  background-color: var(--color-illustration);
 }
 
 @media (max-width: 640px) {
