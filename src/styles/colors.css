@@ -14,9 +14,9 @@
   --cta-hover-color: hsl(192, 50.7%, 40.5%); */
   --color-60-lighter: rgb(255, 255, 255);
   --color-60-light: hsl(124, 80%, 96%);
-  --color-60-medium: hsl(0, 0%, 25%);
-  --color-60-medium-dark: #313131;
-  --color-60-dark: #1f1f1f;
+  --color-60-medium: #323545;
+  --color-60-medium-dark: #252734;
+  --color-60-dark: #171820;
   --color-30-1: rgba(255, 255, 255, 0.795);
   --color-10-1: #ec4e20;
   --color-10-1-lighter: #fa5d2f;
@@ -63,7 +63,7 @@
     --heading-color: #818cab;
 } */
 body {
-  background-color: var(--color-60-dark);
+  background-color: var(--color-60-medium);
   color: var(--color-60-light);
   scrollbar-color: rgb(83, 83, 83) #333;
 }
@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
-  background-color: var(--color-60-dark);
+  background-color: var(--color-60-medium-dark);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.35s ease-out;
@@ -207,6 +207,54 @@ header {
   color: var(--color-60-lighter);
 }
 
+.benefit-icon {
+  background-color: var(--color-60-medium);
+}
+
+/*/////////////////////*/
+/* LANDING CONTAINER */
+/*///////////////////*/
+.landing-container {
+  background-color: var(--color-60-dark);
+}
+
+/*/////////////////////*/
+/* PERSONAL CONTAINER */
+/*///////////////////*/
+.personal-container {
+  background-color: var(--color-60-medium-dark);
+}
+/*/////////////////////*/
+/* SERVICE CONTAINER */
+/*///////////////////*/
+.service-container {
+  background-color: var(--color-60-medium);
+}
+
+/*/////////////////////*/
+/* BENEFITS CONTAINER */
+/*///////////////////*/
+.benefits-container {
+  background-color: var(--color-60-medium-dark);
+}
+
+/*/////////////////////*/
+/* FAQS CONTAINER */
+/*///////////////////*/
+.faqs-container {
+  background-color: var(--color-60-medium-dark);
+}
+
+.faqs-container li {
+  background-color: var(--color-60-medium);
+}
+
+/*/////////////////////*/
+/* CONTACT CONTAINER */
+/*///////////////////*/
+.contact-container {
+  background-color: var(--color-60-medium);
+}
 /*////////*/
 /* CARDS */
 /*//////*/
@@ -313,12 +361,6 @@ header {
 .tool {
   background-color: var(--color-60-light);
   color: var(--color-60-medium-dark);
-}
-
-/* FAQ */
-
-.faq-list-container li {
-  background-color: var(--card-bg-color);
 }
 
 summary::-webkit-details-marker {

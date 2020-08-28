@@ -27,7 +27,7 @@ So shortly after noticing the effects of my habits as a developer, I started sea
 
 I have a degree in Human Physiology, Genetics, and Psychology so I sort of know how our bodies and brains work in creating a complex, highly-functional organism capable of critiquing tech tweets...
 
-Ha! I don't remember a damn thing from that degree so ignore my 'credentials' because I don't have any. The only way you can trust me is check this 👇 and nod if you get me:
+Ha! I don't remember a damn thing from that degree so ignore my 'credentials' because I don't have any. The only way you can trust me is to check this 👇 and nod if you get me:
 
 - ❌ aching eyeballs
 - ❌ sore back
@@ -142,7 +142,7 @@ But there is a crucial thing that needs to happen after your practice for the da
 
 > “Practice does not make perfect. It is practice, followed by a night of sleep, that leads to perfection.” - Matthew Walker
 
-**Ok. Cool. The dude has quotes but who is this Mat guy?**
+**Ok. Cool. The dude has quotes but who is this Matt guy?**
 
 Let me just say that you'd do well to follow his advice to the letter. He's a neuroscientist at Berkeley (formerly at Harvard) and he's one of the top people in the WORLD when it comes to sleep. He's only been studying it for like _20 years_. No seriously, this guy know what he's talking about. He's worked as a sleep consultant (yip, that's a real thing!) for the [NBA, NFL, and British Premier League football teams](https://books.google.com/books?id=ZlU3DwAAQBAJ&pg=PA10&lpg=PA10&dq=matthew+walker+sleep+consultant+premier+league&source=bl&ots=MVT8bEWVnW&sig=ACfU3U3GdyiKxs0saJiQpgOOeKqrb6_3AQ&hl=en&sa=X&redir_esc=y#v=onepage&q=matthew%20walker%20sleep%20consultant%20premier%20league&f=false) and professes his absolute academic obsession with sleep and it's superpowers in his book, ["Why We Sleep"](https://www.audible.com/pd/Why-We-Sleep-Audiobook/B0752ZQR33?source_code=ROWGB13108101800N6&gclid=CjwKCAjw5vz2BRAtEiwAbcVIL99i36Bk3aewC9klaA_AesHEptLK6I8I1aA7ZsACJKws3OBS-TAa0hoCyCUQAvD_BwE).
 
@@ -162,12 +162,12 @@ _every night._
 
 Here are some more **actionable tips** from his book to ensure you give your brain the rest it deserves:
 
-1. ✅ Don't exercise two or three hours before your bedtime.
-1. ✅ Stick to a sleep schedule, even on weekends!
-1. ✅ Avoid caffeine (_cringe..._) and nicotine. If you must have coffee, like me, stop drinking it before late afternoon as it takes up to 8 hours for caffeine to wear off.
-1. ✅ Avoid alcohol before bed - it robs your brain of REM sleep which acts as ["overnight therapy"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2890316/)
-1. ✅ Don't nap after 3pm. A nap is fine, just take it earlier than 3pm. [Science says naps are good!](https://www.newscientist.com/article/mg23030750-800-how-can-i-nap-like-a-pro/)
-1. ✅ Blue light delays our sleep-onset hormones, avoid it as early as possible in the evenings.
+- ✅ Don't exercise two or three hours before your bedtime.
+- ✅ Stick to a sleep schedule, even on weekends!
+- ✅ Avoid caffeine (_cringe..._) and nicotine. If you must have coffee, like me, stop drinking it before late afternoon as it takes up to 8 hours for caffeine to wear off.
+- ✅ Avoid alcohol before bed - it robs your brain of REM sleep which acts as ["overnight therapy"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2890316/)
+- ✅ Don't nap after 3pm. A nap is fine, just take it earlier than 3pm. [Science says naps are good!](https://www.newscientist.com/article/mg23030750-800-how-can-i-nap-like-a-pro/)
+- ✅ Blue light delays our sleep-onset hormones, avoid it as early as possible in the evenings.
 
 **My fellow humans, just do yourself the biggest favour and sleep lots.**
 
@@ -197,7 +197,7 @@ Here is a ['Why and How of Diffuse vs Focused'](https://www.7pace.com/blog/focus
 
 #### Meditation Links
 
-If you're interested in becoming mindful, [check this out](https://wakingup.com/). The first 7 meditations are free and if you use [this](https://share.wakingup.com/dab9b5), you'll get a FREE MONTH from me - no card, no strings attached, simply a month free. At the end of your free month, it's possible to ask the Waking Up team for a free subscription if you can't afford it. They're super understanding and will help you out no questions asked.
+If you're interested in becoming mindful, [check out Waking Up](https://wakingup.com/). The first 7 meditations are free and if you use [a share link of mine](https://share.wakingup.com/dab9b5)(not an affiliate link), you'll get a FREE MONTH from me - no card, no strings attached, simply a month free. At the end of your free month, it's possible to ask the Waking Up team for a free subscription if you can't afford it. They're super understanding and will help you out no questions asked.
 
 Need more convincing that mindfulness is good and works? Check out [this article](https://greatergood.berkeley.edu/article/item/the_state_of_mindfulness_science) from UC [Berkeley](http://berkley.edu) about the scientifically-backed benefits of mindfulness.
 
