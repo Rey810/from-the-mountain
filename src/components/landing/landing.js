@@ -106,11 +106,11 @@ const Landing = () => {
                 Chat with Rey
               </Link>
               <Link
-                to="/projects"
+                to="/#services"
                 className="view-projects-container btn flex flex-row items-center"
               >
                 <FeatherArrowRightCircle />
-                <span className="w-1/1 text-center">View Projects</span>
+                <span className="w-1/1 text-center">View Services</span>
               </Link>
             </div>
             <div
