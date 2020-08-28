@@ -11,10 +11,7 @@ const personal = () => {
       </div>
       <div className="text-wrapper flex justify-center items-center">
         <div className="personal-title-container">
-          <h2 className="personal-title">
-            Let's start <br />
-            with a question
-          </h2>
+          <h2 className="personal-title">Let's start with a question</h2>
           <div className="personal-description-container">
             <p className="personal-description pb-4 ">
               What comes to mind when you hear 'The Perfect Website'? I picture

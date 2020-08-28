@@ -75,6 +75,7 @@ body {
 
 .landing-children h3 {
   @apply mb-4 md:mb-8;
+  @apply text-center md:text-left;
 }
 
 /* General Elements */
@@ -162,6 +163,7 @@ a {
 .personal-title-container h2 {
   @apply mb-0;
   @apply text-left;
+  @apply xl:w-4/5;
 }
 
 /* Services */
@@ -233,19 +235,26 @@ a {
 .all-promises-container {
   @apply w-3/4 mx-auto md:grid md:grid-cols-2 gap-32;
 }
-/* .all-promises-container div {
-  @apply;
-} */
 
+@screen xl {
+  .all-promises-container .img-wrapper svg {
+    transform: scale3d(1.25, 1.25, 1);
+  }
+}
 .all-promises-container h3 {
-  @apply my-3 md:my-6;
+  @apply my-3 md:my-6 xl:mt-16;
   @apply font-semibold;
   @apply md:w-3/4;
 }
 
+.all-promises-container p {
+  @apply xl:w-4/5;
+  @apply text-center md:text-left;
+}
+
 .first-promise,
 .second-promise {
-  @apply block md:flex md:flex-col md:items-center xl:w-3/4;
+  @apply flex flex-col items-center md:block xl:w-3/4;
 }
 
 .first-promise {

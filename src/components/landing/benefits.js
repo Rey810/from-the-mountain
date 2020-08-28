@@ -10,7 +10,7 @@ import Handshake from "../../assets/handshake"
 const Benefits = () => {
   return (
     <PaddingContainer type="benefits-container" X Y>
-      <h2 className="benefits-header">Ways you'll benefit</h2>
+      <h2 className="benefits-header text-center">Ways you'll benefit</h2>
       <section className="all-benefits-container">
         <ul>
           <div className="benefit-item">
