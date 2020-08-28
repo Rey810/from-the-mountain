@@ -244,7 +244,7 @@ a {
 .all-promises-container h3 {
   @apply my-3 md:my-6 xl:mt-16;
   @apply font-semibold;
-  @apply md:w-3/4;
+  @apply md:w-4/5;
 }
 
 .all-promises-container p {
