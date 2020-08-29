@@ -3,7 +3,7 @@
 /*////////////////*/
 .blog-post-card {
   --blog-card-link-color: #ec4e20;
-  --blog-card-bg-color: #313131;
+  --blog-card-bg-color: #252734;
   background-color: var(--blog-card-bg-color);
 }
 
@@ -250,11 +250,11 @@
 }
 
 .dark {
-  --form-bg-color: hsl(0, 0%, 30%);
+  --form-bg-color: #171820;
   --form-header-color: rgba(255, 255, 255, 1);
   --form-text-color: rgba(255, 255, 255, 0.8);
   --form-footer-text-color: rgba(255, 255, 255, 0.5);
-  --form-input-bg-color: hsl(0, 0%, 25.2%);
+  --form-input-bg-color: #252734;
   --form-input-border: none;
   --button-color: #ec4e20;
   --button-hover-color: #fa5d2f;

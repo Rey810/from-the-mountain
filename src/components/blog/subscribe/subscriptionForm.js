@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 
-const SubscriptionForm = ({ tags }) => {
+const SubscriptionForm = props => {
   const [status, setStatus] = useState(null)
   const [loading, setLoading] = useState(false)
   const FORM_ID = "1483305"
@@ -60,6 +60,27 @@ const SubscriptionForm = ({ tags }) => {
     }
   }
 
+  let additionalInputs = null
+  if (props.audit) {
+    additionalInputs = (
+      <>
+        <label htmlFor="site">Site URL</label>
+        <input
+          className="subscribe-input text-base bg-white rounded border border-gray-400 px-4 py-2 mb-4 w-1/1"
+          type="text"
+          aria-label="Your Site URL"
+          name="fields[siteURL]"
+          placeholder="eg. www.mysite.com"
+          required
+        />
+      </>
+    )
+  }
+
+  let successMessage = props.audit
+    ? "Success! Keep an eye on your inbox for your report."
+    : "Success! Please confirm your subscription in your email."
+
   return (
     <form
       className="subscription-form"
@@ -67,25 +88,30 @@ const SubscriptionForm = ({ tags }) => {
       method="post"
       onSubmit={handleSubmit}
     >
+      {additionalInputs}
+      {props.audit ? <label htmlFor="name">Name</label> : null}
       <input
         className="subscribe-input text-base bg-white rounded border border-gray-400 px-4 py-2 mb-4 w-1/1"
         type="text"
         aria-label="Your name"
         name="fields[first_name]"
-        placeholder="Your name"
+        placeholder="Enter your name"
+        id="name"
         required
       />
 
+      {props.audit ? <label htmlFor="email">Email</label> : null}
       <input
         className="subscribe-input text-base bg-white rounded border border-gray-400 px-4 py-2 mb-4 w-1/1"
         type="email"
         aria-label="Your email"
         name="email_address"
-        placeholder="Your email"
+        placeholder="Enter your email"
+        id="email"
         required
       />
 
-      {tags.map(tagName => (
+      {props.tags.map(tagName => (
         <input
           key={tagMap[tagName]}
           id={`tag-${SUBFORM_ID}-${tagMap[tagName]}`}
@@ -109,16 +135,12 @@ const SubscriptionForm = ({ tags }) => {
           "Sending..."
         ) : (
           <>
-            <span>Stay Curious</span>
+            <span>{props.audit ? "Get Report" : "Stay Curious"}</span>
             <FontAwesomeIcon className="ml-4" icon={faPaperPlane} />
           </>
         )}
       </button>
-      {status === "SUCCESS" && (
-        <p class="success">
-          Success! Please confirm your subscription in your email.
-        </p>
-      )}
+      {status === "SUCCESS" && <p class="success">{successMessage}</p>}
       {status === "ERROR" && <p class="error">Oops, please try again.</p>}
     </form>
   )

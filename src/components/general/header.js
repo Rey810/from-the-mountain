@@ -62,10 +62,10 @@ const Header = ({
   // adds specific header links if the header is the landing page header
   let portfolioHeaderCheck = isPortfolioHeader ? (
     <a
-      href="#connect"
+      href="#top"
       className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
     >
-      Chat with Rey
+      Book Site Audit
     </a>
   ) : (
     <a
