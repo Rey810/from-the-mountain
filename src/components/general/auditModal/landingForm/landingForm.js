@@ -8,22 +8,43 @@ export default function landingForm(props) {
     <section
       id="connect"
       className={`${classes.LandingForm} ${
+        props.inLine ? "relative" : "absolute z-20"
+      } ${
         props.theme === "dark" ? "dark" : "light"
-      } connect-form flex flex-col sm:flex-row rounded-lg mx-auto px-4 my-20 sm:w-10/12 md:w-2/3 lg:w-1/2`}
+      } connect-form flex flex-col sm:flex-row rounded-lg mx-auto ${
+        props.inLine ? "sm:w-10/12 md:w-2/3" : "px-4 my-20"
+      }`}
     >
-      <Close close={props.close} />
-      <div className="subscribe-text-container p-8 -mb-px flex flex-col w-full sm:w-1/2 sm:mb-0 sm:-mr-px mt-0">
-        <div className="header-container hidden md:block">
+      {props.inLine ? null : <Close close={props.close} />}
+      <div
+        className={`subscribe-text-container ${
+          props.inLine ? "pb-8" : "p-8"
+        } -mb-px flex flex-col w-full sm:w-1/2 sm:mb-0 sm:-mr-px mt-0`}
+      >
+        <div
+          className={`header-container hidden md:block ${
+            props.inLine ? "md:hidden" : null
+          }`}
+        >
           <h1 className="text-2xl font-medium">It's Free.</h1>
           <h1 className="text-2xl font-medium">It's Fast.</h1>
           <h1 className="text-2xl font-medium">It's Yours.</h1>
         </div>
         <div className="header-container">
-          <h1 className="text-2xl font-medium md:hidden">
-            Get Your Site Report
+          <h1
+            className={`text-2xl font-medium ${
+              props.inLine ? "md:block" : "md:hidden"
+            }`}
+          >
+            {props.inLine
+              ? "Get a free technical report"
+              : "Get Your Site Report"}
           </h1>
         </div>
         <p className="text-sm mt-6 mb-3">
+          {props.inLine
+            ? "Let me review your existing site before you commit to working with me on an awesome new one. "
+            : null}
           In your FREE report, you will understand exactly where your site can
           improve:
         </p>
@@ -54,7 +75,11 @@ export default function landingForm(props) {
           </div>
         </div>
       </div>
-      <div className="subscribe-action pt-0 pl-8 pr-8 pb-8 flex flex-col w-full mt-0 sm:w-1/2 sm:p-8">
+      <div
+        className={`subscribe-action pt-0 ${
+          props.inLine ? null : "px-8"
+        } pb-8 flex flex-col w-full mt-0 sm:w-1/2 sm:p-8`}
+      >
         <SubscriptionForm tags={["potential client"]} audit />
         <p className="form-footer-text text-xs">
           Report will be in your inbox real soon! <br />

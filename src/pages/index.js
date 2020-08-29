@@ -13,6 +13,7 @@ import Contact from "../components/landing/contact"
 import Quotes from "../components/landing/quotes"
 import Benefits from "../components/landing/benefits"
 import FAQ from "../components/landing/faq"
+import SiteReview from "../components/landing/siteReview"
 
 // Font Awesome Icons
 import { library, config } from "@fortawesome/fontawesome-svg-core"
@@ -54,6 +55,7 @@ const IndexPage = () => {
         <Services />
         <Benefits />
         <Promise />
+        <SiteReview />
         <FAQ />
         <Contact />
         <Quotes />

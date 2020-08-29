@@ -166,6 +166,11 @@ a {
   @apply xl:w-4/5;
 }
 
+.free-ribbon {
+  right: 5%;
+  top: 2%;
+}
+
 /* Services */
 .service-container {
   @apply relative;
@@ -203,11 +208,11 @@ a {
 }
 
 .benefit-item {
-  @apply flex flex-col justify-center items-center mx-auto my-24 shadow-md md:mt-0 md:mb-12 md:mb-0;
+  @apply flex flex-col justify-center items-center mx-auto my-24 md:mt-0 md:mb-12 md:mb-0;
 }
 
 .benefit-icon {
-  @apply p-4 rounded-full flex justify-center items-center;
+  @apply p-4 rounded-full flex justify-center items-center shadow-md;
   height: 5rem;
   width: 5rem;
   background-color: var(--color-illustration);

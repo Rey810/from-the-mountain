@@ -161,6 +161,10 @@ header {
   background-color: var(--color-10-1);
 }
 
+.free-ribbon {
+  background-color: var(--color-illustration);
+}
+
 .view-projects-container {
   color: var(--color-10-1);
 }
@@ -238,6 +242,13 @@ header {
 /*///////////////////*/
 .benefits-container {
   background-color: var(--color-60-medium-dark);
+}
+
+/*/////////////////////*/
+/* SITE REVIEW CONTAINER */
+/*///////////////////*/
+.site-review-container {
+  background-color: var(--color-60-dark);
 }
 
 /*/////////////////////*/
