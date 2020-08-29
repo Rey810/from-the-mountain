@@ -7,8 +7,8 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 const SubscriptionForm = props => {
   const [status, setStatus] = useState(null)
   const [loading, setLoading] = useState(false)
-  const FORM_ID = "1483305"
-  const SUBFORM_ID = "906"
+  const FORM_ID = props.audit ? "1629512" : "1483305"
+  const SUBFORM_ID = props.audit ? "2776" : "906"
   const FORM_URL = `https://app.convertkit.com/forms/${FORM_ID}/subscriptions`
 
   const data = useStaticQuery(graphql`
@@ -69,7 +69,7 @@ const SubscriptionForm = props => {
           className="subscribe-input text-base bg-white rounded border border-gray-400 px-4 py-2 mb-4 w-1/1"
           type="text"
           aria-label="Your Site URL"
-          name="fields[siteURL]"
+          name="fields[site_url]"
           placeholder="eg. www.mysite.com"
           required
         />
