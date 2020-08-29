@@ -66,10 +66,9 @@ const Services = () => {
             <div className="service-text-wrapper">
               <h3>Sell Your Stuff Online</h3>
               <p>
-                You want a website. It must look great and you want it to
-                work... All the time. Well, that's why I'm here! I help you by
-                designing, building, and hosting a beautiful site that'll make
-                you a very proud owner. Promise.
+                You have an idea. You want to turn it into an online business
+                without all the hassle. Perfect! I'm here to help you set up an
+                e-commerce store that looks amazing and works like a charm.
               </p>
             </div>
           </div>
