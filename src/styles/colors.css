@@ -65,7 +65,7 @@
     --heading-color: #818cab;
 } */
 body {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-60-dark);
   color: var(--color-60-light);
   scrollbar-color: rgb(83, 83, 83) #333;
 }
@@ -83,7 +83,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
-  background-color: var(--color-60-medium-dark);
+  background-color: var(--color-60-dark);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.35s ease-out;
@@ -234,7 +234,7 @@ header {
 /* SERVICE CONTAINER */
 /*///////////////////*/
 .service-container {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-60-dark);
 }
 
 /*/////////////////////*/
@@ -266,7 +266,7 @@ header {
 /* CONTACT CONTAINER */
 /*///////////////////*/
 .contact-container {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-60-dark);
 }
 /*////////*/
 /* CARDS */
