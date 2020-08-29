@@ -44,7 +44,7 @@ export default function FAQ() {
       <div className="faq-list-container">
         <ul className="faqs">
           {faqs.map(faq => (
-            <li key={uuid()} className="faq mb-12 rounded-md">
+            <li key={uuid()} className="faq mb-12 rounded-md shadow-md">
               <details key={uuid()} onToggle={toggleFocus}>
                 <summary className="flex flex-row items-baseline p-6">
                   <span className="faq-icon-container inline-block w-mc text-base pl-2 pr-6">

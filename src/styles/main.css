@@ -203,7 +203,7 @@ a {
 }
 
 .benefit-item {
-  @apply flex flex-col justify-center items-center mx-auto my-24 md:mt-0 md:mb-12 md:mb-0;
+  @apply flex flex-col justify-center items-center mx-auto my-24 shadow-md md:mt-0 md:mb-12 md:mb-0;
 }
 
 .benefit-icon {
@@ -282,7 +282,7 @@ a {
 
 /* Contact */
 .contact-container {
-  @apply md:mx-40 rounded-md shadow-lg;
+  @apply md:mx-40 rounded-md shadow-xl;
   @apply -mt-64 md:-mt-76;
   @apply py-12 md:py-24;
   @apply w-11/12 md:w-3/4 xl:w-1/2;
