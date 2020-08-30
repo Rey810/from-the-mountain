@@ -15,6 +15,7 @@ const CaseStudy = props => {
             <FontAwesomeIcon icon={faArrowLeft} className="mr-4" /> Back to
             Projects
           </Link>
+          <span>Go Back</span>
         </div>
         <div className="case-specs-container h-full row-start-2 row-end-8 col-start-1 col-end-4 flex flex-col justify-center sm:block sm:pt-24  sm:col-end-5 md:col-end-4 bg-red-400">
           <div className="case-specs-info grid grid-cols-3 bg-red-500 ">

@@ -65,7 +65,7 @@ const Header = ({
       href="#top"
       className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
     >
-      Book Site Audit
+      Get Site Review
     </a>
   ) : (
     <a

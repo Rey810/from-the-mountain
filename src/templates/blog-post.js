@@ -8,6 +8,7 @@ import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons"
 import { faTwitter, faFacebookF } from "@fortawesome/free-brands-svg-icons"
 import Img from "gatsby-image"
 import Footer from "../components/general/footer"
+import Avatar from "../components/images/avatar"
 
 export default function Template({ data, location }) {
   const post = data.markdownRemark
@@ -36,34 +37,42 @@ export default function Template({ data, location }) {
       />
       <div className="blog-container">
         <section className="blog mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2">
-          <div className="header-container pt-6"></div>
           <Link to="/blog" className="text-xl p-2 pl-0">
             <FontAwesomeIcon
               className="blog-back-arrow"
               icon={faLongArrowAltLeft}
             />
           </Link>
-          <h1 className="text-4xl">{post.frontmatter.title}</h1>
-          <div className="subheader-container sm:flex sm:flex-row sm:items-center">
-            <div className="publish-date">
-              <strong>{dateType}:</strong>{" "}
-              <time datetime={ISOdateString}>{date}</time>{" "}
-              <i>by {post.frontmatter.author}</i>
+          <h1 className="blog-header">{post.frontmatter.title}</h1>
+          <div className="subheader-container pt-4 pb-2 flex flex-row items-center">
+            <div className="avatar-container flex justify-center h-8 sm:h-10 mr-2">
+              <div className="avater-image-container relative w-8 sm:w-10">
+                <Avatar />
+              </div>
             </div>
-            <div className="twitter-follow-button-container sm:mt-0 sm:mx-2">
-              <a
-                id="alwaysVisible"
-                href="https://twitter.com/ReyTheDev?ref_src=twsrc%5Etfw"
-                className="twitter-follow-button"
-                data-show-screen-name="false"
-                data-show-count="false"
-                title="Follow Rey on Twitter"
-              >
-                Follow
-              </a>
+            <div className="subheader-info flex flex-col uppercase text-xs sm:text-sm">
+              <div>
+                <span>{post.frontmatter.author}</span>
+              </div>
+              <div className="opacity-75 text-xs">
+                <span className="absolute invisible">{dateType}</span>
+                <time datetime={ISOdateString}>{date}</time>
+              </div>
             </div>
           </div>
-          <div className="h-full border-2 rounded-lg overflow-hidden">
+          <div className="twitter-follow-button-container pb-4">
+            <a
+              id="alwaysVisible"
+              href="https://twitter.com/ReyTheDev?ref_src=twsrc%5Etfw"
+              className="twitter-follow-button"
+              data-show-screen-name="false"
+              data-show-count="true"
+              title="Follow Rey on Twitter"
+            >
+              Follow
+            </a>
+          </div>
+          <div className="h-full md:rounded-lg overflow-hidden -mx-4 md:-mx-40 md:border-2">
             <Img
               fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
               alt={post.frontmatter.imageAlt}
