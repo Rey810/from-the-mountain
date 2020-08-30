@@ -12,7 +12,7 @@ export default function landingForm(props) {
       } ${
         props.theme === "dark" ? "dark" : "light"
       } connect-form flex flex-col sm:flex-row rounded-lg mx-auto ${
-        props.inLine ? "sm:w-10/12 md:w-2/3" : "px-4 my-20"
+        props.inLine ? "sm:w-10/12 md:w-2/3" : "sm:w-10/12 md:w-2/3 px-4 my-20"
       }`}
     >
       {props.inLine ? null : <Close close={props.close} />}
@@ -48,30 +48,30 @@ export default function landingForm(props) {
           In your FREE report, you will understand exactly where your site can
           improve:
         </p>
-        <div className="report-container mt-4 grid grid-cols-3 md:grid-cols-2 gap-y-4">
+        <div className="report-container mt-4 grid grid-cols-3 md:grid-cols-2 gap-y-8">
           <div className="check-container flex items-center flex-col">
             <CheckCricle />
-            <p className="text-xs">SITE SPEED</p>
+            <p className="text-xs pt-1">SITE SPEED</p>
           </div>
           <div className="check-container flex items-center flex-col">
             <CheckCricle />
-            <p className="text-xs">SEO</p>
+            <p className="text-xs pt-1">SEO</p>
           </div>
           <div className="check-container flex items-center flex-col">
             <CheckCricle />
-            <p className="text-xs">FLUID DESIGN</p>
+            <p className="text-xs pt-1">FLUID DESIGN</p>
           </div>
           <div className="check-container flex items-center flex-col">
             <CheckCricle />
-            <p className="text-xs">ACCESSIBILITY</p>
+            <p className="text-xs pt-1">ACCESSIBILITY</p>
           </div>
           <div className="check-container flex items-center flex-col">
             <CheckCricle />
-            <p className="text-xs">BEST PRACTICES</p>
+            <p className="text-xs pt-1">BEST PRACTICES</p>
           </div>
           <div className="check-container flex items-center flex-col">
             <CheckCricle />
-            <p className="text-xs">EASE OF USE</p>
+            <p className="text-xs pt-1">EASE OF USE</p>
           </div>
         </div>
       </div>

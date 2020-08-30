@@ -115,6 +115,7 @@ a {
 
 /* Icons */
 .icon {
+  opacity: 0.75;
   @apply text-lg;
 }
 .view-projects-container {
@@ -309,6 +310,9 @@ a {
 .quotes-container,
 .footer-links {
   @apply text-xs md:text-base;
+}
+.footer-links a:hover {
+  @apply underline;
 }
 
 /*//////////////////*/

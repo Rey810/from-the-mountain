@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 // import ReCAPTCHA from "react-google-recaptcha"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+import { faPaperPlane, faChartBar } from "@fortawesome/free-solid-svg-icons"
 
 const SubscriptionForm = props => {
   const [status, setStatus] = useState(null)
@@ -136,7 +136,11 @@ const SubscriptionForm = props => {
         ) : (
           <>
             <span>{props.audit ? "Get Report" : "Stay Curious"}</span>
-            <FontAwesomeIcon className="ml-4" icon={faPaperPlane} />
+            {props.audit ? (
+              <FontAwesomeIcon className="ml-4" icon={faChartBar} />
+            ) : (
+              <FontAwesomeIcon className="ml-4" icon={faPaperPlane} />
+            )}
           </>
         )}
       </button>

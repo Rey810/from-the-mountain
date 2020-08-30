@@ -210,7 +210,8 @@ header {
 /* ICONS */
 /*//////*/
 .icon:hover {
-  color: var(--color-60-lighter);
+  opacity: 1;
+  transform: scale3d(1.1, 1.1, 1);
 }
 
 .benefit-icon {

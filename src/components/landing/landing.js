@@ -75,13 +75,13 @@ const Landing = () => {
                 animated ? "fadeInSlideUp-4th" : null
               } landing-buttons-container`}
             >
-              <div className="free-ribbon absolute py-1 px-4 rounded-md">
-                Free
-              </div>
               <button
                 className="btn landing-cta-1"
                 onClick={modalToggleHandler}
               >
+                <div className="free-ribbon absolute py-1 px-4 rounded-md text-sm">
+                  Free
+                </div>
                 Get Site Review
               </button>
               <Link
