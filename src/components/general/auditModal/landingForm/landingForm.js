@@ -19,7 +19,7 @@ export default function landingForm(props) {
       <div
         className={`subscribe-text-container ${
           props.inLine ? "pb-8" : "p-8"
-        } -mb-px flex flex-col w-full sm:w-1/2 sm:mb-0 sm:-mr-px mt-0`}
+        } -mb-px flex flex-col justify-between w-full sm:w-1/2 sm:mb-0 sm:-mr-px mt-0`}
       >
         <div
           className={`header-container hidden md:block ${

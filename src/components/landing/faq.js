@@ -6,6 +6,11 @@ import PaddingContainer from "../../components/containers/paddingContainer"
 export default function FAQ() {
   const faqs = [
     {
+      question: "Why is the technical site review free?",
+      answer:
+        "I'd like to help you improve your website where it really matters! What better way to kickstart the process by showing you exactly where you could be doing things better? Consider it a little taste of the value I'll bring to your business. It's delivered to your inbox, obligation free. And you're not subscribing to anything so your inbox stays clean and free of nonsense.",
+    },
+    {
       question: "Do you charge per hour or per project?",
       answer:
         "Charging per project works better for you and me. You know the price upfront and I can focus on creating something great without counting the hours.",
