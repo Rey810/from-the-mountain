@@ -43,3 +43,8 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+/* FAQ Dropdown Animation */
+details p {
+  animation: fadeIn 0.3s ease-in forwards;
+}

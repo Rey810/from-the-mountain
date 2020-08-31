@@ -8,7 +8,7 @@ export default function FAQ() {
     {
       question: "Do you charge per hour or per project?",
       answer:
-        "Charging per project works better for you and me. You know the price upfront and I can focus on creating something great without counting the hours ;)",
+        "Charging per project works better for you and me. You know the price upfront and I can focus on creating something great without counting the hours.",
     },
     {
       question: "How often will we be in contact?",

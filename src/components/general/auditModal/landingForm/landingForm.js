@@ -23,12 +23,12 @@ export default function landingForm(props) {
       >
         <div
           className={`header-container hidden md:block ${
-            props.inLine ? "md:hidden" : null
+            props.inLine ? "md:hidden" : "md:flex md:justify-center"
           }`}
         >
-          <h1 className="text-2xl font-medium">It's Free.</h1>
-          <h1 className="text-2xl font-medium">It's Fast.</h1>
-          <h1 className="text-2xl font-medium">It's Yours.</h1>
+          <h1 className="text-2xl font-medium md:pr-2">It's Free.</h1>
+          <h1 className="text-2xl font-medium md:pr-2">It's Fast.</h1>
+          <h1 className="text-2xl font-medium md:pr-2">It's Yours.</h1>
         </div>
         <div className="header-container">
           <h1
