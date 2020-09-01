@@ -22,6 +22,7 @@
   --color-10-1-lighter: #fa5d2f;
 
   --color-illustration: rgb(99, 41, 196);
+  --color-illustration-light: hsl(262, 65%, 60%);
 
   /* Overlay Colours */
   --initial-color-overlay: rgba(31, 31, 31, 0.4);
@@ -29,7 +30,7 @@
   --final-colour-overlay: rgb(31, 31, 31);
 
   /* Card Colours */
-  --card-bg-color: rgba(31, 31, 31, 0.65);
+  --card-bg-color: var(--color-60-dark);
   --card-header-color: #ffffff;
   --card-text-color: #ffffffd2;
 
@@ -352,7 +353,7 @@ header {
 
 .project-site-link {
   color: var(--color-60-light);
-  background-color: var(--color-10-1);
+  background-color: var(--color-illustration);
 }
 
 .project-code-link {
@@ -366,6 +367,12 @@ header {
 
 .project-tech-container a {
   border-color: var(--project-card-tech-border-color);
+}
+
+.tech-link:hover,
+.tech-link:focus {
+  border-color: var(--color-10-light);
+  color: var(--color-10-light);
 }
 
 /*//////////*/

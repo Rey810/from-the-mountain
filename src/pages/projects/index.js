@@ -26,7 +26,7 @@ const ProjectsPage = props => {
 
   return (
     <Layout canSeeHeader usesPortfolioHeader>
-      <SEO />
+      <SEO title="Projects" />
       {/* <Projects />
         <Toolbox /> */}
       <div className="sticky-footer-wrapper">
