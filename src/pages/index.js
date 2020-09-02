@@ -12,6 +12,7 @@ import Promise from "../components/landing/promise"
 import Contact from "../components/landing/contact"
 import Quotes from "../components/landing/quotes"
 import Benefits from "../components/landing/benefits"
+import Projects from "../components/landing/projects"
 import FAQ from "../components/landing/faq"
 import SiteReview from "../components/landing/siteReview"
 
@@ -56,6 +57,9 @@ const IndexPage = () => {
         <Benefits />
         <Promise />
         <SiteReview />
+      </div>
+      <Projects />
+      <div className="landing-children">
         <FAQ />
         <Contact />
         <Quotes />

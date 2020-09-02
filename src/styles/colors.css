@@ -42,7 +42,8 @@
   --project-card-tech-color: rgba(255, 255, 255, 0.55);
   --project-card-tech-border-color: rgba(255, 255, 255, 0.4);
   /* Project Card Sec CTA */
-  --project-button-sec-bg-color: rgba(64, 64, 64, 0.65);
+  --project-button-sec-bg-color: var(--color-60-medium);
+  --project-button-sec-bg-color-active: var(--color-60-medium-dark);
   --project-button-sec-text-color: rgba(255, 255, 255, 0.75);
 }
 /*////////////////*/
@@ -355,10 +356,21 @@ header {
   color: var(--color-60-light);
   background-color: var(--color-illustration);
 }
+.project-site-link:hover,
+.project-site-link:focus {
+  color: var(--color-60-light);
+  background-color: var(--color-illustration-light);
+}
 
 .project-code-link {
   color: var(--project-button-sec-text-color);
   background-color: var(--project-button-sec-bg-color);
+}
+
+.project-code-link:hover,
+.project-code-link:focus {
+  color: var(--project-button-sec-text-color);
+  background-color: var(--project-button-sec-bg-color-active);
 }
 
 .project-tech-container {

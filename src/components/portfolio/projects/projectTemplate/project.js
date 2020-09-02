@@ -16,8 +16,11 @@ const project = props => {
   } = props.info
 
   console.log({ props })
-  // builds relative URL
-  const caseStudyURL = props.location.pathname + linkName
+  // builds relative URL for when projectcase studies are accessed from the home/projects
+  // linkName is used when project case studies are accessed from home/
+  const caseStudyURL = props.location
+    ? props.location.pathname + linkName
+    : `projects/${linkName}`
 
   return (
     <>

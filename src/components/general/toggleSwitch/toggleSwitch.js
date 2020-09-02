@@ -4,7 +4,7 @@ import classes from "./toggleSwitch.module.css"
 const toggleSwitch = props => {
   return (
     <div
-      className={`${classes.toggleSwitchWrapper} flex justify-center mt-40 mb-20`}
+      className={`${classes.toggleSwitchWrapper} flex justify-center mt-32 mb-16`}
     >
       <button
         className={`rounded-l-md w-32 ${
