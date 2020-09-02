@@ -101,6 +101,7 @@ const Landing = () => {
                 aria-label="Find Rey on Twitter"
                 className="landing-icons icon px-4"
                 href="https://twitter.com/ReyTheDev"
+                target="_blank"
               >
                 <FontAwesomeIcon
                   title="Find Rey on Twitter"
@@ -111,6 +112,7 @@ const Landing = () => {
                 aria-label="See Rey's Code on Github"
                 className="landing-icons icon px-4"
                 href="https://github.com/Rey810"
+                target="_blank"
               >
                 <FontAwesomeIcon
                   title="See Rey's Code on Github"
@@ -121,6 +123,7 @@ const Landing = () => {
                 aria-label="Find Rey on LinkedIn"
                 className="landing-icons icon px-4"
                 href="https://www.linkedin.com/in/rey810/"
+                target="_blank"
               >
                 <FontAwesomeIcon
                   title="Find Rey on LinkedIn"

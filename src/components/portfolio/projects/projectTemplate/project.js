@@ -47,6 +47,7 @@ const project = props => {
                       key={uuid()}
                       href={tech.url}
                       className="tech-link text-xs md:text-sm border-2 rounded-md mb-2 mr-2"
+                      target="_blank"
                     >
                       {tech.name}
                     </a>
