@@ -65,12 +65,14 @@ const Header = ({
       <a
         href="#top"
         className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
+        target="_blank"
       >
         Get Site Review
       </a>
       <Link
         to="/blog"
         className="header-blog-link opacity-90 hover:opacity-100 py-2 px-4 mx-2 font-semibold text-xs hidden sm:inline"
+        target="_blank"
       >
         Blog
       </Link>

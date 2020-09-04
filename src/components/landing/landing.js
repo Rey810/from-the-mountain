@@ -102,6 +102,7 @@ const Landing = () => {
                 className="landing-icons icon px-4"
                 href="https://twitter.com/ReyTheDev"
                 target="_blank"
+                rel="noopener norefferer"
               >
                 <FontAwesomeIcon
                   title="Find Rey on Twitter"
@@ -113,6 +114,7 @@ const Landing = () => {
                 className="landing-icons icon px-4"
                 href="https://github.com/Rey810"
                 target="_blank"
+                rel="noopener norefferer"
               >
                 <FontAwesomeIcon
                   title="See Rey's Code on Github"
@@ -124,6 +126,7 @@ const Landing = () => {
                 className="landing-icons icon px-4"
                 href="https://www.linkedin.com/in/rey810/"
                 target="_blank"
+                rel="noopener norefferer"
               >
                 <FontAwesomeIcon
                   title="Find Rey on LinkedIn"

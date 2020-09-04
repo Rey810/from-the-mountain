@@ -32,6 +32,8 @@ const Footer = () => {
           <a
             className="ml-3 text-gray-500"
             href="https://twitter.com/ReyTheDev"
+            target="_blank"
+            rel="noopener norefferer"
           >
             <svg
               fill="currentColor"
@@ -48,6 +50,8 @@ const Footer = () => {
           <a
             className="ml-3 text-gray-500"
             href="https://www.linkedin.com/in/rey810/"
+            target="_blank"
+            rel="noopener norefferer"
           >
             <svg
               fill="currentColor"
