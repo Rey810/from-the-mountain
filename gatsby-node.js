@@ -1,7 +1,7 @@
 const path = require("path")
 // registers my posts so that I can use those urls
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
   const postTemplate = path.resolve("src/templates/blog-post.js")
 

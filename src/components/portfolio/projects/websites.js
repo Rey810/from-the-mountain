@@ -1,5 +1,5 @@
 import React from "react"
-import Project from "./projectTemplate/project"
+import Project from "../../../templates/project"
 
 const websites = location => {
   return (

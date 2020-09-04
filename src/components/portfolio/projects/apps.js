@@ -1,6 +1,6 @@
 import React from "react"
 // import projects from "./projects"
-import Project from "./projectTemplate/project"
+import Project from "../../../templates/project"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Apps = props => {
