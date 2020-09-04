@@ -1,10 +1,10 @@
 import React from "react"
-import ContentWrapper from "./contentWrapper"
-import FullWidthImageWrapper from "./fullWidthImageContainer"
+import ContentWrapper from "../components/containers/contentWrapper"
+import FullWidthImageWrapper from "../components/containers/fullWidthImageContainer"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
-import ServiceCard from "../../../landing/services/serviceCard"
+import ServiceCard from "../components/landing/services/serviceCard"
 
 const CaseStudy = props => {
   return (

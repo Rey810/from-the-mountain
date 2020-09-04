@@ -61,29 +61,24 @@ const Header = ({
 
   // adds specific header links if the header is the landing page header
   let portfolioHeaderCheck = isPortfolioHeader ? (
-    <div className="inner-links-container">
-      <Link to="/#What-I-Do" className="ml-4">
-        What I Do
-      </Link>
-      {/* <Link to="/projects/#Toolbox" className="ml-4">
-              Tech
-            </Link> */}
-      <Link to="/blog" className="ml-4">
-        Blog
-      </Link>
-      <Link to="/#Connect" className="ml-4">
-        Contact
-      </Link>
-    </div>
+    <a
+      href="#connect"
+      className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
+    >
+      Chat with Rey
+    </a>
   ) : (
-    <a href="#connect" className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md">
-        Let's Connect!
+    <a
+      href="#connect"
+      className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
+    >
+      Let's Connect!
     </a>
   )
 
   return (
     <header
-      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full p-4 md:px-8 lg:px-12 xl:px-16 ${extraClasses.join(
+      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full p-4 md:px-24 ${extraClasses.join(
         " "
       )}`}
     >

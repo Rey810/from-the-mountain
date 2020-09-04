@@ -57,20 +57,24 @@ body {
 /* BASE FONT SIZES */
 /* ///////////// */
 .landing-title {
-  @apply text-6xl;
-}
-.landing-description {
-  @apply text-xl;
+  @apply text-6xl md:text-7xl;
 }
 
+.landing-description,
 .landing-cta-1,
 .email-field {
-  @apply text-xl;
+  @apply text-xl md:text-2xl;
 }
 
 /* Section Headers */
 .landing-children h2 {
-  font-size: 2.5rem;
+  @apply md:text-center;
+  @apply text-4xl md:text-6xl;
+  @apply mb-16 md:mb-32;
+}
+
+.landing-children h3 {
+  @apply mb-4 md:mb-8;
 }
 
 /* General Elements */
@@ -79,17 +83,21 @@ a {
   cursor: pointer;
 }
 
-.landing-children p,
-.quote,
+.btn {
+  @apply block px-12 py-4 rounded my-6;
+}
+
 .landing-cta-2,
-.cta,
-.landing-children li {
+.cta {
   @apply text-base;
 }
 
-.landing-children h3,
-.landing-children summary {
+.landing-children h3 {
   @apply text-2xl;
+}
+
+.landing-children summary {
+  @apply text-base md:text-2xl;
 }
 
 .contact-button {
@@ -108,43 +116,190 @@ a {
 .icon {
   @apply text-lg;
 }
-.view-projects-icon-container {
-  @apply text-xs;
+.view-projects-container {
+  @apply border-2 text-xl;
+  border-color: var(--color-10-1);
 }
 
-.view-projects-container:hover {
-  @apply underline;
+.view-projects-container span {
+  transition: all 0.2s ease-in;
+}
+
+.view-projects-container:hover span {
+  transform: translate3d(5%, 0, 0);
+}
+
+.view-projects-container svg {
+  @apply absolute;
+  transition: all 0.2s ease-in;
+  @apply opacity-0;
+  transform: translate3d(-200%, 0, 0);
+}
+
+.view-projects-container:hover svg {
+  @apply opacity-100 mr-4;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.landing-icons-container a {
+  @apply my-3;
+}
+
+/*////////////////////*/
+/* SPECIFIC SECTIONS */
+/*//////////////////*/
+#What-I-Do .text-wrapper {
+  @apply h-screen md:h-auto;
+}
+
+.personal-container {
+  @apply flex flex-col flex-col-reverse md:grid md:grid-cols-2;
+}
+.personal-description-container {
+  @apply py-12 xl:w-2/3;
+}
+
+.personal-title-container h2 {
+  @apply mb-0;
+  @apply text-left;
+}
+
+/* Services */
+.service-container {
+  @apply relative;
+  @apply xl:w-2/3 xl:mx-auto;
+}
+.service-item {
+  @apply md:grid md:grid-cols-2;
+  @apply md:mt-24;
+}
+
+.service-item p {
+}
+
+.service-text__left,
+.service-text__right {
+  @apply flex flex-col justify-center;
+}
+
+.mobile-reverse {
+  @apply flex flex-col-reverse md:grid;
+}
+
+.service-img {
+  @apply flex justify-center items-center pb-32 pt-12 md:py-0;
+}
+
+/* Benefits */
+.all-benefits-container {
+  @apply mx-auto md:w-3/4;
+}
+
+.all-benefits-container ul {
+  @apply md:grid md:grid-cols-2 md:grid-cols-3;
+  @apply md:gap-x-24 md:gap-y-24;
+}
+
+.benefit-item {
+  @apply flex flex-col justify-center items-center mx-auto my-24 md:mt-0 md:mb-12 md:mb-0;
+}
+
+.benefit-icon {
+  @apply p-4 rounded-full flex justify-center items-center;
+  height: 5rem;
+  width: 5rem;
+}
+
+@media (max-width: 640px) {
+  .benefit-icon {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.benefit-icon svg {
+  @apply w-4/6;
+}
+
+.benefit-text {
+  @apply w-3/4 md:w-auto;
+  @apply mt-6;
+  @apply text-lg md:text-xl;
+  @apply text-center;
+}
+
+/* Promises */
+.all-promises-container {
+  @apply w-3/4 mx-auto md:grid md:grid-cols-2 gap-32;
+}
+/* .all-promises-container div {
+  @apply;
+} */
+
+.all-promises-container h3 {
+  @apply my-3 md:my-6;
+  @apply font-semibold;
+  @apply md:w-3/4;
+}
+
+.first-promise,
+.second-promise {
+  @apply block md:flex md:flex-col md:items-center xl:w-3/4;
+}
+
+.first-promise {
+  @apply ml-auto mb-16;
+}
+
+.second-promise {
+  @apply mr-auto;
+}
+
+/* FAQs */
+.faq-list-container {
+  padding-bottom: 18rem !important;
+}
+
+@media (min-width: 676px) {
+  .faqs-container {
+    padding-bottom: 24rem !important;
+  }
+}
+
+.faq-list-container {
+  @apply mx-auto md:w-1/2;
+}
+
+/* Contact */
+.contact-container {
+  @apply md:mx-40 rounded-md shadow-lg;
+  @apply -mt-64 md:-mt-76;
+  @apply py-12 md:py-24;
+  @apply w-11/12 md:w-3/4 xl:w-1/2;
+  @apply mx-auto;
+}
+
+.contact-container h2 {
+  @apply mb-0;
+}
+
+.contact-header {
+  @apply pb-12 text-center mx-8 md:pb-24 md:mx-24;
+}
+
+/* Quote Container (footer) */
+.quotes-container,
+.footer-links {
+  @apply text-xs md:text-base;
 }
 
 /*//////////////////*/
 /* FLUID TYPOGRAPHY */
 /*//////////////////*/
 @screen md {
-  .landing-title {
-    font-size: 5rem;
-  }
-  .landing-description {
-    @apply text-2xl;
-  }
-
   /* General Elements */
-  .landing-children p,
-  .quote,
-  .landing-cta-2,
-  .cta,
-  .landing-children li {
+  .landing-cta-2 {
     @apply text-lg;
-  }
-
-  /* Section Headers */
-  .landing-children h2 {
-    @apply text-5xl;
-  }
-
-  /* Smaller headers and main points */
-  .landing-children h3,
-  summary {
-    @apply text-2xl;
   }
 
   .contact-button {
@@ -155,46 +310,19 @@ a {
   .icon {
     @apply text-xl;
   }
-
-  .view-projects-icon-container {
-    @apply text-sm;
-  }
 }
 
 /* GENERAL GLOBAL ELEMENTS */
 
 @screen lg {
-  .landing-title {
-    font-size: 6rem;
-  }
-
-  /* Section Headers */
-  .landing-children h2 {
-    font-size: 4rem;
-  }
-
   /* General Elements */
-  .landing-children p,
-  .quote,
-  .landing-cta-2,
-  .cta,
-  .landing-children li {
+  .landing-cta-2 {
     @apply text-xl;
-  }
-
-  /* Smaller headers and main points */
-  .landing-children h3,
-  summary {
-    @apply text-3xl;
   }
 
   /* Icons */
   .icon {
     @apply text-2xl;
-  }
-
-  .view-projects-icon-container {
-    @apply text-lg;
   }
 }
 /* 

@@ -1,38 +1,35 @@
 import React from "react"
+import PaddingContainer from "../containers/paddingContainer"
+import MeditationWoman from "../../assets/illustrations/meditationWoman"
+import WebDevMan from "../../assets/illustrations/webDevMan"
 
 const promise = () => {
   return (
-    <section className="promise-container pb-24 px-4 md:px-8 lg:px-12 xl:px-16 xl:pb-32">
-      <h2 className="promises-header pb-12">My Promises</h2>
-      <div className="promises-container lg:grid lg:grid-cols-2">
-        <div className="promise-1-container pb-8">
-          <div className="promise-header-container  pb-2 flex justify-start items-center">
-            <div className="counter mr-4 flex justify-center items-center rounded-full font-bold">
-              1
-            </div>
-            <h3 className="promise-header font-bold">
-              Fast products that work
-            </h3>
+    <PaddingContainer type="promises-container" X Y>
+      <h2 className="promises-header text-center">My Promises</h2>
+      <section className="all-promises-container">
+        <div className="first-promise">
+          <div className="img-wrapper">
+            <WebDevMan />
           </div>
-          <p className="promise-description sm:w-2/3 lg:w-10/12">
+          <h3>Fast products that work</h3>
+          <p>
             My passion for this ensures excellence in your final product. The
             internet is fragile. Your site won't be.
           </p>
         </div>
-        <div className="promise-2-container pb-8">
-          <div className="promise-header-container  pb-2 flex justify-start items-center">
-            <div className="counter mr-4 flex justify-center items-center rounded-full font-bold">
-              2
-            </div>
-            <h3 className="promise-header font-bold">A healthy relationship</h3>
+        <div className="second-promise">
+          <div className="img-wrapper">
+            <MeditationWoman />
           </div>
-          <p className="promise-description sm:w-2/3 lg:w-10/12">
+          <h3>A healthy relationship</h3>
+          <p>
             Communication is key in any relationship, ours included. No dramas
             or difficult relationships. I'm here to make your life easier.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </PaddingContainer>
   )
 }
 

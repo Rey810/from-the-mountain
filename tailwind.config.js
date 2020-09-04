@@ -67,8 +67,21 @@ module.exports = {
         "13": "13",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1440px",
+    },
   },
 
   variants: {},
   plugins: [],
+  experimental: {
+    extendedFontSizeScale: true,
+    applyComplexClasses: true,
+  },
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
 }

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
+import PaddingContainer from "../../components/containers/paddingContainer"
 
 const Quotes = () => {
   const [quote, setQuote] = useState(
@@ -12,7 +14,7 @@ const Quotes = () => {
     "A nice son who cooks the best",
     "The most handsome guy I know",
     "The best teacher I ever had",
-    "An average human with an above-average height",
+    "Average human with above-average height",
     "A typer of good things",
   ]
   const authors = ["Mom", "Partner", "Student", "Friend", "Happy Client"]
@@ -31,14 +33,32 @@ const Quotes = () => {
   })
   // quotes could be stored here and a timeout can be set to cycle quotes every few seconds
   return (
-    <section className="quotes-container absolute left-0 right-0 flex flex-row mr-16 md:mr-0">
-      <span className="text-4xl p-4">"</span>
-      <div className="quote px-0 md:p-4 flex flex-wrap items-center">
-        <span>
-          {quote} <strong>- {author}</strong>
-        </span>
-      </div>
-    </section>
+    <PaddingContainer type="quotes-container" X>
+      <section className="quotes-container pt-12">
+        <div className="footer-links flex justify-between mx-12 font-bold md:mx-0 md:justify-center items-center">
+          <Link to="/#What-I-Do" className="mx-4 md:mx-8">
+            What I Do
+          </Link>
+          {/* <Link to="/projects/#Toolbox" className="ml-4">
+              Tech
+            </Link> */}
+          <Link to="/blog" className="mx-4 md:mx-8">
+            Blog
+          </Link>
+          <Link to="/#Connect" className="mx-4 md:mx-8">
+            Contact
+          </Link>
+        </div>
+        <div className="quote flex flex-row">
+          <span className="text-4xl p-4">"</span>
+          <div className="quote px-0 md:p-4 flex flex-wrap items-center">
+            <span>
+              {quote} <strong>- {author}</strong>
+            </span>
+          </div>
+        </div>
+      </section>
+    </PaddingContainer>
   )
 }
 

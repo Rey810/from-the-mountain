@@ -3,13 +3,13 @@
     "type": {
       "websites": [
         {
-          "name": "App 1"
+          "title": "App 1"
         },
         {
-          "name": "App 2"
+          "title": "App 2"
         },
         {
-          "name": "App 3"
+          "title": "App 3"
         }
       ],
       "apps": [
