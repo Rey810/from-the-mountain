@@ -2,9 +2,9 @@
 /* BLOG CARD COLOR */
 /*////////////////*/
 .blog-post-card {
-  --blog-card-link-color: #ec4e20;
-  --blog-card-bg-color: #313131;
-  background-color: var(--blog-card-bg-color);
+  --blog-card-link-color: var(--color-10-1);
+  --blog-card-bg-color: var(--color-60-dark);
+  background-color: var(--color-60-dark);
 }
 
 .blog-container {
@@ -36,22 +36,17 @@
 }
 
 /* SUBHEADER: PUBLISH DATE and FOLLOW BUTTON */
-.publish-date {
+.subheader-info {
   color: var(--blog-text-color-lighter);
 }
 
 /* FONTS and PADDING */
+.blog-header {
+  font-size: 2rem;
+}
 
 .blog-back-arrow {
   color: var(--blog-header-color);
-}
-
-.subheader-container {
-  @apply py-4;
-}
-
-.twitter-follow-button-container {
-  @apply mt-1;
 }
 
 .blog h1 {
@@ -62,7 +57,7 @@
   @apply font-bold;
   @apply text-3xl;
   @apply pt-12;
-  @apply pb-6;
+  @apply pb-4;
 }
 
 .blog h3 {
@@ -250,11 +245,11 @@
 }
 
 .dark {
-  --form-bg-color: hsl(0, 0%, 30%);
+  --form-bg-color: #171820;
   --form-header-color: rgba(255, 255, 255, 1);
   --form-text-color: rgba(255, 255, 255, 0.8);
   --form-footer-text-color: rgba(255, 255, 255, 0.5);
-  --form-input-bg-color: hsl(0, 0%, 25.2%);
+  --form-input-bg-color: #252734;
   --form-input-border: none;
   --button-color: #ec4e20;
   --button-hover-color: #fa5d2f;

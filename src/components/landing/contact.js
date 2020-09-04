@@ -13,6 +13,7 @@ const contact = () => {
           <a
             href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!%20:)"
             className="landing-cta-1 my-2 rounded-md shadow-md font-semibold inline-block py-4 px-12"
+            target="_blank"
           >
             Chat with Rey
           </a>
@@ -26,18 +27,21 @@ const contact = () => {
           <a
             className="landing-icons icon px-4"
             href="https://twitter.com/ReyTheDev"
+            target="_blank"
           >
             <FontAwesomeIcon icon={["fab", "twitter"]} />
           </a>
           <a
             className="landing-icons icon px-4"
             href="https://github.com/Rey810"
+            target="_blank"
           >
             <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
           <a
             className="landing-icons icon px-4"
             href="https://www.linkedin.com/in/rey810/"
+            target="_blank"
           >
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>

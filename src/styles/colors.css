@@ -14,12 +14,15 @@
   --cta-hover-color: hsl(192, 50.7%, 40.5%); */
   --color-60-lighter: rgb(255, 255, 255);
   --color-60-light: hsl(124, 80%, 96%);
-  --color-60-medium: #323545;
-  --color-60-medium-dark: #252734;
+  --color-60-medium: hsl(232, 17%, 17%);
+  --color-60-medium-dark: hsl(233, 16%, 14%);
   --color-60-dark: #171820;
   --color-30-1: rgba(255, 255, 255, 0.795);
   --color-10-1: #ec4e20;
   --color-10-1-lighter: #fa5d2f;
+
+  --color-illustration: rgb(99, 41, 196);
+  --color-illustration-light: hsl(262, 65%, 60%);
 
   /* Overlay Colours */
   --initial-color-overlay: rgba(31, 31, 31, 0.4);
@@ -27,7 +30,7 @@
   --final-colour-overlay: rgb(31, 31, 31);
 
   /* Card Colours */
-  --card-bg-color: rgba(31, 31, 31, 0.65);
+  --card-bg-color: var(--color-60-dark);
   --card-header-color: #ffffff;
   --card-text-color: #ffffffd2;
 
@@ -39,7 +42,8 @@
   --project-card-tech-color: rgba(255, 255, 255, 0.55);
   --project-card-tech-border-color: rgba(255, 255, 255, 0.4);
   /* Project Card Sec CTA */
-  --project-button-sec-bg-color: rgba(64, 64, 64, 0.65);
+  --project-button-sec-bg-color: var(--color-60-medium);
+  --project-button-sec-bg-color-active: var(--color-60-medium-dark);
   --project-button-sec-text-color: rgba(255, 255, 255, 0.75);
 }
 /*////////////////*/
@@ -81,7 +85,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
-  background-color: var(--color-60-medium-dark);
+  background-color: var(--color-60-dark);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.35s ease-out;
@@ -133,7 +137,7 @@ h6 {
 
 /* HEADER */
 header {
-  box-shadow: 0px 8px 20px rgba(236, 78, 32, 0.05);
+  box-shadow: 0px 2px 10px rgba(236, 78, 32, 0.05);
 }
 
 /* LANDING */
@@ -157,6 +161,10 @@ header {
 .landing-cta-1 {
   color: var(--color-60-light);
   background-color: var(--color-10-1);
+}
+
+.free-ribbon {
+  background-color: var(--color-illustration);
 }
 
 .view-projects-container {
@@ -204,7 +212,8 @@ header {
 /* ICONS */
 /*//////*/
 .icon:hover {
-  color: var(--color-60-lighter);
+  opacity: 1;
+  transform: scale3d(1.1, 1.1, 1);
 }
 
 .benefit-icon {
@@ -228,7 +237,7 @@ header {
 /* SERVICE CONTAINER */
 /*///////////////////*/
 .service-container {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-60-dark);
 }
 
 /*/////////////////////*/
@@ -236,6 +245,13 @@ header {
 /*///////////////////*/
 .benefits-container {
   background-color: var(--color-60-medium-dark);
+}
+
+/*/////////////////////*/
+/* SITE REVIEW CONTAINER */
+/*///////////////////*/
+.site-review-container {
+  background-color: var(--color-60-dark);
 }
 
 /*/////////////////////*/
@@ -253,7 +269,7 @@ header {
 /* CONTACT CONTAINER */
 /*///////////////////*/
 .contact-container {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-60-dark);
 }
 /*////////*/
 /* CARDS */
@@ -338,12 +354,23 @@ header {
 
 .project-site-link {
   color: var(--color-60-light);
-  background-color: var(--color-10-1);
+  background-color: var(--color-illustration);
+}
+.project-site-link:hover,
+.project-site-link:focus {
+  color: var(--color-60-light);
+  background-color: var(--color-illustration-light);
 }
 
 .project-code-link {
   color: var(--project-button-sec-text-color);
   background-color: var(--project-button-sec-bg-color);
+}
+
+.project-code-link:hover,
+.project-code-link:focus {
+  color: var(--project-button-sec-text-color);
+  background-color: var(--project-button-sec-bg-color-active);
 }
 
 .project-tech-container {
@@ -352,6 +379,12 @@ header {
 
 .project-tech-container a {
   border-color: var(--project-card-tech-border-color);
+}
+
+.tech-link:hover,
+.tech-link:focus {
+  border-color: var(--color-10-light);
+  color: var(--color-10-light);
 }
 
 /*//////////*/

@@ -10,7 +10,7 @@ import ToggleSwitch from "../../components/general/toggleSwitch/toggleSwitch"
 import Apps from "../../components/portfolio/projects/apps"
 import Footer from "../../components/general/footer"
 
-const ProjectsPage = props => {
+const Projects = props => {
   const [showSites, setShowSites] = useState(false)
 
   console.log({ props })
@@ -26,7 +26,7 @@ const ProjectsPage = props => {
 
   return (
     <Layout canSeeHeader usesPortfolioHeader>
-      <SEO />
+      <SEO title="Projects" />
       {/* <Projects />
         <Toolbox /> */}
       <div className="sticky-footer-wrapper">
@@ -45,7 +45,7 @@ const ProjectsPage = props => {
   )
 }
 
-export default ProjectsPage
+export default Projects
 
 // const data = useStaticQuery(graphql`
 //   query {

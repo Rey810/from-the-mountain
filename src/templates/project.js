@@ -16,13 +16,16 @@ const project = props => {
   } = props.info
 
   console.log({ props })
-  // builds relative URL
-  const caseStudyURL = props.location.pathname + linkName
+  // builds relative URL for when projectcase studies are accessed from the home/projects
+  // linkName is used when project case studies are accessed from home/
+  const caseStudyURL = props.location
+    ? props.location.pathname + linkName
+    : `projects/${linkName}`
 
   return (
     <>
-      <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12">
-        <div className="project-container absolute inset-0 grid grid-rows-2 row-gap-4 rounded-lg">
+      <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12 shadow-lg rounded-lg">
+        <div className="project-container absolute inset-0 grid grid-rows-2 row-gap-4">
           <div className="project-image-container relative m-4 mb-0">
             <Img
               fluid={image.childImageSharp.fluid}
@@ -37,13 +40,14 @@ const project = props => {
               <p className="project-description text-xs mb-4 h-17 overflow-y-hidden leading-snug md:text-sm md:h-20">
                 {description}
               </p>
-              <div className="project-tech-container flex flex-wrap">
+              <div className="project-tech-container flex flex-no-wrap">
                 {techStack.map(tech => {
                   return (
                     <a
                       key={uuid()}
                       href={tech.url}
                       className="tech-link text-xs md:text-sm border-2 rounded-md mb-2 mr-2"
+                      target="_blank"
                     >
                       {tech.name}
                     </a>

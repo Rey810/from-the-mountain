@@ -11,31 +11,30 @@
 
 /* Colors are taken from colors.css - mostly from the project cards colours due to this toggle switch currently being used on the projects page */
 .active {
-  background-color: #ec4e20;
+  background-color: var(--color-illustration);
   color: rgba(255, 255, 255);
 }
 
 .inactive {
-  background-color: #313131;
+  background-color: var(--color-60-dark);
   color: rgba(255, 255, 255, 0.4);
 }
 
 .active:hover,
 .active:active {
-  background-color: hsl(14, 95%, 60%);
+  background-color: var(--color-illustration-light);
 }
 
 .inactive:hover,
 .inactive:active {
-  background-color: hsl(0, 0%, 32%);
+  background-color: var(--color-60-medium-dark);
 }
 
 .active:focus {
-  @apply outline-none;
-  @apply shadow-outline;
+  outline-color: var(--color-illustration);
 }
 
 .inactive:focus {
-  @apply outline-none;
-  @apply shadow-outline;
+  outline-color: var(--color-illustration);
+  outline-width: 2px;
 }

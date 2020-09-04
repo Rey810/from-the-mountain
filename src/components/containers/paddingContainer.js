@@ -17,7 +17,11 @@ const PaddingContainer = props => {
 
   padding = padding.join(" ")
 
-  return <div className={`${props.type} ${padding}`}>{props.children}</div>
+  return (
+    <div id={props.id} className={`${props.type} ${padding}`}>
+      {props.children}
+    </div>
+  )
 }
 
 export default PaddingContainer

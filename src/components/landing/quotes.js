@@ -35,19 +35,19 @@ const Quotes = () => {
   return (
     <PaddingContainer type="quotes-container" X>
       <section className="quotes-container pt-12">
-        <div className="footer-links flex justify-between mx-12 font-bold md:mx-0 md:justify-center items-center">
-          <Link to="/#What-I-Do" className="mx-4 md:mx-8">
+        <div className="footer-links flex mx-12 font-bold md:mx-0 justify-center items-center">
+          {/* <Link to="/#What-I-Do" className="mx-4 md:mx-8">
             What I Do
-          </Link>
+          </Link> */}
           {/* <Link to="/projects/#Toolbox" className="ml-4">
               Tech
             </Link> */}
           <Link to="/blog" className="mx-4 md:mx-8">
             Blog
           </Link>
-          <Link to="/#Connect" className="mx-4 md:mx-8">
+          {/* <Link to="/#Connect" className="mx-4 md:mx-8">
             Contact
-          </Link>
+          </Link> */}
         </div>
         <div className="quote flex flex-row">
           <span className="text-4xl p-4">"</span>

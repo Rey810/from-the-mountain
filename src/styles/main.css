@@ -75,6 +75,7 @@ body {
 
 .landing-children h3 {
   @apply mb-4 md:mb-8;
+  @apply text-center md:text-left;
 }
 
 /* General Elements */
@@ -114,10 +115,11 @@ a {
 
 /* Icons */
 .icon {
+  opacity: 0.75;
   @apply text-lg;
 }
 .view-projects-container {
-  @apply border-2 text-xl;
+  @apply border-2 text-lg md:text-xl;
   border-color: var(--color-10-1);
 }
 
@@ -162,11 +164,20 @@ a {
 .personal-title-container h2 {
   @apply mb-0;
   @apply text-left;
+  @apply xl:w-4/5;
+}
+
+.free-ribbon {
+  right: 5%;
+  top: 2%;
 }
 
 /* Services */
 .service-container {
   @apply relative;
+}
+
+.service-items-container {
   @apply xl:w-2/3 xl:mx-auto;
 }
 .service-item {
@@ -205,9 +216,10 @@ a {
 }
 
 .benefit-icon {
-  @apply p-4 rounded-full flex justify-center items-center;
+  @apply p-4 rounded-full flex justify-center items-center shadow-md;
   height: 5rem;
   width: 5rem;
+  background-color: var(--color-illustration);
 }
 
 @media (max-width: 640px) {
@@ -232,19 +244,26 @@ a {
 .all-promises-container {
   @apply w-3/4 mx-auto md:grid md:grid-cols-2 gap-32;
 }
-/* .all-promises-container div {
-  @apply;
-} */
 
+@screen xl {
+  .all-promises-container .img-wrapper svg {
+    transform: scale3d(1.25, 1.25, 1);
+  }
+}
 .all-promises-container h3 {
-  @apply my-3 md:my-6;
+  @apply my-3 md:my-6 xl:mt-16;
   @apply font-semibold;
-  @apply md:w-3/4;
+  @apply md:w-4/5;
+}
+
+.all-promises-container p {
+  @apply xl:w-4/5;
+  @apply text-center md:text-left;
 }
 
 .first-promise,
 .second-promise {
-  @apply block md:flex md:flex-col md:items-center xl:w-3/4;
+  @apply flex flex-col items-center md:block xl:w-3/4;
 }
 
 .first-promise {
@@ -272,7 +291,7 @@ a {
 
 /* Contact */
 .contact-container {
-  @apply md:mx-40 rounded-md shadow-lg;
+  @apply md:mx-40 rounded-md shadow-xl;
   @apply -mt-64 md:-mt-76;
   @apply py-12 md:py-24;
   @apply w-11/12 md:w-3/4 xl:w-1/2;
@@ -291,6 +310,9 @@ a {
 .quotes-container,
 .footer-links {
   @apply text-xs md:text-base;
+}
+.footer-links a:hover {
+  @apply underline;
 }
 
 /*//////////////////*/
