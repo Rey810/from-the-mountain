@@ -1,13 +1,14 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const serviceCard = props => {
+const SimpleCard = props => {
   const {
     title,
     description,
+    descriptionSize ="text-base",
     icon,
     centerHeader = false,
-    headerSize = false,
+    headerSize = "text-base",
     perfectSquare = false,
     padding = 8,
   } = props
@@ -30,14 +31,14 @@ const serviceCard = props => {
       ) : null}
       <h3
         className={`${centerHeader ? "text-center" : null} ${
-          headerSize ? headerSize : null
+          headerSize}
         } card-header font-bold pt-2 pb-4`}
       >
         {title}
       </h3>
-      <p className="card-description">{description}</p>
+      <p className={`card-description ${descriptionSize}`}>{description}</p>
     </div>
   )
 }
 
-export default serviceCard
+export default SimpleCard

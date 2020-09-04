@@ -1,10 +1,7 @@
-import React from "react"
-import Project from "../../../templates/projectCard"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image"
 
-
-const Websites = props => {
-  const projectsData = useStaticQuery(graphql`
+const ProjectsData = useStaticQuery(graphql`
     query {
       allProjectDataJson {
         edges {
@@ -16,8 +13,6 @@ const Websites = props => {
                 imageURL
                 description
                 caseDescription
-                secondDescription
-                secondDescriptionQuote
                 techStack {
                   name
                   url
@@ -41,15 +36,4 @@ const Websites = props => {
     }
   `)
 
-  const projectNodes = projectsData.allProjectDataJson.edges
-  
-  return (
-    <>
-      {projectNodes.map(project => (
-        <Project displayType="website" info={project.node} location={props.location} />
-      ))}
-    </>
-  )
-}
-
-export default Websites
+export const Nodes = ProjectsData.allProjectDataJson.edges

@@ -13,19 +13,20 @@ const projectCard = props => {
     siteURL,
     codeURL,
     image,
+    projectType
   } = props.info
 
-  console.log({ props })
+  console.log("project props", { props })
   // builds relative URL for when projectcase studies are accessed from the home/projects
   // linkName is used when project case studies are accessed from home/
-  const caseStudyURL = props.location
-    ? props.location.pathname + linkName
-    : `projects/${linkName}`
+  const caseStudyURL = linkName
 
-  return (
-    <>
-      <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12 shadow-lg rounded-lg">
-        <div className="project-container absolute inset-0 grid grid-rows-2 row-gap-4">
+  // projectCard only displayed if it's type matches the type that is currently being displayed
+  let projectCard = null;
+  
+  if (projectType === props.displayType) {
+  projectCard = <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12 shadow-lg rounded-lg">
+        <div className="project-container absolute inset-0 grid grid-rows-2 row-gap-4 rounded-lg">
           <div className="project-image-container relative m-4 mb-0">
             <Img
               fluid={image.childImageSharp.fluid}
@@ -57,11 +58,10 @@ const projectCard = props => {
               </div>
             </div>
             <div className="project-buttons-container w-5/12 mb-2 flex flex-col justify-end font-extrabold leading-none">
-              <Link
-                to={caseStudyURL}
-                target="_blank"
+              <a
+                href={caseStudyURL}
+                target="_blank"  rel="noopener norefferer"
                 // passes project info to link as prop available as location.state in linked page
-                state={props.info}
                 className="project-site-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around"
               >
                 View Project{" "}
@@ -72,10 +72,12 @@ const projectCard = props => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </Link>
+              </a>
               <a
                 href={codeURL}
                 className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around mt-4"
+                 rel="noopener norefferer"
+                      target="_blank"
               >
                 See the Code{" "}
                 <svg className="w-4" fill="currentColor" viewBox="0 0 20 20">
@@ -90,6 +92,14 @@ const projectCard = props => {
           </div>
         </div>
       </div>
+
+
+  }
+
+
+  return (
+    <>
+      {projectCard}
     </>
   )
 }

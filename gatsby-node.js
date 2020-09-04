@@ -4,8 +4,10 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const postTemplate = path.resolve("src/templates/blog-post.js")
+  const caseStudyTemplate = path.resolve("src/templates/caseStudy.js")
 
-  return graphql(`
+  // POSTS GRAPHQL QUERY
+  const posts = await graphql(`
     {
       allMarkdownRemark {
         edges {
@@ -25,13 +27,45 @@ exports.createPages = async ({ graphql, actions }) => {
   `).then(res => {
     if (res.errors) {
       return Promise.reject(res.errors)
+    } else {
+      return res.data
     }
+  })
 
-    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: postTemplate,
-      })
+  // creates post pagges from data contained in 'posts'
+  posts.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: postTemplate,
+    })
+  })
+
+  // CASE STUDY GRAPHQL QUERY
+  const caseStudies = await graphql(`
+    {
+      allProjectDataJson {
+        nodes {
+          projectType
+          linkName
+          siteURL
+          codeURL
+          title
+        }
+      }
+    }
+  `).then(res => {
+    if (res.errors) {
+      return Promise.reject(res.errors)
+    } else {
+      return res.data
+    }
+  })
+
+  // creates post pagges from data contained in 'posts'
+  caseStudies.allProjectDataJson.nodes.forEach(obj => {
+    createPage({
+      path: obj.linkName,
+      component: caseStudyTemplate,
     })
   })
 }

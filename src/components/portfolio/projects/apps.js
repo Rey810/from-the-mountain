@@ -1,22 +1,23 @@
 import React from "react"
 // import projects from "./projects"
-import Project from "../../../templates/project"
+import ProjectCard from "../../../templates/projectCard"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Apps = props => {
-  const data = useStaticQuery(graphql`
+  const projectsData = useStaticQuery(graphql`
     query {
-      allDataJson {
+      allProjectDataJson {
         edges {
           node {
-            type {
-              apps {
+                projectType
                 title
                 year
                 linkName
                 imageURL
                 description
                 caseDescription
+                secondDescription
+                secondDescriptionQuote
                 techStack {
                   name
                   url
@@ -33,8 +34,6 @@ const Apps = props => {
                       ...GatsbyImageSharpFluid
                     }
                   }
-                }
-              }
             }
           }
         }
@@ -42,16 +41,14 @@ const Apps = props => {
     }
   `)
 
-  const apps = data.allDataJson.edges[0].node.type.apps
-  console.dir(apps)
+  const projectNodes = projectsData.allProjectDataJson.edges
 
-  console.log("apps.js image", apps[0].image)
-  // console.log("apps.js image 2", apps[1].image)
   return (
     <>
-      {apps.map(project => (
-        <Project info={project} location={props.location} />
+      {projectNodes.map(project => (
+        <ProjectCard displayType="app" info={project.node} location={props.location} />
       ))}
+
     </>
   )
 }
