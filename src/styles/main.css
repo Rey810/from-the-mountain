@@ -127,7 +127,8 @@ a {
   transition: all 0.2s ease-in;
 }
 
-.view-projects-container:hover span {
+.view-projects-container:hover span,
+.launch-project:hover span {
   transform: translate3d(5%, 0, 0);
 }
 
@@ -138,7 +139,7 @@ a {
   transform: translate3d(-200%, 0, 0);
 }
 
-.view-projects-container:hover svg {
+.view-projects-container:hover svgg {
   @apply opacity-100 mr-4;
   transform: translate3d(-100%, 0, 0);
 }

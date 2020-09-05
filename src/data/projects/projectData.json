@@ -4,21 +4,21 @@
     "title": "Wandering Ponderer",
     "year": 2019,
     "linkName": "/projects/wandering-ponderer",
-    "imageURL": "The results of a weather search on the 'Odin's Forecast' weather app",
+    "imageURL": "A young man looking out from a forest into the flowing green expanse of a Thai island",
     "description": "A personal travel site for an explorer, writer, and overthinker.",
-    "caseDescription": "A weather app built to deliver only the most important weather information. This was built using vanilla JS. Everything else was also coded by hand. The results? It can run in any browser, works on mobile and desktop while using the ES6 JS syntax for beautiful code that's easily understood by other developers.",
-    "secondDescription": "I am the second description",
-    "secondDescriptionQuote": "I am a quote",
+    "caseDescription": "I wanted to create a site that could serve as a base for all my travel ramblings. It needed to be built by hand as a way of practically applying the fundamental front-end concepts I was learning at the time. Visually, pages needed to be centered around keeping things aesthetically minimal and non-distracting to give the viewer some breathing space to peruse the content at a convenient pace",
+    "secondDescription": "Large full-width images and flowing prose characterises the dreamy manner in I wrote and captured that which is on display. Ultimately, this was an exercise in piecing together my, at the time, maturing HTML, CSS, and JavaScript skills. Ultimately, I got caught up in the exhiliration that is creating something personal from scratch.",
+    "secondDescriptionQuote": "Large Full-Width Images and Flowing Prose...",
     "techStack": [
       {
         "name": "JavaScript",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       },
-      { "name": "SASS", "url": "https://sass-lang.com/" },
       {
         "name": "HTML",
         "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-      }
+      },
+      { "name": "SASS", "url": "https://sass-lang.com/" }
     ],
     "toolSet": [
       {
@@ -27,11 +27,10 @@
       },
       { "name": "VSCode", "url": "https://code.visualstudio.com/" },
       { "name": "Git", "url": "https://git-scm.com/" },
-      { "name": "Github", "url": "https://github.com/" },
-      { "name": "Cloudfare", "url": "https://www.cloudflare.com/" }
+      { "name": "Github", "url": "https://github.com/" }
     ],
-    "siteURL": "https://rey810.github.io/weather-app/",
-    "codeURL": "https://github.com/Rey810/Weather-App",
+    "siteURL": null,
+    "codeURL": "https://github.com/Rey810/rey810.github.io",
     "image": "wandering_ponderer.png"
   },
   {
@@ -40,10 +39,10 @@
     "year": 2020,
     "linkName": "/projects/odins-forecast",
     "imageURL": "The results of a weather search on the 'Odin's Forecast' weather app",
-    "description": "A clean weather app built to deliver the most important info. Clean code, clean design, clean results.",
-    "caseDescription": "A weather app built to deliver only the most important weather information. This was built using vanilla JS. Everything else was also coded by hand. The results? It can run in any browser, works on mobile and desktop while using the ES6 JS syntax for beautiful code that's easily understood by other developers.",
-    "secondDescription": "I am the second description",
-    "secondDescriptionQuote": "I am a quote",
+    "description": "A minimalist weather app built to deliver the most important info. Clean code, clean design and clean results.",
+    "caseDescription": "A weather app built to deliver only the most important weather information. This was built using vanilla JS. Everything else was also coded by hand. The results? It can run in any browser, works on mobile and desktop while using ES6 JS syntax for beautiful code that's easily understood by other developers.",
+    "secondDescription": "Two APIs (Flickr and OpenWeatherMap) are used in conjunction with Cloudfare service workers setup to secure my API keys. The result is that no sensitive information is exposed in the response. An image of the queried location is returned from Flickr's API. The response is filtered on the service worker side with a dynamic query so that only 5 relevant images are returned. I then randomly selected one of the returned images to serve as the image displayed to the user to keep things more interesting.",
+    "secondDescriptionQuote": "Secure Fast and Dynamic",
     "techStack": [
       {
         "name": "JavaScript",
@@ -65,9 +64,15 @@
       { "name": "Github", "url": "https://github.com/" },
       { "name": "Cloudfare", "url": "https://www.cloudflare.com/" }
     ],
-    "siteURL": "https://rey810.github.io/weather-app/",
+    "siteURL": "https://rey810.github.io/Weather-App/",
     "codeURL": "https://github.com/Rey810/Weather-App",
-    "image": "odins_forecast.png"
+    "image": "odins_forecast.png",
+    "images": [
+      "odins_forecast.png",
+      "odins_forecast.png",
+      "odins_forecast.png",
+      "odins_forecast.png"
+    ]
   },
   {
     "projectType": "app",
@@ -76,9 +81,9 @@
     "linkName": "/projects/root",
     "imageURL": "Home page of the Root design",
     "description": "A Proof-of-Concept dashboard design for a South African fitness app.",
-    "caseDescription": "Vertical rhythm, clever use of whitespace, and a focus on functionality resulted in this Proof-of-Concept design for the initial stages of a fitness app's development stage. Function over form was prioritized without sacrificing fundamental design principles and respect for usability. Code styl here was written agnostically so that developer handoff would be even easier. Clean, semantic HTML complements a practical design.",
-    "secondDescription": "I am the second description",
-    "secondDescriptionQuote": "I am a quote",
+    "caseDescription": "Vertical rhythm and clever use of whitespace with a focus on functionality resulted in this Proof-of-Concept design for the initial stages of a fitness app's development stage. ",
+    "secondDescription": "Function over form was prioritized without sacrificing fundamental design principles and respect for usability. The most important code here is clearly the CSS which is well annotated and written in a consistent, predictable manner allowing for easier collaboration with fellow developers. Clean, semantic HTML compliments a practical design which does it's part in making the web more accessible.",
+    "secondDescriptionQuote": "Functional and Accessible",
     "techStack": [
       {
         "name": "HTML",
@@ -95,8 +100,8 @@
       { "name": "Git", "url": "/" },
       { "name": "Github", "url": "https://github.com/" }
     ],
-    "siteURL": "https://rey810.github.io/weather-app/",
-    "codeURL": "https://github.com/Rey810/Weather-App",
+    "siteURL": null,
+    "codeURL": "https://github.com/Rey810/Root",
     "image": "root.png"
   },
   {
@@ -106,9 +111,9 @@
     "linkName": "/projects/dannys-meditation-app",
     "imageURL": "Danny's Meditation App home page",
     "description": "A re-design of a fellow front-end developer's meditation app.",
-    "caseDescription": "Danny was in the process of building a meditation app for download on the Google Play Store. I offered my help with the design. The result was a more visually consistent design rooted in strong vertical rhythm, sizing, and colour principles. Check AdobeXD for plenty of text about the design and rationale behind decisions.",
-    "secondDescription": "I am the second description",
-    "secondDescriptionQuote": "I am a quote",
+    "caseDescription": "Danny was in the process of building a meditation app for the Google Play Store. I offered my help with the design. The result was a more visually consistent design rooted in strong vertical rhythm, sizing, and colour principles to deliver a calmer, focused experience for meditators.",
+    "secondDescription": "Image choice was largely guided by how we, as meditators, want to perceive our practices: Non-distracted, tranquil, at peace. This meant larger, beautiful images of fellow meditators to serve as inspiration and a source of grounding. Colour is crucial to our digital expereinces. Seeing as experience is the whole crux of this app, I took Danny's initial brand colour and constructed complementary auxillary colours with the hue and saturation to give the rest of the app a more consistent aesthetic.",
+    "secondDescriptionQuote": "Non-distracted, tranquil, at peace...",
     "techStack": [
       {
         "name": "A good Spotify playlist",
@@ -116,8 +121,8 @@
       }
     ],
     "toolSet": [{ "name": "AdobeXD", "url": "/" }],
-    "siteURL": "",
-    "codeURL": "",
+    "siteURL": null,
+    "codeURL": null,
     "image": "dannys_meditation_app.png"
   },
   {
@@ -127,9 +132,9 @@
     "linkName": "/projects/battleships",
     "imageURL": "Battleships screen after a user has beaten the computer",
     "description": "The classic childhood game reimagined as a modern browser-based game built using the latest front-end web technologies.",
-    "caseDescription": "The classic childhood game reimagined as a modern web application built using the latest front-end web technologies. Users battle against the computer in this turn-based game playable on your desktop or mobile browsers. React application full of beautiful unit tests, Object-Oriented programming design principles, and the best parts of JS functional programming",
-    "secondDescription": "I am the second description",
-    "secondDescriptionQuote": "I am a quote",
+    "caseDescription": "The classic childhood game reimagined as a modern web application built using the latest front-end web technologies. Users battle against the computer in this turn-based game playable on your desktop or mobile browsers.",
+    "secondDescription": "A React application full of beautiful unit tests, Object-Oriented programming design principles, and the best parts of JS functional programming. Ships were built with factory functions and then initialized inside two Board components to keep all logic inside a predictable scope. State was kept quite shallow (2 levels) to reduce state-management complexity. Overall, I'm really happy with the naming convention and folder structure proven by the ease of refactoring I experienced.",
+    "secondDescriptionQuote": "Beautiful unit tests compliment the readable structure",
     "techStack": [
       { "name": "React", "url": "https://reactjs.org/" },
       { "name": "Jest", "url": "https://jestjs.io/" }
@@ -153,8 +158,8 @@
     "imageURL": "Eventor's landing page",
     "description": "A web app for event creation and user signup management",
     "caseDescription": "The aim was to build a web app similar to Eventbrite in functionality. Users can sign up, create events, invite other users, and manage attendees of their events.",
-    "secondDescription": "I am the second description",
-    "secondDescriptionQuote": "I am a quote",
+    "secondDescription": "The correct data modelling is crucial when building a database. For this application, my data architecture encompassed 'Eventhubs', 'Events', and 'Users' using various types of Active Record associations. The result was an application where a user can create events, have many people attend his/her events, and attend events him/herself.",
+    "secondDescriptionQuote": "Eventhubs, Events, Users",
     "techStack": [
       { "name": "Ruby", "url": "https://www.ruby-lang.org/en/" },
       { "name": "Ruby-on-Rails", "url": "https://rubyonrails.org/" }
@@ -166,7 +171,7 @@
       { "name": "Github", "url": "https://github.com/" },
       { "name": "Heroku", "url": "https://www.heroku.com/" }
     ],
-    "siteURL": "",
+    "siteURL": null,
     "codeURL": "https://github.com/Rey810/private-events",
     "image": "eventor.png"
   }
