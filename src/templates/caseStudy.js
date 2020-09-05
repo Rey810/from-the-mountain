@@ -74,14 +74,14 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
       </ContentWrapper>
       <FullWidthImageWrapper image={project.image} />
       <ContentWrapper height="6/10">
-        <div className="first-block h-full row-start-2 row-end-8 col-start-1 col-end-5 flex flex-col justify-center sm:block sm:pt-24">
+        <div className="first-block h-full row-start-2 row-end-8 col-start-1 col-end-5 flex flex-col justify-center sm:block">
           <div className="quote">
             <blockquote class="text-xl lg:text-4xl text-center font-semibold">
               {project.secondDescriptionQuote}
             </blockquote>
           </div>
         </div>
-        <div className="second-block h-full row-start-9 row-end-13 col-start-1 col-end-5 sm:row-start-2 sm:col-start-6 sm:col-end-13 sm:row-end-6 sm:pt-24">
+        <div className="second-block h-full row-start-9 row-end-13 col-start-1 col-end-5 sm:row-start-2 sm:col-start-6 sm:col-end-13 sm:row-end-6">
           <p className="quote-explained mb-4 text-xs sm:w-3/4 xl:w-1/2 lg:text-base">
             {project.secondDescription}
           </p>
