@@ -97,7 +97,6 @@
     "image": "odins_forecast.png",
     "images": [
       { "src": "odins_forecast.png", "long": false },
-      { "src": "test.png", "long": true },
       { "src": "odins_forecast.png", "long": false },
       { "src": "odins_forecast.png", "long": false }
     ]
@@ -133,7 +132,6 @@
     "image": "root.png",
     "images": [
       { "src": "odins_forecast.png", "long": false },
-      { "src": "test.png", "long": true },
       { "src": "odins_forecast.png", "long": false },
       { "src": "odins_forecast.png", "long": false }
     ]
@@ -160,7 +158,6 @@
     "image": "dannys_meditation_app.png",
     "images": [
       { "src": "odins_forecast.png", "long": false },
-      { "src": "test.png", "long": true },
       { "src": "odins_forecast.png", "long": false },
       { "src": "odins_forecast.png", "long": false }
     ]
@@ -191,7 +188,6 @@
     "image": "battleships.png",
     "images": [
       { "src": "odins_forecast.png", "long": false },
-      { "src": "test.png", "long": true },
       { "src": "odins_forecast.png", "long": false },
       { "src": "odins_forecast.png", "long": false }
     ]
@@ -222,7 +218,6 @@
     "image": "eventor.png",
     "images": [
       { "src": "odins_forecast.png", "long": false },
-      { "src": "test.png", "long": true },
       { "src": "odins_forecast.png", "long": false },
       { "src": "odins_forecast.png", "long": false }
     ]
