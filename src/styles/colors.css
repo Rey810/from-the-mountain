@@ -14,6 +14,7 @@
   --cta-hover-color: hsl(192, 50.7%, 40.5%); */
   --color-60-lighter: rgb(255, 255, 255);
   --color-60-light: hsl(124, 80%, 96%);
+  --color-60-medium-light: hsl(232, 13%, 26%);
   --color-60-medium: hsl(232, 17%, 17%);
   --color-60-medium-dark: hsl(233, 16%, 14%);
   --color-60-dark: #171820;
@@ -158,6 +159,7 @@ header {
 /*///////////////////////*/
 /* .project-site, */
 .contact-button,
+.get-in-touch,
 .case-launch-button,
 .landing-cta-1 {
   color: var(--color-60-light);
@@ -187,7 +189,9 @@ header {
   opacity: 1;
 }
 
+/* //////////////////////// */
 /* Case Study landing page */
+/* //////////////////////// */
 .launch-project {
   background-color: var(--color-illustration);
 }
@@ -196,8 +200,17 @@ header {
   background-color: var(--color-illustration-light);
 }
 
+.get-in-touch-container {
+  background-color: var(--color-60-dark);
+}
+
+.display-container {
+  background-color: var(--color-60-medium-light);
+}
+
 /* .project-site:hover, */
 .contact-button:hover,
+.get-in-touch:hover,
 .landing-cta-1:hover {
   background-color: var(--color-10-1-lighter);
 }
