@@ -6,9 +6,23 @@
     "linkName": "/projects/wandering-ponderer",
     "imageURL": "A young man looking out from a forest into the flowing green expanse of a Thai island",
     "description": "A personal travel site for an explorer, writer, and overthinker.",
-    "caseDescription": "I wanted to create a site that could serve as a base for all my travel ramblings. It needed to be built by hand as a way of practically applying the fundamental front-end concepts I was learning at the time. Visually, pages needed to be centered around keeping things aesthetically minimal and non-distracting to give the viewer some breathing space to peruse the content at a convenient pace",
-    "secondDescription": "Large full-width images and flowing prose characterises the dreamy manner in I wrote and captured that which is on display. Ultimately, this was an exercise in piecing together my, at the time, maturing HTML, CSS, and JavaScript skills. Ultimately, I got caught up in the exhiliration that is creating something personal from scratch.",
-    "secondDescriptionQuote": "Large Full-Width Images and Flowing Prose...",
+    "caseDescription": "I wanted to create a site that could serve as a base for all my travel ramblings. It needed to be coded by hand as a way of practically applying the fundamental front-end concepts I was learning at the time. Visually, pages needed to be centered around keeping things aesthetically minimal and non-distracting. This gavegive the viewer some breathing space to peruse the content at a convenient pace.",
+    "secondDescription": "Large full-width images and flowing prose characterises the dreamy manner in which I captured and wrote this content. Legibility was key here with the heavy emphasis on the written word. Ultimately, this was an exercise in piecing together my, at the time, maturing HTML, CSS, and JavaScript skills. Ultimately, I got caught up in the exhiliration that is creating something personal from scratch.",
+    "secondDescriptionQuote": "Large Images and Flowing Prose...",
+    "skillsUtilized": [
+      {
+        "name": "Design",
+        "description": "AdobeXD was the UI/UIX tool of choice here. This early project allowed me to become really comfortable working with this vector-based design solution."
+      },
+      {
+        "name": "Web Performance",
+        "description": "Vanilla HTML, CSS, and JavaScript meant the site had no built-in performance-enhancements. Web best practices were studied and applied allowing for a fast, lightweight site."
+      },
+      {
+        "name": "Open-Source",
+        "description": "The entire project was pushed (and hosted) on Github from it's conception. I became comfortable with a Git-based workflow as a result."
+      }
+    ],
     "techStack": [
       {
         "name": "JavaScript",
@@ -31,7 +45,21 @@
     ],
     "siteURL": null,
     "codeURL": "https://github.com/Rey810/rey810.github.io",
-    "image": "wandering_ponderer.png"
+    "image": "wp-palm_trees.png",
+    "images": [
+      {
+        "src": "wp-home.png",
+        "long": true
+      },
+      {
+        "src": "wp-all_places__browser.png",
+        "long": false
+      },
+      {
+        "src": "wp-article.png",
+        "long": true
+      }
+    ]
   },
   {
     "projectType": "app",
@@ -68,10 +96,10 @@
     "codeURL": "https://github.com/Rey810/Weather-App",
     "image": "odins_forecast.png",
     "images": [
-      "odins_forecast.png",
-      "odins_forecast.png",
-      "odins_forecast.png",
-      "odins_forecast.png"
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "test.png", "long": true },
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "odins_forecast.png", "long": false }
     ]
   },
   {
@@ -102,7 +130,13 @@
     ],
     "siteURL": null,
     "codeURL": "https://github.com/Rey810/Root",
-    "image": "root.png"
+    "image": "root.png",
+    "images": [
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "test.png", "long": true },
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "odins_forecast.png", "long": false }
+    ]
   },
   {
     "projectType": "app",
@@ -112,7 +146,7 @@
     "imageURL": "Danny's Meditation App home page",
     "description": "A re-design of a fellow front-end developer's meditation app.",
     "caseDescription": "Danny was in the process of building a meditation app for the Google Play Store. I offered my help with the design. The result was a more visually consistent design rooted in strong vertical rhythm, sizing, and colour principles to deliver a calmer, focused experience for meditators.",
-    "secondDescription": "Image choice was largely guided by how we, as meditators, want to perceive our practices: Non-distracted, tranquil, at peace. This meant larger, beautiful images of fellow meditators to serve as inspiration and a source of grounding. Colour is crucial to our digital expereinces. Seeing as experience is the whole crux of this app, I took Danny's initial brand colour and constructed complementary auxillary colours with the hue and saturation to give the rest of the app a more consistent aesthetic.",
+    "secondDescription": "Image choice was largely guided by how we, as meditators, want to perceive our practices: Non-distracted, tranquil, at peace. This meant larger, beautiful images of fellow meditators to serve as inspiration and a source of grounding. Colour is crucial to our digital expereinces. Seeing as experience is the whole crux of this app, I took Danny's initial brand colour and constructed complementary auxillary colours with lightness and saturation variations to give the rest of the app a more consistent aesthetic.",
     "secondDescriptionQuote": "Non-distracted, tranquil, at peace...",
     "techStack": [
       {
@@ -123,7 +157,13 @@
     "toolSet": [{ "name": "AdobeXD", "url": "/" }],
     "siteURL": null,
     "codeURL": null,
-    "image": "dannys_meditation_app.png"
+    "image": "dannys_meditation_app.png",
+    "images": [
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "test.png", "long": true },
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "odins_forecast.png", "long": false }
+    ]
   },
   {
     "projectType": "app",
@@ -148,7 +188,13 @@
     ],
     "siteURL": "https://react-battleship-reythedev.netlify.app/",
     "codeURL": "https://github.com/Rey810/Battleship/tree/master/battleship",
-    "image": "battleships.png"
+    "image": "battleships.png",
+    "images": [
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "test.png", "long": true },
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "odins_forecast.png", "long": false }
+    ]
   },
   {
     "projectType": "app",
@@ -173,6 +219,12 @@
     ],
     "siteURL": null,
     "codeURL": "https://github.com/Rey810/private-events",
-    "image": "eventor.png"
+    "image": "eventor.png",
+    "images": [
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "test.png", "long": true },
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "odins_forecast.png", "long": false }
+    ]
   }
 ]
