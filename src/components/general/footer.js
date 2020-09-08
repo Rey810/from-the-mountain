@@ -2,9 +2,12 @@ import React from "react"
 import Avatar from "../images/avatar"
 import { Link } from "gatsby"
 
-const Footer = () => {
+const Footer = ({ customBgColor }) => {
   return (
-    <footer className="text-gray-700 body-font relative bottom-0 mb-6 sm:mb-0">
+    <footer
+      className="text-gray-700 body-font relative bottom-0 mb-6 sm:mb-0"
+      style={{ backgroundColor: `${customBgColor}` }}
+    >
       <div className="px-5 py-8 px-4 md:px-8 lg:px-12 xl:px-16 flex items-center sm:flex-row flex-col">
         <Link
           className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
