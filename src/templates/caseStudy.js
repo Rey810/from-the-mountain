@@ -32,7 +32,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   let skillCards = null
   if (project.skillsUtilized) {
     skillCards = (
-      <ContentWrapper height="8/10">
+      <ContentWrapper height="9/10">
         <h2 className="font-semibold text-2xl lg:text-5xl flex items-center justify-center col-start-1 col-end-5 sm:col-end-13">
           Skills Utilized
         </h2>

@@ -9,31 +9,31 @@ const Apps = props => {
       allProjectDataJson {
         edges {
           node {
-                projectType
-                title
-                year
-                linkName
-                imageURL
-                description
-                caseDescription
-                secondDescription
-                secondDescriptionQuote
-                techStack {
-                  name
-                  url
+            projectType
+            title
+            year
+            linkName
+            imageURL
+            description
+            caseDescription
+            secondDescription
+            secondDescriptionQuote
+            techStack {
+              name
+              url
+            }
+            toolSet {
+              name
+              url
+            }
+            siteURL
+            codeURL
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2000) {
+                  ...GatsbyImageSharpFluid
                 }
-                toolSet {
-                  name
-                  url
-                }
-                siteURL
-                codeURL
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 2000) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
+              }
             }
           }
         }
@@ -46,9 +46,12 @@ const Apps = props => {
   return (
     <>
       {projectNodes.map(project => (
-        <ProjectCard displayType="app" info={project.node} location={props.location} />
+        <ProjectCard
+          displayType="app"
+          info={project.node}
+          location={props.location}
+        />
       ))}
-
     </>
   )
 }

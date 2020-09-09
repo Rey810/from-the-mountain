@@ -111,12 +111,8 @@
     "image": "odins_forecast__half-phone.png",
     "images": [
       { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast-1.png", "long": false },
-      { "src": "odins_forecast-2.png", "long": false },
-      { "src": "odins_forecast-3.png", "long": false },
-      { "src": "odins_forecast-4.png", "long": false },
-      { "src": "odins_forecast-5.png", "long": false },
-      { "src": "odins_forecast__full-phone.png", "long": false }
+      { "src": "odins_forecast.png", "long": false },
+      { "src": "odins_forecast.png", "long": false }
     ]
   },
   {
