@@ -2,6 +2,7 @@ import React from "react"
 import ContentWrapper from "../components/containers/contentWrapper"
 import FullWidthImageWrapper from "../components/containers/fullWidthImageContainer"
 import FeatherArrowRightCircle from "../assets/icons/featherArrowRightCircle"
+import Launch from "../assets/icons/launch"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -22,6 +23,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         className="launch-project btn inline-block"
       >
         Launch Project
+        <Launch className="ml-4 inline-block" />
       </a>
     )
   }
