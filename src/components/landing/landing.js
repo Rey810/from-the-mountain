@@ -6,7 +6,7 @@ import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import FeatherArrowRightCircle from "../../assets/icons/featherArrowRightCircle"
 import HeroMan from "../../assets/illustrations/heroMan"
-// import Avatar from "../images/avatar"
+import Avatar from "../images/avatar"
 // import Background from "../images/background"
 import { Link } from "gatsby"
 import Modal from "../general/auditModal/Modal"
@@ -39,20 +39,21 @@ const Landing = () => {
       <Modal toggleModal={modalToggleHandler} show={showModal}>
         <LandingForm theme="dark" close={modalCloseHandler} />
       </Modal>
-      {/* <div
-        className={`opacity-0 ${
-          animated ? "fadeInSlideUp-1st" : ""
-        } avatar-container flex justify-center h-16 my-16 mx-auto px-12`}
-      >
-        <div className="avater-image-container relative w-16">
-          <Avatar />
-        </div>
-        <div className="landing-name-container flex items-center pl-4">
-          <span className="name font-semibold">Rey van den Berg</span>
-        </div>
-      </div> */}
+
       <div className="text-wrapper flex justify-center items-center">
         <div>
+          <div
+            className={`opacity-0 ${
+              animated ? "fadeInSlideUp-1st" : ""
+            } avatar-container flex justify-left h-12 md:hidden mb-4`}
+          >
+            <div className="avater-image-container relative w-14">
+              <Avatar />
+            </div>
+            <div className="avatar-name-container flex items-center pl-4">
+              <span className="opacity-80">Rey van den Berg</span>
+            </div>
+          </div>
           <h1
             className={`opacity-0 ${
               animated ? "fadeInSlideUp-2nd" : ""
@@ -140,7 +141,7 @@ const Landing = () => {
       <div
         className={`opacity-0 ${
           animated ? "fadeIn-6th" : ""
-        } img-wrapper flex justify-center items-center`}
+        } img-wrapper hidden md:flex md:justify-center md:items-center `}
       >
         <HeroMan />
       </div>

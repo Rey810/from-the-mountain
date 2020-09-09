@@ -69,8 +69,22 @@
     "imageURL": "The results of a weather search on the 'Odin's Forecast' weather app",
     "description": "A minimalist weather app built to deliver the most important info. Clean code, clean design and clean results.",
     "caseDescription": "A weather app built to deliver only the most important weather information. This was built using vanilla JS. Everything else was also coded by hand. The results? It can run in any browser, works on mobile and desktop while using ES6 JS syntax for beautiful code that's easily understood by other developers.",
-    "secondDescription": "Two APIs (Flickr and OpenWeatherMap) are used in conjunction with Cloudfare service workers setup to secure my API keys. The result is that no sensitive information is exposed in the response. An image of the queried location is returned from Flickr's API. The response is filtered on the service worker side with a dynamic query so that only 5 relevant images are returned. I then randomly selected one of the returned images to serve as the image displayed to the user to keep things more interesting.",
-    "secondDescriptionQuote": "Secure Fast and Dynamic",
+    "secondDescription": "Two APIs (Flickr and OpenWeatherMap) are used in conjunction with Cloudfare service workers setup to secure my API keys. The result is that no sensitive information is exposed in the response. An image of the queried location is returned from Flickr's API. The response is filtered on the service worker side with a dynamic query so that only 5 relevant images are returned. I then randomly selected one of the returned images to serve as the image displayed to the user to keep things interesting. The Algolia API was used to implement an auto-complete search feature assisting users in finding the name of a city they can't quite remember correctly.",
+    "secondDescriptionQuote": "Secure API calls, fast UI updates, city auto-complete",
+    "skillsUtilized": [
+      {
+        "name": "Mobile-First",
+        "description": "The entire design was built with mobile-users in mind. This mindset elucidated the most important UI elements required for a complete experience. As a result, the final UI is lean and minimalistic."
+      },
+      {
+        "name": "API Consumption",
+        "description": "Three different APIS were called using JavaScript's Fetch. Responses were trimmed and tailored according to what I needed displayed. Response errors are handled and default values are used as fallbacks."
+      },
+      {
+        "name": "Security",
+        "description": "Cloudfare's service workers were setup and then called from within my JavaScript code. This added an extra security layer to keep my API keys hidden and thus keep my API accounts secure."
+      }
+    ],
     "techStack": [
       {
         "name": "JavaScript",
@@ -94,11 +108,15 @@
     ],
     "siteURL": "https://rey810.github.io/Weather-App/",
     "codeURL": "https://github.com/Rey810/Weather-App",
-    "image": "odins_forecast.png",
+    "image": "odins_forecast__half-phone.png",
     "images": [
       { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false }
+      { "src": "odins_forecast-1.png", "long": false },
+      { "src": "odins_forecast-2.png", "long": false },
+      { "src": "odins_forecast-3.png", "long": false },
+      { "src": "odins_forecast-4.png", "long": false },
+      { "src": "odins_forecast-5.png", "long": false },
+      { "src": "odins_forecast__full-phone.png", "long": false }
     ]
   },
   {
@@ -111,6 +129,20 @@
     "caseDescription": "Vertical rhythm and clever use of whitespace with a focus on functionality resulted in this Proof-of-Concept design for the initial stages of a fitness app's development stage. ",
     "secondDescription": "Function over form was prioritized without sacrificing fundamental design principles and respect for usability. The most important code here is clearly the CSS which is well annotated and written in a consistent, predictable manner allowing for easier collaboration with fellow developers. Clean, semantic HTML compliments a practical design which does it's part in making the web more accessible.",
     "secondDescriptionQuote": "Functional and Accessible",
+    "skillsUtilized": [
+      {
+        "name": "Vertical Rhythm",
+        "description": "Consistent spacing is key to achieving a harmonius design. Here I used a vertical rhythm based on a 8pt 'beat'. As a result, the spacing design was implemented quickly and predictably."
+      },
+      {
+        "name": "Layout",
+        "description": "A map, graph, and controller modal all on one screen could have been quite cramped. But a clever use of space and visual hierarchy meant all of the elements fit in one viewport without sacrificing an aesthetically pleasing result."
+      },
+      {
+        "name": "Accessibility",
+        "description": "This is an absolute requirement in any project I build. Here I achieved a UI that would be accessible by all users regardless of visual acuity by focusing on larger interaction areas, a clear hierarchy with variable font-weights and white space, semantic HTML, and strong colour contrasts."
+      }
+    ],
     "techStack": [
       {
         "name": "HTML",
@@ -131,9 +163,8 @@
     "codeURL": "https://github.com/Rey810/Root",
     "image": "root.png",
     "images": [
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false }
+      { "src": "root__long-browser.png", "long": false },
+      { "src": "root__browser.png", "long": false }
     ]
   },
   {
