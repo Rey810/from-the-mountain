@@ -4,6 +4,13 @@ module.exports = {
     cursor: {
       grab: "grab",
     },
+    letterSpacing: {
+      tightest: "-.075em",
+      tighter: "-.05em",
+      normal: "0",
+      wider: ".1em",
+      widest: ".2em",
+    },
     opacity: {
       "0": "0",
       "25": ".25",
