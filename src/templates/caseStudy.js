@@ -3,6 +3,7 @@ import ContentWrapper from "../components/containers/contentWrapper"
 import FullWidthImageWrapper from "../components/containers/fullWidthImageContainer"
 import FeatherArrowRightCircle from "../assets/icons/featherArrowRightCircle"
 import Launch from "../assets/icons/launch"
+import Code from "../assets/icons/code"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -28,6 +29,19 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
     )
   }
 
+  if (!project.siteURL && project.codeURL) {
+    launchProjectButton = (
+      <a
+        type="button"
+        href={project.codeURL}
+        className="launch-project btn inline-block"
+      >
+        View Code
+        <Code className="ml-4 inline-block" />
+      </a>
+    )
+  }
+
   // skills utilized cards inside a container
   let skillCards = null
   if (project.skillsUtilized) {
@@ -39,7 +53,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         <div className="serviceCards-container col-start-1 col-end-13 row-start-2 row-end-12 flex flex-col px-2 items-center scrolling-touch mb-auto md:grid md:grid-cols-2 md:gap-4 md:pl-0 lg:grid-cols-3 lg:gap-8 xl:mx-auto xl:w-5/6 xl:gap-12 xl:mr-auto">
           {project.skillsUtilized.map((skill, index) => (
             <div
-              className={`project-square-wrapper relative w-2/3 pb-2/3 my-12 mx-auto shadow-md ${
+              className={`project-square-wrapper relative w-1/1 pb-1/1 md:w-3/4 md:pb-3/4 my-12 mx-auto shadow-md ${
                 index === 1 ? "md:transform md:scale-125" : null
               }`}
             >
@@ -78,21 +92,25 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   return (
     <>
       <ContentWrapper height="9/10">
-        <div className="back-button flex flex-col justify-center text-xs font-semibold col-start-1 col-end-3 sm:col-end-4 sm:mt-12 w-4/5 sm:w-full lg:col-end-3 xl:w-3/4">
+        <div className="back-button flex flex-col justify-center text-xs font-semibold col-start-1 col-end-3 sm:col-end-4 w-4/5 sm:w-full lg:col-end-3 xl:w-3/4">
           <Link to="/projects" className="pr-4 py-4">
             <FontAwesomeIcon icon={faArrowLeft} className="mr-4" /> BACK TO
             PROJECTS
           </Link>
         </div>
-        <div className="case-specs-container h-full row-start-2 row-end-8 col-start-1 col-end-4 flex flex-col justify-center sm:block sm:pt-24  sm:col-end-5 md:col-end-4">
+        <div className="case-specs-container h-full row-start-2 row-end-8 col-start-1 col-end-4 flex flex-col justify-center sm:block sm:pt-4  sm:col-end-5 md:col-end-4">
           <div className="case-specs-info grid grid-cols-3">
             <div className="case-year col-span-1">
-              <h3 className="font-semibold text-xs mb-4">YEAR</h3>
+              <h3 className="font-semibold text-xs mb-4 tracking-wider">
+                YEAR
+              </h3>
               <time>{project.year}</time>
             </div>
             <div className="case-techs-toolsets col-span-2">
               <div className="case-tech mb-12">
-                <h3 className="font-semibold text-xs mb-4">TECHNOLOGIES</h3>
+                <h3 className="font-semibold text-xs mb-4 tracking-wider">
+                  TECHNOLOGIES
+                </h3>
                 <ul className="text-base">
                   {project.techStack.map((tech, index) => (
                     <li key={index}>{tech.name}</li>
@@ -100,7 +118,9 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
                 </ul>
               </div>
               <div className="case-toolset mb-12 lg:mb-0">
-                <h3 className="font-semibold text-xs mb-4">TOOLSET</h3>
+                <h3 className="font-semibold text-xs mb-4 tracking-wider">
+                  TOOLSET
+                </h3>
                 <ul className="text-base">
                   {project.toolSet.map((tool, index) => (
                     <li key={index}>{tool.name}</li>

@@ -75,7 +75,6 @@ body {
 
 .landing-children h3 {
   @apply mb-4 md:mb-8;
-  @apply text-center md:text-left;
 }
 
 /* General Elements */

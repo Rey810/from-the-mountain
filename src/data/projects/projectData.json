@@ -110,9 +110,13 @@
     "codeURL": "https://github.com/Rey810/Weather-App",
     "image": "odins_forecast__half-phone.png",
     "images": [
+      { "src": "odins_forecast-1.png", "long": false },
       { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false }
+      { "src": "odins_forecast-2.png", "long": false },
+      { "src": "odins_forecast-4.png", "long": false },
+      { "src": "odins_forecast-5.png", "long": false },
+      { "src": "odins_forecast-3.png", "long": false },
+      { "src": "odins_forecast__full-phone.png", "long": false }
     ]
   },
   {
@@ -173,6 +177,20 @@
     "caseDescription": "Danny was in the process of building a meditation app for the Google Play Store. I offered my help with the design. The result was a more visually consistent design rooted in strong vertical rhythm, sizing, and colour principles to deliver a calmer, focused experience for meditators.",
     "secondDescription": "Image choice was largely guided by how we, as meditators, want to perceive our practices: Non-distracted, tranquil, at peace. This meant larger, beautiful images of fellow meditators to serve as inspiration and a source of grounding. Colour is crucial to our digital expereinces. Seeing as experience is the whole crux of this app, I took Danny's initial brand colour and constructed complementary auxillary colours with lightness and saturation variations to give the rest of the app a more consistent aesthetic.",
     "secondDescriptionQuote": "Non-distracted, tranquil, at peace...",
+    "skillsUtilized": [
+      {
+        "name": "Vertical Rhythm",
+        "description": "Consistent spacing is key to achieving a harmonius design. Here I used a vertical rhythm based on a 8pt 'beat'. As a result, the spacing design was implemented predictably and harmoniously."
+      },
+      {
+        "name": "Tranquil Design",
+        "description": "Users of this app are here for one thing - cultivating a calmer, less reactive mind. Every color and element choice reflects an overall design decision that is non-distracting. The UI is spacious with clear CTAs cultivating a peaceful experience."
+      },
+      {
+        "name": "Fast Iteration",
+        "description": "Iteration is crucial to improvement. The initial design was handed over to me by Danny and I set to work. After a couple of hours, I had gone through tweaking iterations culminating in an improved design handed back to Danny in a super timely manner much to his happy surprise."
+      }
+    ],
     "techStack": [
       {
         "name": "A good Spotify playlist",
@@ -182,12 +200,8 @@
     "toolSet": [{ "name": "AdobeXD", "url": "/" }],
     "siteURL": null,
     "codeURL": null,
-    "image": "dannys_meditation_app.png",
-    "images": [
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false }
-    ]
+    "image": "meditation.jpg",
+    "images": [{ "src": "meditation__long-browser.png", "long": false }]
   },
   {
     "projectType": "app",
@@ -199,6 +213,20 @@
     "caseDescription": "The classic childhood game reimagined as a modern web application built using the latest front-end web technologies. Users battle against the computer in this turn-based game playable on your desktop or mobile browsers.",
     "secondDescription": "A React application full of beautiful unit tests, Object-Oriented programming design principles, and the best parts of JS functional programming. Ships were built with factory functions and then initialized inside two Board components to keep all logic inside a predictable scope. State was kept quite shallow (2 levels) to reduce state-management complexity. Overall, I'm really happy with the naming convention and folder structure proven by the ease of refactoring I experienced.",
     "secondDescriptionQuote": "Beautiful unit tests compliment the readable structure",
+    "skillsUtilized": [
+      {
+        "name": "State Management",
+        "description": "React's state object is used to control the game logic and user data. Components were built to be class-based. State is kept relatively shallow and no outside API calls are made thereby negating the need for more complex state management tools such as Redux."
+      },
+      {
+        "name": "Test Driven Development",
+        "description": "This approach allowed me to move consistently through my coding steps confident in the robustness of the application. I used React Testing Library to write unit tests for each React component. This allowed for predictable code and faster iteration even with the initial time spent on setting up tests."
+      },
+      {
+        "name": "Continuous Deployment",
+        "description": "Netlify was hooked up with Github allowing for rapid deployment on Netlfy's servers every time I pushed new code up to the apps's repository"
+      }
+    ],
     "techStack": [
       { "name": "React", "url": "https://reactjs.org/" },
       { "name": "Jest", "url": "https://jestjs.io/" }
@@ -213,11 +241,7 @@
     "siteURL": "https://react-battleship-reythedev.netlify.app/",
     "codeURL": "https://github.com/Rey810/Battleship/tree/master/battleship",
     "image": "battleships.png",
-    "images": [
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false }
-    ]
+    "images": [{ "src": "battleships__laptop.png", "long": false }]
   },
   {
     "projectType": "app",
@@ -227,8 +251,22 @@
     "imageURL": "Eventor's landing page",
     "description": "A web app for event creation and user signup management",
     "caseDescription": "The aim was to build a web app similar to Eventbrite in functionality. Users can sign up, create events, invite other users, and manage attendees of their events.",
-    "secondDescription": "The correct data modelling is crucial when building a database. For this application, my data architecture encompassed 'Eventhubs', 'Events', and 'Users' using various types of Active Record associations. The result was an application where a user can create events, have many people attend his/her events, and attend events him/herself.",
-    "secondDescriptionQuote": "Eventhubs, Events, Users",
+    "secondDescription": "As part of my education in web development from The Odin Project, building this Rails app was a way to really nail Rails Active Record associations and the resultant data modelling needed to build the correct database schema.",
+    "secondDescriptionQuote": "Database Scheming and Data Modelling",
+    "skillsUtilized": [
+      {
+        "name": "Converting Design",
+        "description": "The aesthetic was built purely to convert new visitors to users of the app. Visual techniques and knowledge of typical user behaviour were used to guide a visitor to the Call To Action as clearly and quickly as possible. "
+      },
+      {
+        "name": "Data Architecture",
+        "description": "The correct data modelling is crucial when building a database. In this case, my data architecture encompassed 'Eventhubs', 'Events', and 'Users' using various types of Active Record associations. The result was an application where a user can create events, have many people attend his/her events, and attend events him/herself."
+      },
+      {
+        "name": "MVC Design Pattern",
+        "description": "Ruby-on-Rails was used to implement a model-view-controller pattern which, in the case of this app, governs session creation, events creation and the display of all other relevant information."
+      }
+    ],
     "techStack": [
       { "name": "Ruby", "url": "https://www.ruby-lang.org/en/" },
       { "name": "Ruby-on-Rails", "url": "https://rubyonrails.org/" }
@@ -244,9 +282,8 @@
     "codeURL": "https://github.com/Rey810/private-events",
     "image": "eventor.png",
     "images": [
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast.png", "long": false }
+      { "src": "eventor__monitor.png", "long": false },
+      { "src": "eventor__browser.png", "long": false }
     ]
   }
 ]

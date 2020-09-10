@@ -45,7 +45,7 @@ const Landing = () => {
           <div
             className={`opacity-0 ${
               animated ? "fadeInSlideUp-1st" : ""
-            } avatar-container flex justify-left h-12 md:hidden mb-4`}
+            } avatar-container flex justify-left h-14 md:hidden mb-4`}
           >
             <div className="avater-image-container relative w-14">
               <Avatar />

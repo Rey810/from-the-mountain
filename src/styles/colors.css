@@ -200,6 +200,10 @@ header {
   background-color: var(--color-illustration-light);
 }
 
+.case-specs-info div > h3 {
+  color: var(--color-10-1);
+}
+
 .get-in-touch-container {
   background-color: var(--color-60-dark);
 }

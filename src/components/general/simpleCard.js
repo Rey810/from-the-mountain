@@ -5,7 +5,7 @@ const SimpleCard = props => {
   const {
     title,
     description,
-    descriptionSize ="text-base",
+    descriptionSize = "text-base",
     icon,
     centerHeader = false,
     headerSize = "text-base",
@@ -30,9 +30,8 @@ const SimpleCard = props => {
         </div>
       ) : null}
       <h3
-        className={`${centerHeader ? "text-center" : null} ${
-          headerSize}
-        } card-header font-bold pt-2 pb-4`}
+        className={`${centerHeader ? "text-center" : null} ${headerSize}
+        } card-header font-bold pt-2 pb-4 tracking-wider`}
       >
         {title}
       </h3>
