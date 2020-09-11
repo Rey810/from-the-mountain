@@ -80,7 +80,7 @@ const Header = ({
   ) : (
     <a
       href="#connect"
-      className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6font-semibold shadow-md rounded-md"
+      className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
     >
       Let's Connect!
     </a>
