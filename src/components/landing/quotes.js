@@ -42,12 +42,12 @@ const Quotes = () => {
           {/* <Link to="/projects/#Toolbox" className="ml-4">
               Tech
             </Link> */}
-          {/* <Link to="/blog" className="mx-4 md:mx-8">
+          <Link to="/blog" className="mx-4 md:mx-8">
             Blog
-          </Link> */}
-          {/* <Link to="/#Connect" className="mx-4 md:mx-8">
-            Contact
-          </Link> */}
+          </Link>
+          <Link to="/Projects" className="mx-4 md:mx-8">
+            Projects
+          </Link>
         </div>
         <div className="quote flex flex-row">
           <span className="text-4xl p-4">"</span>
