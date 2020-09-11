@@ -1,10 +1,15 @@
 import React from "react"
 
 // used in CaseStudy to wrap content in a responsive grid layout
-const ContentWrapper = ({ children, mobileHeight = 'full', tabletHeight = '10/10', laptopHeight = '10/10', desktopHeight = '10/10', extraClasses }) => {
+const ContentWrapper = ({ children, mobileHeight = 'max-h-full min-h-full', tabletHeight = 'max-h-full min-h-full', laptopHeight = 'max-h-full min-h-full', desktopHeight = 'max-h-full min-h-full', extraClasses }) => {
+
+  let tailwindHeightClasses = `${mobileHeight} ${tabletHeight} ${laptopHeight} ${desktopHeight} ${mobileHeight} ${tabletHeight} ${laptopHeight} ${desktopHeight}`;
+
+
+  
   return (
     <section
-      className={`max-h-${mobileHeight} md:max-h-${tabletHeight} lg:max-h-${laptopHeight} xl:max-h-${desktopHeight} min-h-${mobileHeight} md:min-h-${tabletHeight} lg:min-h-${laptopHeight} xl:min-h-${desktopHeight} mx-4 my-8 sm:grid sm:w-11/12 xl:w-5/6 sm:mx-auto sm:grid-cols-12 sm:grid-rows-4 ${extraClasses}`}
+      className={`${tailwindHeightClasses} mx-4 my-8 sm:grid sm:w-11/12 xl:w-5/6 sm:mx-auto sm:grid-cols-12 sm:grid-rows-4 ${extraClasses}`}
     >
       {children}
     </section>
