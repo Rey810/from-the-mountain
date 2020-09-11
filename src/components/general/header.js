@@ -62,6 +62,13 @@ const Header = ({
   // adds specific header links if the header is the landing page header
   let portfolioHeaderCheck = isPortfolioHeader ? (
     <>
+      <Link
+        to="/blog"
+        className="header-blog-link opacity-90 hover:opacity-100 py-2 px-4 mx-2 font-semibold text-xs hidden sm:inline md:mx-8 "
+        target="_blank"
+      >
+        Blog
+      </Link>
       <a
         href="#top"
         className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
@@ -69,31 +76,24 @@ const Header = ({
       >
         Get Site Review
       </a>
-      <Link
-        to="/blog"
-        className="header-blog-link opacity-90 hover:opacity-100 py-2 px-4 mx-2 font-semibold text-xs hidden sm:inline"
-        target="_blank"
-      >
-        Blog
-      </Link>
     </>
   ) : (
     <a
       href="#connect"
-      className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
+      className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6font-semibold shadow-md rounded-md"
     >
       Let's Connect!
     </a>
   )
 
   return (
-    <header
-      className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full p-4 md:px-24 ${extraClasses.join(
+    <header>
+      <nav className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full p-4 md:px-24 ${extraClasses.join(
         " "
-      )}`}
-    >
-      {headerLinksCheck}
-      <div className="header-icons">{portfolioHeaderCheck}</div>
+      )}`}>
+        {headerLinksCheck}
+        <div className="header-icons">{portfolioHeaderCheck}</div>
+      </nav>
     </header>
   )
 }

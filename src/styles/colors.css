@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
-header {
+nav {
   background-color: var(--color-60-dark);
   opacity: 0;
   visibility: hidden;
@@ -103,6 +103,10 @@ h4,
 h5,
 h6 {
   color: var(--color-60-light);
+}
+
+strong {
+  color: var(--color-10-1);
 }
 /*/////////////////*/
 /* SCROLL EFFECTS */

@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const Footer = ({ customBgColor }) => {
   return (
     <footer
-      className="text-gray-700 body-font relative bottom-0 mb-6 sm:mb-0"
+      className="text-gray-700 body-font relative bottom-0 pb-6 sm:mb-0"
       style={{ backgroundColor: `${customBgColor}` }}
     >
       <div className="px-5 py-8 px-4 md:px-8 lg:px-12 xl:px-16 flex items-center sm:flex-row flex-col">

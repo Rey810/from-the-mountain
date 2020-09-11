@@ -42,6 +42,9 @@ module.exports = {
         "1/2": "50%",
         "2/3": "66.666666667%",
         "3/4": "75%",
+        "4/5": "80%",
+        "9/11": "81.8%",
+        "9/10": "90%",
         "1/1": "100%",
         "14": "3.5rem",
         "17": "4.25rem",
@@ -65,6 +68,12 @@ module.exports = {
         "6/10": "60vh",
       },
       maxHeight: {
+        "3/10": "30vh",
+        "4/10": "40vh",
+        "5/10": "50vh",
+        "6/10": "60vh",
+        "7/10": "70vh",
+        "8/10": "80vh",
         "9/10": "90vh",
         "8/10": "80vh",
         "7/10": "70vh",
@@ -99,7 +108,10 @@ module.exports = {
     },
   },
 
-  variants: {},
+  variants: {
+    opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    scale: ['responsive', 'hover', 'focus', 'active', 'group-hover']
+  },
   plugins: [],
   experimental: {
     extendedFontSizeScale: true,

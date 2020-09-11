@@ -163,7 +163,7 @@
     "codeURL": "https://github.com/Rey810/Root",
     "image": "root.png",
     "images": [
-      { "src": "root__long-browser.png", "long": false },
+      { "src": "root__long-browser.png", "long": false, "fullWidthLongScroll": true },
       { "src": "root__browser.png", "long": false }
     ]
   },
@@ -176,7 +176,7 @@
     "description": "A re-design of a fellow front-end developer's meditation app.",
     "caseDescription": "Danny was in the process of building a meditation app for the Google Play Store. I offered my help with the design. The result was a more visually consistent design rooted in strong vertical rhythm, sizing, and colour principles to deliver a calmer, focused experience for meditators.",
     "secondDescription": "Image choice was largely guided by how we, as meditators, want to perceive our practices: Non-distracted, tranquil, at peace. This meant larger, beautiful images of fellow meditators to serve as inspiration and a source of grounding. Colour is crucial to our digital expereinces. Seeing as experience is the whole crux of this app, I took Danny's initial brand colour and constructed complementary auxillary colours with lightness and saturation variations to give the rest of the app a more consistent aesthetic.",
-    "secondDescriptionQuote": "Non-distracted, tranquil, at peace...",
+    "secondDescriptionQuote": "Non-distracted, tranquil, and completely at peace...",
     "skillsUtilized": [
       {
         "name": "Vertical Rhythm",
@@ -201,7 +201,7 @@
     "siteURL": null,
     "codeURL": null,
     "image": "meditation.jpg",
-    "images": [{ "src": "meditation__long-browser.png", "long": false }]
+    "images": [{ "src": "meditation__long-browser.png", "fullWidthLongScroll": true }]
   },
   {
     "projectType": "app",

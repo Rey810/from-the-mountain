@@ -81,7 +81,7 @@ const projectCard = props => {
           </div>
           <div className="project-info-container mx-4 my-auto flex justify-between">
             <div className="project-text-container w-1/2 flex flex-col justify-end">
-              <h2 className="project-header text-lg md:text-xl font-semi-bold mb-4">
+              <h2 className="project-header text-lg md:text-xl font-semi-bold my-2">
                 {title}
               </h2>
               <p className="project-description text-xs mb-4 h-17 overflow-y-hidden leading-snug md:text-sm md:h-20">

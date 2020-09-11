@@ -7,8 +7,11 @@ import Img from "gatsby-image"
 // image width and height set to 100% to take up parent divs dimensions
 const fullWidthImageWrapper = props => {
   return (
-    <div className="relative bg-gray-700">
-      <Img fluid={props.image.childImageSharp.fluid} />
+    <div className="relative bg-gray-700 pb-9/10 sm:pb-3/4 lg:pb-1/2">
+      <Img
+        fluid={props.image.childImageSharp.fluid}
+        className="absolute-important w-full h-full"
+      />
     </div>
   )
 }

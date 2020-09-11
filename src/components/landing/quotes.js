@@ -42,9 +42,9 @@ const Quotes = () => {
           {/* <Link to="/projects/#Toolbox" className="ml-4">
               Tech
             </Link> */}
-          <Link to="/blog" className="mx-4 md:mx-8">
+          {/* <Link to="/blog" className="mx-4 md:mx-8">
             Blog
-          </Link>
+          </Link> */}
           {/* <Link to="/#Connect" className="mx-4 md:mx-8">
             Contact
           </Link> */}

@@ -11,22 +11,17 @@ const personal = () => {
       </div>
       <div className="text-wrapper flex justify-center items-center">
         <div className="personal-title-container">
-          <h2 className="personal-title">Let's start with a question</h2>
+          <h2 className="personal-title">Do You Want a Perfect Website?</h2>
           <div className="personal-description-container">
             <p className="personal-description pb-4 ">
-              What comes to mind when you hear 'The Perfect Website'? I picture
-              a site that has amazing looks, fast load-times, ease-of-use and no
-              complications.
+              I build sites with amazing looks and fast load-times that do one thing: <br/><strong>Get You Results.</strong>
             </p>
             <p className="personal-description pb-4">
-              Maybe you picture a site that generates loads of sales, attracts
-              subscribers, and brings across a clear message.
+              Whatever you have in mind, you should know - I build with a
+              goal-oriented eye for precision. 
             </p>
             <p className="personal-description">
-              And that's why you might enjoy working with me - I build with a
-              goal-oriented eye for precision. That means when we're done, you
-              can close your eyes and picture <em>yours</em> as The Perfect
-              Website.
+              When we're done, you will have a site that gets the job done in style.
             </p>
             {/* <Link
           to="/blog"
