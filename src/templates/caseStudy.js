@@ -46,7 +46,11 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   let skillCards = null
   if (project.skillsUtilized) {
     skillCards = (
-      <ContentWrapper laptopHeight="min-h-8/10 max-h-8/10" desktopHeight="min-h-8/10 max-h-8/10" extraClasses="md:block lg:grid">
+      <ContentWrapper
+        laptopHeight="min-h-8/10 max-h-8/10"
+        desktopHeight="min-h-8/10 max-h-8/10"
+        extraClasses="md:block lg:grid"
+      >
         <h2 className="font-semibold mb-8 w-4/5 mx-auto text-2xl flex items-center justify-center col-start-1 col-end-5 sm:w-1/1 sm:col-end-13 md:mb-16 lg:text-5xl lg:mb-0">
           Skills Utilized
         </h2>
@@ -84,8 +88,8 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
           />
         </div>
       )
-    } 
-    
+    }
+
     if (image.fullWidthLongScroll) {
       return <Img fluid={image.src.childImageSharp.fluid} />
     } else {
@@ -94,11 +98,23 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   })
   return (
     <>
-      <ContentWrapper mobileHeight="min-h-9/10 max-h-9/10" tabletHeight="min-h-6/10 max-h-6/10" laptopHeight="min-h-8/10 max-h-8/10" desktopHeight="min-h-8/10 max-h-8/10" extraClasses="mt-0">
+      <ContentWrapper
+        mobileHeight="min-h-9/10 max-h-9/10"
+        tabletHeight="min-h-6/10 max-h-6/10"
+        laptopHeight="min-h-8/10 max-h-8/10"
+        desktopHeight="min-h-8/10 max-h-8/10"
+        extraClasses="mt-0"
+      >
         <div className="back-button flex flex-col justify-center text-xs w-mc font-semibold sm:col-start-1 sm:mt-0 sm:col-end-4 sm:w-full lg:col-end-3 xl:w-3/4">
           <Link to="/projects" className="group pr-4 py-4">
-            <FontAwesomeIcon icon={faArrowLeft} size="lg" className="mr-4 transition duration-200 ease-in transform group-hover:scale-125" /> <span className="opacity-0 transition duration-200 ease-in group-hover:scale-125 group-hover:opacity-100">BACK TO
-            PROJECTS</span>
+            <FontAwesomeIcon
+              icon={faArrowLeft}
+              size="lg"
+              className="mr-4 transition duration-200 ease-in transform group-hover:scale-125"
+            />{" "}
+            <span className="opacity-0 transition duration-200 ease-in group-hover:scale-125 group-hover:opacity-100">
+              BACK TO PROJECTS
+            </span>
           </Link>
         </div>
         <div className="case-specs-container h-full w-9/10 mx-auto sm:w-1/1 sm:col-start-1 flex flex-col justify-start mt-4 md:mt-0 md:justify-center sm:block sm:pt-4 md:col-end-4">
@@ -144,7 +160,13 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         </div>
       </ContentWrapper>
       <FullWidthImageWrapper image={project.image} />
-      <ContentWrapper mobileHeight="min-h-7/10 max-h-7/10" tabletHeight="min-h-5/10 max-h-5/10" laptopHeight="min-h-6/10 max-h-6/10" desktopHeight="min-h-4/10 max-h-4/10" extraClasses="h-full w-4/5 mx-auto">
+      <ContentWrapper
+        mobileHeight="min-h-7/10 max-h-7/10"
+        tabletHeight="min-h-5/10 max-h-5/10"
+        laptopHeight="min-h-6/10 max-h-6/10"
+        desktopHeight="min-h-4/10 max-h-4/10"
+        extraClasses="h-full w-4/5 mx-auto"
+      >
         <div className="first-block sm:w-1/1 row-start-1 row-end-13 col-start-1 col-end-5 flex flex-col justify-center ">
           <div className="quote">
             <blockquote class="text-xl font-semibold text-left mb-8 md:mb-0 md:my-0 md:text-center lg:text-4xl ">
