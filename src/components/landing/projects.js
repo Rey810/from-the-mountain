@@ -23,9 +23,9 @@ const Projects = props => {
       <h2
         className="font-black
 leading-none
-md:text-center
+text-center
 text-4xl md:text-6xl
-mb-8 md:mb-16"
+mb-4 md:mb-16"
       >
         Projects
       </h2>
