@@ -13,7 +13,7 @@ const personal = () => {
         <div className="personal-title-container">
           <h2 className="personal-title">Do You Want a Perfect Website?</h2>
           <div className="personal-description-container">
-            <p className="personal-description pb-4 ">
+            <p className="personal-description landing pb-4 ">
               I build sites with amazing looks and fast load-times that do one thing: <br/><strong>Get You Results.</strong>
             </p>
             <p className="personal-description pb-4">
