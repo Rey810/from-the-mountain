@@ -123,6 +123,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   return (
     <>
       <SEO {...SEOinfo} />
+      <Header isCaseStudy />
       <ContentWrapper
         tabletHeight="md:min-h-6/10 md:max-h-6/10"
         laptopHeight="lg:min-h-8/10 lg:max-h-8/10"

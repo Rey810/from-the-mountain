@@ -9,6 +9,7 @@ const Header = ({
   canSee = false,
   isPortfolioHeader = false,
   isPostHeader = false,
+  isCaseStudy = false,
 }) => {
   const [visible, setVisible] = useState(canSee)
 
@@ -42,7 +43,7 @@ const Header = ({
   }
 
   // adds specific header links if the header is the post header
-  let headerLinksCheck = isPostHeader ? (
+  let chevronOrAvatar = isPostHeader ? (
     <Link to="/blog" className="p-4">
       <FontAwesomeIcon icon={faChevronLeft} />
     </Link>
@@ -60,7 +61,7 @@ const Header = ({
   )
 
   // adds specific header links if the header is the landing page header
-  let portfolioHeaderCheck = isPortfolioHeader ? (
+  let additionalLinks = isPortfolioHeader ? (
     <>
       <Link
         to="/blog"
@@ -69,30 +70,32 @@ const Header = ({
       >
         Blog
       </Link>
-      <a
-        href="#top"
+      <Link
+        to="/#Report"
         className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
         target="_blank"
       >
         Get Site Review
-      </a>
+      </Link>
     </>
   ) : (
-    <a
-      href="#connect"
+    <Link
+      to="/#Connect"
       className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
     >
-      Let's Connect!
-    </a>
+      {isCaseStudy ? "Get in Touch" : "Let's Connect!"}
+    </Link>
   )
 
   return (
     <header>
-      <nav className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full p-4 md:px-24 ${extraClasses.join(
-        " "
-      )}`}>
-        {headerLinksCheck}
-        <div className="header-icons">{portfolioHeaderCheck}</div>
+      <nav
+        className={`fixed top-0 z-10 flex flex-row justify-between items-center w-full p-4 md:px-24 ${extraClasses.join(
+          " "
+        )}`}
+      >
+        {chevronOrAvatar}
+        <div className="header-icons">{additionalLinks}</div>
       </nav>
     </header>
   )

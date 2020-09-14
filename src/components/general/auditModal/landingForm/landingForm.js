@@ -6,7 +6,6 @@ import Close from "../../../general/close"
 export default function landingForm(props) {
   return (
     <section
-      id="connect"
       className={`${classes.LandingForm} ${
         props.inLine ? "relative" : "absolute z-20"
       } ${
