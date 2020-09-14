@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: "https://www.fromthemountain.co.za",
   },
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-catch-links",
     {

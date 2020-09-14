@@ -1,12 +1,12 @@
 import React from "react"
-import SubscriptionForm from "../../../blog/subscribe/subscriptionForm"
-import CheckCricle from "../../../../assets/icons/checkCircle"
-import classes from "./landingForm.module.css"
-import Close from "../../../general/close"
-export default function landingForm(props) {
+import SubscriptionForm from "../../blog/subscribe/subscriptionForm"
+import CheckCricle from "../../../assets/icons/checkCircle"
+import classes from "./ReportForm.module.css"
+import Close from "../close"
+export default function reportForm(props) {
   return (
     <section
-      className={`${classes.LandingForm} ${
+      className={`${classes.ReportForm} ${
         props.inLine ? "relative" : "absolute z-20"
       } ${
         props.theme === "dark" ? "dark" : "light"
@@ -25,12 +25,12 @@ export default function landingForm(props) {
             props.inLine ? "md:hidden" : "md:flex md:justify-center"
           }`}
         >
-          <h1 className="text-2xl font-medium md:pr-2">It's Free.</h1>
-          <h1 className="text-2xl font-medium md:pr-2">It's Fast.</h1>
-          <h1 className="text-2xl font-medium md:pr-2">It's Yours.</h1>
+          <h3 className="text-2xl font-medium md:pr-2">It's Free.</h3>
+          <h3 className="text-2xl font-medium md:pr-2">It's Fast.</h3>
+          <h3 className="text-2xl font-medium md:pr-2">It's Yours.</h3>
         </div>
         <div className="header-container">
-          <h1
+          <h3
             className={`text-2xl font-medium ${
               props.inLine ? "md:block" : "md:hidden"
             }`}
@@ -38,9 +38,9 @@ export default function landingForm(props) {
             {props.inLine
               ? "Get a free technical report"
               : "Get Your Site Report"}
-          </h1>
+          </h3>
         </div>
-        <p className="text-sm mt-6 mb-3">
+        <p className="text-sm mt-6 mb-3 xl:my-3 xl:w-3/4">
           {props.inLine
             ? "Let me review your existing site before you commit to working with me on an awesome new one. "
             : null}

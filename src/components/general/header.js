@@ -55,7 +55,7 @@ const Header = ({
             <Avatar />
           </div>
         </div>
-        <span className="text-base ml-2 font-bold">FTM</span>
+        <span className="text-base ml-2 logo-name">FTM</span>
       </div>
     </Link>
   )
@@ -83,7 +83,7 @@ const Header = ({
       to="/#Connect"
       className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
     >
-      {isCaseStudy ? "Get in Touch" : "Let's Connect!"}
+      {isCaseStudy ? "GET IN TOUCH" : "LET'S CONNECT!"}
     </Link>
   )
 

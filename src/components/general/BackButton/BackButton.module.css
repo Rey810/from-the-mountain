@@ -1,0 +1,15 @@
+.BackButton {
+  @apply flex flex-col justify-center text-xs w-mc font-semibold sm:col-start-1 sm:mt-0 sm:col-end-4 sm:w-full lg:col-end-3 xl:w-3/4;
+}
+
+.BackButton a {
+  @apply flex items-center no-underline hover:no-underline font-bold;
+}
+
+.Dark {
+  color: var(--color-60-medium-dark);
+}
+
+.Light {
+  color: var(--color-60-light);
+}

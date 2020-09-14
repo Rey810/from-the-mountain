@@ -9,8 +9,8 @@ import HeroMan from "../../assets/illustrations/heroMan"
 import Avatar from "../images/avatar"
 // import Background from "../images/background"
 import { Link } from "gatsby"
-import Modal from "../general/auditModal/Modal"
-import LandingForm from "../general/auditModal/landingForm/landingForm"
+import Modal from "../general/Modal/Modal"
+import ReportForm from "../general/ReportForm/ReportForm"
 
 const Landing = () => {
   const [animated, setAnimated] = useState(false)
@@ -29,15 +29,13 @@ const Landing = () => {
     setShowModal(false)
   }
 
-  console.log(showModal)
-
   return (
     <section
       id="What-I-Do"
       className="landing-container md:flex md:justify-center md:items-center md:flex-row md:min-h-screen md:pb-8"
     >
       <Modal toggleModal={modalToggleHandler} show={showModal}>
-        <LandingForm theme="dark" close={modalCloseHandler} />
+        <ReportForm theme="dark" close={modalCloseHandler} />
       </Modal>
 
       <div className="text-wrapper flex justify-center items-center">
@@ -45,7 +43,7 @@ const Landing = () => {
           <div
             className={`opacity-0 ${
               animated ? "fadeInSlideUp-1st" : ""
-            } avatar-container flex justify-left h-14 md:hidden mb-4`}
+            } avatar-container flex justify-left h-14 md:hidden mb-8`}
           >
             <div className="avater-image-container relative w-14">
               <Avatar />

@@ -49,7 +49,7 @@ body {
 /* Leading-none sets line-height to 1 to tighten things up */
 .landing-children h1,
 .landing-children h2 {
-  @apply font-black;
+  @apply font-semibold;
   @apply leading-none;
 }
 
@@ -57,13 +57,26 @@ body {
 /* BASE FONT SIZES */
 /* ///////////// */
 .landing-title {
-  @apply text-6xl md:text-7xl;
+  @apply text-6xl md:text-7xl font-normal;
+}
+
+.landing-title,
+.logo-name {
+  font-family: "Gugi";
+  letter-spacing: 0.1rem;
 }
 
 .landing-description,
 .landing-cta-1,
 .email-field {
   @apply text-xl md:text-2xl;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oxanium";
 }
 
 /* Section Headers */
@@ -108,6 +121,10 @@ a {
   @apply text-xs !important;
 }
 
+.header-icons a {
+  @apply uppercase;
+}
+
 .absolute-important {
   position: absolute !important;
 }
@@ -138,7 +155,7 @@ a {
   transform: translate3d(-200%, 0, 0);
 }
 
-.view-projects-container:hover svgg {
+.view-projects-container:hover svg {
   @apply opacity-100 mr-4;
   transform: translate3d(-100%, 0, 0);
 }

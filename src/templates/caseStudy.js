@@ -7,8 +7,9 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/general/seo"
 import Header from "../components/general/header"
+import BackButton from "../components/general/BackButton/BackButton"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowLeft, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 import SimpleCard from "../components/general/simpleCard"
 import Footer from "../components/general/footer"
 
@@ -24,7 +25,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         href={project.siteURL}
         className="launch-project btn inline-block"
       >
-        Launch Project
+        LAUNCH PROJECT
         <Launch className="ml-4 inline-block" />
       </a>
     )
@@ -37,7 +38,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         href={project.codeURL}
         className="launch-project btn inline-block"
       >
-        View Code
+        VIEW CODE
         <Code className="ml-4 inline-block" />
       </a>
     )
@@ -130,18 +131,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         desktopHeight="xl:min-h-7/10 xl:max-h-7/10"
         extraClasses="mt-0"
       >
-        <div className="back-button flex flex-col justify-center text-xs w-mc font-semibold sm:col-start-1 sm:mt-0 sm:col-end-4 sm:w-full lg:col-end-3 xl:w-3/4">
-          <Link to="/projects" className="group pr-4 py-4">
-            <FontAwesomeIcon
-              icon={faArrowLeft}
-              size="lg"
-              className="mr-4 transition duration-200 ease-in transform group-hover:scale-125"
-            />{" "}
-            <span className="opacity-0 transition duration-200 ease-in group-hover:scale-125 group-hover:opacity-100">
-              BACK TO PROJECTS
-            </span>
-          </Link>
-        </div>
+        <BackButton to="/projects">Back to Projects</BackButton>
         <div className="case-specs-container h-full w-9/10 mx-auto sm:w-1/1 sm:col-start-1 flex flex-col justify-start mt-4 md:mt-0 md:justify-center sm:block sm:pt-4 md:col-end-4">
           <div className="case-specs-info flex justify-around md:grid md:grid-cols-3">
             <div className="case-year col-span-1">
@@ -216,7 +206,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
           to="/#Connect"
           className="get-in-touch font-semibold btn flex items-center justify-around"
         >
-          Get in Touch
+          GET IN TOUCH
           <FontAwesomeIcon className="ml-4" icon={faPaperPlane} />
         </Link>
       </div>

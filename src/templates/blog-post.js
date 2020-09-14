@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/containers/layout"
 import SEO from "../components/general/seo"
 import Subscribe from "../components/blog/subscribe/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons"
 import { faTwitter, faFacebookF } from "@fortawesome/free-brands-svg-icons"
+import BackButton from "../components/general/BackButton/BackButton"
 import Img from "gatsby-image"
 import Footer from "../components/general/footer"
 import Avatar from "../components/images/avatar"
@@ -37,16 +36,13 @@ export default function Template({ data, location }) {
       />
       <div className="blog-container">
         <section className="blog mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2">
-          <Link to="/blog" className="text-xl p-2 pl-0">
-            <FontAwesomeIcon
-              className="blog-back-arrow"
-              icon={faLongArrowAltLeft}
-            />
-          </Link>
+          <BackButton to="/blog" theme="dark">
+            Back to All Articles
+          </BackButton>
           <h1 className="blog-header">{post.frontmatter.title}</h1>
           <div className="subheader-container pt-4 pb-2 flex flex-row items-center">
-            <div className="avatar-container flex justify-center h-8 sm:h-10 mr-2">
-              <div className="avater-image-container relative w-8 sm:w-10">
+            <div className="avatar-container flex justify-center h-8 sm:h-10  lg:h-12 xl:h-16 mr-2">
+              <div className="avater-image-container relative w-8 sm:w-10 lg:w-12 xl:w-16">
                 <Avatar />
               </div>
             </div>
