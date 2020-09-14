@@ -45,7 +45,7 @@ const Quotes = () => {
           <Link to="/blog" className="mx-4 md:mx-8">
             Blog
           </Link>
-          <Link to="/Projects" className="mx-4 md:mx-8">
+          <Link to="/projects" className="mx-4 md:mx-8">
             Projects
           </Link>
         </div>

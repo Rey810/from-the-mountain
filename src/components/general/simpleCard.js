@@ -16,11 +16,11 @@ const SimpleCard = props => {
     <div
       className={`${
         perfectSquare ? "absolute w-full h-full" : null
-      } service-card card-color mx-2 mb-8 px-${padding} py-${padding} w-5/6 flex-grow-0 flex-shrink-0 flex-basis-auto rounded-md shadow-md md:mx-0 md:mb-0 md:w-1/1 md:shadow-lg`}
+      } service-card card-color mx-2 mb-8 ${padding} w-5/6 rounded-md shadow-md md:mx-0 md:mb-0 md:w-1/1 md:shadow-lg`}
     >
       {icon ? (
         <div
-          className={`icon-container p-4 w-12 h-12 inline-block rounded-full flex items-center justify-center`}
+          className={`icon-container p-4 w-12 h-12 rounded-full flex items-center justify-center`}
         >
           <FontAwesomeIcon
             icon={icon}

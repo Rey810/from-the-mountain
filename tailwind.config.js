@@ -40,6 +40,7 @@ module.exports = {
         "1/3": "33.33333333%",
         "2/5": "40%",
         "1/2": "50%",
+        "6/10": "60%",
         "2/3": "66.666666667%",
         "3/4": "75%",
         "4/5": "80%",
@@ -109,8 +110,8 @@ module.exports = {
   },
 
   variants: {
-    opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-    scale: ['responsive', 'hover', 'focus', 'active', 'group-hover']
+    opacity: ["responsive", "hover", "focus", "active", "group-hover"],
+    scale: ["responsive", "hover", "focus", "active", "group-hover"],
   },
   plugins: [],
   experimental: {

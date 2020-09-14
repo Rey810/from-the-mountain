@@ -47,8 +47,8 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   if (project.skillsUtilized) {
     skillCards = (
       <ContentWrapper
-        laptopHeight="min-h-8/10 max-h-8/10"
-        desktopHeight="min-h-8/10 max-h-8/10"
+        laptopHeight="lg:min-h-8/10 lg:max-h-8/10"
+        desktopHeight="xl:min-h-8/10 xl:max-h-8/10"
         extraClasses="md:block lg:grid"
       >
         <h2 className="font-semibold mb-8 w-4/5 mx-auto text-2xl flex items-center justify-center col-start-1 col-end-5 sm:w-1/1 sm:col-end-13 md:mb-16 lg:text-5xl lg:mb-0">
@@ -57,7 +57,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         <div className="serviceCards-container col-start-1 col-end-13 row-start-2 row-end-12 flex flex-col px-6 items-center scrolling-touch md:flex-row md:flex-wrap md:px-0 lg:grid lg:grid-cols-3 lg:gap-8 xl:mx-auto xl:w-5/6 xl:gap-12 xl:mr-auto">
           {project.skillsUtilized.map((skill, index) => (
             <div
-              className={`project-square-wrapper relative w-1/1 pb-1/1 mb-12 md:mb-16 md:w-2/5 md:pb-2/5 lg:w-9/10 lg:pb-9/10 mx-auto shadow-md ${
+              className={`project-square-wrapper relative w-1/1 pb-9/11 sm:pb-1/1 mb-12 md:mb-16 md:w-2/5 md:pb-2/5 lg:w-9/10 lg:pb-9/10 mx-auto shadow-md ${
                 index === 1 ? "lg:transform lg:scale-125" : null
               }`}
             >
@@ -66,7 +66,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
                 description={skill.description}
                 centerHeader
                 descriptionSize="text-sm"
-                padding="6"
+                padding="p-6"
                 perfectSquare
               />
             </div>
@@ -88,10 +88,18 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
           />
         </div>
       )
-    }
-
-    if (image.fullWidthLongScroll) {
-      return <Img fluid={image.src.childImageSharp.fluid} />
+    } else if (image.fullWidthLongScroll && image.srcSet) {
+      // DESKTOP and MOBILE images needed
+      // srcSet is defined in images array
+      console.dir(image)
+      let sources = [
+        image.srcSet[0]["mobile"].src.childImageSharp.fluid,
+        {
+          ...image.srcSet[0]["desktop"].src.childImageSharp.fluid,
+          media: `(min-width: 768px)`,
+        },
+      ]
+      return <Img fluid={sources} />
     } else {
       return <FullWidthImageWrapper image={image.src} />
     }
@@ -99,10 +107,9 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   return (
     <>
       <ContentWrapper
-        mobileHeight="min-h-9/10 max-h-9/10"
-        tabletHeight="min-h-6/10 max-h-6/10"
-        laptopHeight="min-h-8/10 max-h-8/10"
-        desktopHeight="min-h-8/10 max-h-8/10"
+        tabletHeight="md:min-h-6/10 md:max-h-6/10"
+        laptopHeight="lg:min-h-8/10 lg:max-h-8/10"
+        desktopHeight="xl:min-h-7/10 xl:max-h-7/10"
         extraClasses="mt-0"
       >
         <div className="back-button flex flex-col justify-center text-xs w-mc font-semibold sm:col-start-1 sm:mt-0 sm:col-end-4 sm:w-full lg:col-end-3 xl:w-3/4">
@@ -161,11 +168,10 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
       </ContentWrapper>
       <FullWidthImageWrapper image={project.image} />
       <ContentWrapper
-        mobileHeight="min-h-7/10 max-h-7/10"
-        tabletHeight="min-h-5/10 max-h-5/10"
-        laptopHeight="min-h-6/10 max-h-6/10"
-        desktopHeight="min-h-4/10 max-h-4/10"
-        extraClasses="h-full w-4/5 mx-auto"
+        tabletHeight="md:min-h-5/10 md:max-h-5/10"
+        laptopHeight="lg:min-h-6/10 lg:max-h-6/10"
+        desktopHeight="xl:min-h-4/10 xl:max-h-4/10"
+        extraClasses="w-4/5 mx-auto flex flex-col justify-center"
       >
         <div className="first-block sm:w-1/1 row-start-1 row-end-13 col-start-1 col-end-5 flex flex-col justify-center ">
           <div className="quote">
@@ -242,6 +248,26 @@ export const projectQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        srcSet {
+          mobile {
+            src {
+              childImageSharp {
+                fluid(maxWidth: 2000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          desktop {
+            src {
+              childImageSharp {
+                fluid(maxWidth: 2000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }

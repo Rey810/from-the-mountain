@@ -163,8 +163,19 @@
     "codeURL": "https://github.com/Rey810/Root",
     "image": "root.png",
     "images": [
-      { "src": "root__long-browser.png", "long": false, "fullWidthLongScroll": true },
-      { "src": "root__browser.png", "long": false }
+      {
+        "srcSet": [
+          {
+            "mobile": {
+              "src": "root__long-browser-MOBILE.png"
+            },
+            "desktop": {
+              "src": "root__long-browser.png"
+            }
+          }
+        ],
+        "fullWidthLongScroll": true
+      }
     ]
   },
   {
@@ -201,7 +212,21 @@
     "siteURL": null,
     "codeURL": null,
     "image": "meditation.jpg",
-    "images": [{ "src": "meditation__long-browser.png", "fullWidthLongScroll": true }]
+    "images": [
+      {
+        "srcSet": [
+          {
+            "mobile": {
+              "src": "meditation__long-browser-MOBILE.png"
+            },
+            "desktop": {
+              "src": "meditation__long-browser.png"
+            }
+          }
+        ],
+        "fullWidthLongScroll": true
+      }
+    ]
   },
   {
     "projectType": "app",
@@ -224,7 +249,7 @@
       },
       {
         "name": "Continuous Deployment",
-        "description": "Netlify was hooked up with Github allowing for rapid deployment on Netlfy's servers every time I pushed new code up to the apps's repository"
+        "description": "Netlify was hooked up with Github allowing for rapid deployment on Netlfy's servers every time I pushed new code up to the apps's repository. This allowed for hotfixes pushed to Github to reflect almost instantaneously in the production environment."
       }
     ],
     "techStack": [

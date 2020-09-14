@@ -14,14 +14,17 @@ const personal = () => {
           <h2 className="personal-title">Do You Want a Perfect Website?</h2>
           <div className="personal-description-container">
             <p className="personal-description pb-4 ">
-              I build sites with amazing looks and fast load-times that do one thing: <br/><strong>Get You Results.</strong>
+              I build sites with amazing looks and fast load-times that do one
+              thing: <br />
+              <strong>Get You Results.</strong>
             </p>
             <p className="personal-description pb-4">
               Whatever you have in mind, you should know - I build with a
-              goal-oriented eye for precision. 
+              goal-oriented eye for precision.
             </p>
             <p className="personal-description">
-              When we're done, you will have a site that gets the job done in style.
+              When we're done, you will have a site that gets the job done{" "}
+              <em>in style.</em>
             </p>
             {/* <Link
           to="/blog"
