@@ -53,6 +53,10 @@ body {
   @apply leading-none;
 }
 
+.landing-children h2 {
+  @apply font-bold;
+}
+
 /* //////////////// */
 /* BASE FONT SIZES */
 /* ///////////// */
