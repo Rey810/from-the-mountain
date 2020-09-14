@@ -223,7 +223,7 @@ a {
   @apply mx-auto md:w-3/4;
 }
 
-.all-benefits-container ul {
+.all-benefits-container div {
   @apply md:grid md:grid-cols-2 md:grid-cols-3;
   @apply md:gap-x-24 md:gap-y-24;
 }

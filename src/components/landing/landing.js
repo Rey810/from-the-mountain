@@ -97,6 +97,7 @@ const Landing = () => {
               } landing-icons-container flex flex-col justify-center ml-10 md:ml-18`}
             >
               <a
+                title="Find Rey on Twitter"
                 aria-label="Find Rey on Twitter"
                 className="landing-icons icon px-4"
                 href="https://twitter.com/ReyTheDev"
@@ -110,6 +111,7 @@ const Landing = () => {
               </a>
               <a
                 aria-label="See Rey's Code on Github"
+                title="See Rey's Code on Github"
                 className="landing-icons icon px-4"
                 href="https://github.com/Rey810"
                 target="_blank"
@@ -122,6 +124,7 @@ const Landing = () => {
               </a>
               <a
                 aria-label="Find Rey on LinkedIn"
+                title="Find Rey on LinkedIn"
                 className="landing-icons icon px-4"
                 href="https://www.linkedin.com/in/rey810/"
                 target="_blank"
