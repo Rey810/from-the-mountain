@@ -8,7 +8,7 @@ const BackButton = ({ children, to, theme }) => {
   let colorTheme = theme === "dark" ? classes.Dark : classes.Light
   return (
     <div className={`${classes.BackButton}`}>
-      <Link to={`${to}`} className={` ${colorTheme} group pr-4 py-4`}>
+      <Link to={`${to}`} className={`${colorTheme} group pr-4 py-4`}>
         <FontAwesomeIcon
           icon={faArrowLeft}
           size="lg"

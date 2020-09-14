@@ -7,9 +7,9 @@
 }
 
 .Dark {
-  color: var(--color-60-medium-dark);
+  color: var(--color-60-medium-dark) !important;
 }
 
 .Light {
-  color: var(--color-60-light);
+  color: var(--color-60-light) !important;
 }
