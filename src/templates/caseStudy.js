@@ -1,11 +1,12 @@
 import React from "react"
 import ContentWrapper from "../components/containers/contentWrapper"
 import FullWidthImageWrapper from "../components/containers/fullWidthImageContainer"
-import FeatherArrowRightCircle from "../assets/icons/featherArrowRightCircle"
 import Launch from "../assets/icons/launch"
 import Code from "../assets/icons/code"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/general/seo"
+import Header from "../components/general/header"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 import SimpleCard from "../components/general/simpleCard"
@@ -104,8 +105,24 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
       return <FullWidthImageWrapper image={image.src} />
     }
   })
+
+  console.log("CaseStudy -> project.image", project.image)
+
+  //SEO info for projects
+  let SEOinfo = {
+    title: project.title,
+    image: project.image.childImageSharp.resize,
+    description: project.description,
+    keywords: project.skillsUtilized.reduce((prev, skill, index) => {
+      if (index === 0) return skill.name
+      return `${prev} ${skill.name}`
+    }, ""),
+    imageAltDescr: project.imageURL,
+    pathname: project.linkName,
+  }
   return (
     <>
+      <SEO {...SEOinfo} />
       <ContentWrapper
         tabletHeight="md:min-h-6/10 md:max-h-6/10"
         laptopHeight="lg:min-h-8/10 lg:max-h-8/10"
@@ -240,6 +257,13 @@ export const projectQuery = graphql`
         childImageSharp {
           fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
+          }
+        }
+        childImageSharp {
+          resize(width: 1200) {
+            src
+            height
+            width
           }
         }
       }

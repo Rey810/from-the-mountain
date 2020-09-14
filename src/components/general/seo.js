@@ -41,6 +41,8 @@ function SEO({
     `
   )
 
+  console.dir(image)
+
   // general meta
   const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
@@ -52,6 +54,7 @@ function SEO({
   const ogType = type ? type : "website"
   // image meta
   const metaImage = image || placeholderImage.childImageSharp.resize
+  console.log("metaImage", metaImage)
   const imagePath =
     image && image.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
@@ -143,7 +146,7 @@ function SEO({
         )
         .concat(meta)}
     >
-    <script>
+      <script>
         var clicky_site_ids = clicky_site_ids || [];
         clicky_site_ids.push(101262924);
       </script>
