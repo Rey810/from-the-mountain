@@ -232,6 +232,10 @@ a {
   @apply flex flex-col justify-center items-center mx-auto my-24 md:mt-0 md:mb-12 md:mb-0;
 }
 
+.benefit-item li {
+  @apply list-none;
+}
+
 .benefit-icon {
   @apply p-4 rounded-full flex justify-center items-center shadow-md;
   height: 5rem;

@@ -63,14 +63,7 @@ module.exports = {
         icon: `src/images/avatar.png`,
       },
     },
-    // "gatsby-plugin-dark-mode",
     `gatsby-plugin-postcss`,
-    // {
-    //   resolve: `gatsby-plugin-clicky`,
-    //   options: {
-    //     siteId: '101262924',
-    //   },
-    // },
     `gatsby-plugin-twitter`,
     {
       resolve: "gatsby-source-filesystem",
@@ -87,12 +80,6 @@ module.exports = {
         path: `./src/data/projects`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-fullstory`,
-    //   options: {
-    //     fs_org: "W6GPY",
-    //   },
-    // },
     {
       resolve: "gatsby-plugin-netlify",
       options: {
@@ -104,7 +91,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/blog/*`],
+        precachePages: [`/`, `/blog/*`, `/projects/*`],
       },
     },
     `gatsby-plugin-sitemap`,
