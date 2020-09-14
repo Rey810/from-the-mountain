@@ -3,7 +3,8 @@ import SubscriptionForm from "../../blog/subscribe/subscriptionForm"
 import CheckCricle from "../../../assets/icons/checkCircle"
 import classes from "./ReportForm.module.css"
 import Close from "../close"
-export default function reportForm(props) {
+
+export default function ReportForm(props) {
   return (
     <section
       className={`${classes.ReportForm} ${

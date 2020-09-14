@@ -1,6 +1,6 @@
 import React from "react"
 import PaddingContainer from "../containers/paddingContainer"
-import ReportForm from "../general/ReportForm/reportForm"
+import ReportForm from "../general/ReportForm/ReportForm"
 
 const siteReview = () => {
   return (
