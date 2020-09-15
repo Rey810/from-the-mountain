@@ -101,7 +101,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
           media: `(min-width: 768px)`,
         },
       ]
-      return <Img fluid={sources} />
+      return <Img fluid={sources} class name="h-full" />
     } else {
       return <FullWidthImageWrapper image={image.src} />
     }
