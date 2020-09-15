@@ -12,7 +12,6 @@ const Benefits = () => {
     <PaddingContainer type="benefits-container" X Y>
       <h2 className="benefits-header text-center">Ways you'll benefit</h2>
       <section className="all-benefits-container">
-        <div>
           <div className="benefit-item">
             <div className="benefit-icon">
               <ThumbUp />
@@ -57,7 +56,6 @@ const Benefits = () => {
               Build trust with your ideal clients
             </li>
           </div>
-        </div>
       </section>
     </PaddingContainer>
   )
