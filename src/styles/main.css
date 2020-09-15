@@ -53,13 +53,17 @@ body {
   @apply leading-none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oxanium";
+}
+
 .landing-children h2 {
   @apply font-bold;
 }
 
-/* //////////////// */
-/* BASE FONT SIZES */
-/* ///////////// */
 .landing-title {
   @apply text-6xl md:text-7xl font-normal;
 }
@@ -76,11 +80,8 @@ body {
   @apply text-xl md:text-2xl;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Oxanium";
+.free-ribbon .price {
+  text-decoration-style: wavy;
 }
 
 /* Section Headers */

@@ -78,8 +78,11 @@ const Landing = () => {
                 className="btn landing-cta-1"
                 onClick={modalToggleHandler}
               >
-                <div className="free-ribbon absolute py-1 px-4 rounded-md text-sm">
-                  Free
+                <div className="free-ribbon absolute py-1 px-4 rounded-md flex items-center">
+                  <span className="price line-through text-base mr-1 lg:mr-2">
+                    $25
+                  </span>
+                  <span className="italic font-semibold text-sm">FREE</span>
                 </div>
                 Get Site Review
               </button>

@@ -46,7 +46,8 @@ library.add(
 // fixes huge Font Awesome icon on load by inlining CSS
 config.autoAddCss = false
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  console.dir(data)
   return (
     <Layout usesPortfolioHeader={true}>
       <SEO title="Web Developer" />
@@ -55,9 +56,11 @@ const IndexPage = () => {
         <Personal />
         <Services />
         <Benefits />
-        <Promise />
       </div>
       <Projects />
+      <div className="landing-children">
+        <Promise />
+      </div>
       <div className="landing-children">
         <SiteReview />
       </div>

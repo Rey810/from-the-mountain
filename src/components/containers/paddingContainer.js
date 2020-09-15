@@ -11,7 +11,7 @@ const PaddingContainer = props => {
   }
 
   if (props.Y) {
-    paddingY = "pt-16 pb-20 md:pt-32 md:pb-40"
+    paddingY = "pt-16 pb-20 lg:pt-32 lg:pb-40"
     padding.push(paddingY)
   }
 

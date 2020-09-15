@@ -13,6 +13,7 @@
   --cta-color: rgb(24, 206, 176);
   --cta-hover-color: hsl(192, 50.7%, 40.5%); */
   --color-60-lighter: rgb(255, 255, 255);
+  --color-60-transp:  rgba(255, 255, 255, 0.75);
   --color-60-light: hsl(124, 80%, 96%);
   --color-60-medium-light: #3a3c4b;
   --color-60-medium: hsl(232, 17%, 17%);
@@ -45,7 +46,7 @@
   /* Project Card Sec CTA */
   --project-button-sec-bg-color: var(--color-60-medium);
   --project-button-sec-bg-color-active: var(--color-60-medium-dark);
-  --project-button-sec-text-color: rgba(255, 255, 255, 0.75);
+  --project-button-sec-text-color: var(--color-60-transp);
 }
 /*////////////////*/
 /* FOCUS COLOURS */
@@ -117,29 +118,6 @@ strong.landing {
   opacity: 1;
 }
 
-/* DARKEN BG CONTAINER */
-.color-overlay-container {
-  background-color: var(--initial-color-overlay);
-  filter: blur(0px);
-  transition: background-color 2s ease-out;
-}
-
-.color-overlay-container.saturate {
-  background-color: var(--mid-colour-overlay);
-  transition: background-color 1s linear;
-}
-
-/*BLUR BG*/
-.blur {
-  filter: blur(3px);
-  transition: filter 2s ease-out;
-}
-
-/* DARKEN BG CONTAINER when contact button is in view*/
-.darkenContact {
-  background-color: var(--final-colour-overlay) !important;
-}
-
 /* HEADER */
 header {
   box-shadow: 0px 2px 10px rgba(236, 78, 32, 0.05);
@@ -155,8 +133,9 @@ header {
   position: relative;
 }
 
-.goals {
-  color: var(--color-30-1);
+.free-ribbon .price {
+  color: var(--color-60-transp);
+  text-decoration-color: var(--color-60-light);
 }
 /*/////////////////////////*/
 /* CALL TO ACTION BUTTONS */
