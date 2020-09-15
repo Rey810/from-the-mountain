@@ -64,21 +64,20 @@ const SubscriptionForm = props => {
   if (props.audit) {
     additionalInputs = (
       <>
-        <label htmlFor="site">Site URL</label>
+        <label htmlFor="site">Site URL (optional)</label>
         <input
           className="subscribe-input text-base bg-white rounded border border-gray-400 px-4 py-2 mb-4 w-1/1"
           type="text"
           aria-label="Your Site URL"
           name="fields[site_url]"
           placeholder="eg. www.mysite.com"
-          required
         />
       </>
     )
   }
 
   let successMessage = props.audit
-    ? "Success! Keep an eye on your inbox for your report."
+    ? "Success! Keep an eye on your inbox for an email from me."
     : "Success! Please confirm your subscription in your email."
 
   return (
