@@ -107,8 +107,6 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
     }
   })
 
-  console.log("CaseStudy -> project.image", project.image)
-
   //SEO info for projects
   let SEOinfo = {
     title: project.title,

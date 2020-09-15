@@ -14,7 +14,7 @@ const BackButton = ({ children, to, theme }) => {
           size="lg"
           className="mr-4 transition transform group-hover:scale-125 duration-150 ease-in "
         />{" "}
-        <span className="inline-block text-lg opacity-0 transition duration-150 ease-in group-hover:opacity-100">
+        <span className="inline-block text-lg opacity-0 transition duration-150 ease-in group-hover:opacity-90">
           {children}
         </span>
       </Link>

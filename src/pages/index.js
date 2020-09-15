@@ -56,9 +56,11 @@ const IndexPage = () => {
         <Services />
         <Benefits />
         <Promise />
-        <SiteReview />
       </div>
       <Projects />
+      <div className="landing-children">
+        <SiteReview />
+      </div>
       <div className="landing-children">
         <FAQ />
         <Contact />

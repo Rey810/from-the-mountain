@@ -16,9 +16,7 @@ const BlogPage = ({ data }) => (
     <div className="sticky-footer-wrapper">
       <div className="blog-content">
         <section class="px-4 mt-10">
-          <h1 className="pt-12 text-5xl font-bold md:text-center">
-            Latest Posts
-          </h1>
+          <h1 className="pt-12 text-5xl font-bold text-center">Latest Posts</h1>
           <div class="py-12">
             <div class="flex flex-wrap">
               {data.allMarkdownRemark.edges.map(post => (

@@ -56,7 +56,7 @@ export default function Template({ data, location }) {
               </div>
             </div>
           </div>
-          <div className="twitter-follow-button-container pb-4">
+          <div className="twitter-follow-button-container pb-4 xl:pb-8">
             <a
               id="alwaysVisible"
               href="https://twitter.com/ReyTheDev?ref_src=twsrc%5Etfw"

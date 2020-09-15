@@ -242,6 +242,9 @@ header {
 /*////////*/
 /* ICONS */
 /*//////*/
+.icon {
+  transition: all ease-in 0.15s;
+}
 .icon:hover {
   opacity: 1;
   transform: scale3d(1.1, 1.1, 1);

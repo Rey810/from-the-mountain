@@ -37,7 +37,7 @@ export default function ReportForm(props) {
             }`}
           >
             {props.inLine
-              ? "Get a free technical report"
+              ? "Book your free technical report"
               : "Get Your Site Report"}
           </h3>
         </div>
@@ -45,8 +45,8 @@ export default function ReportForm(props) {
           {props.inLine
             ? "Let me review your existing site before you commit to working with me on an awesome new one. "
             : null}
-          In your FREE report, you will understand exactly where your site can
-          improve:
+          In your FREE site analysis, you will understand exactly where your
+          site can improve:
         </p>
         <div className="report-container mt-4 grid grid-cols-3 md:grid-cols-2 gap-y-8">
           <div className="check-container flex items-center flex-col">
@@ -82,8 +82,10 @@ export default function ReportForm(props) {
       >
         <SubscriptionForm tags={["potential client"]} audit />
         <p className="form-footer-text text-xs">
-          Report will be in your inbox real soon! <br />
-          Please allow 24hrs as I'm crazy about attention to detail.
+          I'll get back to you with a few questions to build the best report for
+          you.
+          <br />
+          Keep an eye on your email (and spam if we haven't chatted in the past)
         </p>
       </div>
     </section>
