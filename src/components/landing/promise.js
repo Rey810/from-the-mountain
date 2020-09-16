@@ -9,7 +9,7 @@ const promise = props => {
       <h2 className="promises-header text-center">My Promises</h2>
       <section className="all-promises-container">
         <div className="first-promise">
-          <div className="img-wrapper">
+          <div className="img-wrapper w-1/1">
             <Img fluid={webMan.childImageSharp.fluid} className="lg:w-4/5" />
           </div>
           <h3>Fast products that work</h3>
