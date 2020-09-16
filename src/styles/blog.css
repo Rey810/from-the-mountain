@@ -76,7 +76,8 @@
 
 .blog p,
 .blog li {
-  @apply text-base;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .blog p {
@@ -155,11 +156,12 @@
   color: var(--blog-text-color-lighter);
   @apply underline;
   text-decoration-style: wavy;
+  text-decoration-width: 2px;
   text-decoration-color: var(--link-color);
 }
 
 .blog strong {
-  @apply font-semibold;
+  @apply font-medium;
 }
 
 .blog a:hover {

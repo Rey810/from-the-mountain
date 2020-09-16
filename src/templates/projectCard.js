@@ -29,7 +29,7 @@ const projectCard = props => {
       <a
         href={codeURL}
         className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around mt-4"
-        rel="noopener noreferer"
+        rel="noopener noreferrer"
         target="_blank"
       >
         See the Code{" "}
@@ -50,7 +50,7 @@ const projectCard = props => {
       <a
         href={caseStudyURL}
         target="_blank"
-        rel="noopener noreferer"
+        rel="noopener noreferrer"
         // passes project info to link as prop available as location.state in linked page
         className="project-site-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around"
       >
@@ -94,7 +94,7 @@ const projectCard = props => {
                       key={uuid()}
                       href={tech.url}
                       className="tech-link text-xs md:text-sm border-2 rounded-md mb-2 mr-2"
-                      rel="noopener noreferer"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
                       {tech.name}
