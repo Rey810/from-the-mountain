@@ -46,20 +46,31 @@ library.add(
 // fixes huge Font Awesome icon on load by inlining CSS
 config.autoAddCss = false
 
-const IndexPage = ({ data }) => {
-  console.dir(data)
+const IndexPage = ({
+  data: {
+    allIllustrationsDataJson: { nodes },
+  },
+}) => {
+  console.log({ nodes })
+
+  let images = nodes.reduce((result, obj) => {
+    result[obj.name] = obj.src
+    return result
+  }, {})
+
+  console.log("imges Object", images)
   return (
     <Layout usesPortfolioHeader={true}>
       <SEO title="Web Developer" />
       <div className="landing-children">
-        <Landing />
-        <Personal />
-        <Services />
+        <Landing {...images} />
+        <Personal {...images} />
+        <Services {...images} />
         <Benefits />
       </div>
       <Projects />
       <div className="landing-children">
-        <Promise />
+        <Promise {...images} />
       </div>
       <div className="landing-children">
         <SiteReview />
@@ -74,3 +85,20 @@ const IndexPage = ({ data }) => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  {
+    allIllustrationsDataJson {
+      nodes {
+        name
+        src {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

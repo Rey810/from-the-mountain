@@ -1,0 +1,34 @@
+[
+  {
+    "name": "heroMan",
+    "src": "heroMan.png"
+  },
+  {
+    "name": "teaching",
+    "src": "teaching.png"
+  },
+  {
+    "name": "graphsWoman",
+    "src": "graphsWoman.png"
+  },
+  {
+    "name": "happyWoman",
+    "src": "happyWoman.png"
+  },
+  {
+    "name": "moneyWoman",
+    "src": "moneyWoman.png"
+  },
+  {
+    "name": "robotWoman",
+    "src": "robotWoman.png"
+  },
+  {
+    "name": "meditationWoman",
+    "src": "meditationWoman.png"
+  },
+  {
+    "name": "webMan",
+    "src": "webMan.png"
+  }
+]

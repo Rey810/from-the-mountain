@@ -13,7 +13,7 @@
   --cta-color: rgb(24, 206, 176);
   --cta-hover-color: hsl(192, 50.7%, 40.5%); */
   --color-60-lighter: rgb(255, 255, 255);
-  --color-60-transp:  rgba(255, 255, 255, 0.75);
+  --color-60-transp: rgba(255, 255, 255, 0.75);
   --color-60-light: hsl(124, 80%, 96%);
   --color-60-medium-light: #3a3c4b;
   --color-60-medium: hsl(232, 17%, 17%);
@@ -257,6 +257,13 @@ header {
 /* BENEFITS CONTAINER */
 /*///////////////////*/
 .benefits-container {
+  background-color: var(--color-60-medium-dark);
+}
+
+/*/////////////////////*/
+/* PROMISES CONTAINER */
+/*///////////////////*/
+.promises-container {
   background-color: var(--color-60-medium-dark);
 }
 

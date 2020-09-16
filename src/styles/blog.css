@@ -152,12 +152,18 @@
   color: var(--blog-text-color);
 }
 .blog a {
-  color: var(--link-color);
-  @apply font-medium;
+  color: var(--blog-text-color-lighter);
+  @apply underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--link-color);
+}
+
+.blog strong {
+  @apply font-semibold;
 }
 
 .blog a:hover {
-  text-decoration: underline;
+  color: var(--link-color);
 }
 
 .share-buttons-wrapper {
@@ -183,7 +189,7 @@
 }
 
 .blog blockquote a {
-  color: var(--block-text-link-color);
+  /* color: var(--block-text-link-color); */
 }
 
 .subscribe-input {

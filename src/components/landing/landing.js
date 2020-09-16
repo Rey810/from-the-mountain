@@ -5,14 +5,13 @@
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import FeatherArrowRightCircle from "../../assets/icons/featherArrowRightCircle"
-import HeroMan from "../../assets/illustrations/heroMan"
 import Avatar from "../images/avatar"
-// import Background from "../images/background"
 import { Link } from "gatsby"
 import Modal from "../general/Modal/Modal"
 import ReportForm from "../general/ReportForm/ReportForm"
+import Img from "gatsby-image"
 
-const Landing = () => {
+const Landing = props => {
   const [animated, setAnimated] = useState(false)
   const [showModal, setShowModal] = useState(false)
 
@@ -105,7 +104,7 @@ const Landing = () => {
                 className="landing-icons icon px-4"
                 href="https://twitter.com/ReyTheDev"
                 target="_blank"
-                rel="noopener norefferer"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   title="Find Rey on Twitter"
@@ -118,7 +117,7 @@ const Landing = () => {
                 className="landing-icons icon px-4"
                 href="https://github.com/Rey810"
                 target="_blank"
-                rel="noopener norefferer"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   title="See Rey's Code on Github"
@@ -131,7 +130,7 @@ const Landing = () => {
                 className="landing-icons icon px-4"
                 href="https://www.linkedin.com/in/rey810/"
                 target="_blank"
-                rel="noopener norefferer"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   title="Find Rey on LinkedIn"
@@ -145,9 +144,9 @@ const Landing = () => {
       <div
         className={`opacity-0 ${
           animated ? "fadeIn-6th" : ""
-        } img-wrapper hidden md:flex md:justify-center md:items-center `}
+        } img-wrapper hidden lg:block lg:w-2/5`}
       >
-        <HeroMan />
+        <Img fluid={props.heroMan.childImageSharp.fluid} />
       </div>
     </section>
   )

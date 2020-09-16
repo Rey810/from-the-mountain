@@ -80,10 +80,6 @@ h4 {
   @apply text-xl md:text-2xl;
 }
 
-.free-ribbon .price {
-  text-decoration-style: wavy;
-}
-
 /* Section Headers */
 .landing-children h2 {
   @apply md:text-center;
@@ -173,7 +169,7 @@ a {
 /* SPECIFIC SECTIONS */
 /*//////////////////*/
 #What-I-Do .text-wrapper {
-  @apply h-screen md:h-auto;
+  @apply min-h-screen;
 }
 
 .personal-container {
@@ -207,12 +203,9 @@ a {
   @apply md:mt-24;
 }
 
-.service-item p {
-}
-
 .service-text__left,
 .service-text__right {
-  @apply flex flex-col justify-center;
+  @apply flex flex-col justify-center items-center;
 }
 
 .mobile-reverse {
@@ -268,7 +261,7 @@ a {
 
 /* Promises */
 .all-promises-container {
-  @apply w-3/4 mx-auto md:grid md:grid-cols-2 gap-32;
+  @apply md:w-3/4 mx-auto md:grid md:grid-cols-2 gap-32;
 }
 
 @screen xl {

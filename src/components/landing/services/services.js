@@ -1,11 +1,9 @@
 import React from "react"
 import PaddingContainer from "../../containers/paddingContainer"
-import CelebrateWoman from "../../../assets/illustrations/celebrateWoman"
-import GraphsWoman from "../../../assets/illustrations/graphsWoman"
-import MoneyWoman from "../../../assets/illustrations/moneyWoman"
-import RobotWoman from "../../../assets/illustrations/robotWoman"
+import Img from "gatsby-image"
 
-const Services = () => {
+const Services = props => {
+  const { graphsWoman, happyWoman, moneyWoman, robotWoman } = props
   return (
     <PaddingContainer id="services" type="service-container" X Y>
       <h2 className="text-center">Ways I can help you</h2>
@@ -13,7 +11,7 @@ const Services = () => {
       <section className="service-items-container">
         <div className="service-item">
           <div className="service-text__left">
-            <div className="service-text-wrapper">
+            <div className="service-text-wrapper lg:w-4/5">
               <h3>Own a Website that Works</h3>
               <p>
                 You want a website. It must look great and you want it to
@@ -23,16 +21,22 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="service-img">
-            <GraphsWoman />
+          <div className="service-img flex items-center justify-center">
+            <Img
+              fluid={graphsWoman.childImageSharp.fluid}
+              className="w-1/1 md:w-3/4"
+            />
           </div>
         </div>
         <div className="service-item mobile-reverse">
-          <div className="service-img">
-            <CelebrateWoman />
+          <div className="service-img flex items-center justify-center">
+            <Img
+              fluid={happyWoman.childImageSharp.fluid}
+              className="w-1/1 md:w-3/4"
+            />
           </div>
           <div className="service-text__right">
-            <div className="service-text-wrapper">
+            <div className="service-text-wrapper lg:w-4/5">
               <h3>Become Famous with SEO</h3>
               <p>
                 An impressive Google ranking means more people see your
@@ -45,7 +49,7 @@ const Services = () => {
         </div>
         <div className="service-item">
           <div className="service-text__left">
-            <div className="service-text-wrapper">
+            <div className="service-text-wrapper lg:w-4/5">
               <h3>Control the Features</h3>
               <p>
                 Do you feel restricted by all the drag-and-drop web builders out
@@ -55,15 +59,21 @@ const Services = () => {
             </div>
           </div>
           <div className="service-img">
-            <RobotWoman />
+            <Img
+              fluid={robotWoman.childImageSharp.fluid}
+              className="w-1/1 md:w-3/4"
+            />
           </div>
         </div>
         <div className="service-item mobile-reverse">
-          <div className="service-img">
-            <MoneyWoman />
+          <div className="service-img flex items-center justify-center">
+            <Img
+              fluid={moneyWoman.childImageSharp.fluid}
+              className="w-1/1 md:w-3/4"
+            />
           </div>
           <div className="service-text__right">
-            <div className="service-text-wrapper">
+            <div className="service-text-wrapper lg:w-4/5">
               <h3>Sell Your Stuff Online</h3>
               <p>
                 You have an idea. You want to turn it into an online business

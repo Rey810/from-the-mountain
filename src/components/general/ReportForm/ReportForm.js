@@ -21,24 +21,9 @@ export default function ReportForm(props) {
           props.inLine ? "pb-8" : "p-8"
         } -mb-px flex flex-col justify-between w-full sm:w-1/2 sm:mb-0 sm:-mr-px mt-0`}
       >
-        <div
-          className={`header-container hidden md:block ${
-            props.inLine ? "md:hidden" : "md:flex md:justify-center"
-          }`}
-        >
-          <h3 className="text-2xl font-medium md:pr-2">It's Free.</h3>
-          <h3 className="text-2xl font-medium md:pr-2">It's Fast.</h3>
-          <h3 className="text-2xl font-medium md:pr-2">It's Yours.</h3>
-        </div>
         <div className="header-container">
-          <h3
-            className={`text-2xl font-medium ${
-              props.inLine ? "md:block" : "md:hidden"
-            }`}
-          >
-            {props.inLine
-              ? "Book Your Free Technical Report"
-              : "Get Your Site Report"}
+          <h3 className="text-2xl font-medium">
+            Book Your Free Technical Report
           </h3>
         </div>
         <p className="text-sm mt-6 mb-3 xl:my-3 xl:w-3/4">
@@ -82,7 +67,8 @@ export default function ReportForm(props) {
       >
         <SubscriptionForm tags={["potential client"]} audit />
         <p className="form-footer-text text-xs">
-          I'll be sending you a few questions to build your best report. Keep an eye on your email (and spam if we haven't chatted in the past)
+          I'll be sending you a few questions to build your best report. Keep an
+          eye on your email (and spam if we haven't chatted in the past)
         </p>
       </div>
     </section>

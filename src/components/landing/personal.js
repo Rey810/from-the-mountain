@@ -1,13 +1,13 @@
 // import { Link } from "gatsby"
 import React from "react"
-import QuestionMan from "../../assets/illustrations/questionMan"
 import PaddingContainer from "../containers/paddingContainer"
+import Img from "gatsby-image"
 
-const personal = () => {
+const personal = props => {
   return (
     <PaddingContainer type="personal-container" X Y>
-      <div className="img-wrapper flex justify-center items-center">
-        <QuestionMan />
+      <div className="flex items-center justify-center">
+        <Img fluid={props.teaching.childImageSharp.fluid} className="w-1/1 md:w-3/4" />
       </div>
       <div className="text-wrapper flex justify-center items-center">
         <div className="personal-title-container">

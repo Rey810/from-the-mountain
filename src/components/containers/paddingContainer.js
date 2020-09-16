@@ -6,7 +6,7 @@ const PaddingContainer = props => {
 
   let padding = []
   if (props.X) {
-    paddingX = "px-4 md:px-24"
+    paddingX = "px-4 md:px-24 lg:px-16"
     padding.push(paddingX)
   }
 

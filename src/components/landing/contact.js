@@ -1,6 +1,5 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import PaddingContainer from "../containers/paddingContainer"
 
 const contact = () => {
   return (
@@ -13,6 +12,7 @@ const contact = () => {
           <a
             href="mailto:hi@fromthemountain.co.za?subject=Let's%20Connect!&body=Hi%20Rey!%20:)"
             className="landing-cta-1 my-2 rounded-md shadow-md font-semibold inline-block py-4 px-12"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Chat with Rey
@@ -28,6 +28,7 @@ const contact = () => {
             className="landing-icons icon px-4"
             href="https://twitter.com/ReyTheDev"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={["fab", "twitter"]} />
           </a>
@@ -35,6 +36,7 @@ const contact = () => {
             className="landing-icons icon px-4"
             href="https://github.com/Rey810"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
@@ -42,6 +44,7 @@ const contact = () => {
             className="landing-icons icon px-4"
             href="https://www.linkedin.com/in/rey810/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>

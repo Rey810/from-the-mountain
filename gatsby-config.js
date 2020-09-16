@@ -13,6 +13,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-catch-links",
     {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        useMozJpeg: true,
+        stripMetadata: true,
+        defaultQuality: 50,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
@@ -32,7 +41,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -41,14 +49,6 @@ module.exports = {
           "gatsby-remark-a11y-emoji",
           `gatsby-remark-reading-time`,
         ],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sharp",
-      options: {
-        useMozJpeg: true,
-        stripMetadata: true,
-        defaultQuality: 50,
       },
     },
     {
@@ -68,6 +68,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: { path: "src/data" },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: { path: "src/assets/illustrations" },
     },
     {
       resolve: "gatsby-transformer-yaml",
