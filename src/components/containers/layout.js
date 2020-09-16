@@ -16,7 +16,7 @@ const Layout = ({
         isPortfolioHeader={usesPortfolioHeader}
         isPostHeader={usesInPostHeader}
       />
-      <a id="top"></a>
+      <div id="top"></div>
       <main>{children}</main>
       <ScrollUpButton isPostHeader={usesInPostHeader} />
     </>

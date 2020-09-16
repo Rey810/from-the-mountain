@@ -39,11 +39,7 @@ const Landing = props => {
 
       <div className="text-wrapper flex justify-center items-center">
         <div>
-          <div
-            className={`opacity-0 ${
-              animated ? "fadeInSlideUp-1st" : ""
-            } avatar-container flex justify-left h-14 md:hidden mb-8`}
-          >
+          <div className="avatar-container flex justify-left h-14 md:hidden mb-8">
             <div className="avater-image-container relative w-14">
               <Avatar />
             </div>
@@ -53,14 +49,14 @@ const Landing = props => {
           </div>
           <h1
             className={`opacity-0 ${
-              animated ? "fadeInSlideUp-2nd" : ""
+              animated ? "fadeInSlideUp-1st" : null
             } landing-title leading-none`}
           >
             Freelance <br /> Developer
           </h1>
           <p
             className={`opacity-0 ${
-              animated ? "fadeInSlideUp-3rd" : null
+              animated ? "fadeInSlideUp-2nd" : null
             } landing-description my-12`}
           >
             Helping people turn their ideas into <br /> sites & apps that work.{" "}
@@ -70,7 +66,7 @@ const Landing = props => {
           <div className="cta-container flex flex-row">
             <div
               className={`opacity-0 ${
-                animated ? "fadeInSlideUp-4th" : null
+                animated ? "fadeInSlideUp-3rd" : null
               } landing-buttons-container`}
             >
               <button
@@ -95,7 +91,7 @@ const Landing = props => {
             </div>
             <div
               className={`opacity-0 ${
-                animated ? "fadeIn-5th" : ""
+                animated ? "fadeIn-4th" : ""
               } landing-icons-container flex flex-col justify-center ml-10 md:ml-18`}
             >
               <a
@@ -143,7 +139,7 @@ const Landing = props => {
       </div>
       <div
         className={`opacity-0 ${
-          animated ? "fadeIn-6th" : ""
+          animated ? "fadeIn-5th" : ""
         } img-wrapper hidden lg:block lg:w-2/5`}
       >
         <Img fluid={props.heroMan.childImageSharp.fluid} />
