@@ -118,6 +118,7 @@ module.exports = {
         },
         mentions: true,
         pingbacks: true,
+        fetchLimit: 1000,
         domain: "www.fromthemountain.co.za",
         token: "0dEQ-0rXh6iuun08NDpddA",
       },

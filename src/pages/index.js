@@ -25,9 +25,11 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
+
 // FONT AWESOME
 // fab represenets all of the brand icons
-library.add(faGithub, faLinkedin, faTwitter)
+library.add(faGithub, faLinkedin, faTwitter, faChevronDown)
 // fixes huge Font Awesome icon on load by inlining CSS
 config.autoAddCss = false
 
