@@ -149,6 +149,14 @@ function SEO({
         clicky_site_ids.push(101262924);
       </script>
       <script async src="//static.getclicky.com/js"></script>
+      <link
+        rel="webmention"
+        href="https://webmention.io/www.fromthemountain.co.za/webmention"
+      />
+      <link
+        rel="pingback"
+        href="https://webmention.io/www.fromthemountain.co.za/xmlrpc"
+      />
       <link href="https://github.com/Rey810" rel="me" />
       <link href="https://www.linkedin.com/in/rey810/" rel="me" />
       <link href="https://twitter.com/ReyTheDev" rel="me" />
