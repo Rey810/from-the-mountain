@@ -41,8 +41,6 @@ function SEO({
     `
   )
 
-  console.dir(image)
-
   // general meta
   const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
@@ -151,6 +149,9 @@ function SEO({
         clicky_site_ids.push(101262924);
       </script>
       <script async src="//static.getclicky.com/js"></script>
+      <link rel="me" href="https://github.com/Rey810" />
+      <link rel="me" href="https://www.linkedin.com/in/rey810/" />
+      <link rel="me" href="https://twitter.com/ReyTheDev" />
     </Helmet>
   )
 }
