@@ -2,8 +2,6 @@
   position: fixed;
   right: 0;
   bottom: 0;
-
-  @apply shadow-sm;
   @apply mr-4;
   transition: opacity 0.3s ease-in;
 }

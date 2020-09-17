@@ -28,7 +28,7 @@ const ScrollUpButton = props => {
   const opacity = visible ? "opacity-75" : "opacity-0"
 
   return (
-    //scrolls up to <a id="top"> which sits above <main> in layout to always be at the top of the document.
+    //scrolls up to <div id="top"> which sits above <main> in layout to always be at the top of the document.
     <a
       href="#top"
       className={`${opacity} ${classes.initial} ${hiddenMobile} mb-6 lg:block lg:mr-12 xl:mr-16 md:mb-8 lg:mb-12 xl:mb-16`}
