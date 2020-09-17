@@ -151,11 +151,11 @@ function SEO({
       <script async src="//static.getclicky.com/js"></script>
       <link
         rel="webmention"
-        href="https://webmention.io/www.fromthemountain.co.za/webmention"
+        href="https://webmention.io/fromthemountain.co.za/webmention"
       />
       <link
         rel="pingback"
-        href="https://webmention.io/www.fromthemountain.co.za/xmlrpc"
+        href="https://webmention.io/fromthemountain.co.za/xmlrpc"
       />
       <link href="https://github.com/Rey810" rel="me" />
       <link href="https://www.linkedin.com/in/rey810/" rel="me" />
