@@ -152,6 +152,7 @@ function SEO({
       <link rel="me" href="https://github.com/Rey810" />
       <link rel="me" href="https://www.linkedin.com/in/rey810/" />
       <link rel="me" href="https://twitter.com/ReyTheDev" />
+      <link rel="me" href="https://www.instagram.com/rey_810/" />
     </Helmet>
   )
 }
