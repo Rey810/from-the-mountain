@@ -108,5 +108,19 @@ module.exports = {
         devMode: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-webmention`,
+      options: {
+        username: "www.fromthemountain.co.za", 
+        identity: {
+          github: "rey810",
+          twitter: "reythedev", 
+        },
+        mentions: true,
+        pingbacks: true,
+        domain: "www.fromthemountain.co.za",
+        token: process.env.WEBMENTIONS_TOKEN,
+      },
+    },
   ],
 }

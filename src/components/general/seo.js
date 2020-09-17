@@ -149,10 +149,10 @@ function SEO({
         clicky_site_ids.push(101262924);
       </script>
       <script async src="//static.getclicky.com/js"></script>
-      <link rel="me" href="https://github.com/Rey810" />
-      <link rel="me" href="https://www.linkedin.com/in/rey810/" />
-      <link rel="me" href="https://twitter.com/ReyTheDev" />
-      <link rel="me" href="https://www.instagram.com/rey_810/" />
+      <link href="https://github.com/Rey810" rel="me" />
+      <link href="https://www.linkedin.com/in/rey810/" rel="me" />
+      <link href="https://twitter.com/ReyTheDev" rel="me" />
+      <link href="https://www.instagram.com/rey_810/" rel="me" />
     </Helmet>
   )
 }
