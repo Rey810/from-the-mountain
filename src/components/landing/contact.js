@@ -30,7 +30,7 @@ const contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={["fab", "twitter"]} />
+            <FontAwesomeIcon icon={["fa", "twitter"]} />
           </a>
           <a
             className="landing-icons icon px-4"
@@ -38,7 +38,7 @@ const contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={["fab", "github"]} />
+            <FontAwesomeIcon icon={["fa", "github"]} />
           </a>
           <a
             className="landing-icons icon px-4"
@@ -46,7 +46,7 @@ const contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={["fab", "linkedin"]} />
+            <FontAwesomeIcon icon={["fa", "linkedin"]} />
           </a>
         </div>
       </div>

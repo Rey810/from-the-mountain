@@ -19,30 +19,15 @@ import SiteReview from "../components/landing/siteReview"
 // Font Awesome Icons
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faCheckCircle, faThumbsUp } from "@fortawesome/free-regular-svg-icons"
 import {
-  faCode,
-  faShoppingCart,
-  faAward,
-  faChevronRight,
-  faChevronDown,
-  faChevronLeft,
-} from "@fortawesome/free-solid-svg-icons"
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
 
 // FONT AWESOME
 // fab represenets all of the brand icons
-library.add(
-  fab,
-  faCode,
-  faCheckCircle,
-  faThumbsUp,
-  faShoppingCart,
-  faAward,
-  faChevronRight,
-  faChevronDown,
-  faChevronLeft
-)
+library.add(faGithub, faLinkedin, faTwitter)
 // fixes huge Font Awesome icon on load by inlining CSS
 config.autoAddCss = false
 
@@ -51,14 +36,11 @@ const IndexPage = ({
     allIllustrationsDataJson: { nodes },
   },
 }) => {
-  console.log({ nodes })
-
   let images = nodes.reduce((result, obj) => {
     result[obj.name] = obj.src
     return result
   }, {})
 
-  console.log("imges Object", images)
   return (
     <Layout usesPortfolioHeader={true}>
       <SEO title="Web Developer" />

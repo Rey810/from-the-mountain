@@ -99,5 +99,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        analyzerMode: "server",
+        analyzerPort: "8888",
+        defaultSizes: "gzip",
+        devMode: true,
+      },
+    },
   ],
 }

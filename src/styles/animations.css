@@ -13,6 +13,9 @@
 .fadeInSlideUp-4th {
   animation: fadeInSlideUp 0.3s 0.9s linear forwards;
 }
+.fadeIn-4th {
+  animation: fadeInSlideUp 0.3s 0.9s linear forwards;
+}
 
 .fadeIn-5th {
   animation: fadeIn 0.3s 1.5s linear forwards;

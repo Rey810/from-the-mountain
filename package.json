@@ -48,6 +48,7 @@
     "typeface-oxanium": "^1.1.4"
   },
   "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.12",
     "prettier": "2.0.5",
     "tailwindcss": "^1.7.3"
   },
