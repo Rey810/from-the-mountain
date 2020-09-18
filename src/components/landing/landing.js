@@ -57,7 +57,7 @@ const Landing = props => {
           <p
             className={`opacity-0 ${
               animated ? "fadeInSlideUp-2nd" : null
-            } landing-description my-12`}
+            } landing-description my-12 lg:mt-8 lg:mb-4 xl:my-12`}
           >
             Helping people turn their ideas into <br /> sites & apps that work.{" "}
             <br />

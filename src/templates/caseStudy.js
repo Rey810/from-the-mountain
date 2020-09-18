@@ -56,10 +56,10 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         <h2 className="font-semibold mb-8 w-4/5 mx-auto text-2xl flex items-center justify-center col-start-1 col-end-5 sm:w-1/1 sm:col-end-13 md:mb-16 lg:text-5xl lg:mb-0">
           Skills Utilized
         </h2>
-        <div className="serviceCards-container col-start-1 col-end-13 row-start-2 row-end-12 flex flex-col px-6 items-center scrolling-touch md:flex-row md:flex-wrap md:px-0 lg:grid lg:grid-cols-3 lg:gap-8 xl:mx-auto xl:w-5/6 xl:gap-12 xl:mr-auto">
+        <div className="serviceCards-container col-start-1 col-end-13 row-start-2 row-end-12 flex flex-col px-6 items-center scrolling-touch md:flex-row md:flex-wrap md:px-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:mt-16 xl:mt-0 xl:mx-auto xl:w-5/6 xl:gap-12 xl:mr-auto">
           {project.skillsUtilized.map((skill, index) => (
             <div
-              className={`project-square-wrapper relative w-1/1 pb-9/11 sm:pb-1/1 mb-12 md:mb-16 md:w-2/5 md:pb-2/5 lg:w-9/10 lg:pb-9/10 mx-auto shadow-md ${
+              className={`project-square-wrapper relative w-1/1 pb-9/11 sm:pb-1/1 mb-12 md:mb-16 md:w-2/5 md:pb-2/5 lg:w-9/10 lg:pb-2/3 mx-auto shadow-md ${
                 index === 1 ? "lg:transform lg:scale-125" : null
               }`}
             >
