@@ -49,7 +49,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   if (project.skillsUtilized) {
     skillCards = (
       <ContentWrapper
-        laptopHeight="lg:min-h-8/10 lg:max-h-8/10"
+        laptopHeight="lg:min-h-8/10"
         desktopHeight="xl:min-h-8/10 xl:max-h-8/10"
         extraClasses="md:block lg:grid"
       >

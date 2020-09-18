@@ -152,7 +152,7 @@
 .blog p {
   color: var(--blog-text-color);
 }
-.blog a {
+.blog a:not(.backButton) {
   color: var(--link-color);
   box-shadow: inset 0 -1px 0 0 var(--link-color);
   border-bottom: 1px solid var(--link-color);
@@ -162,7 +162,7 @@
   @apply font-medium;
 }
 
-.blog a:hover {
+.blog a:hover:not(.backButton) {
   box-shadow: inset 0 -1.2em 0 0 var(--link-color);
   color: var(--color-60-light);
 }
