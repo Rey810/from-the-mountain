@@ -78,7 +78,7 @@
       },
       {
         "name": "API Consumption",
-        "description": "Three different APIS were called using JavaScript's Fetch. Responses were trimmed and tailored according to what I needed displayed. Response errors are handled and default values are used as fallbacks."
+        "description": "Three different APIs were called using JavaScript's Fetch. Responses were trimmed and tailored according to what I needed displayed. Response errors are handled and default values are used as fallbacks."
       },
       {
         "name": "Security",

@@ -85,6 +85,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: `WebMentionEntry`,
+        imagePath: `edges[].node[].author.photo`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-netlify",
       options: {
         headers: {

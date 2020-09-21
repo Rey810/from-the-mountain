@@ -37,6 +37,9 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: node.frontmatter.path,
       component: postTemplate,
+      context: {
+        permalink: `https://www.fromthemountain.co.za${node.frontmatter.path}/`,
+      },
     })
   })
 

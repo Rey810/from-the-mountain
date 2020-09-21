@@ -8,9 +8,12 @@ import BackButton from "../components/general/BackButton/BackButton"
 import Img from "gatsby-image"
 import Footer from "../components/general/footer"
 import Avatar from "../components/images/avatar"
+// WEB MENTIONS
+import WebMentions from "../components/webMentions/webMentions"
 
-export default function Template({ data, location }) {
-  const post = data.markdownRemark
+export default function Template(props) {
+  const post = props.data.markdownRemark
+  const webMentions = props.data.allWebMentionEntry
   // const siteTitle = data.site.siteMetadata.title
   const image = post.frontmatter.featuredImage
     ? post.frontmatter.featuredImage.childImageSharp.resize
@@ -23,6 +26,8 @@ export default function Template({ data, location }) {
   // converts human-readable date into machine-readable date to be used in "Published..."
   const ISOdateString = new Date(date).toISOString()
 
+  console.log("props", props)
+
   return (
     <Layout location={"blog"} usesInPostHeader>
       <SEO
@@ -31,7 +36,7 @@ export default function Template({ data, location }) {
         image={image}
         imageAltDescr={post.frontmatter.imageAlt}
         type={"article"}
-        pathname={location.pathname}
+        pathname={props.location.pathname}
         keywords={post.frontmatter.keywords}
       />
       <div className="blog-container">
@@ -75,6 +80,7 @@ export default function Template({ data, location }) {
             />
           </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <WebMentions {...webMentions} postTitle={post.frontmatter.title} location={props.location}/>
         </section>
         <div className="share-buttons-wrapper fixed z-10 w-full bottom-0 p-3 flex justify-center sm:z-0 md:block md:left-0 md:w-0 md:top-1/3 md:p-6">
           <div className="twitter-share-button-container text-center mx-4 md:mx-0 md:mb-6">
@@ -82,7 +88,7 @@ export default function Template({ data, location }) {
               title="Share on Twitter"
               id="alwaysVisible"
               className="custom-twitter-share-button"
-              href={`https://twitter.com/share?text=${post.frontmatter.title} via @ReyTheDev&url=https://www.fromthemountain.co.za/${location.pathname}`}
+              href={`https://twitter.com/share?text=${post.frontmatter.title} via @ReyTheDev&url=https://www.fromthemountain.co.za/${props.location.pathname}`}
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
@@ -92,7 +98,7 @@ export default function Template({ data, location }) {
               title="Share on Facebook"
               id="alwaysVisible"
               className="custom-twitter-share-button"
-              href={`https://www.facebook.com/sharer.php?u=https://www.fromthemountain.co.za/${location.pathname}`}
+              href={`https://www.facebook.com/sharer.php?u=https://www.fromthemountain.co.za/${props.location.pathname}`}
             >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
@@ -106,7 +112,7 @@ export default function Template({ data, location }) {
 }
 
 export const postQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query BlogPostByPath($path: String!, $permalink: String) {
     site {
       siteMetadata {
         title
@@ -135,6 +141,26 @@ export const postQuery = graphql`
               height
               width
             }
+          }
+        }
+      }
+    }
+    allWebMentionEntry(filter: { wmTarget: { eq: $permalink } }) {
+      edges {
+        node {
+          id
+          author {
+            name
+            photo
+            url
+          }
+          likeOf
+          wmTarget
+          wmSource
+          wmProperty
+          wmId
+          content {
+            text
           }
         }
       }

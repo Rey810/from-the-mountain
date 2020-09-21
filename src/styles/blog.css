@@ -28,6 +28,7 @@
   --button-hover-color: #fa5d2f;
   --button-text-color: hsl(0, 0%, 100%);
   --input-text-color: rgba(160, 174, 192, 1);
+
 }
 
 .blog-container ol {
@@ -152,7 +153,7 @@
 .blog p {
   color: var(--blog-text-color);
 }
-.blog a:not(.backButton) {
+.blog a:not(.backButton):not(.webmention__link) {
   color: var(--link-color);
   box-shadow: inset 0 -1px 0 0 var(--link-color);
   border-bottom: 1px solid var(--link-color);
@@ -162,8 +163,8 @@
   @apply font-medium;
 }
 
-.blog a:hover:not(.backButton) {
-  box-shadow: inset 0 -1.2em 0 0 var(--link-color);
+.blog a:hover:not(.backButton):not(.webmention__link) {
+  box-shadow: inset 0 -1.5em 0 0 var(--link-color);
   color: var(--color-60-light);
 }
 
@@ -209,6 +210,76 @@
 
 .custom-subscribe-button:hover {
   background-color: var(--button-hover-color);
+}
+
+/*//////////////*/
+/* WEBMENTIONS */
+/*////////////*/
+
+.webmentions__all {
+  border-top: 1px solid var(--border-color);
+  @apply mt-8;
+}
+
+.webmentions__all > div {
+  @apply mb-4;
+}
+
+.webmentions__all h3 {
+  @apply text-xl tracking-wider py-0;
+}
+
+.webmentions__all h4 {
+  @apply text-sm pt-0 pb-2 opacity-80;
+} 
+
+.webmentions__header {
+  @apply flex justify-between items-center pb-6 pt-12;
+}
+
+.webmentions__info, .webmentions__add {
+  color: var(--blog-text-color-lighter);
+}
+
+.webmentions__add {
+  @apply text-sm font-bold mt-12;
+}
+
+.webmention__like-container {
+  @apply ml-2;
+}
+
+.webmention__like-avatar {
+  @apply -ml-2 inline-block;
+}
+
+.webmention__like-avatar a img {
+  box-shadow: 0 0 0 .25rem white;
+  transition: transform .1s ease-in-out;
+  @apply relative;
+}
+
+.webmention__like-avatar img:hover {
+  box-shadow: 0 0 0 .15rem var(--color-illustration-light);
+  transform: scale3d(1.1, 1.1, 1);
+  z-index: 2;
+}
+
+.webmention__mention-container {
+  color: var(--blog-text-color);
+  @apply italic;
+}
+
+.webmention__mention {
+  @apply rounded-md mb-6;
+  background-color: var(--color-illustration-light);
+  color: var(--color-60-lighter);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.webmention__mention a {
+  @apply p-3 grid;
+  grid-template-columns: auto auto;
 }
 
 /*////////////////////*/
