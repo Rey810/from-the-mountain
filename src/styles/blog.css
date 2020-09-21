@@ -279,7 +279,7 @@
 
 .webmention__mention a {
   @apply p-3 grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
 }
 
 /*////////////////////*/
