@@ -47,7 +47,7 @@ const WebMentions = ({ edges, postTitle, location }) => {
       <div className="webmention__mention">
         <a className="h-full w-full webmention__link" href={author.url}>
           <img loading="lazy" height="50" width="50" src={author.photo} alt={author.name} title={author.name} key={author.wmId} className="rounded-sm inline-block"/>
-        <span className="ml-4 text-sm">{author.text}</span>
+        <span className="ml-4 text-sm my-auto">{author.text}</span>
         </a>
       </div>
     )
