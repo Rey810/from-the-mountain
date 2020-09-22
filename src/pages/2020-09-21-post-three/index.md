@@ -89,7 +89,7 @@ That's it.
 
 Anyway, so this vision hits me in 2016.
 
-In it, I wake up somewhere in jungley Asia _(probably South East)_, grab my skateboard (_as if that's a totally normal thing for me - I don't skate)_ and \*_stop at my Tai Chi master's training studio for a quick session _(I did Tai Chi once, for like 5 minutes in my pajamas. It was in China so maybe it counts?)\*.
+In it, I wake up somewhere in jungley Asia _(probably South East)_, grab my skateboard _(as if that's a totally normal thing for me - I don't skate)_ and stop at my Tai Chi master's training studio for a quick session _(I did Tai Chi once, for like 5 minutes in my pajamas. It was in China so maybe it counts?)_.
 
 I then go to the local school surrounded by dense jungle, littered streets, and hooting scooters, where I teach English to a group of smiling little kids.
 
@@ -167,7 +167,7 @@ There is great satisfaction in that.
 
 Obviously it's been a difficult journey but what worthwhile cause wasn't?
 
-If you're reading this and you're looking to start your own journey (or maybe you're a some ways down the road), the next few paragraphs may do you some good.
+If you're reading this and you're looking to start your own journey (or maybe you're some ways down the road), the next few paragraphs may do you some good.
 
 Erik Trautman, the guy that started _The Odin Project_, along with some others at [_Thinkful_](https://www.thinkful.com/) wrote a [fantastic article on the real learning curve of coding](https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/) where competence and confidence are plotted as X and Y coordinates on a graph. I highly recommend going through it when you have a lot of time - it's a looong article. The journey can be summarized as follows:
 
