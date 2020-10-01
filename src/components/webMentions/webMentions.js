@@ -66,7 +66,7 @@ const WebMentions = ({ edges, postTitle, location }) => {
     </div>
       {likesDisplay}
       {mentionsDisplay}
-      <div className="webmentions__add">Want to add to the conversation? <a href={`https://twitter.com/share?text=${postTitle} via @ReyTheDev&url=https://www.fromthemountain.co.za/${location.pathname}`} target="_blank" rel="noopener noreferrer">Tweet about this article</a></div>
+      <div className="webmentions__add">Want to add to the conversation? <a href={`https://twitter.com/share?text=${postTitle} via @ReyTheDev&url=https://www.fromthemountain.co.za${location.pathname}`} target="_blank" rel="noopener noreferrer">Tweet about this article</a></div>
     </div>
   )
 }

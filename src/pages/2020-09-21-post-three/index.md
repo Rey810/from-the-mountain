@@ -6,7 +6,7 @@ title: "Survive Learning to Code: Tales and Tips from a Psych Student turned Dev
 cardTitle: "Survive Learning to Code"
 author: "Rey van den Berg"
 category: "Developer Happiness"
-summary: "Part memoir, part tips for newbies, herein lies my journey from science and psych to code and tech."
+summary: "Part memoir, part tips-for-newbies."
 keywords: "wellbeing, journey, career change, developer, coding, web development, learning curve, habits, code newbie, advice, mental, health, healthier, mindset, mindfulness, mindful, balance, minimalism, self-help, programmer, coder, webdev, developer, memoir, tips, guide, engineer, wholesome"
 imageAttribution: "https://icons8.com"
 imageAlt: "An orange haired cartoon boy writing on a smartboard with graphs and stats flaoting around him."

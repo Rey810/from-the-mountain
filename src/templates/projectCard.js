@@ -28,7 +28,7 @@ const projectCard = props => {
     codeLink = (
       <a
         href={codeURL}
-        className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around mt-4"
+        className="project-code-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around mt-4 antialiased"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -52,7 +52,7 @@ const projectCard = props => {
         target="_blank"
         rel="noopener noreferrer"
         // passes project info to link as prop available as location.state in linked page
-        className="project-site-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around"
+        className="project-site-link text-xs md:text-sm rounded-md shadow-md flex items-center justify-around antialiased"
       >
         View Project{" "}
         <svg className="w-4" fill="currentColor" viewBox="0 0 20 20">
@@ -76,7 +76,7 @@ const projectCard = props => {
           <div className="project-image-container relative m-4 mb-0">
             <Img
               fluid={image.childImageSharp.fluid}
-              className="absolute inset-0  rounded-t-md h-full w-full"
+              className="absolute inset-0 rounded-t-md max-h-full w-full"
             />
           </div>
           <div className="project-info-container mx-4 my-auto flex justify-between">

@@ -48,6 +48,13 @@ module.exports = {
           // ...
           "gatsby-remark-a11y-emoji",
           `gatsby-remark-reading-time`,
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+          },
         ],
       },
     },

@@ -18,7 +18,7 @@ const BlogPage = ({ data }) => (
         <section class="px-4 mt-10">
           <h1 className="pt-12 text-5xl font-bold text-center">Latest Posts</h1>
           <div class="py-12">
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap lg:justify-center">
               {data.allMarkdownRemark.edges.map(post => (
                 <BlogCard
                   title={post.node.frontmatter.title}

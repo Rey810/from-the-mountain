@@ -26,28 +26,20 @@ const Header = ({
   // i.e. when the component unmounts and also after the previous render
   // for multiple hooks, they're run in the order they're defined
   useEffect(() => {
-    /* This prevents a listener from being added if canSee is false which means that the current location is not on the Latest Posts page. Therefore things can continue as normal. If we are on the Latest Posts page then I don't want the header to didsappear if the user scrolls */
+    /* This prevents a listener from being added if canSee is false which means that the current location is not on the Latest Posts page. Therefore things can continue as normal. If we are on the Latest Posts page then I don't want the header to disappear if the user scrolls */
     if (!canSee) window.addEventListener("scroll", toggleVis)
-    // Cleans up the hook by removing the eventlistener when the component
     // It also cleans up effects from the previous render before runnnig effects the next time
     return () => window.removeEventListener("scroll", toggleVis)
   }, [visible])
 
   // adds an extra class if a header other than the post header is being displayed
   const extraClasses = []
-  if (isPostHeader) {
-    extraClasses.push("pl-0 py-0")
-  }
   if (visible) {
     extraClasses.push("visible")
   }
 
   // adds specific header links if the header is the post header
-  let chevronOrAvatar = isPostHeader ? (
-    <Link to="/blog" className="p-4">
-      <FontAwesomeIcon icon={faChevronLeft} />
-    </Link>
-  ) : (
+  let avatar = (
     <Link to="/">
       <div className="home-section flex flex-row items-center">
         <div className="avatar-container flex justify-center h-8 mx-auto ">
@@ -94,7 +86,7 @@ const Header = ({
           " "
         )}`}
       >
-        {chevronOrAvatar}
+        {avatar}
         <div className="header-icons">{additionalLinks}</div>
       </nav>
     </header>

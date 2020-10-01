@@ -23,7 +23,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
       <a
         type="button"
         href={project.siteURL}
-        className="launch-project btn inline-block"
+        className="launch-project btn inline-block text-sm"
       >
         LAUNCH PROJECT
         <Launch className="ml-4 inline-block" />
@@ -36,7 +36,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
       <a
         type="button"
         href={project.codeURL}
-        className="launch-project btn inline-block"
+        className="launch-project btn inline-block text-md"
       >
         VIEW CODE
         <Code className="ml-4 inline-block" />

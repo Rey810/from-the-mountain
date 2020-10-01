@@ -1,7 +1,7 @@
 /* Prevents image from overflowing the first grid row in the projects cards */
-.project-image-container div {
+/* .project-image-container div {
   height: -webkit-fill-available;
-}
+} */
 
 .project-image-container {
   padding-bottom: inherit;

@@ -14,11 +14,11 @@ const BlogCard = props => {
   } = props
 
   return (
-    <div className="blog-post-card rounded-lg mb-12 w-1/1 md:mx-6 md:w-1/2 lg:w-1/3">
+    <div className="blog-post-card rounded-lg mb-12 w-1/1 md:mx-6 md:w-1/2 lg:w-1/3 xl:w-1/4">
       <div className="h-full rounded-lg overflow-hidden">
         <Img fluid={image} alt={imageAlt} />
         <div className="p-6">
-          <h2 className="tracking-widest text-lg title-font font-light mb-2">
+          <h2 className="tracking-widest text-sm title-font font-light mb-2">
             {category}
           </h2>
           <h1
