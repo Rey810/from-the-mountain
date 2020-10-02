@@ -186,6 +186,8 @@ Here are some small actionable things to try out in your digital minimalism expe
 
 Again, these are not meant to make your life difficult or unpleasant. They're a means to clarifying which pieces of technology are genuinely valuable and which are not. In other words, you're practicing digital minimalism!
 
+_[Check out a few practical tips from the people who made *The Social Dilemma*](https://www.humanetech.com/take-control)
+
 <h2 id="the-harms-of-an-unchecked-digital-life">7. The Harms of an Unchecked Digital Life</h2>
 
 _Aside: The sources for the stats below are from well-respected journals such as Nature, Journal of Communication, Journal of Consumer Research, American Economic Review, The Journal of the American Medical Association, Science Direct, Society for Research in Child Development; respected authors, and other sources deemed worthy and true by the [Center for Humane Technology.](https://www.humanetech.com/)_
