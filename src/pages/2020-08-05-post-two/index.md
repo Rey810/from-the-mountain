@@ -1,6 +1,6 @@
 ---
 path: "/blog/digital-minimalism-why-your-happiness-demands-it"
-lastUpdated: ""
+lastUpdated: "2 October, 2020"
 date: "8 August, 2020"
 title: "Digital Minimalism: Why Your Happiness Demands It"
 cardTitle: "Digital Minimalism"
