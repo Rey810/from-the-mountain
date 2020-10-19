@@ -15,8 +15,8 @@ const personal = props => {
           <div className="personal-description-container">
             <p className="personal-description pb-4 ">
               I build sites with amazing looks and fast load-times that do one
-              thing: <br />
-              <strong className="landing">Get You Results.</strong>
+              thing:
+              <strong className="landing"> Get You Results.</strong>
             </p>
             <p className="personal-description pb-4">
               Whatever you have in mind, you should know - I build with a
