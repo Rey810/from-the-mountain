@@ -63,11 +63,11 @@ const Header = ({
         Blog
       </Link>
       <Link
-        to="/#Report"
+        to="/#Connect"
         className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
         target="_blank"
       >
-        Get Site Review
+        HIRE ME
       </Link>
     </>
   ) : (
@@ -75,7 +75,7 @@ const Header = ({
       to="/#Connect"
       className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
     >
-      {isCaseStudy ? "GET IN TOUCH" : "LET'S CONNECT!"}
+      {isCaseStudy ? "HIRE ME" : "LET'S CONNECT!"}
     </Link>
   )
 

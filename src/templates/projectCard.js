@@ -16,7 +16,7 @@ const projectCard = props => {
     projectType,
   } = props.info
 
-  console.log("project props", { props })
+
   // builds relative URL for when projectcase studies are accessed from the home/projects
   // linkName is used when project case studies are accessed from home/
   const caseStudyURL = linkName
@@ -76,7 +76,7 @@ const projectCard = props => {
           <div className="project-image-container relative m-4 mb-0">
             <Img
               fluid={image.childImageSharp.fluid}
-              className="absolute inset-0 rounded-t-md max-h-full w-full"
+              className="inset-0 rounded-t-md"
             />
           </div>
           <div className="project-info-container mx-4 my-auto flex justify-between">

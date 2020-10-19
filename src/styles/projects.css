@@ -7,6 +7,10 @@
   padding-bottom: inherit;
 }
 
+.project-image-container > div {
+  position: absolute !important;
+}
+
 .tech-link {
   padding: 0.25em 0.5em;
 }
