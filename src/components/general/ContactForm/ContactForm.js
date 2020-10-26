@@ -1,8 +1,21 @@
-import React from "react"
+import React, { useState } from "react"
 
-const Form = () => {
-  const handleSubmit = e => {
-    console.log("button clicked dude!")
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+
+  const [btnMsg, setBtnMsg] = useState("Get in Touch")
+
+  // takes event, finds value, updates state of that input
+  const updateInput = e => {
+    const inputValue = e.target.value
+    // update state immutably
+    const oldState = formData
+    const newState = { ...oldState, [e.target.id]: inputValue }
+    setFormData(newState)
   }
 
   return (
@@ -13,6 +26,7 @@ const Form = () => {
       name="contact"
       autoComplete="new-one"
       className="contact-form"
+      action="/"
     >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
@@ -24,6 +38,8 @@ const Form = () => {
           pattern="\S+.*"
           placeholder="the placeholder"
           autoComplete="off"
+          value={formData.name}
+          onChange={updateInput}
         />
         <label htmlFor="name" className="label-name">
           <span className="content-name">Name</span>
@@ -36,6 +52,8 @@ const Form = () => {
           required
           placeholder="the placeholder"
           autoComplete="na"
+          value={formData.email}
+          onChange={updateInput}
         />
         <label htmlFor="email" className="label-email">
           <span className="content-email">Email</span>
@@ -43,21 +61,26 @@ const Form = () => {
       </div>
       <div>
         <textarea
-          name="question"
-          placeholder="Your Question"
-          id="question"
+          name="message"
+          placeholder="Your Message"
+          id="message"
+          required
           cols="30"
           rows="5"
           minLength="10"
           maxLength="100"
-          required
+          value={formData.message}
+          onChange={updateInput}
         ></textarea>
       </div>
-      <button onClick={handleSubmit} type="submit">
-        Get in Touch
+      <button
+        className="contact-button w-full text-white text-lg font-semibold border-0 py-2 px-6 rounded"
+        type="submit"
+      >
+        {btnMsg}
       </button>
     </form>
   )
 }
 
-export default Form
+export default ContactForm

@@ -69,7 +69,7 @@ const Landing = props => {
                 animated ? "fadeInSlideUp-3rd" : null
               } landing-buttons-container`}
             >
-              <button
+              {/* <button
                 className="btn landing-cta-1"
                 onClick={modalToggleHandler}
               >
@@ -80,10 +80,13 @@ const Landing = props => {
                   <span className="italic font-semibold text-sm">FREE</span>
                 </div>
                 Get Site Review
-              </button>
+              </button> */}
+              <Link to="/#Connect" className="btn landing-cta-1">
+                <span className="w-1/1 text-center inline-block">Hire Me</span>
+              </Link>
               <Link
                 to="/#services"
-                className="view-projects-container btn flex flex-row items-center"
+                className="view-projects-container btn flex fex-row items-center"
               >
                 <FeatherArrowRightCircle />
                 <span className="w-1/1 text-center">View Services</span>
