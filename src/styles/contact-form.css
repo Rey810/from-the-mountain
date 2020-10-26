@@ -1,0 +1,145 @@
+.contact-form {
+  display: inline-block;
+  margin: 0rem 0 3rem 0;
+  overflow: hidden;
+}
+
+.contact-form div {
+  position: relative;
+}
+
+input,
+textarea {
+  background-color: transparent;
+}
+
+.contact-form .input-animated input {
+  display: block;
+  border: none;
+  padding: 1.25rem 1rem 0.75rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+.contact-form .input-animated input::placeholder {
+  color: transparent;
+}
+
+.contact-form .input-animated input,
+.contact-form .input-animated label {
+  color: var(--color-60-light);
+}
+
+.contact-form .input-animated label {
+  color: var(--placeholder-color);
+}
+
+.contact-form .input-animated label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid var(--color-60-light);
+}
+
+.contact-form .input-animated label:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid var(--color-60-light);
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.contact-form .input-animated label span {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+/* + only works for adjacent elements below the initial element */
+.contact-form .input-animated input:not(:placeholder-shown) + label:after,
+.contact-form textarea:not(:placeholder-shown) {
+  border-color: var(--error-color);
+}
+
+.contact-form
+  .input-animated
+  input:not(:placeholder-shown)
+  + .label-name
+  .content-name,
+.contact-form
+  .input-animated
+  input:not(:placeholder-shown)
+  + .label-email
+  .content-email {
+  color: var(--error-color);
+}
+
+.contact-form .input-animated input:valid + .label-name .content-name,
+.contact-form .input-animated input:valid + .label-email .content-email {
+  color: var(--success-color);
+}
+
+.contact-form .input-animated input:valid + label:after,
+.contact-form textarea:valid {
+  border-color: var(--success-color);
+}
+
+.contact-form .input-animated input:focus + label span,
+.contact-form .input-animated input:valid + label span,
+.contact-form .input-animated input:not(:placeholder-shown) + label span {
+  transform: translateY(-150%);
+  @apply text-xs;
+  color: var(--color-60-light);
+}
+
+.contact-form .input-animated input:focus + label:after,
+.contact-form input:valid + label:after,
+.contact-form input:not(:placeholder-shown) + label:after {
+  transform: translateX(0%);
+}
+
+.Form input:invalid {
+  box-shadow: none;
+}
+
+/* TEXTAREA ONLY */
+.contact-form textarea {
+  @apply my-8;
+  border: 1px solid var(--color-60-light);
+}
+
+.contact-form textarea:focus {
+  box-shadow: inset 0px 0px 1px 1px var(--color-60-light);
+  @apply outline-none;
+}
+
+.contact-form textarea:not(:placeholder-shown) {
+  box-shadow: inset 0px 0px 1px 1px var(--error-color);
+}
+
+.contact-form textarea:valid {
+  box-shadow: inset 0px 0px 1px 1px var(--success-color);
+}
+
+.Form textarea:invalid {
+  box-shadow: none;
+}
+
+.contact-form textarea {
+  color: var(--color-60-light);
+  @apply py-3 px-4;
+}
+
+.contact-form textarea::placeholder {
+  color: var(--placeholder-color);
+  @apply text-base;
+}

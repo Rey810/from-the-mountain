@@ -49,6 +49,14 @@
   --project-button-sec-bg-color: var(--color-60-medium);
   --project-button-sec-bg-color-active: var(--color-60-medium-dark);
   --project-button-sec-text-color: var(--color-60-transp);
+
+  /* FORM COLOURS */
+  --placeholder-color: var(--color-60-transp);
+
+  /*  STATUS COLOURS  */
+  --error-color: #ff3366;
+  --default-color: #d6edff;
+  --success-color: #81e979;
 }
 /*////////////////*/
 /* FOCUS COLOURS */
