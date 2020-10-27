@@ -1,17 +1,4 @@
 :root {
-  /* Dark blue Purple */
-  /* #396AB2 */
-
-  /* Blue steel */
-  /* #cbe7ee */
-  /* --base-color: hsl(192, 51%, 90%);
-  --primary-color: hsl(192, 51%, 80%);
-  --secondary-color: hsl(193, 13%, 48%);
-  --tertiary-color: hsl(192, 19%, 31%);
-  --heading-color: hsl(190, 39%, 15%);
-  --bg-color: hsl(0, 0%, 98%);
-  --cta-color: rgb(24, 206, 176);
-  --cta-hover-color: hsl(192, 50.7%, 40.5%); */
   --color-60-lighter: rgb(255, 255, 255);
   --color-60-transp: rgba(255, 255, 255, 0.75);
   --color-60-light: hsl(124, 80%, 96%);
@@ -33,6 +20,12 @@
   --mid-colour-overlay: rgba(31, 31, 31, 0.6);
   --final-colour-overlay: rgb(31, 31, 31);
 
+  /* Toolbox Colours */
+  --tool-color: var(--color-illustration-light);
+  --tool-name-color: var(--color-60-transp);
+  --toolbox-header-color: var(--color-60-transp);
+
+
   /* Card Colours */
   --card-bg-color: var(--color-60-dark);
   --card-header-color: #ffffff;
@@ -40,11 +33,13 @@
 
   /* FAQ Colours */
   --faq-bg-color: hsla(0, 0%, 12%, 0.8);
+
   /* Project Card Colors */
   --project-card-header-color: rgba(255, 255, 255, 0.9);
   --project-card-description-color: rgba(255, 255, 255, 0.8);
   --project-card-tech-color: rgba(255, 255, 255, 0.55);
   --project-card-tech-border-color: rgba(255, 255, 255, 0.4);
+
   /* Project Card Sec CTA */
   --project-button-sec-bg-color: var(--color-60-medium);
   --project-button-sec-bg-color-active: var(--color-60-medium-dark);
@@ -420,10 +415,25 @@ header {
 /*//////////*/
 /* TOOLBOX */
 /*////////*/
+.toolbox-container {
+  background-color: var(--color-60-dark);
+}
+
 /*Tool*/
 .tool {
-  background-color: var(--color-60-light);
-  color: var(--color-60-medium-dark);
+  background-color: var(--tool-bg-color);
+}
+
+.tool svg {
+  fill: var(--tool-color);
+}
+
+.tool span {
+  color: var(--tool-name-color)
+}
+
+.tool h5 {
+  color: var(--toolbox-header-color);
 }
 
 summary::-webkit-details-marker {

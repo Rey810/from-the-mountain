@@ -7,7 +7,7 @@ import Landing from "../components/landing/landing"
 import Personal from "../components/landing/personal"
 import Services from "../components/landing/services/services"
 import Promise from "../components/landing/promise"
-// import Toolbox from "../components/toolbox"
+import Toolbox from "../components/portfolio/toolbox/toolbox"
 // import Projects from "../components/projects"
 import Contact from "../components/landing/contact"
 import Quotes from "../components/landing/quotes"
@@ -51,6 +51,7 @@ const IndexPage = ({
         <Personal {...images} />
         <Services {...images} />
         <Benefits />
+      <Toolbox />
       </div>
       <Projects />
       <div className="landing-children">

@@ -5,18 +5,19 @@ const toolboxCard = props => {
   return (
     <>
       <div
-        className="toolbox-card card-color ml-2 mr-6 mb-8 py-8 pl-8 pr-2
-rounded-md shadow-md sm:w-3/4 md:w-2/3 lg:w-64 lg:py-10 lg:pl-10 lg:pr-4 lg:shadow-lg lg:w-full"
+        className="toolbox-card mb-8 py-8
+flex items-center flex-col sm:w-3/4 md:w-2/3 lg:w-64 lg:py-10 lg:w-full"
       >
-        <h6 className="toolbox-card-header pb-8 font-bold">{title}</h6>
+        <h3 className="toolbox-card-header font-bold">{title}</h3>
         <div className="tools-container">
           <ul className="flex flex-row flex-wrap">
             {tools.map(tool => (
               <li
-                key={tool}
-                className="tool rounded-lg w-mc py-2 px-4 mr-2 mb-2 shadow-sm"
+                key={tool.name}
+                className="tool rounded-lg h-28 w-28 p-4 md:m-2 shadow-sm flex justify-start items-center flex-col"
               >
-                {tool}
+                <div className="w-8 h-8" dangerouslySetInnerHTML={{ __html: tool.icon}} />
+                <span className="mt-3 mb-1 font-bold block">{tool.name}</span>
               </li>
             ))}
           </ul>
