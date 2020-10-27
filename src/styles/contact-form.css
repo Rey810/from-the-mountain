@@ -139,7 +139,7 @@ button:disabled {
 
 .contact-form textarea {
   color: var(--color-60-light);
-  @apply py-3 px-4;
+  @apply py-3 px-4 w-full;
 }
 
 .contact-form textarea::placeholder {

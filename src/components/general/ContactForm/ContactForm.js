@@ -19,13 +19,15 @@ const ContactForm = () => {
   }
 
   return (
+    <>
+    <div role="doc-subtitle" className="mb-4 text-sm opacity-75">Start by clicking on 'Name'</div>
     <form
       method="post"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="contact"
       autoComplete="new-one"
-      className="contact-form"
+      className="contact-form w-2/3 md:w-auto"
       action="/"
     >
       <input type="hidden" name="bot-field" />
@@ -80,6 +82,7 @@ const ContactForm = () => {
         {btnMsg}
       </button>
     </form>
+    </>
   )
 }
 

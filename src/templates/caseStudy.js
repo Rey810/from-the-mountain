@@ -11,6 +11,7 @@ import BackButton from "../components/general/BackButton/BackButton"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 import SimpleCard from "../components/general/simpleCard"
+import ContactForm from "../components/general/ContactForm/ContactForm"
 import Footer from "../components/general/footer"
 
 // destructures the nested projectDataJson from inside data and renames it to 'project'
@@ -129,6 +130,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
     <>
       <SEO {...SEOinfo} />
       <Header isCaseStudy />
+      
       <ContentWrapper
         tabletHeight="md:min-h-6/10 md:max-h-6/10"
         laptopHeight="lg:min-h-8/10 lg:max-h-8/10"
@@ -207,13 +209,14 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         <h3 className="font-semibold text-lg mt-4 md:mt-0 md:text-xl lg:text-2xl xl:text-3xl">
           Want to Work with Me?
         </h3>
-        <Link
+        {/* <Link
           to="/#Connect"
           className="get-in-touch font-semibold btn flex items-center justify-around"
         >
           GET IN TOUCH
           <FontAwesomeIcon className="ml-4" icon={faPaperPlane} />
-        </Link>
+        </Link> */}
+        <ContactForm />
       </div>
       <Footer customBgColor="#171820" />
     </>

@@ -63,7 +63,7 @@ const Header = ({
         Blog
       </Link>
       <Link
-        to="/#Connect"
+        to="#Connect"
         className="contact-mail contact-button mx-auto header-contact-button center py-2 px-6 font-semibold shadow-md rounded-md"
         target="_blank"
       >
