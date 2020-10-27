@@ -45,18 +45,94 @@
     ],
     "siteURL": null,
     "codeURL": "https://github.com/Rey810/rey810.github.io",
-    "image": "wp-palm_trees.png",
+    "image": "images/wp-palm_trees.png",
     "images": [
       {
-        "src": "wp-home.png",
+        "src": "images/wp-home.png",
         "long": true
       },
       {
-        "src": "wp-all_places__browser.png",
+        "src": "images/wp-all_places__browser.png",
         "long": false
       },
       {
-        "src": "wp-article.png",
+        "src": "images/wp-article.png",
+        "long": true
+      }
+    ]
+  },
+    {
+    "projectType": "website",
+    "title": "Deep Roots",
+    "year": 2020,
+    "linkName": "/projects/deep-roots",
+    "imageURL": "Deep Roots landing page with a band rocking in the background.",
+    "description": "The official site for the much-loved Deep Roots Night Market",
+    "caseDescription": "Deep Roots had already established a reputation as the best Friday night market in the entire city. They were, however, without a business website that brought across their professional yet down-to-earth, lovable vibe they were known for.",
+    "collab": [
+      {
+        "name": "Toasted Marshmallow",
+        "link": "https://toastedmarshmallow.co/",
+        "icon": "images/TM-logo.png"
+      }
+    ],
+    "secondDescription": "A clean, minimal design with a dark aesthetic stays true to the professional offering Deep Roots provides it's vendors and customers. Deep Roots is known for it's on-the-ground interaction and fantastic people-skills. As such, website wording (copy) that captures their kind, relatable nature is essential for a site that accentuates Deep Roots' personality. The end-product is a site where visitors can find all the key info about the next market, book an event planning session with Deep Roots, and get a real feel for the Deep Roots everyone loves.",
+    "secondDescriptionQuote": "Staying true to The Vibe",
+    "skillsUtilized": [
+      {
+        "name": "CMS",
+        "description": "A user-friendly content management system was set up to make it easy for Deep Roots to be in control of the key Night Market info like ticket price and performing artists."
+      },
+      {
+        "name": "Visitor Focused",
+        "description": "Most people would be accessing the site on mobile. This prioritized a mobile-friendly design and development approach to maximise a site visitors experience with fast load times, a spacious UI, and a thoughtful UX."
+      },
+      {
+        "name": "Speed Optimization",
+        "description": "Site speed is integral to a happy user-experience. As such, the development was done with speed optimizations at the forefront of decision-making with practices such as crucial page pre-fetching, image optimizations, clean JavaScript code, and semantic HTML."
+      }
+    ],
+    "techStack": [
+      {
+        "name": "JavaScript",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      },
+      {
+        "name": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      { "name": "CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      }
+    ],
+    "toolSet": [
+      {
+        "name": "Webflow",
+        "url": "https://webflow.com/"
+      },
+      {
+        "name": "AdobeXD",
+        "url": "https://www.adobe.com/africa/products/xd.html"
+      }
+    ],
+    "siteURL": "https://deep-roots.webflow.io/",
+    "codeURL": null,
+    "image": "images/Deep-Roots-Landing-Mobile.png",
+    "images": [
+      {
+        "src": "images/Deep-Roots-Land.png",
+        "long": true
+      },
+      {
+        "src": "images/Deep-Roots-Night-Market.png",
+        "long": true
+      },
+      {
+        "src": "images/Deep-Roots-Event-Planning.png",
+        "long": true
+      },
+      {
+        "src": "images/Deep-Roots-Contact.png",
         "long": true
       }
     ]
@@ -108,15 +184,15 @@
     ],
     "siteURL": "https://rey810.github.io/Weather-App/",
     "codeURL": "https://github.com/Rey810/Weather-App",
-    "image": "odins_forecast__half-phone.png",
+    "image": "images/odins_forecast__half-phone.png",
     "images": [
-      { "src": "odins_forecast-1.png", "long": false },
-      { "src": "odins_forecast.png", "long": false },
-      { "src": "odins_forecast-2.png", "long": false },
-      { "src": "odins_forecast-4.png", "long": false },
-      { "src": "odins_forecast-5.png", "long": false },
-      { "src": "odins_forecast-3.png", "long": false },
-      { "src": "odins_forecast__full-phone.png", "long": false }
+      { "src": "images/odins_forecast-1.png", "long": false },
+      { "src": "images/odins_forecast.png", "long": false },
+      { "src": "images/odins_forecast-2.png", "long": false },
+      { "src": "images/odins_forecast-4.png", "long": false },
+      { "src": "images/odins_forecast-5.png", "long": false },
+      { "src": "images/odins_forecast-3.png", "long": false },
+      { "src": "images/odins_forecast__full-phone.png", "long": false }
     ]
   },
   {
@@ -161,16 +237,16 @@
     ],
     "siteURL": null,
     "codeURL": "https://github.com/Rey810/Root",
-    "image": "root.png",
+    "image": "images/root.png",
     "images": [
       {
         "srcSet": [
           {
             "mobile": {
-              "src": "root__long-browser-MOBILE.png"
+              "src": "images/root__long-browser-MOBILE.png"
             },
             "desktop": {
-              "src": "root__long-browser.png"
+              "src": "images/root__long-browser.png"
             }
           }
         ],
@@ -211,16 +287,16 @@
     "toolSet": [{ "name": "AdobeXD", "url": "/" }],
     "siteURL": null,
     "codeURL": null,
-    "image": "meditation.jpg",
+    "image": "images/meditation.jpg",
     "images": [
       {
         "srcSet": [
           {
             "mobile": {
-              "src": "meditation__long-browser-MOBILE.png"
+              "src": "images/meditation__long-browser-MOBILE.png"
             },
             "desktop": {
-              "src": "meditation__long-browser.png"
+              "src": "images/meditation__long-browser.png"
             }
           }
         ],
@@ -265,8 +341,8 @@
     ],
     "siteURL": "https://react-battleship-reythedev.netlify.app/",
     "codeURL": "https://github.com/Rey810/Battleship/tree/master/battleship",
-    "image": "battleships.png",
-    "images": [{ "src": "battleships__laptop.png", "long": false }]
+    "image": "images/battleships.png",
+    "images": [{ "src": "images/battleships__laptop.png", "long": false }]
   },
   {
     "projectType": "app",
@@ -305,10 +381,10 @@
     ],
     "siteURL": null,
     "codeURL": "https://github.com/Rey810/private-events",
-    "image": "eventor.png",
+    "image": "images/eventor.png",
     "images": [
-      { "src": "eventor__monitor.png", "long": false },
-      { "src": "eventor__browser.png", "long": false }
+      { "src": "images/eventor__monitor.png", "long": false },
+      { "src": "images/eventor__browser.png", "long": false }
     ]
   }
 ]

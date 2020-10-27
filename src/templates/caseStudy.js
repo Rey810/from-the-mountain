@@ -119,6 +119,12 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
     imageAltDescr: project.imageURL,
     pathname: project.linkName,
   }
+
+  let collaborators = null
+  if (project.collab){
+   collaborators = <span className="flex items-center text-xs italic -mt-4">In collaboration with <a href={project.collab[0].link} className="mx-2 transform scale-75 duration-200 hover:scale-100"><Img fixed={project.collab[0].icon.childImageSharp.fixed} /></a></span>
+  }
+
   return (
     <>
       <SEO {...SEOinfo} />
@@ -169,6 +175,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
               {project.caseDescription}
             </p>
             {launchProjectButton}
+            {collaborators}
           </div>
         </div>
       </ContentWrapper>
@@ -225,6 +232,17 @@ export const projectQuery = graphql`
       siteURL
       codeURL
       description
+      collab {
+        name
+        link
+        icon {
+          childImageSharp {
+            fixed(width: 32, height: 41) {
+            ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
       secondDescription
       secondDescriptionQuote
       imageURL
