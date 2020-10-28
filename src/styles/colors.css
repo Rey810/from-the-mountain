@@ -24,6 +24,7 @@
   --tool-color: var(--color-illustration-light);
   --tool-name-color: var(--color-60-transp);
   --toolbox-header-color: var(--color-60-transp);
+  --tool-bg-color: var(--color-60-medium-dark);
 
   /* Card Colours */
   --card-bg-color: var(--color-60-dark);
@@ -276,6 +277,35 @@ header {
 /*///////////////////*/
 .landing-container {
   background-color: var(--color-60-dark);
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      var(--color-60-dark) 20%,
+      var(--color-60-dark) 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        var(--color-60-dark) 20%,
+        var(--color-60-dark) 80%,
+        transparent 80%,
+        transparent
+      )
+      35px 35px,
+    linear-gradient(
+        var(--color-60-medium-dark) 2.8000000000000003px,
+        transparent 2.8000000000000003px
+      )
+      0 -1.4000000000000001px,
+    linear-gradient(
+        90deg,
+        var(--color-60-medium-dark) 2.8000000000000003px,
+        var(--color-60-dark) 2.8000000000000003px
+      ) -1.4000000000000001px 0;
+  background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
 }
 
 /*/////////////////////*/
