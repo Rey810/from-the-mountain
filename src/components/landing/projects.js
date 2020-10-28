@@ -19,7 +19,7 @@ const Projects = props => {
   )
 
   return (
-    <PaddingContainer type="projects" X Y>
+    <PaddingContainer type="projects-container" X Y>
       <h2
         className="font-black
 leading-none

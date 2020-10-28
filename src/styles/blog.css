@@ -29,6 +29,12 @@
   --button-text-color: hsl(0, 0%, 100%);
   --input-text-color: rgba(160, 174, 192, 1);
 
+  /* Blog footer colours */
+  /* similar to light theme of subscribe form */
+  --color-60-dark: hsl(210, 38%, 90%);
+  --color-60-medium-dark: hsl(208, 57%, 95%);
+  --color-60-transp: hsl(208.8, 10.5%, 35%);
+  --color-60-light: hsl(208.8, 10.5%, 29%);
 }
 
 .blog-container ol {
@@ -231,13 +237,14 @@
 
 .webmentions__all h4 {
   @apply text-sm pt-0 pb-2 opacity-80;
-} 
+}
 
 .webmentions__header {
   @apply flex justify-between items-center pb-6 pt-12;
 }
 
-.webmentions__info, .webmentions__add {
+.webmentions__info,
+.webmentions__add {
   color: var(--blog-text-color-lighter);
 }
 
@@ -254,13 +261,13 @@
 }
 
 .webmention__like-avatar a img {
-  box-shadow: 0 0 0 .25rem white;
-  transition: transform .1s ease-in-out;
+  box-shadow: 0 0 0 0.25rem white;
+  transition: transform 0.1s ease-in-out;
   @apply relative;
 }
 
 .webmention__like-avatar img:hover {
-  box-shadow: 0 0 0 .15rem var(--color-illustration-light);
+  box-shadow: 0 0 0 0.15rem var(--color-illustration-light);
   transform: scale3d(1.1, 1.1, 1);
   z-index: 2;
 }

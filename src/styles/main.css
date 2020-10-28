@@ -325,6 +325,47 @@ a {
   @apply pb-12 text-center mx-8 md:pb-24 md:mx-24;
 }
 
+footer {
+  @apply relative py-40;
+}
+
+.footer-content {
+  @apply flex flex-col justify-center mx-8 md:flex-row md:mx-auto md:w-1/2;
+}
+
+.footer-content-1 {
+  @apply border-b-2 border-solid border-opacity-75 mr-1/5 mb-10 pb-10 md:mb-0 md:pb-0 md:border-none;
+}
+
+.footer-content-2 {
+  font-family: "Oxanium";
+}
+
+.footer-content h3 {
+  @apply text-xs mb-4 font-bold;
+}
+
+.footer-content p,
+.footer-content li {
+  @apply text-sm;
+}
+
+.footer-content p {
+  max-width: 50ch;
+  line-height: 160%;
+}
+
+.footer-content li {
+  @apply my-2;
+}
+
+.footer-icons {
+  @apply mt-4;
+}
+.footer-icons a {
+  @apply text-base mr-4;
+}
+
 /* Quote Container (footer) */
 .quotes-container,
 .footer-links {

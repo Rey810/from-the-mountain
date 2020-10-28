@@ -1,12 +1,12 @@
 :root {
   --color-60-lighter: rgb(255, 255, 255);
   --color-60-transp: rgba(255, 255, 255, 0.75);
-  --color-60-light: hsl(124, 80%, 96%);
+  --color-60-light: rgb(237, 253, 238);
   --color-60-medium-light: #3a3c4b;
   --color-60-medium: hsl(232, 17%, 17%);
-  --color-60-medium-dark: hsl(233, 16%, 14%);
+  --color-60-medium-dark: #1e1f29;
   --color-60-dark: #171820;
-  --color-30-1: rgba(255, 255, 255, 0.795);
+  --color-30-1: #ffffffcb;
   --color-10-1: #ec4e20;
   --color-10-1-lighter: #fa5d2f;
 
@@ -24,7 +24,6 @@
   --tool-color: var(--color-illustration-light);
   --tool-name-color: var(--color-60-transp);
   --toolbox-header-color: var(--color-60-transp);
-
 
   /* Card Colours */
   --card-bg-color: var(--color-60-dark);
@@ -74,8 +73,8 @@
     --heading-color: #818cab;
 } */
 body {
-  background-color: var(--color-60-medium);
   color: var(--color-60-light);
+  background-color: var(--color-60-medium);
   scrollbar-color: rgb(83, 83, 83) #333;
 }
 
@@ -126,6 +125,40 @@ strong.landing {
 /* HEADER */
 header {
   box-shadow: 0px 2px 10px rgba(236, 78, 32, 0.05);
+}
+
+/* Scope to landing page children */
+.landing-children {
+  background-color: var(--color-60-dark);
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      var(--color-60-dark) 20%,
+      var(--color-60-dark) 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        var(--color-60-dark) 20%,
+        var(--color-60-dark) 80%,
+        transparent 80%,
+        transparent
+      )
+      35px 35px,
+    linear-gradient(
+        var(--color-60-medium-dark) 2.8000000000000003px,
+        transparent 2.8000000000000003px
+      )
+      0 -1.4000000000000001px,
+    linear-gradient(
+        90deg,
+        var(--color-60-medium-dark) 2.8000000000000003px,
+        #171820 2.8000000000000003px
+      ) -1.4000000000000001px 0;
+  background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
 }
 
 /* LANDING */
@@ -273,6 +306,13 @@ header {
 }
 
 /*/////////////////////*/
+/* PROJECTS CONTAINER */
+/*///////////////////*/
+.projects-container {
+  background-color: var(--color-60-medium);
+}
+
+/*/////////////////////*/
 /* SITE REVIEW CONTAINER */
 /*///////////////////*/
 .site-review-container {
@@ -416,7 +456,6 @@ header {
 /* TOOLBOX */
 /*////////*/
 .toolbox-container {
-  background-color: var(--color-60-dark);
 }
 
 /*Tool*/
@@ -429,7 +468,7 @@ header {
 }
 
 .tool span {
-  color: var(--tool-name-color)
+  color: var(--tool-name-color);
 }
 
 .tool h5 {
@@ -466,6 +505,36 @@ svg {
 
 /* QUOTES */
 .quotes-container {
+  background-color: var(--color-60-dark);
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      var(--color-60-dark) 20%,
+      var(--color-60-dark) 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        var(--color-60-dark) 20%,
+        var(--color-60-dark) 80%,
+        transparent 80%,
+        transparent
+      )
+      35px 35px,
+    linear-gradient(
+        var(--color-60-medium-dark) 2.8000000000000003px,
+        transparent 2.8000000000000003px
+      )
+      0 -1.4000000000000001px,
+    linear-gradient(
+        90deg,
+        var(--color-60-medium-dark) 2.8000000000000003px,
+        #171820 2.8000000000000003px
+      ) -1.4000000000000001px 0;
+  background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
   border-color: var(--color-30-1);
 }
 
@@ -474,6 +543,55 @@ svg {
 }
 
 /* FOOTER */
+footer {
+  background-color: var(--color-60-dark);
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      var(--color-60-dark) 20%,
+      var(--color-60-dark) 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        var(--color-60-dark) 20%,
+        var(--color-60-dark) 80%,
+        transparent 80%,
+        transparent
+      )
+      35px 35px,
+    linear-gradient(
+        var(--color-60-medium-dark) 2.8000000000000003px,
+        transparent 2.8000000000000003px
+      )
+      0 -1.4000000000000001px,
+    linear-gradient(
+        90deg,
+        var(--color-60-medium-dark) 2.8000000000000003px,
+        var(--color-60-dark) 2.8000000000000003px
+      ) -1.4000000000000001px 0;
+  background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
+}
+
+.footer-content h3 {
+  color: var(--color-60-transp);
+}
+
+.footer-content-1 {
+  border-color: var(--color-60-transp);
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-content svg,
+.footer-content a {
+  color: var(--color-60-light);
+}
 
 /* ANIMATION */
 @keyframes fadeInSlide {

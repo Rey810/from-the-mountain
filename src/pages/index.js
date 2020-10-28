@@ -10,11 +10,12 @@ import Promise from "../components/landing/promise"
 import Toolbox from "../components/portfolio/toolbox/toolbox"
 // import Projects from "../components/projects"
 import Contact from "../components/landing/contact"
-import Quotes from "../components/landing/quotes"
 import Benefits from "../components/landing/benefits"
 import Projects from "../components/landing/projects"
 import FAQ from "../components/landing/faq"
 import SiteReview from "../components/landing/siteReview"
+import Footer from "../components/general/footer"
+import Quotes from "../components/landing/quotes"
 
 // Font Awesome Icons
 import { library, config } from "@fortawesome/fontawesome-svg-core"
@@ -51,7 +52,7 @@ const IndexPage = ({
         <Personal {...images} />
         <Services {...images} />
         <Benefits />
-      <Toolbox />
+        <Toolbox />
       </div>
       <Projects />
       <div className="landing-children">
@@ -63,6 +64,7 @@ const IndexPage = ({
       <div className="landing-children">
         <FAQ />
         <Contact />
+        <Footer />
         <Quotes />
       </div>
     </Layout>
