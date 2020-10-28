@@ -82,14 +82,14 @@ const Landing = props => {
                 Get Site Review
               </button> */}
               <Link to="/#Connect" className="btn landing-cta-1">
-                <span className="w-1/1 text-center inline-block">Hire Me</span>
+                <span className="w-1/1 text-center inline-block">HIRE ME</span>
               </Link>
               <Link
                 to="/#services"
                 className="view-projects-container btn flex fex-row items-center"
               >
                 <FeatherArrowRightCircle />
-                <span className="w-1/1 text-center">View Services</span>
+                <span className="w-1/1 text-center">VIEW SERVICES</span>
               </Link>
             </div>
             <div
