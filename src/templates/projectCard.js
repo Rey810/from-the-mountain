@@ -16,7 +16,6 @@ const projectCard = props => {
     projectType,
   } = props.info
 
-
   // builds relative URL for when projectcase studies are accessed from the home/projects
   // linkName is used when project case studies are accessed from home/
   const caseStudyURL = linkName
@@ -66,52 +65,47 @@ const projectCard = props => {
     )
   }
 
-  // projectCard only displayed if it's type matches the type that is currently being displayed
-  let projectCard = null
-
-  if (projectType === props.displayType) {
-    projectCard = (
-      <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12 shadow-lg rounded-lg">
-        <div className="project-container absolute inset-0 grid grid-rows-2 row-gap-4 rounded-lg">
-          <div className="project-image-container relative m-4 mb-0">
-            <Img
-              fluid={image.childImageSharp.fluid}
-              className="inset-0 rounded-t-md"
-            />
+  let projectCard = (
+    <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12 shadow-lg rounded-lg">
+      <div className="project-container absolute inset-0 grid grid-rows-2 row-gap-4 rounded-lg">
+        <div className="project-image-container relative m-4 mb-0">
+          <Img
+            fluid={image.childImageSharp.fluid}
+            className="inset-0 rounded-t-md"
+          />
+        </div>
+        <div className="project-info-container mx-4 my-auto flex justify-between">
+          <div className="project-text-container w-1/2 flex flex-col justify-end">
+            <h3 className="project-header text-lg md:text-xl font-semi-bold my-2">
+              {title}
+            </h3>
+            <p className="project-description text-xs mb-4 h-17 overflow-y-hidden leading-snug md:text-sm md:h-20">
+              {description}
+            </p>
+            <div className="project-tech-container flex flex-no-wrap">
+              {techStack.map(tech => {
+                return (
+                  <a
+                    key={uuid()}
+                    href={tech.url}
+                    className="tech-link text-xs md:text-sm border-2 rounded-md mb-2 mr-2"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {tech.name}
+                  </a>
+                )
+              })}
+            </div>
           </div>
-          <div className="project-info-container mx-4 my-auto flex justify-between">
-            <div className="project-text-container w-1/2 flex flex-col justify-end">
-              <h3 className="project-header text-lg md:text-xl font-semi-bold my-2">
-                {title}
-              </h3>
-              <p className="project-description text-xs mb-4 h-17 overflow-y-hidden leading-snug md:text-sm md:h-20">
-                {description}
-              </p>
-              <div className="project-tech-container flex flex-no-wrap">
-                {techStack.map(tech => {
-                  return (
-                    <a
-                      key={uuid()}
-                      href={tech.url}
-                      className="tech-link text-xs md:text-sm border-2 rounded-md mb-2 mr-2"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      {tech.name}
-                    </a>
-                  )
-                })}
-              </div>
-            </div>
-            <div className="project-buttons-container w-5/12 mb-2 flex flex-col justify-end font-extrabold leading-none">
-              {caseStudyLink}
-              {codeLink}
-            </div>
+          <div className="project-buttons-container w-5/12 mb-2 flex flex-col justify-end font-extrabold leading-none">
+            {caseStudyLink}
+            {codeLink}
           </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 
   return <>{projectCard}</>
 }

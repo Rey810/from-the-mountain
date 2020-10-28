@@ -5,7 +5,10 @@ import { useStaticQuery, graphql } from "gatsby"
 const Websites = props => {
   const projectsData = useStaticQuery(graphql`
     query {
-      allProjectDataJson {
+      allProjectDataJson(
+        filter: { projectType: { eq: "website" } }
+        sort: { fields: year, order: DESC }
+      ) {
         edges {
           node {
             projectType
@@ -40,16 +43,12 @@ const Websites = props => {
     }
   `)
 
-  const projectNodes = projectsData.allProjectDataJson.edges
+  const websiteNodes = projectsData.allProjectDataJson.edges
 
   return (
     <>
-      {projectNodes.map(project => (
-        <Project
-          displayType="website"
-          info={project.node}
-          location={props.location}
-        />
+      {websiteNodes.map(project => (
+        <Project info={project.node} location={props.location} />
       ))}
     </>
   )
