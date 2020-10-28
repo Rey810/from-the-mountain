@@ -26,7 +26,7 @@ export default function ReportForm(props) {
             Book Your Free Technical Report
           </h3>
         </div>
-        <p className="text-sm mt-6 mb-3 xl:my-3 xl:w-3/4">
+        <p className="mb-3 xl:w-3/4">
           {props.inLine
             ? "Let me review your existing (or pre-deployment) site before you commit to working with me on an awesome new one. "
             : null}

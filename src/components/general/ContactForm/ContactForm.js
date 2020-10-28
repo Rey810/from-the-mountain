@@ -9,7 +9,7 @@ const ContactForm = () => {
 
   const [btnMsg, setBtnMsg] = useState("Get in Touch")
 
-  // takes event, finds value, updates state of that input
+  // takes event (cliked input), finds value, updates state of that input
   const updateInput = e => {
     const inputValue = e.target.value
     // update state immutably
@@ -20,7 +20,7 @@ const ContactForm = () => {
 
   return (
     <>
-    <div role="doc-subtitle" className="mb-4 text-sm opacity-75">Start by clicking on 'Name'</div>
+    <div role="doc-subtitle" className="mb-4 text-xs opacity-75">Start by clicking on 'Name'</div>
     <form
       method="post"
       netlify-honeypot="bot-field"

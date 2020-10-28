@@ -31,7 +31,7 @@ const Landing = props => {
   return (
     <section
       id="What-I-Do"
-      className="landing-container md:flex md:justify-center md:items-center md:flex-row md:min-h-screen md:pb-8"
+      className="landing-container pattern-bg md:flex md:justify-center md:items-center md:flex-row md:min-h-screen md:pb-8"
     >
       <Modal toggleModal={modalToggleHandler} show={showModal}>
         <ReportForm theme="dark" close={modalCloseHandler} />

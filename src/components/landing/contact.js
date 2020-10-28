@@ -17,32 +17,6 @@ const contact = () => {
             </span>
           </div>
         </div>
-        <div className="contact-social-container text-2xl flex flex-row justify-center pt-6">
-          <a
-            className="landing-icons icon px-4"
-            href="https://twitter.com/ReyTheDev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={["fab", "twitter"]} />
-          </a>
-          <a
-            className="landing-icons icon px-4"
-            href="https://github.com/Rey810"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={["fab", "github"]} />
-          </a>
-          <a
-            className="landing-icons icon px-4"
-            href="https://www.linkedin.com/in/rey810/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={["fab", "linkedin"]} />
-          </a>
-        </div>
       </div>
     </section>
   )

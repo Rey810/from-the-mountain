@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const Footer = ({ customBgColor }) => {
   return (
-    <footer style={{ backgroundColor: `${customBgColor}` }}>
+    <footer className="pattern-bg" style={{ backgroundColor: `${customBgColor}` }}>
       <div className="footer-content">
         <div className="footer-content-1">
           <h3>About FTM</h3>

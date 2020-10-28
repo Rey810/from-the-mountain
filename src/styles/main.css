@@ -77,7 +77,7 @@ h4 {
 .landing-description,
 .landing-cta-1,
 .email-field {
-  @apply text-xl md:text-2xl;
+  @apply text-xl;
 }
 
 /* Section Headers */
@@ -203,6 +203,12 @@ a {
   @apply md:mt-24;
 }
 
+@media (min-width: 767px) {
+  .service-text-wrapper {
+    max-width: 40ch;
+  }
+}
+
 .service-text__left,
 .service-text__right {
   @apply flex flex-col justify-center items-center;
@@ -218,6 +224,7 @@ a {
 
 /* Benefits */
 .all-benefits-container {
+  font-family: 'Oxanium';
   @apply mx-auto md:w-3/4;
 }
 
@@ -235,10 +242,7 @@ a {
 }
 
 .benefit-icon {
-  @apply p-4 rounded-full flex justify-center items-center shadow-md;
-  height: 5rem;
-  width: 5rem;
-  background-color: var(--color-illustration);
+  @apply p-4 rounded-full flex justify-center items-center shadow-md h-16 w-16;
 }
 
 @media (max-width: 640px) {
@@ -249,13 +253,12 @@ a {
 }
 
 .benefit-icon svg {
-  @apply w-4/6;
+  @apply w-5;
 }
 
 .benefit-text {
   @apply w-3/4 md:w-auto;
   @apply mt-6;
-  @apply text-lg md:text-xl;
   @apply text-center;
 }
 
@@ -367,10 +370,14 @@ footer {
 }
 
 /* Quote Container (footer) */
-.quotes-container,
-.footer-links {
-  @apply text-xs md:text-base;
+.quotes-container {
+  @apply text-xs;
 }
+
+.quote {
+  @apply px-0 md:p-4 flex justify-center flex-wrap items-center
+}
+
 .footer-links a:hover {
   @apply underline;
 }
@@ -407,12 +414,6 @@ footer {
     @apply text-2xl;
   }
 }
-/* 
-@media screen and (min-width: 1400px) {
-  html {
-    font-size: 24px;
-  }
-} */
 
 @tailwind components;
 @tailwind utilities;

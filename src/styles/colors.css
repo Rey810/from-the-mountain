@@ -99,7 +99,7 @@ nav {
 }
 
 p {
-  color: var(--color-60-light);
+  color: var(--color-60-transp);
 }
 
 h1,
@@ -128,8 +128,23 @@ header {
   box-shadow: 0px 2px 10px rgba(236, 78, 32, 0.05);
 }
 
-/* Scope to landing page children */
-.landing-children {
+/* LANDING */
+.landing-title,
+.landing-description {
+  color: var(--color-60-light);
+}
+.animated-goal {
+  animation: fadeInSlide 0.5s ease-in infinite;
+  position: relative;
+}
+
+.free-ribbon .price {
+  color: var(--color-60-transp);
+  text-decoration-color: var(--color-60-light);
+}
+
+/* PATTERN BACKGROUND */
+.pattern-bg {
   background-color: var(--color-60-dark);
   opacity: 1;
   background: radial-gradient(
@@ -157,25 +172,11 @@ header {
     linear-gradient(
         90deg,
         var(--color-60-medium-dark) 2.8000000000000003px,
-        #171820 2.8000000000000003px
+        var(--color-60-dark) 2.8000000000000003px
       ) -1.4000000000000001px 0;
   background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
 }
 
-/* LANDING */
-.landing-title,
-.landing-description {
-  color: var(--color-60-light);
-}
-.animated-goal {
-  animation: fadeInSlide 0.5s ease-in infinite;
-  position: relative;
-}
-
-.free-ribbon .price {
-  color: var(--color-60-transp);
-  text-decoration-color: var(--color-60-light);
-}
 /*/////////////////////////*/
 /* CALL TO ACTION BUTTONS */
 /*///////////////////////*/
@@ -269,44 +270,12 @@ header {
 }
 
 .benefit-icon {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-illustration);
 }
 
 /*/////////////////////*/
 /* LANDING CONTAINER */
 /*///////////////////*/
-.landing-container {
-  background-color: var(--color-60-dark);
-  opacity: 1;
-  background: radial-gradient(
-      circle,
-      transparent 20%,
-      var(--color-60-dark) 20%,
-      var(--color-60-dark) 80%,
-      transparent 80%,
-      transparent
-    ),
-    radial-gradient(
-        circle,
-        transparent 20%,
-        var(--color-60-dark) 20%,
-        var(--color-60-dark) 80%,
-        transparent 80%,
-        transparent
-      )
-      35px 35px,
-    linear-gradient(
-        var(--color-60-medium-dark) 2.8000000000000003px,
-        transparent 2.8000000000000003px
-      )
-      0 -1.4000000000000001px,
-    linear-gradient(
-        90deg,
-        var(--color-60-medium-dark) 2.8000000000000003px,
-        var(--color-60-dark) 2.8000000000000003px
-      ) -1.4000000000000001px 0;
-  background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
-}
 
 /*/////////////////////*/
 /* PERSONAL CONTAINER */
@@ -338,9 +307,7 @@ header {
 /*/////////////////////*/
 /* PROJECTS CONTAINER */
 /*///////////////////*/
-.projects-container {
-  background-color: var(--color-60-medium);
-}
+
 
 /*/////////////////////*/
 /* SITE REVIEW CONTAINER */
@@ -533,94 +500,13 @@ svg {
   transform: rotate(180deg);
 }
 
-/* QUOTES */
-.quotes-container {
-  background-color: var(--color-60-dark);
-  opacity: 1;
-  background: radial-gradient(
-      circle,
-      transparent 20%,
-      var(--color-60-dark) 20%,
-      var(--color-60-dark) 80%,
-      transparent 80%,
-      transparent
-    ),
-    radial-gradient(
-        circle,
-        transparent 20%,
-        var(--color-60-dark) 20%,
-        var(--color-60-dark) 80%,
-        transparent 80%,
-        transparent
-      )
-      35px 35px,
-    linear-gradient(
-        var(--color-60-medium-dark) 2.8000000000000003px,
-        transparent 2.8000000000000003px
-      )
-      0 -1.4000000000000001px,
-    linear-gradient(
-        90deg,
-        var(--color-60-medium-dark) 2.8000000000000003px,
-        #171820 2.8000000000000003px
-      ) -1.4000000000000001px 0;
-  background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
-  border-color: var(--color-30-1);
-}
 
 .quotes-container span {
   border-color: var(--color-30-1);
 }
 
-/* FOOTER */
-footer {
-  background-color: var(--color-60-dark);
-  opacity: 1;
-  background: radial-gradient(
-      circle,
-      transparent 20%,
-      var(--color-60-dark) 20%,
-      var(--color-60-dark) 80%,
-      transparent 80%,
-      transparent
-    ),
-    radial-gradient(
-        circle,
-        transparent 20%,
-        var(--color-60-dark) 20%,
-        var(--color-60-dark) 80%,
-        transparent 80%,
-        transparent
-      )
-      35px 35px,
-    linear-gradient(
-        var(--color-60-medium-dark) 2.8000000000000003px,
-        transparent 2.8000000000000003px
-      )
-      0 -1.4000000000000001px,
-    linear-gradient(
-        90deg,
-        var(--color-60-medium-dark) 2.8000000000000003px,
-        var(--color-60-dark) 2.8000000000000003px
-      ) -1.4000000000000001px 0;
-  background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
-}
-
-.footer-content h3 {
-  color: var(--color-60-transp);
-}
-
-.footer-content-1 {
-  border-color: var(--color-60-transp);
-}
-
 .footer-content a:hover {
   text-decoration: underline;
-}
-
-.footer-content svg,
-.footer-content a {
-  color: var(--color-60-light);
 }
 
 /* ANIMATION */

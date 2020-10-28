@@ -19,7 +19,7 @@ const Projects = props => {
   )
 
   return (
-    <PaddingContainer type="projects-container" X Y>
+    <PaddingContainer type="projects-container pattern-bg" X Y>
       <h2
         className="font-black
 leading-none
@@ -33,7 +33,7 @@ mb-4 md:mb-16"
         toggleProjects={toggleSwitchHandler}
         showSites={showSites}
       />
-      <div className="projects-container mx-auto sm:w-72 lg:w-76 xl:w-2/3 xl:grid xl:grid-cols-2 xl:gap-x-16">
+      <div className="projects-container pattern-bg mx-auto sm:w-72 lg:w-76 xl:w-2/3 xl:grid xl:grid-cols-2 xl:gap-x-16">
         {displayedProjects}
       </div>
     </PaddingContainer>

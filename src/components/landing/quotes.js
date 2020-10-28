@@ -37,7 +37,7 @@ const Quotes = () => {
       <section className="quotes-container">
         <div className="quote flex flex-row">
           <span className="text-4xl p-4">"</span>
-          <div className="quote px-0 md:p-4 flex flex-wrap items-center">
+          <div className="quote">
             <span>
               {quote} <strong>- {author}</strong>
             </span>

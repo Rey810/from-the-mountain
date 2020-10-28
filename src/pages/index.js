@@ -51,8 +51,8 @@ const IndexPage = ({
         <Landing {...images} />
         <Personal {...images} />
         <Services {...images} />
-        <Benefits />
         <Toolbox />
+        <Benefits />
       </div>
       <Projects />
       <div className="landing-children">
@@ -61,7 +61,7 @@ const IndexPage = ({
       <div className="landing-children">
         <SiteReview />
       </div>
-      <div className="landing-children">
+      <div className="landing-children pattern-bg">
         <FAQ />
         <Contact />
         <Footer />

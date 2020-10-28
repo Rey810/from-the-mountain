@@ -4,8 +4,6 @@ const Money = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="21.341"
-      height="37.735"
       viewBox="0 0 21.341 37.735"
     >
       <path

@@ -85,13 +85,13 @@ const toolbox = () => {
   }
 
   return (
-    <PaddingContainer id="Toolbox" type="toolbox-container" X Y>
+    <PaddingContainer id="Toolbox" type="toolbox-container pattern-bg" X Y>
       <h2 className="toolbox-header text-center">My Toolbox</h2>
       <div className="toolbox-cards-wrapper">
         <ToolboxCard tools={tools.frontend} title={"Front-end"} />
         <ToolboxCard tools={tools.backend} title={"Back-end"} />
         <ToolboxCard tools={tools.general} title={"General"} />
-      </div>
+    </div>
     </PaddingContainer>
   )
 }
