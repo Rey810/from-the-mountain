@@ -1,7 +1,7 @@
 ---
 path: "/blog/survive-learning-to-code"
 lastUpdated: ""
-date: "21 September, 2020"
+date: "2020-09-21"
 title: "Survive Learning to Code: Tales and Tips from a Psych Student turned Developer"
 cardTitle: "Survive Learning to Code"
 author: "Rey van den Berg"

@@ -1,7 +1,7 @@
 ---
 path: "/blog/3-wellbeing-focused-ways-to-be-a-better-developer"
-lastUpdated: "03 August, 2020"
-date: "30 June, 2020"
+lastUpdated: "2020-08-03"
+date: "2020-06-30"
 title: "The 3 Best Wellbeing Habits You Need to be a Better Developer"
 cardTitle: "The 3 Best Wellbeing Habits"
 author: "Rey van den Berg"

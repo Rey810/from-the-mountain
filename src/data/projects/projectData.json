@@ -61,14 +61,14 @@
       }
     ]
   },
-    {
+  {
     "projectType": "website",
     "title": "Deep Roots",
     "year": 2020,
     "linkName": "/projects/deep-roots",
     "imageURL": "Deep Roots landing page with a band rocking in the background.",
     "description": "The official site for the much-loved Deep Roots Night Market",
-    "caseDescription": "Deep Roots had already established a reputation as the best Friday night market in the entire city. They were, however, without a business website that brought across their professional yet down-to-earth, lovable vibe they were known for.",
+    "caseDescription": "Deep Roots had already established a reputation as the best Friday night market in Pretoria. They were, however, without a business website that brought across their professional yet down-to-earth, lovable vibe that they are known for.",
     "collab": [
       {
         "name": "Toasted Marshmallow",
@@ -101,7 +101,8 @@
         "name": "HTML",
         "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
       },
-      { "name": "CSS",
+      {
+        "name": "CSS",
         "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
       }
     ],

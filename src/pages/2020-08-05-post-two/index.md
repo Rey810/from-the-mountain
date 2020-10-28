@@ -1,7 +1,7 @@
 ---
 path: "/blog/digital-minimalism-why-your-happiness-demands-it"
-lastUpdated: "2 October, 2020"
-date: "8 August, 2020"
+lastUpdated: "2020-10-02"
+date: "2020-08-08"
 title: "Digital Minimalism: Why Your Happiness Demands It"
 cardTitle: "Digital Minimalism"
 author: "Rey van den Berg"
@@ -186,7 +186,7 @@ Here are some small actionable things to try out in your digital minimalism expe
 
 Again, these are not meant to make your life difficult or unpleasant. They're a means to clarifying which pieces of technology are genuinely valuable and which are not. In other words, you're practicing digital minimalism!
 
-_[Check out a few practical tips from the people who made *The Social Dilemma*](https://www.humanetech.com/take-control)
+\_[Check out a few practical tips from the people who made _The Social Dilemma_](https://www.humanetech.com/take-control)
 
 <h2 id="the-harms-of-an-unchecked-digital-life">7. The Harms of an Unchecked Digital Life</h2>
 
