@@ -505,6 +505,14 @@ svg {
   border-color: var(--color-30-1);
 }
 
+.footer-content-1, .footer-content-2 {
+  color: var(--color-60-transp);
+}
+
+.footer-icons a:hover {
+  color: var(--color-60-light);
+}
+
 .footer-content a:hover {
   text-decoration: underline;
 }

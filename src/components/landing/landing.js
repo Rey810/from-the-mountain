@@ -95,7 +95,7 @@ const Landing = props => {
             <div
               className={`opacity-0 ${
                 animated ? "fadeIn-4th" : null
-              } landing-icons-container flex flex-col justify-center ml-10 md:ml-18`}
+              } landing-icons-container flex flex-col justify-center ml-10`}
             >
               <a
                 title="Find Rey on Twitter"

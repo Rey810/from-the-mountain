@@ -2,6 +2,9 @@
 /* .project-image-container div {
   height: -webkit-fill-available;
 } */
+.project-square-wrapper {
+  @apply relative mx-auto md:w-9/10 md:pb-9/10 my-12 shadow-lg rounded-lg;
+}
 
 .project-image-container {
   padding-bottom: inherit;

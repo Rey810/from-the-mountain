@@ -31,8 +31,16 @@ const Projects = props => {
       {/* <Projects />
         <Toolbox /> */}
       <div className="sticky-footer-wrapper">
-        <section class="px-4 md:px-8 lg:px-12 xl:px-16 mt-16 mb-20">
-        <h2>Projects</h2>
+        <section class="px-4 mt-10 mb-20 md:px-8 lg:px-12 xl:px-16">
+              <h2
+        className="font-black
+leading-none
+text-center
+text-4xl md:text-6xl
+pt-12 md:mt-0"
+      >
+        Projects
+      </h2>
           <ToggleSwitch
             toggleProjects={toggleSwitchHandler}
             showSites={showSites}
@@ -41,7 +49,7 @@ const Projects = props => {
             {displayedProjects}
           </div>
         </section>
-        <div className="get-in-touch-container flex flex-col items-center py-4 -mb-1 -mx-20 sm:py-8 lg:py-24">
+        <div className="get-in-touch-container flex flex-col items-center py-4 -mb-1 sm:py-8 lg:py-24">
             <h3 className="font-semibold text-lg mt-4 md:mt-0 md:text-xl lg:text-2xl xl:text-3xl">
               Want to Work with Me?
             </h3>

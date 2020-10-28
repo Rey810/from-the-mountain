@@ -41,8 +41,9 @@ body {
 
 .landing-children h3,
 .landing-children h4,
-.landing-children h5 {
-  font-weight: bold;
+.landing-children h5,
+.cta-container {
+  @apply font-bold;
 }
 
 /* Font black is a font weight of 900 */
@@ -76,8 +77,8 @@ h4 {
 
 .landing-description,
 .landing-cta-1,
-.email-field {
-  @apply text-xl;
+.view-projects-container {
+  @apply text-base;
 }
 
 /* Section Headers */
@@ -99,11 +100,6 @@ a {
 
 .btn {
   @apply block px-12 py-4 rounded my-6;
-}
-
-.landing-cta-2,
-.cta {
-  @apply text-base;
 }
 
 .landing-children h3 {
@@ -136,7 +132,7 @@ a {
   @apply text-lg;
 }
 .view-projects-container {
-  @apply border-2 text-lg md:text-xl;
+  @apply border-2;
   border-color: var(--color-10-1);
 }
 
@@ -397,7 +393,7 @@ footer {
 
   /* Icons */
   .icon {
-    @apply text-xl;
+    @apply text-lg;
   }
 }
 
@@ -411,7 +407,7 @@ footer {
 
   /* Icons */
   .icon {
-    @apply text-2xl;
+    @apply text-lg;
   }
 }
 

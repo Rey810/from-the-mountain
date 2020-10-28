@@ -7,9 +7,9 @@
 }
 
 .Dark {
-  color: var(--color-60-medium-dark) !important;
+  color: #171820 !important;
 }
 
 .Light {
-  color: var(--color-60-light) !important;
+  color: rgb(237, 253, 238) !important;
 }

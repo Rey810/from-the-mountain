@@ -66,7 +66,7 @@ const projectCard = props => {
   }
 
   let projectCard = (
-    <div className="project-square-wrapper relative w-1/1 pb-1/1 my-12 shadow-lg rounded-lg">
+    <div className="project-square-wrapper">
       <div className="project-container absolute inset-0 grid grid-rows-2 row-gap-4 rounded-lg">
         <div className="project-image-container relative m-4 mb-0">
           <Img
