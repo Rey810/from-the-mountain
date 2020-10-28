@@ -10,11 +10,11 @@ flex items-center flex-col sm:w-3/4 md:w-2/3 lg:w-64 lg:py-10 lg:w-full"
       >
         <h3 className="toolbox-card-header font-bold">{title}</h3>
         <div className="tools-container">
-          <ul className="flex flex-row flex-wrap">
+          <ul className="flex flex-row flex-wrap justify-center">
             {tools.map(tool => (
               <li
                 key={tool.name}
-                className="tool rounded-lg h-28 w-28 p-4 md:m-2 shadow-sm flex justify-end items-center flex-col"
+                className="tool rounded-lg h-28 w-28 p-4 m-2 shadow-sm flex justify-end items-center flex-col"
               >
                 <div
                   className="w-8 h-8"
