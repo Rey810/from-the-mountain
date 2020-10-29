@@ -9,8 +9,8 @@
   --color-30-1: #ffffffcb;
   --color-accent-main: #ff6663;
   --color-accent-main-lighter: #ff7370;
-  --color-accent-sec: #1282a2;
-  --color-accent-sec-lighter: rgb(44, 179, 216);
+  --color-accent-sec: #03cea4;
+  --color-accent-sec-lighter: #0edfb5;
 
   --border-color: #eceeef;
 
@@ -183,12 +183,20 @@ header {
 /* CALL TO ACTION BUTTONS */
 /*///////////////////////*/
 /* .project-site, */
-.contact-button,
+
 .get-in-touch,
 .case-launch-button,
 .landing-cta-1 {
   color: var(--color-60-light);
   background-color: var(--color-accent-main);
+}
+
+.contact-button {
+  background-color: var(--color-accent-sec);
+}
+
+.contact-button:hover {
+  background-color: var(--color-accent-sec-lighter);
 }
 
 .free-ribbon {
@@ -238,7 +246,6 @@ header {
 }
 
 /* .project-site:hover, */
-.contact-button:hover,
 .get-in-touch:hover,
 .landing-cta-1:hover {
   background-color: var(--color-accent-main-lighter);

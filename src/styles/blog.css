@@ -25,8 +25,8 @@
   /* AUXILLARY COLORS */
   --link-color: var(--color-illustration);
   /* SUBSCRIBE BLOCK */
-  --button-color:#ff6663;
-  --button-hover-color:  hsl(1, 100%, 72%);
+  --button-color: #ff6663;
+  --button-hover-color: hsl(1, 100%, 72%);
   --button-text-color: hsl(0, 0%, 100%);
   --input-text-color: rgba(160, 174, 192, 1);
 
@@ -327,7 +327,8 @@
   --form-footer-text-color: hsl(208.8, 10.5%, 35%);
   --form-input-bg-color: rgb(255, 255, 255);
   --form-input-border: 1px solid rgb(203, 213, 224);
-  --button-color: #ec4e20;
+  --button-color: var(--button-color);
+  --button-hover-color: var(--button-hover-color);
 }
 
 .dark {
@@ -337,8 +338,8 @@
   --form-footer-text-color: rgba(255, 255, 255, 0.5);
   --form-input-bg-color: #252734;
   --form-input-border: none;
-  --button-color: #ec4e20;
-  --button-hover-color: #fa5d2f;
+  --button-color: var(--button-color);
+  --button-hover-color: var(--button-hover-color);
 }
 
 .subscribe-text-container,
