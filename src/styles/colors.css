@@ -222,6 +222,15 @@ header {
   opacity: 1;
 }
 
+.header-contact-button {
+  background-color:   var(--color-accent-main);
+}
+
+.header-contact-button:hover {
+  background-color:   var(--color-accent-main-lighter);
+}
+
+
 /* //////////////////////// */
 /* Case Study landing page */
 /* //////////////////////// */
