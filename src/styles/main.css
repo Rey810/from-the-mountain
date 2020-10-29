@@ -220,7 +220,7 @@ a {
 
 /* Benefits */
 .all-benefits-container {
-  font-family: 'Oxanium';
+  font-family: "Oxanium";
   @apply mx-auto md:w-3/4;
 }
 
@@ -256,6 +256,11 @@ a {
   @apply w-3/4 md:w-auto;
   @apply mt-6;
   @apply text-center;
+}
+
+/* Toolbox */
+.toolbox-cards-wrapper {
+  @apply flex flex-col items-center;
 }
 
 /* Promises */
@@ -371,7 +376,7 @@ footer {
 }
 
 .quote {
-  @apply px-0 md:p-4 flex justify-center flex-wrap items-center
+  @apply px-0 md:p-4 flex justify-center flex-wrap items-center;
 }
 
 .footer-links a:hover {

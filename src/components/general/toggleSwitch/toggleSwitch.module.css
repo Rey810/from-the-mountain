@@ -16,7 +16,7 @@
 }
 
 .inactive {
-  background-color: var(--color-60-dark);
+  background-color: var(--color-60-medium-dark);
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -27,7 +27,7 @@
 
 .inactive:hover,
 .inactive:active {
-  background-color: var(--color-60-medium-dark);
+  background-color: var(--color-60-medium);
 }
 
 .active:focus {

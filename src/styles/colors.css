@@ -1,19 +1,21 @@
 :root {
   --color-60-lighter: rgb(255, 255, 255);
-  --color-60-transp: rgba(255, 255, 255, 0.75);
+  --color-60-transp: #ffffffbf;
   --color-60-light: rgb(237, 253, 238);
-  --color-60-medium-light: #3a3c4b;
-  --color-60-medium: hsl(232, 17%, 17%);
-  --color-60-medium-dark: #1e1f29;
+  --color-60-medium-light: #31323b;
+  --color-60-medium: hsl(234, 16%, 20%);
+  --color-60-medium-dark: hsl(234, 16%, 13%);
   --color-60-dark: #171820;
   --color-30-1: #ffffffcb;
-  --color-10-1: #ec4e20;
-  --color-10-1-lighter: #fa5d2f;
+  --color-accent-main: #ff6663;
+  --color-accent-main-lighter: #ff7370;
+  --color-accent-sec: #1282a2;
+  --color-accent-sec-lighter: rgb(44, 179, 216);
 
   --border-color: #eceeef;
 
-  --color-illustration: rgb(99, 41, 196);
-  --color-illustration-light: hsl(262, 65%, 60%);
+  --color-illustration: #5626a9;
+  --color-illustration-light: #6635bb;
 
   /* Overlay Colours */
   --initial-color-overlay: rgba(31, 31, 31, 0.4);
@@ -21,7 +23,7 @@
   --final-colour-overlay: rgb(31, 31, 31);
 
   /* Toolbox Colours */
-  --tool-color: var(--color-illustration-light);
+  --tool-color: var(--color-accent-sec);
   --tool-name-color: var(--color-60-transp);
   --toolbox-header-color: var(--color-60-transp);
   --tool-bg-color: var(--color-60-medium-dark);
@@ -42,7 +44,7 @@
 
   /* Project Card Sec CTA */
   --project-button-sec-bg-color: var(--color-60-medium);
-  --project-button-sec-bg-color-active: var(--color-60-medium-dark);
+  --project-button-sec-bg-color-active: var(--color-60-medium-light);
   --project-button-sec-text-color: var(--color-60-transp);
 
   /* FORM COLOURS */
@@ -112,7 +114,7 @@ h6 {
 }
 
 strong.landing {
-  color: var(--color-10-1);
+  color: var(--color-accent-main);
 }
 /*/////////////////*/
 /* SCROLL EFFECTS */
@@ -186,7 +188,7 @@ header {
 .case-launch-button,
 .landing-cta-1 {
   color: var(--color-60-light);
-  background-color: var(--color-10-1);
+  background-color: var(--color-accent-main);
 }
 
 .free-ribbon {
@@ -194,12 +196,12 @@ header {
 }
 
 .view-projects-container {
-  color: var(--color-10-1);
+  color: var(--color-accent-main);
 }
 
 .view-projects-icon-container {
-  color: var(--color-10-1);
-  border-color: var(--color-10-1);
+  color: var(--color-accent-main);
+  border-color: var(--color-accent-main);
 }
 
 .email-field {
@@ -224,7 +226,7 @@ header {
 }
 
 .case-specs-info div > h3 {
-  color: var(--color-10-1);
+  color: var(--color-accent-main);
 }
 
 .get-in-touch-container {
@@ -239,7 +241,7 @@ header {
 .contact-button:hover,
 .get-in-touch:hover,
 .landing-cta-1:hover {
-  background-color: var(--color-10-1-lighter);
+  background-color: var(--color-accent-main-lighter);
 }
 
 .reply-indicator {
@@ -281,13 +283,13 @@ header {
 /* PERSONAL CONTAINER */
 /*///////////////////*/
 .personal-container {
-  background-color: var(--color-60-medium-dark);
+  background-color: var(--color-60-dark);
 }
 /*/////////////////////*/
 /* SERVICE CONTAINER */
 /*///////////////////*/
 .service-container {
-  background-color: var(--color-60-dark);
+  background-color: var(--color-60-medium-dark);
 }
 
 /*/////////////////////*/
@@ -308,7 +310,6 @@ header {
 /* PROJECTS CONTAINER */
 /*///////////////////*/
 
-
 /*/////////////////////*/
 /* SITE REVIEW CONTAINER */
 /*///////////////////*/
@@ -320,18 +321,18 @@ header {
 /* FAQS CONTAINER */
 /*///////////////////*/
 .faqs-container {
-  background-color: var(--color-60-medium-dark);
+  background-color: var(--color-60-medium);
 }
 
 .faqs-container li {
-  background-color: var(--color-60-medium);
+  background-color: var(--color-60-dark);
 }
 
 /*/////////////////////*/
 /* CONTACT CONTAINER */
 /*///////////////////*/
 .contact-container {
-  background-color: var(--color-60-dark);
+  background-color: var(--color-60-medium-dark);
 }
 /*////////*/
 /* CARDS */
@@ -349,11 +350,11 @@ header {
 }
 
 .text-link {
-  color: var(--color-10-1);
+  color: var(--color-accent-main);
 }
 
 .text-link:hover {
-  color: var(--color-10-1-lighter);
+  color: var(--color-accent-main-lighter);
 }
 
 .service-card {
@@ -391,12 +392,12 @@ header {
   padding: 0.1em 0.5em;
   width: 2em;
   height: 2em;
-  background-color: var(--color-10-1);
+  background-color: var(--color-accent-main);
   color: var(--color-60-lighter);
 }
 
 .benefit-icon {
-  color: var(--color-10-1);
+  color: var(--color-accent-main);
 }
 
 /*/////////////////////////*/
@@ -485,11 +486,11 @@ details p {
 }
 
 .open summary::before {
-  color: var(--color-10-1-lighter);
+  color: var(--color-accent-main-lighter);
 }
 
 .open summary {
-  color: var(--color-10-1-lighter);
+  color: var(--color-accent-main-lighter);
 }
 
 svg {
@@ -500,12 +501,12 @@ svg {
   transform: rotate(180deg);
 }
 
-
 .quotes-container span {
   border-color: var(--color-30-1);
 }
 
-.footer-content-1, .footer-content-2 {
+.footer-content-1,
+.footer-content-2 {
   color: var(--color-60-transp);
 }
 
