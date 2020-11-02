@@ -26,7 +26,7 @@
   --link-color: var(--color-illustration);
   --link-hover-text-color: white;
   /* SUBSCRIBE BLOCK */
-  --button-color: #ff6663;
+  --button-color: var(--color-accent-main);
   --button-hover-color: hsl(1, 100%, 72%);
   --button-text-color: hsl(0, 0%, 100%);
   --input-text-color: rgba(160, 174, 192, 1);
@@ -328,8 +328,8 @@
   --form-footer-text-color: hsl(208.8, 10.5%, 35%);
   --form-input-bg-color: rgb(255, 255, 255);
   --form-input-border: 1px solid rgb(203, 213, 224);
-  --button-color: var(--button-color);
-  --button-hover-color: var(--button-hover-color);
+  --button-color: var(--color-accent-main);
+  --button-hover-color: var(--color-accent-main-lighter);
 }
 
 .dark {
