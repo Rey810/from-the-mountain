@@ -41,13 +41,14 @@ export default function Template(props) {
       />
       <div className="blog-container">
         <section className="blog mx-auto px-4 sm:w-10/12 md:w-2/3 lg:w-1/2 xl:w-1/3">
-          <BackButton to="/blog" theme="light">
+          <BackButton to="/blog" theme="dark">
             Back to All Articles
           </BackButton>
+          <div className="blog-header-container lg:-mx-12">
           <h1 className="blog-header">{post.frontmatter.title}</h1>
           <div className="subheader-container pt-4 pb-2 flex flex-row items-center">
-            <div className="avatar-container flex justify-center h-8 sm:h-10  lg:h-12 xl:h-16 mr-2">
-              <div className="avater-image-container relative w-8 sm:w-10 lg:w-12 xl:w-16">
+            <div className="avatar-container flex justify-center h-10 lg:h-12 xl:h-16 mr-2">
+              <div className="avater-image-container relative w-10 lg:w-12 xl:w-16">
                 <Avatar />
               </div>
             </div>
@@ -72,6 +73,7 @@ export default function Template(props) {
             >
               Follow
             </a>
+          </div>
           </div>
           <div className="h-full md:rounded-lg overflow-hidden -mx-4 md:-mx-40 md:border-2">
             <Img
