@@ -24,6 +24,7 @@
   --block-text-link-color: #4c4cb9;
   /* AUXILLARY COLORS */
   --link-color: var(--color-illustration);
+  --link-hover-text-color: white;
   /* SUBSCRIBE BLOCK */
   --button-color: #ff6663;
   --button-hover-color: hsl(1, 100%, 72%);
@@ -85,7 +86,7 @@
 .blog p,
 .blog li {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .blog p {
@@ -161,7 +162,7 @@
   color: var(--blog-text-color);
 }
 .blog a:not(.backButton):not(.webmention__link) {
-  color: var(--link-color);
+  color: var(--link-hover-text-color);
   box-shadow: inset 0 -1px 0 0 var(--link-color);
   border-bottom: 1px solid var(--link-color);
 }
