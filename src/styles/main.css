@@ -173,6 +173,7 @@ a {
 }
 .personal-description-container {
   @apply py-12 xl:w-2/3;
+  max-width: 50ch;
 }
 
 .personal-title-container h2 {
