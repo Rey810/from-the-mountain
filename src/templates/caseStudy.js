@@ -54,7 +54,7 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
         desktopHeight="xl:min-h-8/10 xl:max-h-8/10"
         extraClasses="md:block lg:grid"
       >
-        <h2 className="font-semibold mb-8 w-4/5 mx-auto text-2xl flex items-center justify-center col-start-1 col-end-5 sm:w-1/1 sm:col-end-13 md:mb-16 lg:text-5xl lg:mb-0">
+        <h2 className="font-semibold mb-8 w-4/5 mx-auto text-3xl flex items-center justify-center col-start-1 col-end-5 sm:w-1/1 sm:col-end-13 md:mb-16 lg:text-5xl lg:mb-0">
           Skills Utilized
         </h2>
         <div className="serviceCards-container col-start-1 col-end-13 row-start-2 row-end-12 flex flex-col px-6 items-center scrolling-touch md:flex-row md:flex-wrap md:px-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:mt-16 xl:mt-0 xl:mx-auto xl:w-5/6 xl:gap-12 xl:mr-auto">
@@ -122,15 +122,25 @@ const CaseStudy = ({ data: { projectDataJson: project }, data, location }) => {
   }
 
   let collaborators = null
-  if (project.collab){
-   collaborators = <span className="flex items-center text-xs italic -mt-4">In collaboration with <a href={project.collab[0].link} className="mx-2 transform scale-75 duration-200 hover:scale-100"><Img fixed={project.collab[0].icon.childImageSharp.fixed} /></a></span>
+  if (project.collab) {
+    collaborators = (
+      <span className="flex items-center text-xs italic -mt-4">
+        In collaboration with{" "}
+        <a
+          href={project.collab[0].link}
+          className="mx-2 transform scale-75 duration-200 hover:scale-100"
+        >
+          <Img fixed={project.collab[0].icon.childImageSharp.fixed} />
+        </a>
+      </span>
+    )
   }
 
   return (
     <>
       <SEO {...SEOinfo} />
       <Header isCaseStudy />
-      
+
       <ContentWrapper
         tabletHeight="md:min-h-6/10 md:max-h-6/10"
         laptopHeight="lg:min-h-8/10 lg:max-h-8/10"
@@ -241,7 +251,7 @@ export const projectQuery = graphql`
         icon {
           childImageSharp {
             fixed(width: 32, height: 41) {
-            ...GatsbyImageSharpFixed
+              ...GatsbyImageSharpFixed
             }
           }
         }
