@@ -12,7 +12,7 @@ const Services = props => {
         <div className="service-item">
           <div className="service-text__left">
             <div className="service-text-wrapper lg:w-4/5">
-              <h3>Own a Website that Works</h3>
+              <h3>1. Own a Website that Works</h3>
               <p>
                 You want a website. It must look great and you want it to
                 work... All the time. Well, that's why I'm here! I help you by
@@ -37,7 +37,7 @@ const Services = props => {
           </div>
           <div className="service-text__right">
             <div className="service-text-wrapper lg:w-4/5">
-              <h3>Become Famous with SEO</h3>
+              <h3>2. Become Famous with SEO</h3>
               <p>
                 An impressive Google ranking means more people see your
                 fantastic blog post or revolutionary product. I ensure you have
@@ -50,7 +50,7 @@ const Services = props => {
         <div className="service-item">
           <div className="service-text__left">
             <div className="service-text-wrapper lg:w-4/5">
-              <h3>Control the Features</h3>
+              <h3>3. Control the Features</h3>
               <p>
                 Do you feel restricted by all the drag-and-drop web builders out
                 there? I provide a powerful custom code solution that fits your
@@ -74,7 +74,7 @@ const Services = props => {
           </div>
           <div className="service-text__right">
             <div className="service-text-wrapper lg:w-4/5">
-              <h3>Sell Your Stuff Online</h3>
+              <h3>4. Sell Your Stuff Online</h3>
               <p>
                 You have an idea. You want to turn it into an online business
                 without all the hassle. Perfect! I'm here to help you set up an

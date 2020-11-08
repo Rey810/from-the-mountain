@@ -98,6 +98,11 @@ a {
   cursor: pointer;
 }
 
+a:active,
+button:active {
+  transform: scale3d(0.9, 0.9, 1);
+}
+
 .btn {
   @apply block px-12 py-4 rounded my-6;
 }
@@ -309,7 +314,7 @@ a {
 }
 
 .faq-list-container {
-  @apply mx-auto md:w-1/2;
+  @apply mx-auto md:w-3/4 lg:w-1/2;
 }
 
 /* Contact */
@@ -338,7 +343,7 @@ footer {
 }
 
 .footer-content-1 {
-  @apply border-b-2 border-solid border-opacity-75 mr-1/5 mb-10 pb-10 md:mb-0 md:pb-0 md:border-none;
+  @apply border-b md:border-b-2 border-solid border-opacity-75 mr-1/5 mb-20 pb-20 md:mb-10 md:pb-10 md:mb-0 md:pb-0 md:border-none;
 }
 
 .footer-content-2 {
@@ -349,8 +354,7 @@ footer {
   @apply text-xs mb-4 font-bold;
 }
 
-.footer-content p,
-.footer-content li {
+.footer-content p {
   @apply text-sm;
 }
 
@@ -376,7 +380,7 @@ footer {
 }
 
 .quote {
-  @apply px-0 md:p-4 flex justify-center flex-wrap items-center;
+  @apply px-0 md:p-4 flex justify-start md:justify-center flex-wrap items-center;
 }
 
 .footer-links a:hover {

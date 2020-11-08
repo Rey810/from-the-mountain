@@ -110,7 +110,10 @@ button:disabled {
   transform: translateX(0%);
 }
 
-.Form input:invalid {
+.contact-form input:invalid {
+  box-shadow: none;
+}
+.contact-form input:-moz-ui-invalid {
   box-shadow: none;
 }
 
@@ -133,7 +136,8 @@ button:disabled {
   box-shadow: inset 0px 0px 1px 1px var(--success-color);
 }
 
-.Form textarea:invalid {
+.contact-form textarea:invalid,
+.contact-form textarea:-moz-ui-invalid {
   box-shadow: none;
 }
 

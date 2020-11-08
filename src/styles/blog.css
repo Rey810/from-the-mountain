@@ -339,8 +339,8 @@
   --form-footer-text-color: rgba(255, 255, 255, 0.5);
   --form-input-bg-color: #252734;
   --form-input-border: none;
-  --button-color: var(--button-color);
-  --button-hover-color: var(--button-hover-color);
+  --button-color: var(--color-accent-main);
+  --button-hover-color: var(--color-accent-main-lighter);
 }
 
 .subscribe-text-container,
