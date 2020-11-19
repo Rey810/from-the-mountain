@@ -50,16 +50,14 @@
 }
 
 /* FONTS and PADDING */
-.blog-header {
-  font-size: 2rem;
-}
 
 .blog-back-arrow {
   color: var(--blog-header-color);
 }
 
 .blog h1 {
-  @apply font-bold;
+  @apply font-bold leading-none;
+  font-size: 2rem;
 }
 
 .blog h2 {

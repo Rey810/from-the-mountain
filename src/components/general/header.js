@@ -40,7 +40,7 @@ const Header = ({
 
   // adds specific header links if the header is the post header
   let avatar = (
-    <Link to="/">
+    <Link to="/" class="logo">
       <div className="home-section flex flex-row items-center">
         <div className="avatar-container flex justify-center h-8 mx-auto ">
           <div className="avater-image-container relative w-8">

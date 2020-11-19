@@ -17,8 +17,13 @@ body {
 a:focus,
 summary:focus,
 .serviceCards-container:focus {
+  --tw-ring-color: var(--color-accent-main-lighter);
   @apply outline-none;
-  @apply shadow-outline;
+  @apply ring ring-opacity-50 ring-inset;
+}
+
+a:focus > * {
+  opacity: 1;
 }
 
 /* ///////////// */
@@ -51,7 +56,6 @@ body {
 .landing-children h1,
 .landing-children h2 {
   @apply font-semibold;
-  @apply leading-none;
 }
 
 h1,
@@ -98,15 +102,6 @@ a {
   cursor: pointer;
 }
 
-a:active,
-button:active {
-  transform: scale3d(0.9, 0.9, 1);
-}
-
-.btn {
-  @apply block px-12 py-4 rounded my-6;
-}
-
 .landing-children h3 {
   @apply text-2xl;
 }
@@ -117,6 +112,15 @@ button:active {
 
 .contact-button {
   @apply text-3xl;
+}
+
+a.logo:focus {
+  box-shadow: none;
+}
+
+a.logo:focus .avater-image-container > div:first-child {
+  --tw-ring-color: var(--color-accent-main-lighter);
+  @apply ring ring-opacity-50 ring-inset;
 }
 
 .header-contact-button {
@@ -136,28 +140,45 @@ button:active {
   opacity: 0.75;
   @apply text-lg;
 }
-.view-projects-container {
+
+.btn {
+  @apply inline-block rounded my-6 uppercase;
+  padding: 1em 3em;
+  transition: all 0.3s ease-in;
+}
+
+.btn__outlined {
   @apply border-2;
   border-color: var(--color-10-1);
 }
 
-.view-projects-container span {
+.btn__outlined:hover {
+  border-color: var(--color-accent-main-lighter);
+  color: var(--color-accent-main-lighter);
+}
+
+.btn.view-projects-container {
+  @apply flex flex-row items-center;
+  color: var(-color-accent-main-lighter);
+}
+
+.btn.view-projects-container span {
   transition: all 0.2s ease-in;
 }
 
-.view-projects-container:hover span,
+.btn.view-projects-container:hover span,
 .launch-project:hover span {
   transform: translate3d(5%, 0, 0);
 }
 
-.view-projects-container svg {
+.btn.view-projects-container svg {
   @apply absolute;
   transition: all 0.2s ease-in;
   @apply opacity-0;
   transform: translate3d(-200%, 0, 0);
 }
 
-.view-projects-container:hover svg {
+.btn.view-projects-container:hover svg {
   @apply opacity-100 mr-4;
   transform: translate3d(-100%, 0, 0);
 }
@@ -177,14 +198,13 @@ button:active {
   @apply flex flex-col flex-col-reverse md:grid md:grid-cols-2;
 }
 .personal-description-container {
-  @apply py-12 xl:w-2/3;
-  max-width: 50ch;
+  @apply py-12 text-xl text-center;
+  max-width: 45ch;
 }
 
 .personal-title-container h2 {
   @apply mb-0;
   @apply text-left;
-  @apply xl:w-4/5;
 }
 
 .free-ribbon {
@@ -200,9 +220,9 @@ button:active {
 .service-items-container {
   @apply xl:w-2/3 xl:mx-auto;
 }
+
 .service-item {
-  @apply md:grid md:grid-cols-2;
-  @apply md:mt-24;
+  @apply text-center md:text-left md:grid md:grid-cols-2 md:mt-24;
 }
 
 @media (min-width: 767px) {
@@ -336,7 +356,7 @@ button:active {
 }
 
 footer {
-  @apply relative py-40;
+  @apply relative py-20 md:py-40;
 }
 
 .footer-content {

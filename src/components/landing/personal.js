@@ -1,39 +1,34 @@
 // import { Link } from "gatsby"
 import React from "react"
 import PaddingContainer from "../containers/paddingContainer"
-import Img from "gatsby-image"
 
 const personal = props => {
   return (
-    <PaddingContainer type="personal-container" X Y>
-      <div className="flex items-center justify-center">
-        <Img fluid={props.teaching.childImageSharp.fluid} className="w-1/1 md:w-3/4" />
-      </div>
-      <div className="text-wrapper flex justify-center items-center">
-        <div className="personal-title-container">
-          <h2 className="personal-title">Do You Want a Perfect Website?</h2>
-          <div className="personal-description-container">
-            <p className="personal-description pb-4 ">
-              I build sites with amazing looks and fast load-times that do one
-              thing:
-              <strong className="landing"> Get You Results.</strong>
-            </p>
-            <p className="personal-description pb-4">
-              Whatever you have in mind, you should know - I build with a
-              goal-oriented eye for precision.
-            </p>
-            <p className="personal-description">
-              When we're done, you will have a site that gets the job done{" "}
-              <em>in style.</em>
-            </p>
-            {/* <Link
-          to="/blog"
-          className="py-2 px-8 border border-solid rounded-md my-2"
-        >
-          Checkout Blog
-        </Link> */}
-          </div>
+    <PaddingContainer
+      type="personal-container flex justify-center items-center"
+      X
+      Y
+    >
+      <div className="personal-title-container flex flex-col justify-center items-center">
+        <h2 className="personal-title">I Get You Results</h2>
+        <div className="personal-description-container">
+          <p className="personal-description pb-4 ">
+            I build sites with amazing looks and fast load-times that do one
+            thing:
+            <strong className="landing"> Get You Results.</strong>
+          </p>
+          <p className="personal-description pb-4">
+            Whatever you have in mind, you should know - I build with a
+            goal-oriented eye for precision.
+          </p>
+          <p className="personal-description">
+            When we're done, you will have a site that gets the job done{" "}
+            <em>in style.</em>
+          </p>
         </div>
+        <a href="#Projects" className="btn btn__outlined text-xs md:text-sm">
+          <span class="w-1/1 text-center">SEE PAST WORK</span>
+        </a>
       </div>
     </PaddingContainer>
   )

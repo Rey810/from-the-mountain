@@ -50,14 +50,14 @@ const Landing = props => {
           <h1
             className={`opacity-0 ${
               animated ? "fadeInSlideUp-1st" : null
-            } landing-title leading-none`}
+            } landing-title`}
           >
             Freelance <br /> Developer
           </h1>
           <p
             className={`opacity-0 ${
               animated ? "fadeInSlideUp-2nd" : null
-            } landing-description my-12 lg:mt-8 lg:mb-4 xl:my-12`}
+            } landing-description my-12 text-xl lg:mt-8 lg:mb-4 xl:my-12`}
           >
             Helping people turn their ideas into <br /> sites & apps that work.{" "}
             <br />
@@ -69,24 +69,12 @@ const Landing = props => {
                 animated ? "fadeInSlideUp-3rd" : null
               } landing-buttons-container`}
             >
-              {/* <button
-                className="btn landing-cta-1"
-                onClick={modalToggleHandler}
-              >
-                <div className="free-ribbon absolute py-1 px-4 rounded-md flex items-center">
-                  <span className="price line-through text-base mr-1 lg:mr-2">
-                    $25
-                  </span>
-                  <span className="italic font-semibold text-sm">FREE</span>
-                </div>
-                Get Site Review
-              </button> */}
-              <Link to="/#Connect" className="btn landing-cta-1">
+              <Link to="/#Connect" className="btn block landing-cta-1">
                 <span className="w-1/1 text-center inline-block">HIRE ME</span>
               </Link>
               <Link
                 to="/#services"
-                className="view-projects-container btn flex fex-row items-center"
+                className="view-projects-container btn btn__outlined"
               >
                 <FeatherArrowRightCircle />
                 <span className="w-1/1 text-center">VIEW SERVICES</span>

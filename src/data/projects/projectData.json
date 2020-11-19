@@ -6,7 +6,7 @@
     "linkName": "/projects/wandering-ponderer",
     "imageURL": "A young man looking out from a forest into the flowing green expanse of a Thai island",
     "description": "A personal travel site for an explorer, writer, and overthinker.",
-    "caseDescription": "I wanted to create a site that could serve as a base for all my travel ramblings. It needed to be coded by hand as a way of practically applying the fundamental front-end concepts I was learning at the time. Visually, pages needed to be centered around keeping things aesthetically minimal and non-distracting. This gavegive the viewer some breathing space to peruse the content at a convenient pace.",
+    "caseDescription": "I wanted to create a site that could serve as a base for all my travel ramblings. It needed to be coded by hand as a way of practically applying the fundamental front-end concepts I was learning at the time. Visually, pages needed to be centered around keeping things aesthetically minimal and non-distracting. This to give the reader some breathing space to peruse the content at a convenient pace.",
     "secondDescription": "Large full-width images and flowing prose characterises the dreamy manner in which I captured and wrote this content. Legibility was key here with the heavy emphasis on the written word. Ultimately, this was an exercise in piecing together my, at the time, maturing HTML, CSS, and JavaScript skills. Ultimately, I got caught up in the exhiliration that is creating something personal from scratch.",
     "secondDescriptionQuote": "Large Images and Flowing Prose...",
     "skillsUtilized": [
@@ -263,7 +263,7 @@
     "imageURL": "Danny's Meditation App home page",
     "description": "A re-design of a fellow front-end developer's meditation app.",
     "caseDescription": "Danny was in the process of building a meditation app for the Google Play Store. I offered my help with the design. The result was a more visually consistent design rooted in strong vertical rhythm, sizing, and colour principles to deliver a calmer, focused experience for meditators.",
-    "secondDescription": "Image choice was largely guided by how we, as meditators, want to perceive our practices: Non-distracted, tranquil, at peace. This meant larger, beautiful images of fellow meditators to serve as inspiration and a source of grounding. Colour is crucial to our digital expereinces. Seeing as experience is the whole crux of this app, I took Danny's initial brand colour and constructed complementary auxillary colours with lightness and saturation variations to give the rest of the app a more consistent aesthetic.",
+    "secondDescription": "Image choice was largely guided by how we, as meditators, want to perceive our practices: Non-distracted, tranquil, at peace. This meant larger, beautiful images of fellow meditators to serve as inspiration and a source of grounding. Colour is crucial to our digital experiences. Seeing as experience is the whole crux of this app, I took Danny's initial brand colour and constructed complementary auxillary colours with lightness and saturation variations to give the rest of the app a more consistent aesthetic.",
     "secondDescriptionQuote": "Non-distracted, tranquil, and completely at peace...",
     "skillsUtilized": [
       {
@@ -272,7 +272,7 @@
       },
       {
         "name": "Tranquil Design",
-        "description": "Users of this app are here for one thing - cultivating a calmer, less reactive mind. Every color and element choice reflects an overall design decision that is non-distracting. The UI is spacious with clear CTAs cultivating a peaceful experience."
+        "description": "Users of this app are here for one thing - cultivating a calmer, less reactive mind. Every colour and element choice reflects an overall design decision that is non-distracting. The UI is spacious with clear CTAs cultivating a peaceful experience."
       },
       {
         "name": "Fast Iteration",

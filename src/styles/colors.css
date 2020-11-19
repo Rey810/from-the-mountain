@@ -54,7 +54,10 @@
   --error-color: #ff3366;
   --default-color: #d6edff;
   --success-color: #81e979;
+
+  /* Tailwind Variables */
 }
+
 /*////////////////*/
 /* FOCUS COLOURS */
 /*//////////////*/
@@ -223,13 +226,12 @@ header {
 }
 
 .header-contact-button {
-  background-color:   var(--color-accent-main);
+  background-color: var(--color-accent-main);
 }
 
 .header-contact-button:hover {
-  background-color:   var(--color-accent-main-lighter);
+  background-color: var(--color-accent-main-lighter);
 }
-
 
 /* //////////////////////// */
 /* Case Study landing page */

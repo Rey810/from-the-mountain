@@ -19,7 +19,7 @@ const Projects = props => {
   )
 
   return (
-    <PaddingContainer type="projects-container pattern-bg" X Y>
+    <PaddingContainer type="projects-container pattern-bg" id="Projects" X Y>
       <h2
         className="font-black
 leading-none

@@ -118,12 +118,4 @@ module.exports = {
     scale: ["responsive", "hover", "focus", "active", "group-hover"],
   },
   plugins: [],
-  experimental: {
-    extendedFontSizeScale: true,
-    applyComplexClasses: true,
-  },
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
 }
