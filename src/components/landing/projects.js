@@ -5,7 +5,7 @@ import Apps from "../../components/portfolio/projects/apps"
 import PaddingContainer from "../containers/paddingContainer"
 
 const Projects = props => {
-  const [showSites, setShowSites] = useState(false)
+  const [showSites, setShowSites] = useState(true)
 
   console.log({ props })
   const toggleSwitchHandler = () => {
