@@ -73,11 +73,11 @@ const Landing = props => {
                 <span className="w-1/1 text-center inline-block">HIRE ME</span>
               </Link>
               <Link
-                to="/#services"
+                to="/Blog"
                 className="view-projects-container btn btn__outlined"
               >
                 <FeatherArrowRightCircle />
-                <span className="w-1/1 text-center">VIEW SERVICES</span>
+                <span className="w-1/1 text-center">Read Pre-COVID Blog</span>
               </Link>
             </div>
             <div
