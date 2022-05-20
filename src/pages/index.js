@@ -4,17 +4,17 @@ import SEO from "../components/general/seo"
 // import { useStaticQuery, graphql } from "gatsby"
 // Components of Landing Page
 import Landing from "../components/landing/landing"
-import Personal from "../components/landing/personal"
-import Services from "../components/landing/services/services"
-import Promise from "../components/landing/promise"
-import Toolbox from "../components/portfolio/toolbox/toolbox"
+// import Personal from "../components/landing/personal"
+// import Services from "../components/landing/services/services"
+// import Promise from "../components/landing/promise"
+// import Toolbox from "../components/portfolio/toolbox/toolbox"
 // import Projects from "../components/projects"
-import Contact from "../components/landing/contact"
-import Benefits from "../components/landing/benefits"
-import Projects from "../components/landing/projects"
-import FAQ from "../components/landing/faq"
-import SiteReview from "../components/landing/siteReview"
-import Footer from "../components/general/footer"
+// import Contact from "../components/landing/contact"
+// import Benefits from "../components/landing/benefits"
+// import Projects from "../components/landing/projects"
+// import FAQ from "../components/landing/faq"
+// import SiteReview from "../components/landing/siteReview"
+// import Footer from "../components/general/footer"
 import Quotes from "../components/landing/quotes"
 
 // Font Awesome Icons
@@ -49,22 +49,22 @@ const IndexPage = ({
       <SEO title="Web Developer" />
       <div className="landing-children">
         <Landing {...images} />
-        <Personal {...images} />
-        <Services {...images} />
-        <Toolbox />
-        <Benefits />
-      </div>
-      <Projects />
-      <div className="landing-children">
-        <Promise {...images} />
-      </div>
-      <div className="landing-children">
-        <SiteReview />
-      </div>
-      <div className="landing-children pattern-bg">
-        <FAQ />
-        <Contact />
-        <Footer />
+//         <Personal {...images} />
+//         <Services {...images} />
+//         <Toolbox />
+//         <Benefits />
+//       </div>
+//       <Projects />
+//       <div className="landing-children">
+//         <Promise {...images} />
+//       </div>
+//       <div className="landing-children">
+//         <SiteReview />
+//       </div>
+//       <div className="landing-children pattern-bg">
+//         <FAQ />
+//         <Contact />
+//         <Footer />
         <Quotes />
       </div>
     </Layout>
