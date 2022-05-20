@@ -73,7 +73,7 @@ const Landing = props => {
                 <span className="w-1/1 text-center inline-block">Come Say Hi</span>
               </a>
               <Link
-                to="/Blog"
+                to="/blog"
                 className="view-projects-container btn btn__outlined"
               >
                 <FeatherArrowRightCircle />
