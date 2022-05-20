@@ -49,22 +49,6 @@ const IndexPage = ({
       <SEO title="Web Developer" />
       <div className="landing-children">
         <Landing {...images} />
-//         <Personal {...images} />
-//         <Services {...images} />
-//         <Toolbox />
-//         <Benefits />
-//       </div>
-//       <Projects />
-//       <div className="landing-children">
-//         <Promise {...images} />
-//       </div>
-//       <div className="landing-children">
-//         <SiteReview />
-//       </div>
-//       <div className="landing-children pattern-bg">
-//         <FAQ />
-//         <Contact />
-//         <Footer />
         <Quotes />
       </div>
     </Layout>
