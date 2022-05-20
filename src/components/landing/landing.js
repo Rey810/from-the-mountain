@@ -69,8 +69,8 @@ const Landing = props => {
                 animated ? "fadeInSlideUp-3rd" : null
               } landing-buttons-container`}
             >
-              <Link to="/#Connect" className="btn block landing-cta-1">
-                <span className="w-1/1 text-center inline-block">HIRE ME</span>
+              <a href="https://twitter.com/ReyTheDev" className="btn block landing-cta-1">
+                <span className="w-1/1 text-center inline-block">Come Say Hi</span>
               </Link>
               <Link
                 to="/Blog"
