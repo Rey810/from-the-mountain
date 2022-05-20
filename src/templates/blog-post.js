@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/containers/layout"
 import SEO from "../components/general/seo"
-import Subscribe from "../components/blog/subscribe/subscribe"
+// import Subscribe from "../components/blog/subscribe/subscribe"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter, faFacebookF } from "@fortawesome/free-brands-svg-icons"
 import BackButton from "../components/general/BackButton/BackButton"
 import Img from "gatsby-image"
-import Footer from "../components/general/footer"
+// import Footer from "../components/general/footer"
 import Avatar from "../components/images/avatar"
 // WEB MENTIONS
 import WebMentions from "../components/webMentions/webMentions"
@@ -106,8 +106,6 @@ export default function Template(props) {
             </a>
           </div>
         </div>
-        <Subscribe />
-        <Footer />
       </div>
     </Layout>
   )
