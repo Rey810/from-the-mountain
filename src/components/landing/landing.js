@@ -71,7 +71,7 @@ const Landing = props => {
             >
               <a href="https://twitter.com/ReyTheDev" className="btn block landing-cta-1">
                 <span className="w-1/1 text-center inline-block">Come Say Hi</span>
-              </Link>
+              </a>
               <Link
                 to="/Blog"
                 className="view-projects-container btn btn__outlined"
